@@ -11,6 +11,7 @@ import type { Entry } from '../src/data/types.ts'
 import { LEVELS, OUT_DIR, SHARD_SIZE } from './lib/content-io.ts'
 import { buildRelations } from './relations.ts'
 import { validateAll } from './validate.ts'
+import { readLearningRanks } from './lib/learning-order.ts'
 
 export interface IndexItem {
   id: string
@@ -22,6 +23,7 @@ export interface IndexItem {
   g: string[] // 태그
   k: string // 검색 키워드: 변화형 | 모든 meaningKo | 유의어 (소문자)
   s: number // 샤드 번호
+  r: number // 레벨 안의 추천 학습 순서 (1부터)
 }
 
 const r = validateAll()
@@ -30,6 +32,8 @@ if (!r.ok) {
   console.error('검증 실패 — 데이터 빌드를 중단합니다.')
   process.exit(1)
 }
+
+const learningRanks = readLearningRanks(r.levels)
 
 rmSync(OUT_DIR, { recursive: true, force: true })
 mkdirSync(OUT_DIR, { recursive: true })
@@ -66,6 +70,7 @@ for (const lv of LEVELS) {
         g: e.tags ?? [],
         k: Array.from(kw).join('|'),
         s: shard,
+        r: learningRanks.get(e.id)!,
       })
     }
   }

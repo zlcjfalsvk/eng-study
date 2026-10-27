@@ -1,0 +1,40 @@
+{
+  "beginner": [
+    "I", "you", "be", "have", "do", "can", "go", "come", "get", "make",
+    "take", "want", "need", "know", "think", "say", "tell", "ask", "help",
+    "not", "yes", "no", "good", "like", "time", "day", "work", "home",
+    "water", "food", "family", "friend", "please", "hello", "sorry",
+    "get up", "wake up", "sit down", "stand up", "come in", "go out",
+    "turn on", "turn off", "look for", "excuse me", "take a break",
+    "have breakfast", "nice to meet you"
+  ],
+  "intermediate": [
+    "issue", "experience", "require", "involve", "achieve", "approach",
+    "process", "evidence", "environment", "challenge", "concern", "factor",
+    "relationship", "responsibility", "likely", "come up with", "bring up",
+    "put off", "give up", "look after", "look into", "end up", "work out",
+    "go through", "take on", "get back to", "make up for", "put up with",
+    "take part in", "pay attention", "take place", "make sure"
+  ],
+  "advanced": [
+    "notion", "nuance", "compelling", "feasible", "inherent", "explicit",
+    "implicit", "empirical", "coherent", "robust", "viable", "rigorous",
+    "scrutinize", "mitigate", "concede", "articulate", "assert", "contend",
+    "undermine", "exacerbate", "unprecedented", "paradigm", "salient",
+    "draw on", "account for", "give rise to", "hinge on", "stem from",
+    "think through", "single out", "point to", "call into question",
+    "in light of", "strike a balance", "a case in point",
+    "a double-edged sword", "by and large", "in retrospect"
+  ],
+  "business": [
+    "agenda", "minutes", "action item", "schedule", "reschedule", "budget",
+    "client", "proposal", "contract", "agreement", "negotiate", "invoice",
+    "revenue", "expense", "cash flow", "forecast", "target", "stakeholder",
+    "deliverable", "milestone", "follow up", "set up", "reach out",
+    "get back to", "go over", "push back", "sign off", "wrap up", "carry out",
+    "take ownership", "meet a deadline", "on track", "reach an agreement",
+    "as discussed", "please find attached", "best regards", "next steps",
+    "touch base", "circle back", "quotation", "purchase order",
+    "customer service", "due date", "out of office", "attachment", "FYI"
+  ]
+}

@@ -16,6 +16,7 @@ export interface IndexItem {
   g: string[] // 태그
   k: string // 검색 키워드
   s: number // 샤드 번호
+  r?: number // 레벨 안의 추천 학습 순서 (이전 캐시에는 없을 수 있음)
 }
 
 export interface Manifest {
@@ -52,7 +53,10 @@ export async function loadIndex(level: Level): Promise<IndexItem[]> {
   const key = `index:${level}`
   const cached = memo.get(key)
   if (cached) return cached as Promise<IndexItem[]>
-  const p = getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json`)
+  // 새 앱에서 추천 순서가 없는 이전 서비스 워커 색인을 재사용하지 않는다.
+  // 오프라인일 때는 이미 받아 둔 이전 색인으로도 계속 탐색할 수 있다.
+  const p = getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=1`)
+    .catch(() => getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json`))
     .then((items) => items.map((i) => ({ ...i, l: level })))
     .catch(() => [] as IndexItem[]) // 콘텐츠가 없는 레벨은 빈 목록
   memo.set(key, p)
@@ -131,7 +135,8 @@ export function searchIndex(list: IndexItem[], q: string): IndexItem[] {
     else if (e.k.includes(needle)) s = 40
     if (s) scored.push({ e, s })
   }
-  return scored.sort((a, b) => b.s - a.s || a.e.h.localeCompare(b.e.h)).map((x) => x.e)
+  // 같은 검색 점수라면 호출한 곳에서 선택한 정렬 순서를 유지한다.
+  return scored.sort((a, b) => b.s - a.s).map((x) => x.e)
 }
 
 export const LEVEL_META: Record<Level, { label: string; short: string; code: string; desc: string; color: string; bg: string; ring: string; bar: string }> = {

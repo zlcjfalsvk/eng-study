@@ -3,13 +3,15 @@ import { Link, useNavigate, useParams } from 'react-router'
 import { LEVELS, type Entry, type Level } from '../data/types'
 import { LEVEL_META, loadEntries, loadIndex } from '../lib/content'
 import { useAsync } from '../lib/hooks'
-import { isDue, previewInterval, shuffle, todayKey, type Grade } from '../lib/srs'
+import { isDue, previewInterval, todayKey, type Grade } from '../lib/srs'
+import { selectStudyCards } from '../lib/learning-order'
 import { getRelatedBrief } from '../lib/relations'
 import { speak } from '../lib/tts'
 import { useStore } from '../store/progress'
 import { SpeakButton } from '../components/SpeakButton'
 import { Button, Card, Chip, Empty, Page, Spinner, cx } from '../components/ui'
 import { SenseCard } from './EntryDetail'
+import { LearningOrderInfo } from '../components/LearningOrderInfo'
 
 export default function Study() {
   const params = useParams<{ level?: string }>()
@@ -43,13 +45,7 @@ export default function Study() {
 
   async function start(kind: 'mixed' | 'due' | 'new', count?: number) {
     if (!data || starting) return
-    const now = Date.now()
-    const dueCards = data.filter((e) => isDue(progress[e.id], now))
-    const newCards = data.filter((e) => !progress[e.id] || progress[e.id].status === 'new')
-    let picked = [] as typeof data
-    if (kind === 'due') picked = shuffle(dueCards)
-    else if (kind === 'new') picked = shuffle(newCards).slice(0, count ?? 10)
-    else picked = shuffle([...dueCards, ...shuffle(newCards).slice(0, Math.min(newLeft, 20))])
+    const picked = selectStudyCards(data, progress, kind, kind === 'new' ? count ?? 10 : Math.min(newLeft, 20))
     if (picked.length === 0) return
     setStarting(true)
     try {
@@ -133,6 +129,10 @@ export default function Study() {
           <p className="text-center text-xs text-slate-400">
             하루 새 단어 목표 {settings.dailyNew}개 · 오늘 {daily?.newCards ?? 0}개 학습 · <Link to="/settings" className="underline">변경</Link>
           </p>
+          <p className="text-center text-xs leading-relaxed text-slate-500">
+            복습할 카드를 먼저 학습하고, 새 단어는 핵심 어휘·표현부터 추천순으로 익힙니다.
+          </p>
+          <LearningOrderInfo />
 
           <Card className="mt-2">
             <p className="text-sm font-semibold">플래시카드 사용법</p>

@@ -4,9 +4,11 @@ import { LEVELS, type EntryType, type Level, type Status } from '../data/types'
 import { LEVEL_META, TYPE_LABEL, loadAllIndexes, loadIndex, searchIndex, type IndexItem } from '../lib/content'
 import { useAsync, useDebounced } from '../lib/hooks'
 import { isDue } from '../lib/srs'
+import { orderIndex } from '../lib/learning-order'
 import { useStore } from '../store/progress'
 import { EntryList } from '../components/EntryList'
 import { Chip, Empty, Page, Spinner } from '../components/ui'
+import { LearningOrderInfo } from '../components/LearningOrderInfo'
 
 type Filter = 'all' | 'new' | 'learning' | 'known' | 'due' | 'bookmarked'
 const FILTERS: { key: Filter; label: string }[] = [
@@ -29,6 +31,7 @@ export default function Browse() {
   const level = (params.level === 'all' ? 'all' : (LEVELS.find((l) => l === params.level) ?? settingsLevel)) as Level | 'all'
   const filter = (sp.get('filter') as Filter) || 'all'
   const type = (sp.get('type') as EntryType | 'all') || 'all'
+  const order = sp.get('sort') === 'alphabetical' ? 'alphabetical' : 'recommended'
   const [q, setQ] = useState(sp.get('q') ?? '')
   const dq = useDebounced(q, 150)
   const [shown, setShown] = useState(PAGE)
@@ -38,7 +41,7 @@ export default function Browse() {
 
   useEffect(() => {
     setShown(PAGE)
-  }, [level, filter, type, dq])
+  }, [level, filter, type, dq, order])
 
   const filtered = useMemo(() => {
     if (!data) return []
@@ -64,8 +67,8 @@ export default function Browse() {
         return true
       })
     }
-    return searchIndex(list, dq)
-  }, [data, filter, type, dq, progress])
+    return searchIndex(orderIndex(list, order), dq)
+  }, [data, filter, type, dq, progress, order])
 
   function setParam(k: string, v: string) {
     const next = new URLSearchParams(sp)
@@ -134,6 +137,23 @@ export default function Browse() {
           )}
         </div>
       </div>
+
+      <div className="mb-2 mt-2 flex items-center justify-between gap-3">
+        <p className="text-xs text-slate-500">{dq.trim() ? '검색 일치도 우선 · 같은 점수는 선택한 순서' : order === 'alphabetical' ? 'A → Z' : level === 'all' ? '초급 → 중급 → 고급 → 비즈니스' : '먼저 익힐 단어부터 차근차근'}</p>
+        <label className="flex shrink-0 items-center gap-2 text-xs text-slate-500">
+          정렬
+          <select
+            aria-label="단어장 정렬"
+            value={order}
+            onChange={(e) => setParam('sort', e.target.value)}
+            className="rounded-lg border border-slate-200 bg-white px-2 py-2 text-sm text-slate-700 focus-visible:outline-2 focus-visible:outline-brand-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+          >
+            <option value="recommended">추천순</option>
+            <option value="alphabetical">알파벳순</option>
+          </select>
+        </label>
+      </div>
+      {order === 'recommended' && <LearningOrderInfo className="mb-3" />}
 
       {loading ? (
         <Spinner />

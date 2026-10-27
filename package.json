@@ -15,7 +15,8 @@
     "validate:part": "tsx scripts/validate-part.ts",
     "merge:parts": "tsx scripts/merge-parts.ts",
     "wordlist": "tsx scripts/wordlist.ts",
-    "fix:case": "tsx scripts/fix-case.ts"
+    "fix:case": "tsx scripts/fix-case.ts",
+    "test:learning-order": "tsx --test scripts/learning-order.test.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
