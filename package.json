@@ -11,7 +11,10 @@
     "validate": "tsx scripts/validate.ts",
     "generate": "tsx scripts/generate.ts",
     "data": "tsx scripts/build-data.ts",
-    "predev": "tsx scripts/build-data.ts"
+    "predev": "tsx scripts/build-data.ts",
+    "validate:part": "tsx scripts/validate-part.ts",
+    "merge:parts": "tsx scripts/merge-parts.ts",
+    "wordlist": "tsx scripts/wordlist.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

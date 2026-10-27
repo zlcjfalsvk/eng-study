@@ -1,0 +1,350 @@
+# business — 비즈니스 영어 표제어 목록
+# 형식: headword,type (word | phrasal | idiom | collocation)
+
+# ===== 1. Meetings (회의) =====
+action item,word
+minutes,word
+attendee,word
+chair,word
+facilitator,word
+quorum,word
+motion,word
+adjourn,word
+convene,word
+preside,word
+recap,word
+takeaway,word
+standup,word
+huddle,word
+offsite,word
+town hall,word
+all-hands,word
+kickoff,word
+debrief,word
+briefing,word
+breakout,word
+roundtable,word
+sync,word
+check-in,word
+one-on-one,word
+agenda item,collocation
+open the floor,idiom
+take the floor,idiom
+have the floor,idiom
+park,word
+tabled,word
+sidebar,word
+tangent,word
+consensus,word
+dissent,word
+abstain,word
+unanimous,word
+second,word
+proxy,word
+dial in,phrasal
+call in,phrasal
+join in,phrasal
+sit in,phrasal
+chime in,phrasal
+weigh in,phrasal
+jump in,phrasal
+cut in,phrasal
+butt in,phrasal
+drop off,phrasal
+hop on,phrasal
+hop off,phrasal
+log on,phrasal
+log off,phrasal
+mute,word
+unmute,word
+screen share,word
+breakout room,collocation
+conference call,collocation
+video call,collocation
+hybrid meeting,collocation
+call a meeting,collocation
+hold a meeting,collocation
+run a meeting,collocation
+chair a meeting,collocation
+reschedule,word
+postpone,word
+push,word
+bump,word
+move up,phrasal
+bring forward,phrasal
+put back,phrasal
+run over,phrasal
+run late,phrasal
+run short,phrasal
+wind down,phrasal
+kick off,phrasal
+get started,phrasal
+get going,phrasal
+move on,phrasal
+move along,phrasal
+go around,phrasal
+go over,phrasal
+go through,phrasal
+run through,phrasal
+talk through,phrasal
+think through,phrasal
+hash out,phrasal
+thrash out,phrasal
+iron out,phrasal
+flesh out,phrasal
+spell out,phrasal
+lay out,phrasal
+map out,phrasal
+set out,phrasal
+point out,phrasal
+bring up,phrasal
+raise,word
+come up,phrasal
+touch on,phrasal
+dwell on,phrasal
+elaborate,word
+clarify,word
+reiterate,word
+summarize,word
+delegate,word
+assign,word
+volunteer,word
+own,word
+owner,word
+driver,word
+timebox,word
+timekeeper,word
+note-taker,word
+scribe,word
+housekeeping,word
+ground rules,collocation
+parking lot,idiom
+offline,word
+take it offline,idiom
+back-to-back,word
+double-booked,word
+slot,word
+window,word
+availability,word
+calendar invite,collocation
+tentative,word
+decline,word
+accept,word
+optional,word
+required,word
+recurring,word
+cadence,word
+weekly,word
+biweekly,word
+fortnightly,word
+quarterly,word
+standing meeting,collocation
+status update,collocation
+progress report,collocation
+on track,idiom
+off track,idiom
+behind schedule,collocation
+ahead of schedule,collocation
+blocker,word
+dependency,word
+next steps,collocation
+to that end,idiom
+on that note,idiom
+with that said,idiom
+going forward,idiom
+moving forward,idiom
+at this point,idiom
+for the record,idiom
+off the record,idiom
+in a nutshell,idiom
+bottom line,idiom
+big picture,idiom
+30,000-foot view,idiom
+deep dive,idiom
+drill down,phrasal
+zoom in,phrasal
+zoom out,phrasal
+step back,phrasal
+level set,idiom
+get alignment,collocation
+reach a consensus,collocation
+reach an agreement,collocation
+make a decision,collocation
+come to a decision,collocation
+
+# ===== 2. Email & documents (이메일·문서) =====
+subject line,collocation
+recipient,word
+sender,word
+cc,word
+bcc,word
+attachment,word
+attach,word
+forward,word
+reply all,phrasal
+thread,word
+inbox,word
+draft,word
+template,word
+signature,word
+salutation,word
+sign-off,word
+greeting,word
+closing,word
+disclaimer,word
+confidential,word
+urgent,word
+high priority,collocation
+acknowledge,word
+acknowledgment,word
+receipt,word
+confirm receipt,collocation
+hereby,word
+herewith,word
+enclosed,word
+aforementioned,word
+as per,idiom
+per se,idiom
+re,word
+fyi,word
+asap,word
+eod,word
+eow,word
+cob,word
+tbd,word
+tba,word
+tbc,word
+n/a,word
+eta,word
+ooo,word
+out of office,collocation
+auto-reply,word
+bounce,word
+bounce back,phrasal
+spam,word
+flag up,phrasal
+chase,word
+chase up,phrasal
+nudge,word
+ping,word
+gentle reminder,collocation
+friendly reminder,collocation
+heads-up,word
+get back to,phrasal
+hear back,phrasal
+write back,phrasal
+revert,word
+look forward to,phrasal
+appreciate,word
+kindly,word
+hesitate,word
+advise,word
+further to,idiom
+in reference to,idiom
+with regard to,idiom
+in light of,idiom
+on behalf of,idiom
+in due course,idiom
+at your earliest convenience,idiom
+please find attached,collocation
+as discussed,collocation
+as requested,collocation
+as agreed,collocation
+as a follow-up,collocation
+to whom it may concern,idiom
+best regards,collocation
+kind regards,collocation
+warm regards,collocation
+yours sincerely,collocation
+yours faithfully,collocation
+memo,word
+memorandum,word
+circular,word
+bulletin,word
+newsletter,word
+announcement,word
+notice,word
+proposal,word
+quote,word
+quotation,word
+estimate,word
+tender,word
+bid,word
+rfp,word
+rfq,word
+spec,word
+specification,word
+brief,word
+one-pager,word
+white paper,word
+case study,collocation
+report,word
+appendix,word
+annex,word
+exhibit,word
+schedule,word
+addendum,word
+amendment,word
+revision,word
+version,word
+redline,word
+markup,word
+track changes,collocation
+proofread,word
+typo,word
+formatting,word
+header,word
+footer,word
+bullet point,collocation
+boilerplate,word
+placeholder,word
+dummy,word
+mock-up,word
+wireframe,word
+blueprint,word
+checklist,word
+form,word
+fill in,phrasal
+fill out,phrasal
+tick off,phrasal
+cross out,phrasal
+strike out,phrasal
+write up,phrasal
+type up,phrasal
+draw up,phrasal
+sketch out,phrasal
+hand in,phrasal
+turn in,phrasal
+send out,phrasal
+send over,phrasal
+send across,phrasal
+pass on,phrasal
+pass along,phrasal
+print out,phrasal
+scan,word
+file,word
+archive,word
+shred,word
+back up,phrasal
+upload,word
+download,word
+shared drive,collocation
+folder,word
+naming convention,collocation
+read-only,word
+access,word
+permission,word
+cover letter,collocation
+executive summary,collocation
+table of contents,collocation
+glossary,word
+footnote,word
+citation,word
+source,word
+reference,word
+abstract,word
+synopsis,word
+digest,word
+rundown,word
+overview,word
+snapshot,word

@@ -11,6 +11,32 @@ export interface ValidationResult {
   messages: string[]
 }
 
+/** 스키마를 통과한 엔트리들에 대한 규칙 검사. seenIds 는 호출자가 넘긴 집합에 누적된다. */
+export function checkEntries(list: Entry[], lv: Level, seenIds: Set<string>, existingHeadwords = new Set<string>()): string[] {
+  const problems: string[] = []
+  const seenHeadwords = new Set<string>(existingHeadwords)
+  for (const e of list) {
+    const expectedPrefix = `${LEVEL_PREFIX[e.level]}-${TYPE_PREFIX[e.type]}-`
+    if (e.level !== lv) problems.push(`${e.id}: level 이 "${e.level}" 인데 ${lv} 파일에 있음`)
+    if (!e.id.startsWith(expectedPrefix)) problems.push(`${e.id}: id 접두사가 level/type과 불일치 (기대: ${expectedPrefix}...)`)
+    if (seenIds.has(e.id)) problems.push(`${e.id}: 중복 id`)
+    seenIds.add(e.id)
+    const hw = e.headword.toLowerCase()
+    if (seenHeadwords.has(hw)) problems.push(`${e.id}: 같은 레벨에 중복 headword "${e.headword}"`)
+    seenHeadwords.add(hw)
+    // 예문에 표제어(또는 변화형)가 들어 있는지 — 첫 단어의 어간 + forms 로 느슨하게 검사
+    const first = hw.split(' ')[0]
+    const stems = [first.slice(0, Math.max(3, first.length - 2)), ...(e.forms ?? []).map((f) => f.toLowerCase())]
+    e.senses.forEach((s, si) => {
+      s.examples.forEach((x, xi) => {
+        const en = x.en.toLowerCase()
+        if (!stems.some((st) => en.includes(st))) problems.push(`${e.id} senses[${si}].examples[${xi}]: 예문에 표제어(${e.headword})가 보이지 않음 — "${x.en}"`)
+      })
+    })
+  }
+  return problems
+}
+
 export function validateAll(): ValidationResult {
   const messages: string[] = []
   let ok = true
@@ -36,27 +62,7 @@ export function validateAll(): ValidationResult {
       continue
     }
     const list = r.data as Entry[]
-    const problems: string[] = []
-    const seenHeadwords = new Set<string>()
-    for (const e of list) {
-      const expectedPrefix = `${LEVEL_PREFIX[e.level]}-${TYPE_PREFIX[e.type]}-`
-      if (e.level !== lv) problems.push(`${e.id}: level 이 "${e.level}" 인데 ${lv}.jsonl 에 있음`)
-      if (!e.id.startsWith(expectedPrefix)) problems.push(`${e.id}: id 접두사가 level/type과 불일치 (기대: ${expectedPrefix}...)`)
-      if (seenIds.has(e.id)) problems.push(`${e.id}: 중복 id`)
-      seenIds.add(e.id)
-      const hw = e.headword.toLowerCase()
-      if (seenHeadwords.has(hw)) problems.push(`${e.id}: 같은 레벨에 중복 headword "${e.headword}"`)
-      seenHeadwords.add(hw)
-      // 예문에 표제어(또는 변화형)가 들어 있는지 — 첫 단어의 어간 + forms 로 느슨하게 검사
-      const first = hw.split(' ')[0]
-      const stems = [first.slice(0, Math.max(3, first.length - 2)), ...(e.forms ?? []).map((f) => f.toLowerCase())]
-      e.senses.forEach((s, si) => {
-        s.examples.forEach((x, xi) => {
-          const en = x.en.toLowerCase()
-          if (!stems.some((st) => en.includes(st))) problems.push(`${e.id} senses[${si}].examples[${xi}]: 예문에 표제어(${e.headword})가 보이지 않음 — "${x.en}"`)
-        })
-      })
-    }
+    const problems = checkEntries(list, lv, seenIds)
     if (problems.length) {
       ok = false
       messages.push(`✗ ${lv}.jsonl: ${problems.length}개 문제`)
