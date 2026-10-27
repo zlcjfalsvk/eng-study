@@ -19,13 +19,14 @@ export function orderIndex(items: IndexItem[], order: BrowseOrder = 'recommended
 /** Review overdue cards first; choose unseen cards in recommendation order. */
 export function selectStudyCards(
   items: IndexItem[], progress: Record<string, Progress>,
-  kind: 'mixed' | 'due' | 'new', newLimit: number, now = Date.now(),
+  kind: 'mixed' | 'due' | 'new', newLimit: number, now = Date.now(), sessionLimit = 20,
 ): IndexItem[] {
   const due = items.filter((item) => isDue(progress[item.id], now))
     .sort((a, b) => progress[a.id].due - progress[b.id].due || compareRecommended(a, b))
   const fresh = orderIndex(items.filter((item) => !progress[item.id] || progress[item.id].status === 'new'))
     .slice(0, Math.max(0, Math.floor(newLimit)))
-  if (kind === 'due') return due
-  if (kind === 'new') return fresh
-  return [...due, ...fresh]
+  const limit = Math.max(0, Math.min(20, Math.floor(sessionLimit)))
+  if (kind === 'due') return due.slice(0, limit)
+  if (kind === 'new') return fresh.slice(0, limit)
+  return [...due, ...fresh].slice(0, limit)
 }

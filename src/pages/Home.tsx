@@ -3,6 +3,8 @@ import { LEVELS, type Level } from '../data/types'
 import { LEVEL_META, loadManifest } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { isDue } from '../lib/srs'
+import { sessionPath } from '../lib/study-session'
+import { TOPICS } from '../lib/topics'
 import { useStore, useToday } from '../store/progress'
 import { Card, ChevronRight, Page, ProgressBar, Spinner, cx } from '../components/ui'
 
@@ -12,6 +14,7 @@ export default function Home() {
   const progress = useStore((s) => s.progress)
   const setSettings = useStore((s) => s.setSettings)
   const today = useToday()
+  const session = useStore((s) => s.studySession)
 
   const now = Date.now()
   const perLevel = {} as Record<Level, { known: number; learning: number; due: number }>
@@ -54,11 +57,18 @@ export default function Home() {
               <p className="text-3xl font-bold">{totalDue}</p>
               <p className="mt-1 text-xs text-white/70">{totalDue ? '잊기 전에 복습하면 기억이 오래 갑니다.' : '모두 복습했어요. 새 단어를 배워 보세요!'}</p>
             </div>
-            <Link to="/study" className="rounded-xl bg-white/95 px-4 py-2.5 text-sm font-semibold text-brand-700 shadow active:scale-95">
+            <Link to={totalDue ? '/study/all?mode=due' : '/study'} className="rounded-xl bg-white/95 px-4 py-2.5 text-sm font-semibold text-brand-700 shadow active:scale-95">
               {totalDue ? '복습 시작' : '학습 시작'}
             </Link>
           </div>
         </Card>
+
+        {!!session?.remaining.length && <Card className="mb-5">
+          <div className="flex items-center justify-between gap-3">
+            <div><p className="text-sm font-semibold">지난 학습 이어하기</p><p className="mt-1 text-xs text-slate-500">남은 카드 {session.remaining.length}개 · 진행 상황이 저장되어 있어요.</p></div>
+            <Link to={sessionPath(session)} className="shrink-0 rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white">이어하기</Link>
+          </div>
+        </Card>}
 
         <h2 className="mb-2 text-sm font-semibold text-slate-500">레벨별 진도</h2>
         {manifest.loading ? (
@@ -103,9 +113,14 @@ export default function Home() {
           </div>
         )}
 
+        <h2 className="mb-2 mt-6 text-sm font-semibold text-slate-500">상황별 학습</h2>
+        <div className="grid grid-cols-2 gap-2">
+          {TOPICS.filter((t) => t.key !== 'all').map((t) => <Quick key={t.key} to={`/study/all?topic=${t.key}`} emoji={t.key === 'daily' ? '💬' : t.key === 'travel' ? '✈️' : t.key === 'meetings' ? '🤝' : '✉️'} title={t.label} desc="관련 단어·표현 익히기" />)}
+        </div>
         <h2 className="mb-2 mt-6 text-sm font-semibold text-slate-500">바로가기</h2>
         <div className="grid grid-cols-2 gap-2">
           <Quick to="/quiz" emoji="🎯" title="퀴즈" desc="뜻·단어·빈칸 채우기" />
+          <Quick to="/quiz?scope=today" emoji="✅" title="오늘 학습 퀴즈" desc="오늘 익힌 단어 확인하기" />
           <Quick to="/grammar" emoji="📘" title="문법 정리" desc={`${manifest.data?.grammar ?? 0}개 주제`} />
           <Quick to="/browse?filter=bookmarked" emoji="★" title="북마크" desc="표시한 단어 모아보기" />
           <Quick to="/browse?filter=learning" emoji="🔥" title="학습 중" desc="아직 익히는 단어" />

@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router'
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router'
 import { LEVELS, type Entry, type Level } from '../data/types'
-import { LEVEL_META, loadEntries, loadIndex } from '../lib/content'
+import { LEVEL_META, loadAllIndexes, loadEntries, loadIndex } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { isDue, previewInterval, todayKey, type Grade } from '../lib/srs'
 import { selectStudyCards } from '../lib/learning-order'
+import { sessionPath, type StudySession } from '../lib/study-session'
+import { TOPICS, matchesTopic, parseTopic, topicLabel } from '../lib/topics'
 import { getRelatedBrief } from '../lib/relations'
 import { speak } from '../lib/tts'
 import { useStore } from '../store/progress'
@@ -15,131 +17,148 @@ import { LearningOrderInfo } from '../components/LearningOrderInfo'
 
 export default function Study() {
   const params = useParams<{ level?: string }>()
+  const [sp, setSp] = useSearchParams()
   const nav = useNavigate()
   const settings = useStore((s) => s.settings)
   const setSettings = useStore((s) => s.setSettings)
-  const level = (LEVELS.find((l) => l === params.level) ?? settings.level) as Level
-  const { data, loading } = useAsync(() => loadIndex(level), [level])
+  const scope: Level | 'all' = params.level === 'all' ? 'all' : LEVELS.find((l) => l === params.level) ?? settings.level
+  const topic = parseTopic(sp.get('topic'))
+  const dueOnly = sp.get('mode') === 'due'
+  const sessionSize = settings.sessionSize === 10 ? 10 : 20
+  const { data, loading } = useAsync(() => scope === 'all' ? loadAllIndexes() : loadIndex(scope), [scope])
   const [starting, setStarting] = useState(false)
+  const [error, setError] = useState('')
   const progress = useStore((s) => s.progress)
   const daily = useStore((s) => s.daily[todayKey()])
-
-  // 세션 큐는 처음 한 번만 구성한다 (진도 변화로 카드가 중간에 사라지지 않도록)
-  const [queue, setQueue] = useState<Entry[] | null>(null)
-  const [done, setDone] = useState<{ again: number; good: number }>({ again: 0, good: 0 })
-  const [mode, setMode] = useState<'pick' | 'session' | 'summary'>('pick')
-
+  const saved = useStore((s) => s.studySession)
+  const beginStudy = useStore((s) => s.beginStudy)
+  const finishStudy = useStore((s) => s.finishStudy)
+  const active = sp.get('resume') === '1'
+  const ongoing = !!saved?.remaining.length
+  const { data: loadedCards, loading: cardsLoading, error: cardsError } = useAsync(
+    () => active && saved?.remaining.length
+      ? loadEntries(saved.initialIds).then((entries) => ({ token: saved.token, entries }))
+      : Promise.resolve(null),
+    [active, saved?.token],
+  )
+  const list = useMemo(() => (data ?? []).filter((e) => matchesTopic(e, topic)), [data, topic])
   const stats = useMemo(() => {
     const now = Date.now()
-    let due = 0
-    let fresh = 0
-    for (const e of data ?? []) {
-      const p = progress[e.id]
-      if (isDue(p, now)) due++
-      else if (!p || p.status === 'new') fresh++
-    }
-    return { due, fresh }
-  }, [data, progress])
-
+    return { due: list.filter((e) => isDue(progress[e.id], now)).length,
+      fresh: list.filter((e) => !progress[e.id] || progress[e.id].status === 'new').length }
+  }, [list, progress])
   const newLeft = Math.max(0, settings.dailyNew - (daily?.newCards ?? 0))
+  const preview = selectStudyCards(list, progress, dueOnly ? 'due' : 'mixed', newLeft, Date.now(), sessionSize)
+  const previewDue = preview.filter((e) => isDue(progress[e.id])).length
 
-  async function start(kind: 'mixed' | 'due' | 'new', count?: number) {
-    if (!data || starting) return
-    const picked = selectStudyCards(data, progress, kind, kind === 'new' ? count ?? 10 : Math.min(newLeft, 20))
-    if (picked.length === 0) return
+  async function start(kind: 'mixed' | 'due' | 'new') {
+    if (starting || ongoing) return
+    const picked = selectStudyCards(list, progress, kind, kind === 'new' ? 10 : newLeft, Date.now(), sessionSize)
+    if (!picked.length) return
     setStarting(true)
+    setError('')
     try {
-      const q: Entry[] = await loadEntries(picked.map((i) => i.id))
-      if (q.length === 0) return
-      setQueue(q)
-      setDone({ again: 0, good: 0 })
-      setMode('session')
+      const entries = await loadEntries(picked.map((i) => i.id))
+      if (entries.length !== picked.length) throw new Error('일부 카드를 불러오지 못했습니다.')
+      const ids = picked.map((i) => i.id)
+      const session: StudySession = { token: crypto.randomUUID(), scope, topic, kind, startedAt: Date.now(), initialIds: ids,
+        remaining: ids, reviewedIds: [], attempts: {}, again: 0, good: 0 }
+      beginStudy(session)
+      nav(sessionPath(session), { replace: true })
+    } catch {
+      setError('카드를 불러오지 못했어요. 연결을 확인하고 다시 시도해 주세요.')
     } finally {
       setStarting(false)
     }
   }
 
-  if (loading || !data) return <Page title="학습"><Spinner /></Page>
-
-  if (mode === 'session' && queue) {
-    return (
-      <Session
-        level={level}
-        queue={queue}
-        onFinish={(r) => {
-          setDone(r)
-          setMode('summary')
-        }}
-        onQuit={() => setMode('pick')}
-      />
-    )
+  function pause() {
+    if (saved) nav(sessionPath(saved).replace('&resume=1', ''), { replace: true })
   }
 
-  if (mode === 'summary') {
-    const total = done.again + done.good
-    return (
+  if (active && saved) {
+    if (saved.remaining.length === 0) return (
       <Page title="학습 완료">
         <div className="flex flex-col items-center gap-3 py-10 text-center">
-          <div className="text-5xl">🎉</div>
-          <h2 className="text-2xl font-bold">수고했어요!</h2>
-          <p className="text-slate-500">카드 {total}장을 복습했습니다.</p>
-          <div className="mt-2 grid w-full max-w-xs grid-cols-2 gap-2">
-            <Card className="text-center"><p className="text-xs text-slate-500">기억함</p><p className="text-2xl font-bold text-emerald-600">{done.good}</p></Card>
-            <Card className="text-center"><p className="text-xs text-slate-500">다시</p><p className="text-2xl font-bold text-rose-500">{done.again}</p></Card>
+          <div className="text-5xl">🎉</div><h2 className="text-2xl font-bold">수고했어요!</h2>
+          <p className="text-slate-500">단어 {saved.reviewedIds.length}개를 학습했습니다.</p>
+          <div className="grid w-full max-w-xs grid-cols-2 gap-2">
+            <Card><p className="text-xs text-slate-500">기억함</p><p className="text-2xl font-bold text-emerald-600">{saved.good}</p></Card>
+            <Card><p className="text-xs text-slate-500">다시 확인</p><p className="text-2xl font-bold text-rose-500">{saved.again}</p></Card>
           </div>
-          <div className="mt-4 flex gap-2">
-            <Button variant="secondary" onClick={() => setMode('pick')}>계속 학습</Button>
-            <Button onClick={() => nav('/quiz')}>퀴즈로 확인</Button>
+          <p className="text-xs text-slate-500">평가 횟수 기준 · 어려운 단어는 복습 일정에 반영했어요.</p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            <Button variant="secondary" onClick={pause}>계속 학습</Button>
+            <Button disabled={!saved.reviewedIds.length} onClick={() => nav('/quiz?scope=session')}>이번 학습 퀴즈</Button>
           </div>
         </div>
       </Page>
     )
+    if (cardsLoading || !cardsError && loadedCards?.token !== saved.token) return <Page title="이어갈 카드 준비 중"><Spinner /></Page>
+    if (cardsError || !loadedCards || loadedCards.entries.length !== saved.initialIds.length) return (
+      <Page title="학습"><Empty title="카드를 불러오지 못했어요" desc="진행 상황은 저장되어 있습니다. 연결을 확인한 뒤 다시 이어가세요." action={<Button onClick={pause}>학습 화면으로</Button>} /></Page>
+    )
+    const card = loadedCards.entries.find((e) => e.id === saved.remaining[0])!
+    return <Session key={`${saved.token}:${saved.again + saved.good}`} card={card} session={saved} onPause={pause} />
   }
 
-  const m = LEVEL_META[level]
   return (
-    <Page title="학습">
-      <div className="no-scrollbar -mx-4 mb-4 flex gap-1.5 overflow-x-auto px-4 sm:flex-wrap sm:overflow-visible">
-        {LEVELS.map((lv) => (
-          <Chip key={lv} active={level === lv} onClick={() => { setSettings({ level: lv }); nav(`/study/${lv}`, { replace: true }) }}>
-            {LEVEL_META[lv].label}
+    <Page title={dueOnly ? scope === 'all' ? '전체 복습' : '복습' : '학습'}>
+      {ongoing && saved && (
+        <Card className="mb-4 border-brand-200 dark:border-brand-800">
+          <h2 className="text-sm font-semibold">진행 중인 학습이 있어요</h2>
+          <p className="mt-1 text-xs text-slate-500">{saved.scope === 'all' ? '전체 레벨' : LEVEL_META[saved.scope].label} · {topicLabel(saved.topic)} · 남은 카드 {saved.remaining.length}개</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Button onClick={() => nav(sessionPath(saved))}>학습 이어하기</Button>
+            <Button variant="ghost" onClick={() => { finishStudy(); nav(sessionPath(saved)) }}>이번 학습 마무리</Button>
+          </div>
+          <p className="mt-2 text-xs text-slate-500">이어가거나 마무리한 뒤 새 학습을 시작하세요. 남은 단어의 진도는 바뀌지 않습니다.</p>
+        </Card>
+      )}
+      <div className="no-scrollbar -mx-4 mb-3 flex gap-1.5 overflow-x-auto px-4 sm:flex-wrap sm:overflow-visible">
+        {(['all', ...LEVELS] as const).map((lv) => (
+          <Chip key={lv} active={scope === lv} onClick={() => { if (lv !== 'all') setSettings({ level: lv }); nav(`/study/${lv}?topic=${topic}`, { replace: true }) }}>
+            {lv === 'all' ? '전체 레벨' : LEVEL_META[lv].label}
           </Chip>
         ))}
       </div>
-
-      {data.length === 0 ? (
-        <Empty title="이 레벨에 콘텐츠가 없습니다" />
-      ) : (
+      <label className="mb-3 flex items-center justify-between gap-3 text-sm">
+        학습 상황
+        <select aria-label="학습 상황" value={topic} onChange={(e) => { const next = new URLSearchParams(sp); next.set('topic', e.target.value); setSp(next, { replace: true }) }} className="rounded-lg border border-slate-200 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900">
+          {TOPICS.map((t) => <option key={t.key} value={t.key}>{t.label}</option>)}
+        </select>
+      </label>
+      {loading ? <Spinner /> : list.length === 0 ? <Empty title="이 상황의 단어가 없습니다" desc="레벨이나 학습 상황을 바꿔 보세요." /> : (
         <div className="flex flex-col gap-3">
-          <Card className={cx('border-0 ring-1', m.bg, m.ring)}>
-            <p className={cx('text-xs font-semibold', m.color)}>{m.label} · {data.length.toLocaleString()}개 수록</p>
+          <Card>
+            <p className="text-xs font-semibold text-slate-500">{scope === 'all' ? '전체 레벨' : LEVEL_META[scope].label} · {topicLabel(topic)} · {list.length.toLocaleString()}개</p>
             <div className="mt-2 grid grid-cols-2 gap-2">
               <div><p className="text-xs text-slate-500">복습 예정</p><p className="text-2xl font-bold">{stats.due}</p></div>
               <div><p className="text-xs text-slate-500">아직 안 본 단어</p><p className="text-2xl font-bold">{stats.fresh}</p></div>
             </div>
           </Card>
-
-          <Button className="py-3.5 text-base" onClick={() => start('mixed')} disabled={starting || (stats.due === 0 && (stats.fresh === 0 || newLeft === 0))}>
-            {starting ? '카드 준비 중…' : '오늘의 학습 시작'} <span className="font-normal opacity-80">(복습 {stats.due} + 새 단어 {Math.min(newLeft, stats.fresh, 20)})</span>
-          </Button>
-          <div className="grid grid-cols-2 gap-2">
-            <Button variant="secondary" onClick={() => start('due')} disabled={starting || !stats.due}>복습만 ({stats.due})</Button>
-            <Button variant="secondary" onClick={() => start('new', 10)} disabled={starting || !stats.fresh}>새 단어 10개</Button>
+          <div className="flex items-center justify-between gap-2 text-sm">
+            <span>한 번에 학습할 단어</span>
+            <div className="flex gap-1.5">{([10, 20] as const).map((n) => <Chip key={n} active={sessionSize === n} onClick={() => setSettings({ sessionSize: n })}>{n}개</Chip>)}</div>
           </div>
-          <p className="text-center text-xs text-slate-400">
-            하루 새 단어 목표 {settings.dailyNew}개 · 오늘 {daily?.newCards ?? 0}개 학습 · <Link to="/settings" className="underline">변경</Link>
-          </p>
-          <p className="text-center text-xs leading-relaxed text-slate-500">
-            복습할 카드를 먼저 학습하고, 새 단어는 핵심 어휘·표현부터 추천순으로 익힙니다.
-          </p>
+          <Button className="py-3.5 text-base" onClick={() => start(dueOnly ? 'due' : 'mixed')} disabled={starting || ongoing || !preview.length}>
+            {starting ? '카드 준비 중…' : dueOnly ? '복습 시작' : '오늘의 학습 시작'} <span className="font-normal opacity-80">(복습 {previewDue} + 새 단어 {preview.length - previewDue})</span>
+          </Button>
+          {!dueOnly && <div className="grid grid-cols-2 gap-2">
+            <Button variant="secondary" onClick={() => start('due')} disabled={starting || ongoing || !stats.due}>복습만 (최대 {sessionSize}개)</Button>
+            <Button variant="secondary" onClick={() => start('new')} disabled={starting || ongoing || !stats.fresh}>새 단어 10개</Button>
+          </div>}
+          {dueOnly && stats.due === 0 && <p className="text-center text-sm text-slate-500">예정된 복습을 모두 마쳤어요.</p>}
+          {error && <p role="alert" className="text-sm text-rose-600">{error}</p>}
+          <p className="text-center text-xs text-slate-500">하루 새 단어 목표 {settings.dailyNew}개 · 오늘 {daily?.newCards ?? 0}개 학습 · <Link to="/settings" className="underline">변경</Link></p>
+          <p className="text-center text-xs leading-relaxed text-slate-500">복습할 카드를 먼저, 새 단어는 추천순으로 익힙니다. 진행 상황은 자동 저장됩니다.</p>
           <LearningOrderInfo />
-
           <Card className="mt-2">
             <p className="text-sm font-semibold">플래시카드 사용법</p>
             <ul className="mt-1.5 flex list-disc flex-col gap-1 pl-4 text-sm text-slate-600 dark:text-slate-300">
-              <li>카드를 탭하면 뒤집혀 상황별 뜻과 예문이 나옵니다. 🔊 로 발음을 들어 보세요.</li>
-              <li><b>다시</b>는 몇 분 뒤 이 세션에서 다시 나오고, <b>알겠음</b>·<b>쉬움</b>은 며칠 뒤 복습으로 넘어갑니다.</li>
-              <li>간격이 3주를 넘으면 "아는 단어"로 분류됩니다.</li>
+              <li>카드를 탭하면 상황별 뜻과 예문이 나옵니다. 🔊 로 발음을 들어 보세요.</li>
+              <li><b>다시</b>·<b>어려움</b>은 이번 세션에서 한 번 더 확인하고, 이후 복습 일정에도 반영합니다.</li>
+              <li><b>저장하고 나가기</b>를 누르거나 새로고침해도 남은 카드부터 이어갈 수 있습니다.</li>
             </ul>
           </Card>
         </div>
@@ -148,52 +167,22 @@ export default function Study() {
   )
 }
 
-function Session({ level, queue: initial, onFinish, onQuit }: { level: Level; queue: Entry[]; onFinish: (r: { again: number; good: number }) => void; onQuit: () => void }) {
+function Session({ card, session, onPause }: { card: Entry; session: StudySession; onPause: () => void }) {
   const settings = useStore((s) => s.settings)
-  const gradeCard = useStore((s) => s.grade)
+  const answerStudy = useStore((s) => s.answerStudy)
   const progress = useStore((s) => s.progress)
-  const [queue, setQueue] = useState(initial)
-  const [idx, setIdx] = useState(0)
   const [flipped, setFlipped] = useState(false)
-  const [result, setResult] = useState({ again: 0, good: 0 })
   const [senseIdx, setSenseIdx] = useState(0)
-  const total = initial.length
-  const card = queue[idx]
-  const m = LEVEL_META[level]
-
+  const m = LEVEL_META[card.level]
   useEffect(() => {
-    setFlipped(false)
-    setSenseIdx(0)
-  }, [idx, card?.id])
-
-  useEffect(() => {
-    if (flipped && settings.autoSpeak && card) speak(card.headword, { rate: settings.rate, voiceURI: settings.voiceURI })
-  }, [flipped]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  if (!card) {
-    onFinish(result)
-    return null
-  }
-
+    if (flipped && settings.autoSpeak) speak(card.headword, { rate: settings.rate, voiceURI: settings.voiceURI })
+  }, [flipped, settings.autoSpeak, settings.rate, settings.voiceURI, card.headword])
   function answer(g: Grade) {
-    gradeCard(card.id, g)
-    const next = { ...result, [g === 'again' ? 'again' : 'good']: result[g === 'again' ? 'again' : 'good'] + 1 }
-    setResult(next)
-    if (g === 'again' || g === 'hard') {
-      // 세션 뒤쪽에 다시 넣는다
-      const q = queue.slice()
-      q.splice(Math.min(queue.length, idx + 1 + 3 + Math.floor(Math.random() * 3)), 0, card)
-      setQueue(q)
-    }
-    if (idx + 1 >= (g === 'again' || g === 'hard' ? queue.length + 1 : queue.length)) {
-      onFinish(next)
-      return
-    }
-    setIdx(idx + 1)
+    answerStudy(session.token, card.id, g, session.again + session.good)
   }
 
   const prog = progress[card.id]
-  const remaining = queue.length - idx
+  const remaining = session.remaining.length
   const frontIsEn = settings.frontSide === 'en'
 
   return (
@@ -205,13 +194,13 @@ function Session({ level, queue: initial, onFinish, onQuit }: { level: Level; qu
         </span>
       }
       right={
-        <button type="button" onClick={onQuit} className="rounded-lg px-2 py-1 text-sm text-slate-500">
-          종료
+        <button type="button" onClick={onPause} className="rounded-lg px-2 py-1 text-sm text-slate-500">
+          저장하고 나가기
         </button>
       }
     >
       <div className="mb-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
-        <div className="h-full bg-brand-500 transition-all" style={{ width: `${Math.min(100, Math.round(((total - Math.min(remaining, total)) / total) * 100))}%` }} />
+        <div className="h-full bg-brand-500 transition-all" style={{ width: `${Math.round(((session.again + session.good) / (session.again + session.good + remaining)) * 100)}%` }} />
       </div>
 
       <div className="flip-card" onClick={() => !flipped && setFlipped(true)}>

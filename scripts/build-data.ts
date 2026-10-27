@@ -24,6 +24,7 @@ export interface IndexItem {
   k: string // 검색 키워드: 변화형 | 모든 meaningKo | 유의어 (소문자)
   s: number // 샤드 번호
   r: number // 레벨 안의 추천 학습 순서 (1부터)
+  p: string[] // 품사
 }
 
 const r = validateAll()
@@ -71,6 +72,7 @@ for (const lv of LEVELS) {
         k: Array.from(kw).join('|'),
         s: shard,
         r: learningRanks.get(e.id)!,
+        p: [...new Set(e.senses.map((s) => s.pos))],
       })
     }
   }

@@ -3,6 +3,7 @@ import { persist, createJSONStorage } from 'zustand/middleware'
 import type { Level, Progress } from '../data/types'
 import { grade as srsGrade, markKnown as srsMarkKnown, newProgress, todayKey, type Grade } from '../lib/srs'
 import { progressStorage } from './storage'
+import { advanceSession, studySessionSchema, type StudySession } from '../lib/study-session'
 
 export interface Settings {
   voiceURI?: string
@@ -12,6 +13,7 @@ export interface Settings {
   frontSide: 'en' | 'ko' // 플래시카드 앞면
   level: Level // 마지막 선택 레벨
   theme: 'system' | 'light' | 'dark'
+  sessionSize?: 10 | 20
 }
 
 export interface DailyStat {
@@ -26,6 +28,12 @@ interface State {
   daily: Record<string, DailyStat>
   grammarRead: Record<string, number>
   settings: Settings
+  studySession: StudySession | null
+  lastStudyIds: string[]
+
+  beginStudy: (session: StudySession) => void
+  answerStudy: (token: string, id: string, g: Grade, step: number) => void
+  finishStudy: () => void
 
   grade: (id: string, g: Grade) => void
   markKnown: (id: string) => void
@@ -46,6 +54,7 @@ const defaultSettings: Settings = {
   frontSide: 'en',
   level: 'beginner',
   theme: 'system',
+  sessionSize: 20,
 }
 
 function bumpDaily(daily: Record<string, DailyStat>, patch: Partial<DailyStat>) {
@@ -63,6 +72,27 @@ export const useStore = create<State>()(
       daily: {},
       grammarRead: {},
       settings: defaultSettings,
+      studySession: null,
+      lastStudyIds: [],
+
+      beginStudy: (session) => set({ studySession: studySessionSchema.parse(session) }),
+      answerStudy: (token, id, g, step) => set((s) => {
+        const session = s.studySession
+        if (!session || session.token !== token || session.remaining[0] !== id || session.again + session.good !== step) return s
+        const prev = s.progress[id]
+        const next = srsGrade(prev, g)
+        if (prev?.bookmarked) next.bookmarked = true
+        const updated = advanceSession(session, g)
+        return {
+          progress: { ...s.progress, [id]: next },
+          daily: bumpDaily(s.daily, { reviews: 1, newCards: !prev || prev.status === 'new' ? 1 : 0 }),
+          studySession: updated,
+          ...(updated.remaining.length === 0 ? { lastStudyIds: updated.reviewedIds } : {}),
+        }
+      }),
+      finishStudy: () => set((s) => s.studySession ? {
+        studySession: { ...s.studySession, remaining: [] }, lastStudyIds: s.studySession.reviewedIds,
+      } : {}),
 
       grade: (id, g) =>
         set((s) => {
@@ -103,8 +133,8 @@ export const useStore = create<State>()(
       setSettings: (patch) => set((s) => ({ settings: { ...s.settings, ...patch } })),
 
       exportAll: () => {
-        const { progress, daily, grammarRead, settings } = get()
-        return JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), progress, daily, grammarRead, settings }, null, 2)
+        const { progress, daily, grammarRead, settings, studySession, lastStudyIds } = get()
+        return JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), progress, daily, grammarRead, settings, studySession, lastStudyIds }, null, 2)
       },
 
       importAll: (data) => {
@@ -116,16 +146,29 @@ export const useStore = create<State>()(
           daily: { ...s.daily, ...(d.daily ?? {}) },
           grammarRead: { ...s.grammarRead, ...(d.grammarRead ?? {}) },
           settings: { ...s.settings, ...(d.settings ?? {}) },
+          ...(d.studySession && studySessionSchema.safeParse(d.studySession).success && !s.studySession?.remaining.length
+            ? { studySession: studySessionSchema.parse(d.studySession) } : {}),
+          ...(Array.isArray(d.lastStudyIds) ? { lastStudyIds: d.lastStudyIds.filter((id): id is string => typeof id === 'string').slice(0, 20) } : {}),
         }))
         return { ok: true, message: `${Object.keys(d.progress).length}개 항목의 학습 기록을 불러왔습니다.` }
       },
 
-      resetAll: () => set({ progress: {}, daily: {}, grammarRead: {} }),
+      resetAll: () => set({ progress: {}, daily: {}, grammarRead: {}, studySession: null, lastStudyIds: [] }),
     }),
     {
       name: STORAGE_KEY,
       storage: createJSONStorage(() => progressStorage),
       version: 1,
+      merge: (persisted, current) => {
+        const saved = (persisted ?? {}) as Partial<State>
+        const parsed = studySessionSchema.safeParse(saved.studySession)
+        return {
+          ...current, ...saved,
+          settings: { ...defaultSettings, ...(saved.settings ?? {}) },
+          studySession: parsed.success ? parsed.data : null,
+          lastStudyIds: Array.isArray(saved.lastStudyIds) ? saved.lastStudyIds.filter((id) => typeof id === 'string').slice(0, 20) : [],
+        }
+      },
     },
   ),
 )
