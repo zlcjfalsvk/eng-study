@@ -1,0 +1,992 @@
+{
+  "date": "2026-10-27",
+  "baseCommit": "6bd1c7192c2d170d32b762704d9ff3e87a688f2f",
+  "coverage": {
+    "koreanGlossReview": "All 8,911 headwords and 13,955 Korean sense glosses read in a first-pass lexical review.",
+    "targetedFullEntryReview": 32,
+    "stratifiedFullEntrySample": {
+      "entries": 32,
+      "senses": 44,
+      "examples": 88,
+      "method": "2 entries per level and type, ranked by SHA-256 of meaning-review-20261027:<entry-id>.",
+      "ids": [
+        "b-w-red",
+        "b-w-fine",
+        "b-p-get-together",
+        "b-p-join-in",
+        "b-i-be-careful",
+        "b-i-high-five",
+        "b-c-last-name",
+        "b-c-make-noise",
+        "i-w-negotiate",
+        "i-w-appoint",
+        "i-p-freshen-up",
+        "i-p-work-through",
+        "i-i-make-a-fuss",
+        "i-i-go-through-the-roof",
+        "i-c-take-a-chance",
+        "i-c-room-temperature",
+        "a-w-fortitude",
+        "a-w-irk",
+        "a-p-answer-for",
+        "a-p-dispense-with",
+        "a-i-bear-fruit",
+        "a-i-wear-thin",
+        "a-c-heighten-tensions",
+        "a-c-defuse-tensions",
+        "z-w-backorder",
+        "z-w-glitch",
+        "z-p-win-back",
+        "z-p-boil-down",
+        "z-i-pull-an-all-nighter",
+        "z-i-on-my-plate",
+        "z-c-hit-the-target",
+        "z-c-on-the-next-slide"
+      ]
+    },
+    "pairedDefinitionHeuristicFlagsReviewed": 135,
+    "automatedExamplesChecked": 28001
+  },
+  "limitations": [
+    "This is a first-pass meaning review, not an external dictionary verification of all 13,955 senses.",
+    "Detailed English definitions, bilingual examples and usage notes were reviewed for the 32 targeted and 32 sampled entries, plus the automated flags.",
+    "The remaining unflagged English definitions, translations, pronunciation and grammar explanations have not received a new exhaustive independent semantic review."
+  ],
+  "preservation": {
+    "entryIdsHeadwordsLevelsTypesOrderAndNonSenseMetadataUnchanged": true,
+    "senseAndExampleCountsUnchanged": true,
+    "changedEntryCount": 27,
+    "counts": {
+      "beginner": {
+        "entries": 2163,
+        "senses": 3667,
+        "examples": 7336
+      },
+      "intermediate": {
+        "entries": 2225,
+        "senses": 3800,
+        "examples": 7600
+      },
+      "advanced": {
+        "entries": 2433,
+        "senses": 3390,
+        "examples": 6825
+      },
+      "business": {
+        "entries": 2090,
+        "senses": 3098,
+        "examples": 6240
+      }
+    }
+  },
+  "changedExamples": [
+    {
+      "id": "b-w-above",
+      "sense": 1,
+      "example": 1,
+      "words": 6
+    },
+    {
+      "id": "b-w-english",
+      "sense": 1,
+      "example": 1,
+      "words": 7
+    },
+    {
+      "id": "b-w-freezing",
+      "sense": 1,
+      "example": 1,
+      "words": 6
+    },
+    {
+      "id": "b-w-over",
+      "sense": 2,
+      "example": 0,
+      "words": 7
+    },
+    {
+      "id": "b-w-put",
+      "sense": 1,
+      "example": 1,
+      "words": 8
+    },
+    {
+      "id": "b-w-smooth",
+      "sense": 1,
+      "example": 1,
+      "words": 9
+    },
+    {
+      "id": "a-w-ambivalent",
+      "sense": 0,
+      "example": 2,
+      "words": 12
+    },
+    {
+      "id": "a-w-conceive",
+      "sense": 1,
+      "example": 2,
+      "words": 12
+    },
+    {
+      "id": "a-w-nuance",
+      "sense": 1,
+      "example": 0,
+      "words": 11
+    },
+    {
+      "id": "a-w-nuance",
+      "sense": 1,
+      "example": 1,
+      "words": 12
+    },
+    {
+      "id": "a-w-ostensibly",
+      "sense": 0,
+      "example": 2,
+      "words": 13
+    },
+    {
+      "id": "a-w-precarious",
+      "sense": 1,
+      "example": 1,
+      "words": 12
+    },
+    {
+      "id": "z-w-overhead",
+      "sense": 0,
+      "example": 1,
+      "words": 11
+    },
+    {
+      "id": "z-p-push-back",
+      "sense": 0,
+      "example": 2,
+      "words": 13
+    }
+  ],
+  "confirmedCorrections": [
+    {
+      "id": "b-w-above",
+      "level": "beginner",
+      "headword": "above",
+      "sense": 1,
+      "example": null,
+      "reason": "Strictly greater than, not greater than or equal to.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/above_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "(수치·수준) ~ 이상, ~보다 높은",
+          "after": "(수치·수준) ~을 넘는, ~보다 높은"
+        },
+        "note": {
+          "before": "above zero(영상), below zero(영하), above average(평균 이상). 나이·가격은 보통 over 를 더 많이 씀.",
+          "after": "above zero(영상), below zero(영하), above average(평균을 웃도는). 수치에서 기준값 자체는 포함하지 않으며, 나이·가격에는 보통 over를 더 많이 쓴다."
+        }
+      }
+    },
+    {
+      "id": "b-w-above",
+      "level": "beginner",
+      "headword": "above",
+      "sense": 1,
+      "example": 1,
+      "reason": "Keep example translation consistent with the strict comparison.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/above_1"
+      ],
+      "changes": {
+        "ko": {
+          "before": "그녀의 시험 점수는 평균 이상이었어.",
+          "after": "그녀의 시험 점수는 평균보다 높았어."
+        }
+      }
+    },
+    {
+      "id": "b-w-above",
+      "level": "beginner",
+      "headword": "above",
+      "sense": 0,
+      "example": null,
+      "reason": "Over can cover a surface while touching it.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/over_1"
+      ],
+      "changes": {
+        "note": {
+          "before": "above = 단순히 더 높은 위치, over = 바로 위를 덮거나 가로지르는 느낌. 접촉하면 on.",
+          "after": "above는 단순히 더 높은 위치를 나타낸다. over는 높은 위치뿐 아니라 덮거나 가로지르는 관계에도 쓰인다. 표면에 놓인 위치는 보통 on으로 표현한다."
+        }
+      }
+    },
+    {
+      "id": "b-w-between",
+      "level": "beginner",
+      "headword": "between",
+      "sense": 0,
+      "example": null,
+      "reason": "Between is not restricted to two entities.",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/between"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "(둘) 사이에",
+          "after": "(구별되는 대상들) 사이에"
+        },
+        "meaningEn": {
+          "before": "in the space that separates two things or people",
+          "after": "in the space separating two or more distinct things or people"
+        },
+        "note": {
+          "before": "between A and B(둘). 셋 이상 사이에 '둘러싸여' 있으면 among. between 뒤에 and 를 써야 함('between A to B' 는 틀림).",
+          "after": "between A and B는 A와 B 사이를 나타낸다. 개별 대상을 구별하면 셋 이상에도 between을 쓸 수 있다. among은 집단 속에 있거나 여러 구성원 사이에 분포한다는 데 초점을 둔다. 범위는 between A and B 또는 from A to B로 쓴다."
+        }
+      }
+    },
+    {
+      "id": "b-w-between",
+      "level": "beginner",
+      "headword": "between",
+      "sense": 2,
+      "example": null,
+      "reason": "Avoid an absolute two-only rule in relationship and choice senses.",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/between"
+      ],
+      "changes": {
+        "meaningEn": {
+          "before": "used to talk about a relationship, choice, or difference involving two things",
+          "after": "used for a relationship, choice, or difference involving distinct people or things"
+        },
+        "note": {
+          "before": "the difference between A and B, choose between A and B. 둘 다 '사이' 로 외우면 자연스러움.",
+          "after": "the difference between A and B, choose between A and B처럼 쓴다. 구별되는 선택지나 관계라면 셋 이상에도 between을 쓸 수 있다."
+        }
+      }
+    },
+    {
+      "id": "b-w-bother",
+      "level": "beginner",
+      "headword": "bother",
+      "sense": 1,
+      "example": null,
+      "reason": "The verb itself means making an effort; negation comes from not or do not.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/bother_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "(귀찮아서) 굳이 ~하지 않다",
+          "after": "일부러 수고하다, 애써 ~하다 (주로 부정문·의문문)"
+        }
+      }
+    },
+    {
+      "id": "b-w-english",
+      "level": "beginner",
+      "headword": "English",
+      "sense": 1,
+      "example": null,
+      "reason": "English and British have different geographical scope.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/english_2"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "영국의, 영국 사람의",
+          "after": "잉글랜드의, 잉글랜드 사람의"
+        }
+      }
+    },
+    {
+      "id": "b-w-english",
+      "level": "beginner",
+      "headword": "English",
+      "sense": 1,
+      "example": 1,
+      "reason": "Reflect the more specific identity in the English sentence.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/english_2"
+      ],
+      "changes": {
+        "ko": {
+          "before": "내 새 친구는 런던 출신의 영국 사람이야.",
+          "after": "내 새 친구는 런던 출신의 잉글랜드 사람이야."
+        }
+      }
+    },
+    {
+      "id": "b-w-excuse",
+      "level": "beginner",
+      "headword": "excuse",
+      "sense": 0,
+      "example": null,
+      "reason": "Correct the direction of the verb; distinguish it from the formula excuse me.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excuse_2"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "실례하다, 양해를 구하다",
+          "after": "(작은 잘못·무례를) 용서하다, 양해하다"
+        },
+        "meaningEn": {
+          "before": "used to politely get attention, apologize, or ask to pass",
+          "after": "to accept a small mistake or impolite action without blaming the person"
+        },
+        "note": {
+          "before": "Excuse me 는 말 걸기·지나가기·재채기 뒤 등 다양하게 씀. 잘못을 사과할 때는 I'm sorry.",
+          "after": "Excuse me는 직역하면 양해해 달라는 요청이며, 말을 걸거나 지나갈 때 실례합니다로 옮긴다. excuse 자체가 양해를 구하다는 뜻은 아니다. 이미 한 잘못을 사과할 때는 보통 I’m sorry를 쓴다."
+        }
+      }
+    },
+    {
+      "id": "b-w-freezing",
+      "level": "beginner",
+      "headword": "freezing",
+      "sense": 1,
+      "example": null,
+      "reason": "Freezing is the freezing point, whereas below freezing means below zero Celsius.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/freezing_2"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "영하, 빙점(0°C)",
+          "after": "빙점, 물이 어는 온도(0°C)"
+        }
+      }
+    },
+    {
+      "id": "b-w-freezing",
+      "level": "beginner",
+      "headword": "freezing",
+      "sense": 1,
+      "example": 1,
+      "reason": "Use a clear temperature comparison.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/freezing_2"
+      ],
+      "changes": {
+        "ko": {
+          "before": "기온이 영상 0도를 살짝 넘어.",
+          "after": "기온이 빙점을 조금 웃돌아."
+        }
+      }
+    },
+    {
+      "id": "b-w-must",
+      "level": "beginner",
+      "headword": "must",
+      "sense": 2,
+      "example": null,
+      "reason": "Both examples use a count noun, not an adjective.",
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/must"
+      ],
+      "changes": {
+        "pos": {
+          "before": "adj.",
+          "after": "n."
+        },
+        "meaningKo": {
+          "before": "꼭 해야 하는, 필수의",
+          "after": "꼭 필요한 것·일, 필수품·필수 항목"
+        },
+        "note": {
+          "before": "a must = 필수 항목(명사처럼). must-see(꼭 봐야 할 것), must-have(필수품).",
+          "after": "a must는 꼭 필요하거나 꼭 해 봐야 하는 것을 뜻하는 명사다. must-see(꼭 봐야 할 것), must-have(필수품)와 함께 익힌다."
+        }
+      }
+    },
+    {
+      "id": "b-w-over",
+      "level": "beginner",
+      "headword": "over",
+      "sense": 0,
+      "example": null,
+      "reason": "Over does not require lack of contact.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/over_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "~위에(떨어져서), ~을 넘어",
+          "after": "~위에, ~을 덮어; ~을 넘어"
+        },
+        "meaningEn": {
+          "before": "above something without touching it, or across from one side to the other",
+          "after": "above something, covering it, or across it from one side to the other"
+        },
+        "note": {
+          "before": "over = 위에 떠 있거나 덮고 있는 느낌(a blanket over the bed), on 은 접촉. above 는 단순히 '더 높은 위치'.",
+          "after": "over는 더 높은 위치뿐 아니라 덮고 있는 관계에도 쓴다. a blanket over the bed에서는 담요가 침대에 닿아 있어도 된다. on은 보통 표면 위의 위치, above는 더 높은 위치에 초점을 둔다."
+        }
+      }
+    },
+    {
+      "id": "b-w-over",
+      "level": "beginner",
+      "headword": "over",
+      "sense": 2,
+      "example": null,
+      "reason": "Over a numerical threshold excludes the threshold itself.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/over_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "~이상, ~을 넘는",
+          "after": "~을 넘는, ~초과"
+        }
+      }
+    },
+    {
+      "id": "b-w-over",
+      "level": "beginner",
+      "headword": "over",
+      "sense": 2,
+      "example": 0,
+      "reason": "Do not translate over 18 as inclusive 18 and over.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/over_1"
+      ],
+      "changes": {
+        "ko": {
+          "before": "이 영화는 18세 이상 관람가야.",
+          "after": "이 영화는 18세를 넘은 사람들을 위한 거야."
+        }
+      }
+    },
+    {
+      "id": "b-w-put",
+      "level": "beginner",
+      "headword": "put",
+      "sense": 1,
+      "example": null,
+      "reason": "Remove the incorrect association of put off/take off with switching off devices and align the sense examples.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/put",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/put-off"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "(옷을) 입다, (불·기기를) 켜다·끄다 (put on/off)",
+          "after": "(put on) 옷·신발 등을 입다, 착용하다"
+        },
+        "meaningEn": {
+          "before": "put on: to start wearing clothes or turn something on; put off: to delay something",
+          "after": "put on: to place clothes, shoes, or accessories on your body"
+        },
+        "note": {
+          "before": "put on(입다·켜다) ↔ take off(벗다·끄다). put off(미루다), put away(치우다), put down(내려놓다) 등 구동사가 아주 많음. 옷은 wear(입고 있는 상태)와 put on(입는 동작)을 구분.",
+          "after": "put on은 입는 동작, wear는 입고 있는 상태를 나타낸다. 옷을 벗다는 take off, 전기 기기를 끄다는 turn off 또는 switch off다. put off는 보통 미루다라는 뜻이며, put과 뒤의 부사·전치사가 결합하면 의미가 달라진다."
+        }
+      }
+    },
+    {
+      "id": "b-w-put",
+      "level": "beginner",
+      "headword": "put",
+      "sense": 1,
+      "example": 1,
+      "reason": "Use the same clothing sense in both examples.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/put"
+      ],
+      "changes": {
+        "en": {
+          "before": "Don't put off your homework until Sunday.",
+          "after": "I put on my shoes by the door."
+        },
+        "ko": {
+          "before": "숙제를 일요일까지 미루지 마.",
+          "after": "나는 문 옆에서 신발을 신었어."
+        }
+      }
+    },
+    {
+      "id": "b-w-sentence",
+      "level": "beginner",
+      "headword": "sentence",
+      "sense": 0,
+      "example": null,
+      "reason": "Questions and exclamations do not end with a period.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/sentence_1"
+      ],
+      "changes": {
+        "meaningEn": {
+          "before": "a group of words that expresses a complete idea, ending with a period",
+          "after": "a group of words expressing a statement, question, or command"
+        },
+        "note": {
+          "before": "a sentence 는 대문자로 시작하고 마침표로 끝남. '문장'은 sentence, '글/본문'은 text, '글 한 단락'은 paragraph.",
+          "after": "글로 쓸 때 문장은 대문자로 시작하고 보통 마침표·물음표·느낌표로 끝난다. 문장은 sentence, 글이나 본문은 text, 한 단락은 paragraph다."
+        }
+      }
+    },
+    {
+      "id": "b-w-sentence",
+      "level": "beginner",
+      "headword": "sentence",
+      "sense": 1,
+      "example": null,
+      "reason": "Distinguish sentence as punishment from a verdict or judgment in general.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/sentence_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "(형사) 판결, 선고",
+          "after": "법원이 선고한 형, 형량"
+        },
+        "note": {
+          "before": "뉴스에서 자주 들리는 뜻. life sentence = 종신형, death sentence = 사형. 동사로도 쓰임(be sentenced to 3 years).",
+          "after": "유무죄 판단인 verdict와 달리 어떤 처벌을 받는지에 초점을 둔다. life sentence는 종신형, death sentence는 사형이다. be sentenced to three years는 징역 3년을 선고받다는 뜻이다."
+        }
+      }
+    },
+    {
+      "id": "b-w-than",
+      "level": "beginner",
+      "headword": "than",
+      "sense": 0,
+      "example": null,
+      "reason": "Comparatives need not always have an explicit than phrase.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-and-most"
+      ],
+      "changes": {
+        "note": {
+          "before": "비교급(-er / more) 뒤에는 꼭 than. then(그 다음에)과 철자·발음이 비슷해 글로 쓸 때 자주 틀림. 구어에서는 than me, 격식에서는 than I (am).",
+          "after": "비교 대상을 명시할 때 비교급 뒤에 than을 쓴다. This is better처럼 비교 대상을 생략할 수도 있다. then(그다음에)과 철자를 혼동하지 않는다. 구어에서는 than me, 격식에서는 than I am처럼 쓴다."
+        }
+      }
+    },
+    {
+      "id": "b-w-than",
+      "level": "beginner",
+      "headword": "than",
+      "sense": 1,
+      "example": null,
+      "reason": "Correct inclusive/exclusive numerical boundaries.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/over_1",
+        "https://dictionary.cambridge.org/dictionary/english/under"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "(more/less than + 수량) ~ 이상, ~ 이하",
+          "after": "(more than) ~초과; (less than) ~미만"
+        },
+        "note": {
+          "before": "more than 10 = 10 초과(10 포함 아님). '10 이상' 을 정확히 말하려면 10 or more.",
+          "after": "more than 10은 10 초과, less than 10은 10 미만으로 기준값을 포함하지 않는다. 10 이상은 10 or more, 10 이하는 10 or less로 표현한다."
+        }
+      }
+    },
+    {
+      "id": "b-w-under",
+      "level": "beginner",
+      "headword": "under",
+      "sense": 1,
+      "example": null,
+      "reason": "Under excludes the boundary value.",
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/under"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "~미만, ~이하",
+          "after": "~미만, ~보다 적은"
+        }
+      }
+    },
+    {
+      "id": "b-w-red",
+      "level": "beginner",
+      "headword": "red",
+      "sense": 1,
+      "example": null,
+      "reason": "The second example concerns red eyes, which the previous face-only definition did not cover.",
+      "sources": [],
+      "changes": {
+        "meaningKo": {
+          "before": "(얼굴이) 붉어진, 빨개진",
+          "after": "(얼굴·눈 등이) 붉어진, 빨개진"
+        },
+        "meaningEn": {
+          "before": "having a face that becomes red because you are embarrassed, hot, or angry",
+          "after": "redder than usual because of emotion, heat, crying, or irritation"
+        },
+        "note": {
+          "before": "go/turn red(얼굴이 빨개지다) = blush. 부끄러움·더위·분노 모두 가능.",
+          "after": "go/turn red는 얼굴 등이 빨개진다는 뜻이다. blush는 특히 부끄러움 등으로 얼굴이 붉어지는 것을 가리킨다. 눈은 울거나 자극을 받아 red가 될 수 있다."
+        }
+      }
+    },
+    {
+      "id": "b-w-smooth",
+      "level": "beginner",
+      "headword": "smooth",
+      "sense": 1,
+      "example": 1,
+      "reason": "Use the adjective smooth rather than its derived adverb.",
+      "sources": [],
+      "changes": {
+        "en": {
+          "before": "Everything went smoothly on the first day.",
+          "after": "We had a smooth start on the first day."
+        },
+        "ko": {
+          "before": "첫날은 모든 게 순조롭게 진행됐어.",
+          "after": "우리는 첫날을 순조롭게 시작했어."
+        }
+      }
+    },
+    {
+      "id": "i-w-claim",
+      "level": "intermediate",
+      "headword": "claim",
+      "sense": 0,
+      "example": null,
+      "reason": "Unproved does not mean no evidence exists or that the claim is false.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/claim_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "주장하다 (증거 없이)",
+          "after": "(아직 입증되지 않은 사실을) 주장하다"
+        },
+        "note": {
+          "before": "뉴스에서 '사실 여부는 확인되지 않았다'는 뉘앙스. say 보다 거리를 두는 표현. insist 는 '우기다'에 가까움.",
+          "after": "사실이라고 말하지만 아직 입증되지 않았거나 다른 사람이 믿지 않을 수 있다는 거리를 둔다. 증거가 전혀 없거나 반드시 거짓이라는 뜻은 아니다. insist는 주장을 강하게 고수하거나 요구할 때 쓴다."
+        }
+      }
+    },
+    {
+      "id": "i-w-complex",
+      "level": "intermediate",
+      "headword": "complex",
+      "sense": 2,
+      "example": null,
+      "reason": "Do not equate all complexes with inferiority.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/complex_2"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "콤플렉스, 강박적인 열등감",
+          "after": "특정한 점에 대한 지나친 불안·자의식, 콤플렉스"
+        },
+        "note": {
+          "before": null,
+          "after": "complex about something은 특정한 점을 지나치게 걱정하거나 의식하는 상태다. inferiority complex는 열등감이지만 complex 자체가 언제나 열등감만 뜻하는 것은 아니다."
+        }
+      }
+    },
+    {
+      "id": "a-w-ploy",
+      "level": "advanced",
+      "headword": "ploy",
+      "sense": 0,
+      "example": null,
+      "reason": "The advantage belongs to the person using the tactic, not their opponent.",
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/ploy"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "상대에게 유리한 반응을 끌어내려는 책략",
+          "after": "자신에게 유리한 결과를 얻으려는 책략·술책"
+        }
+      }
+    },
+    {
+      "id": "a-w-nuance",
+      "level": "advanced",
+      "headword": "nuance",
+      "sense": 1,
+      "example": null,
+      "reason": "Teach a noun sense of nuance rather than assigning the adjective nuanced to its lemma.",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/nuance"
+      ],
+      "changes": {
+        "pos": {
+          "before": "adj.",
+          "after": "n."
+        },
+        "meaningKo": {
+          "before": "(nuanced) 섬세한, 단순화하지 않은",
+          "after": "미묘한 차이를 살피고 표현하는 섬세함"
+        },
+        "meaningEn": {
+          "before": "(nuanced) showing awareness of fine distinctions rather than oversimplifying",
+          "after": "sensitivity to fine distinctions in meaning, judgment, or expression"
+        },
+        "note": {
+          "before": "형용사 nuanced 가 사설·리뷰에서 매우 자주 쓰임. a nuanced view / approach / portrayal. 반대 뉘앙스는 simplistic, black-and-white.",
+          "after": "nuance는 명사다. 형용사 nuanced는 미묘한 차이를 살린, 단순화하지 않은이라는 뜻이며 별도 표제어에서도 익힐 수 있다."
+        }
+      }
+    },
+    {
+      "id": "a-w-nuance",
+      "level": "advanced",
+      "headword": "nuance",
+      "sense": 1,
+      "example": 0,
+      "reason": "Use the noun nuance in a noun sense.",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/nuance"
+      ],
+      "changes": {
+        "en": {
+          "before": "The report offers a more nuanced picture than the headlines suggest.",
+          "after": "The report preserves nuance even while summarizing the competing political positions."
+        },
+        "ko": {
+          "before": "그 보고서는 헤드라인이 암시하는 것보다 훨씬 섬세한 그림을 제시한다.",
+          "after": "그 보고서는 상반된 정치적 입장을 요약하면서도 미묘한 차이를 살린다."
+        }
+      }
+    },
+    {
+      "id": "a-w-nuance",
+      "level": "advanced",
+      "headword": "nuance",
+      "sense": 1,
+      "example": 1,
+      "reason": "Use the noun nuance in a noun sense.",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/nuance"
+      ],
+      "changes": {
+        "en": {
+          "before": "We need a nuanced debate, not slogans shouted across the aisle.",
+          "after": "We need nuance in this debate rather than another round of slogans."
+        },
+        "ko": {
+          "before": "우리에게 필요한 건 통로 건너편으로 외치는 구호가 아니라 섬세한 토론이다.",
+          "after": "이 토론에는 구호를 또 주고받는 대신 미묘한 차이를 살피는 섬세함이 필요하다."
+        }
+      }
+    },
+    {
+      "id": "a-w-ambivalent",
+      "level": "advanced",
+      "headword": "ambivalent",
+      "sense": 0,
+      "example": 2,
+      "reason": "Replace the derived noun ambivalence with the adjective being taught.",
+      "sources": [],
+      "changes": {
+        "en": {
+          "before": "His ambivalence toward fame runs through every chapter of the memoir.",
+          "after": "He remains ambivalent about the fame that followed his widely praised memoir."
+        },
+        "ko": {
+          "before": "명성에 대한 그의 양가감정이 회고록의 모든 장을 관통한다.",
+          "after": "그는 널리 호평받은 회고록으로 얻은 명성에 여전히 양가감정을 느낀다."
+        }
+      }
+    },
+    {
+      "id": "a-w-conceive",
+      "level": "advanced",
+      "headword": "conceive",
+      "sense": 1,
+      "example": 2,
+      "reason": "Replace conceivable with the verb conceive.",
+      "sources": [],
+      "changes": {
+        "en": {
+          "before": "Scarcely conceivable a decade ago, remote surgery is now routine.",
+          "after": "Few researchers could conceive of remote surgery when the early trials began."
+        },
+        "ko": {
+          "before": "10년 전만 해도 상상하기 어려웠던 원격 수술이 이제는 일상이 되었다.",
+          "after": "초기 시험이 시작되었을 때 원격 수술을 상상할 수 있는 연구자는 거의 없었다."
+        }
+      }
+    },
+    {
+      "id": "a-w-ostensibly",
+      "level": "advanced",
+      "headword": "ostensibly",
+      "sense": 0,
+      "example": 2,
+      "reason": "Replace the adjective ostensible with the adverb ostensibly.",
+      "sources": [],
+      "changes": {
+        "en": {
+          "before": "The ostensible purpose of the trip was trade; the real one was intelligence.",
+          "after": "The delegation traveled ostensibly for trade talks, though its real mission involved intelligence."
+        },
+        "ko": {
+          "before": "여행의 표면적 목적은 무역이었지만 진짜 목적은 정보 수집이었다.",
+          "after": "대표단은 표면상 무역 회담을 위해 이동했지만 실제 임무는 정보 수집과 관련되어 있었다."
+        }
+      }
+    },
+    {
+      "id": "a-w-precarious",
+      "level": "advanced",
+      "headword": "precarious",
+      "sense": 1,
+      "example": 1,
+      "reason": "Replace precariously with the adjective precarious.",
+      "sources": [],
+      "changes": {
+        "en": {
+          "before": "The cabin perched precariously on the cliff above the sea.",
+          "after": "The cabin occupied a precarious position on the cliff above the sea."
+        },
+        "ko": {
+          "before": "오두막은 바다 위 절벽에 위태롭게 자리 잡고 있었다.",
+          "after": "그 오두막은 바다 위 절벽의 위태로운 곳에 자리 잡고 있었다."
+        }
+      }
+    },
+    {
+      "id": "z-w-budge",
+      "level": "business",
+      "headword": "budge",
+      "sense": 0,
+      "example": null,
+      "reason": "The verb means changing position; not budge means refusing to change.",
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/budge"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "입장·조건을 조금도 바꾸지 않다; 양보하다",
+          "after": "입장·조건을 바꾸다, 양보하다 (주로 부정문)"
+        }
+      }
+    },
+    {
+      "id": "z-w-principal",
+      "level": "business",
+      "headword": "principal",
+      "sense": 2,
+      "example": null,
+      "reason": "Correct the agency relationship, which was reversed by the Korean gloss.",
+      "sources": [
+        "https://www.law.cornell.edu/wex/principal"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "대리인을 통하지 않은 본인·위임인",
+          "after": "대리인이 대신하여 행동하는 본인·위임인"
+        }
+      }
+    },
+    {
+      "id": "z-w-overhead",
+      "level": "business",
+      "headword": "overhead",
+      "sense": 0,
+      "example": null,
+      "reason": "Overhead is an indirect-cost category, not a synonym for fixed cost.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overheads",
+        "https://www.accaglobal.com/content/dam/acca/global/pdf/sa_jan10_garrett.pdf"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "간접비, 고정 운영비",
+          "after": "간접비, 사업 운영에 드는 공통 비용"
+        },
+        "note": {
+          "before": "미국식은 보통 불가산 overhead, 영국식은 overheads 로 복수형을 씀.",
+          "after": "미국식은 보통 불가산 overhead, 영국식은 복수 overheads를 쓴다. 특정 제품·업무에 직접 귀속하기 어려운 비용이며, 고정비만이 아니라 변동 간접비도 포함할 수 있다."
+        }
+      }
+    },
+    {
+      "id": "z-w-overhead",
+      "level": "business",
+      "headword": "overhead",
+      "sense": 0,
+      "example": 1,
+      "reason": "Keep the translation consistent with indirect cost rather than fixed cost.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overheads"
+      ],
+      "changes": {
+        "ko": {
+          "before": "스타트업은 안정적인 매출이 생길 때까지 고정비를 낮게 유지하려고 합니다.",
+          "after": "스타트업은 안정적인 매출이 생길 때까지 간접비를 낮게 유지하려고 합니다."
+        }
+      }
+    },
+    {
+      "id": "z-w-spin",
+      "level": "business",
+      "headword": "spin",
+      "sense": 2,
+      "example": null,
+      "reason": "Keep the gloss compatible with the existing slowly spinning display example.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/spin_1"
+      ],
+      "changes": {
+        "meaningKo": {
+          "before": "빠르게 회전하다, 회전시키다",
+          "after": "(축을 중심으로) 회전하다, 회전시키다"
+        }
+      }
+    },
+    {
+      "id": "z-p-push-back",
+      "level": "business",
+      "headword": "push back",
+      "sense": 0,
+      "example": 2,
+      "reason": "Use the phrasal verb push back rather than the derived noun pushback.",
+      "sources": [],
+      "changes": {
+        "en": {
+          "before": "We got a lot of pushback from sales on the new commission structure.",
+          "after": "Sales managers pushed back on the new commission structure during yesterday’s planning meeting."
+        },
+        "ko": {
+          "before": "새 수수료 체계에 대해 영업팀의 반발이 컸습니다.",
+          "after": "영업 관리자들은 어제 계획 회의에서 새 수수료 체계에 이의를 제기했습니다."
+        }
+      }
+    }
+  ],
+  "reviewedWithoutChanges": {
+    "cabbage": "Napa/Chinese cabbage distinction already explained in the note.",
+    "heart attack": "Existing note correctly distinguishes it from cardiac arrest.",
+    "write off": "The supplied debt and vehicle senses are supported by their examples; no confirmed semantic error.",
+    "stalemate": "English definition and note already specify the player is not in check.",
+    "OEM": "The industry-dependent equipment/component maker role is already explained.",
+    "revert": "Regional reply usage is explicitly marked and international alternatives are provided."
+  },
+  "remainingAutomatedFlags": {
+    "wordExamples": {
+      "count": 6,
+      "disposition": "Valid contractions does not / will / would and singular sandal under plural sandals; scanner limitations, reviewed manually."
+    },
+    "phraseExamples": {
+      "count": 12,
+      "disposition": "Valid inflections, pluralization, possessive/article variants, separated phrasal verbs, or standalone at odds. No data edits solely to satisfy the scanners."
+    }
+  },
+  "validation": {
+    "schema": "passed for all four levels and 20 grammar topics",
+    "wordlist": "all four lists fully covered; no missing entries",
+    "build": "passed: full content validation, TypeScript, Vite and PWA generation",
+    "diffWhitespace": "passed",
+    "newOrChangedEnglishExamples": "14 bilingual example records reviewed; all changed English sentences within their level word limits"
+  }
+}
