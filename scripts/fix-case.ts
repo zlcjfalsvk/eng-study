@@ -6,7 +6,7 @@ import type { Entry } from '../src/data/types.ts'
 
 const MAP: Record<string, string> = {
   english: 'English', pe: 'PE', mr: 'Mr.', mrs: 'Mrs.', ms: 'Ms.', dr: 'Dr.', tv: 'TV', ok: 'OK', dvd: 'DVD', cd: 'CD', pc: 'PC', usa: 'USA', uk: 'UK',
-  i: 'I', 'i\'m': 'I\'m', 'k-pop': 'K-pop', atm: 'ATM', bbq: 'BBQ', 'x-ray': 'X-ray', 'wi-fi': 'Wi-Fi', wifi: 'Wi-Fi', sns: 'SNS', id: 'ID', 'am': 'a.m.', 'pm': 'p.m.',
+  i: 'I', 't-shirt': 'T-shirt', 'o\'clock': "o'clock", 'i\'m': 'I\'m', 'k-pop': 'K-pop', atm: 'ATM', bbq: 'BBQ', 'x-ray': 'X-ray', 'wi-fi': 'Wi-Fi', wifi: 'Wi-Fi', sns: 'SNS', id: 'ID', 'am': 'a.m.', 'pm': 'p.m.',
   monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday', friday: 'Friday', saturday: 'Saturday', sunday: 'Sunday',
   january: 'January', february: 'February', march: 'March', april: 'April', june: 'June', july: 'July', august: 'August', september: 'September', october: 'October', november: 'November', december: 'December',
   christmas: 'Christmas', easter: 'Easter', halloween: 'Halloween', "new year's day": "New Year's Day", "valentine's day": "Valentine's Day", 'new year': 'New Year',
