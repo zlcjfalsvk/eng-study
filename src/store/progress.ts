@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
-import type { Level, Progress } from '../data/types'
+import type { Entry, Level, Progress } from '../data/types'
 import { grade as srsGrade, markKnown as srsMarkKnown, newProgress, todayKey, type Grade } from '../lib/srs'
 import { progressStorage } from './storage'
 import { advanceSession, studySessionSchema, type StudySession } from '../lib/study-session'
@@ -32,6 +32,7 @@ interface State {
   lastStudyIds: string[]
 
   beginStudy: (session: StudySession) => void
+  cacheStudyCards: (token: string, cards: Entry[]) => void
   answerStudy: (token: string, id: string, g: Grade, step: number) => void
   finishStudy: () => void
 
@@ -76,6 +77,11 @@ export const useStore = create<State>()(
       lastStudyIds: [],
 
       beginStudy: (session) => set({ studySession: studySessionSchema.parse(session) }),
+      cacheStudyCards: (token, cards) => set((s) => {
+        if (!s.studySession || s.studySession.token !== token) return s
+        const parsed = studySessionSchema.safeParse({ ...s.studySession, cards })
+        return parsed.success ? { studySession: parsed.data } : s
+      }),
       answerStudy: (token, id, g, step) => set((s) => {
         const session = s.studySession
         if (!session || session.token !== token || session.remaining[0] !== id || session.again + session.good !== step) return s

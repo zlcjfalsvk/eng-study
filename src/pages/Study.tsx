@@ -37,7 +37,12 @@ export default function Study() {
   const ongoing = !!saved?.remaining.length
   const { data: loadedCards, loading: cardsLoading, error: cardsError } = useAsync(
     () => active && saved?.remaining.length
-      ? loadEntries(saved.initialIds).then((entries) => ({ token: saved.token, entries }))
+      ? saved.cards
+        ? Promise.resolve({ token: saved.token, entries: saved.cards })
+        : loadEntries(saved.initialIds).then((entries) => {
+            useStore.getState().cacheStudyCards(saved.token, entries)
+            return { token: saved.token, entries }
+          })
       : Promise.resolve(null),
     [active, saved?.token],
   )
@@ -62,7 +67,7 @@ export default function Study() {
       if (entries.length !== picked.length) throw new Error('일부 카드를 불러오지 못했습니다.')
       const ids = picked.map((i) => i.id)
       const session: StudySession = { token: crypto.randomUUID(), scope, topic, kind, startedAt: Date.now(), initialIds: ids,
-        remaining: ids, reviewedIds: [], attempts: {}, again: 0, good: 0 }
+        remaining: ids, reviewedIds: [], attempts: {}, again: 0, good: 0, cards: entries }
       beginStudy(session)
       nav(sessionPath(session), { replace: true })
     } catch {
