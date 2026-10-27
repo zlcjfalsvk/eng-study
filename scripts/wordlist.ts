@@ -9,6 +9,8 @@ import { LEVELS, ROOT, readLevel } from './lib/content-io.ts'
 
 type Item = { headword: string; type: EntryType; line: string }
 const dir = join(ROOT, 'scripts/wordlists')
+/** 비교용 정규화: 소문자, 마침표 제거 (Mr. ↔ mr) */
+const norm = (h: string) => h.toLowerCase().replace(/\./g, '')
 
 function read(level: Level): { items: Item[]; raw: string[] } {
   let raw: string[] = []
@@ -42,10 +44,10 @@ if (cmd === 'check' || cmd === 'dedupe') {
   }
   for (const lv of LEVELS) {
     const items = lists[lv].items
-    const existing = new Set(readLevel(lv).map((e) => e.headword.toLowerCase()))
+    const existing = new Set(readLevel(lv).map((e) => norm(e.headword)))
     const types: Record<string, number> = {}
     for (const it of items) types[it.type] = (types[it.type] ?? 0) + 1
-    const dupExisting = items.filter((it) => existing.has(it.headword.toLowerCase())).length
+    const dupExisting = items.filter((it) => existing.has(norm(it.headword))).length
     console.log(`${lv}: ${items.length}개 ${JSON.stringify(types)} · 기존 콘텐츠와 중복 ${dupExisting} · 낮은 레벨과 중복 ${removals[lv].size}`)
     if (removals[lv].size) console.log(`   예: ${[...removals[lv]].slice(0, 15).join(', ')}`)
   }
@@ -70,10 +72,10 @@ if (cmd === 'check' || cmd === 'dedupe') {
     console.error('사용법: pnpm wordlist batches <level> <n> <size> <outdir>')
     process.exit(1)
   }
-  const existing = new Set(readLevel(level).map((e) => e.headword.toLowerCase()))
+  const existing = new Set(readLevel(level).map((e) => norm(e.headword)))
   const seen = new Set<string>()
   const todo = read(level).items.filter((it) => {
-    const k = it.headword.toLowerCase()
+    const k = norm(it.headword)
     if (existing.has(k) || seen.has(k)) return false
     seen.add(k)
     return true
