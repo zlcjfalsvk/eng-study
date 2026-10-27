@@ -1,0 +1,2431 @@
+# advanced (C1–C2) wordlist — headword,type
+# Sections: formal/academic verbs, nuance adjectives, abstract nouns, adverbs & discourse markers,
+# borrowed fixed expressions, formal phrasal verbs, sophisticated idioms, editorial collocations.
+
+# ===== Formal & academic verbs (A–C) =====
+abate,word
+abdicate,word
+abhor,word
+abridge,word
+abrogate,word
+abscond,word
+absolve,word
+abstain,word
+accentuate,word
+accede,word
+accost,word
+accrue,word
+acquiesce,word
+acquit,word
+adhere,word
+adjourn,word
+adjudicate,word
+admonish,word
+adulterate,word
+affirm,word
+afflict,word
+aggravate,word
+alienate,word
+allay,word
+allege,word
+alleviate,word
+allude,word
+amalgamate,word
+ameliorate,word
+amass,word
+annex,word
+annihilate,word
+annotate,word
+annul,word
+appease,word
+append,word
+apportion,word
+appraise,word
+arbitrate,word
+ascertain,word
+ascribe,word
+aspire,word
+assail,word
+assent,word
+assert,word
+assimilate,word
+assuage,word
+atone,word
+attenuate,word
+attest,word
+attribute,word
+augment,word
+authenticate,word
+avert,word
+avow,word
+balk,word
+banish,word
+befall,word
+begrudge,word
+belie,word
+belittle,word
+bemoan,word
+bequeath,word
+berate,word
+beseech,word
+beset,word
+besiege,word
+bestow,word
+bewilder,word
+bolster,word
+broach,word
+buttress,word
+capitulate,word
+castigate,word
+cede,word
+censure,word
+certify,word
+chastise,word
+circumscribe,word
+circumvent,word
+coalesce,word
+coerce,word
+cohere,word
+collate,word
+collude,word
+commend,word
+commiserate,word
+compel,word
+comply,word
+comprise,word
+concur,word
+condone,word
+confer,word
+confiscate,word
+conflate,word
+conform,word
+confound,word
+congregate,word
+conjecture,word
+conjure,word
+connote,word
+consecrate,word
+consolidate,word
+conspire,word
+constitute,word
+constrain,word
+construe,word
+contaminate,word
+contravene,word
+convene,word
+converge,word
+corroborate,word
+counteract,word
+countenance,word
+covet,word
+culminate,word
+curtail,word
+
+# ===== Formal & academic verbs (D–F) =====
+debase,word
+debunk,word
+decimate,word
+decry,word
+deduce,word
+deem,word
+defer,word
+deflect,word
+defray,word
+defy,word
+degenerate,word
+delineate,word
+delude,word
+demarcate,word
+demean,word
+demystify,word
+denigrate,word
+denote,word
+denounce,word
+depict,word
+deplete,word
+deplore,word
+deprecate,word
+deride,word
+derive,word
+desecrate,word
+designate,word
+desist,word
+detain,word
+deter,word
+detract,word
+devise,word
+devolve,word
+differentiate,word
+diffuse,word
+dilute,word
+diminish,word
+disavow,word
+discern,word
+disclose,word
+disconcert,word
+discredit,word
+disdain,word
+disenfranchise,word
+disentangle,word
+disintegrate,word
+dismantle,word
+disparage,word
+dispel,word
+dispense,word
+disperse,word
+displace,word
+disseminate,word
+dissent,word
+dissipate,word
+dissuade,word
+distill,word
+divest,word
+divulge,word
+dwindle,word
+eclipse,word
+efface,word
+elaborate,word
+elude,word
+emanate,word
+embark,word
+embed,word
+embellish,word
+embody,word
+emulate,word
+enact,word
+encapsulate,word
+encompass,word
+encroach,word
+endow,word
+engender,word
+engulf,word
+enjoin,word
+enlist,word
+enmesh,word
+enshrine,word
+ensue,word
+entice,word
+entrench,word
+enumerate,word
+envisage,word
+envision,word
+epitomize,word
+equate,word
+eradicate,word
+erode,word
+eschew,word
+espouse,word
+evince,word
+evoke,word
+exalt,word
+exasperate,word
+excise,word
+exculpate,word
+exemplify,word
+exempt,word
+exhort,word
+exonerate,word
+expedite,word
+expound,word
+expunge,word
+extol,word
+extrapolate,word
+extricate,word
+exude,word
+fabricate,word
+facilitate,word
+falter,word
+fathom,word
+feign,word
+flout,word
+foment,word
+forbear,word
+forestall,word
+forfeit,word
+forgo,word
+formulate,word
+forsake,word
+foster,word
+fulminate,word
+
+# ===== Formal & academic verbs (G–O) =====
+galvanize,word
+garner,word
+gauge,word
+germinate,word
+glean,word
+grapple,word
+gravitate,word
+hamper,word
+harbor,word
+harness,word
+heed,word
+hinder,word
+hypothesize,word
+illuminate,word
+immerse,word
+impair,word
+impart,word
+impede,word
+impel,word
+impinge,word
+implicate,word
+implore,word
+impose,word
+impoverish,word
+impugn,word
+imbue,word
+incite,word
+incorporate,word
+incriminate,word
+inculcate,word
+incur,word
+indemnify,word
+indict,word
+induce,word
+infer,word
+infringe,word
+infuse,word
+inhibit,word
+initiate,word
+instigate,word
+instill,word
+institute,word
+insinuate,word
+integrate,word
+interrogate,word
+intersperse,word
+intervene,word
+intimate,word
+intimidate,word
+inundate,word
+invalidate,word
+invoke,word
+irk,word
+jeopardize,word
+juxtapose,word
+lament,word
+languish,word
+laud,word
+legislate,word
+legitimize,word
+liken,word
+loathe,word
+magnify,word
+malign,word
+manifest,word
+marginalize,word
+meander,word
+mediate,word
+misconstrue,word
+mollify,word
+muster,word
+necessitate,word
+negate,word
+nullify,word
+nurture,word
+obfuscate,word
+obliterate,word
+obscure,word
+obviate,word
+officiate,word
+orchestrate,word
+oscillate,word
+ostracize,word
+oust,word
+outstrip,word
+overhaul,word
+override,word
+overshadow,word
+overstate,word
+
+# ===== Formal & academic verbs (P–Z) =====
+pacify,word
+patronize,word
+perpetrate,word
+perpetuate,word
+persevere,word
+pertain,word
+peruse,word
+pervade,word
+placate,word
+plummet,word
+polarize,word
+ponder,word
+portend,word
+posit,word
+postulate,word
+precipitate,word
+predicate,word
+predispose,word
+preempt,word
+premise,word
+presuppose,word
+prevail,word
+proclaim,word
+procure,word
+proliferate,word
+promulgate,word
+propagate,word
+propel,word
+propound,word
+proscribe,word
+prosecute,word
+protract,word
+provoke,word
+purport,word
+quantify,word
+quell,word
+quench,word
+ratify,word
+rationalize,word
+reaffirm,word
+rebuff,word
+rebuke,word
+rebut,word
+recant,word
+reciprocate,word
+reconcile,word
+rectify,word
+recur,word
+redress,word
+refute,word
+regress,word
+reinforce,word
+reinstate,word
+reiterate,word
+rejuvenate,word
+relegate,word
+relinquish,word
+remonstrate,word
+renounce,word
+repeal,word
+repel,word
+replenish,word
+replicate,word
+reprimand,word
+reproach,word
+repudiate,word
+rescind,word
+resuscitate,word
+retract,word
+revere,word
+revoke,word
+sanction,word
+satiate,word
+secede,word
+segregate,word
+sequester,word
+shirk,word
+shun,word
+simulate,word
+solicit,word
+spawn,word
+spur,word
+squander,word
+stagnate,word
+stifle,word
+stipulate,word
+subdue,word
+subjugate,word
+subordinate,word
+subside,word
+subsidize,word
+substantiate,word
+subsume,word
+subvert,word
+succumb,word
+supersede,word
+supplant,word
+suppress,word
+surmise,word
+surmount,word
+surpass,word
+synthesize,word
+tarnish,word
+temper,word
+thwart,word
+tout,word
+transcend,word
+transgress,word
+transpire,word
+truncate,word
+underpin,word
+undulate,word
+unravel,word
+uphold,word
+usurp,word
+utter,word
+vacillate,word
+validate,word
+venerate,word
+verify,word
+vex,word
+vilify,word
+vindicate,word
+vitiate,word
+vouch,word
+waive,word
+wane,word
+wield,word
+withstand,word
+wrest,word
+
+# ===== Nuance adjectives (A–D) =====
+abject,word
+aberrant,word
+abrasive,word
+abstruse,word
+abysmal,word
+acerbic,word
+acrimonious,word
+acute,word
+adamant,word
+adept,word
+adroit,word
+adverse,word
+aesthetic,word
+affable,word
+affluent,word
+aggrieved,word
+agnostic,word
+alleged,word
+aloof,word
+altruistic,word
+amenable,word
+amiable,word
+amorphous,word
+ample,word
+anachronistic,word
+analogous,word
+ancillary,word
+anomalous,word
+antagonistic,word
+antithetical,word
+apathetic,word
+apocryphal,word
+appalling,word
+apposite,word
+apprehensive,word
+arcane,word
+archaic,word
+arduous,word
+articulate,word
+ascetic,word
+assertive,word
+assiduous,word
+astute,word
+audacious,word
+austere,word
+authoritarian,word
+authoritative,word
+autonomous,word
+avid,word
+axiomatic,word
+banal,word
+belligerent,word
+benevolent,word
+benign,word
+bleak,word
+blatant,word
+blithe,word
+bombastic,word
+brazen,word
+brusque,word
+bucolic,word
+burgeoning,word
+cacophonous,word
+callous,word
+candid,word
+capricious,word
+cardinal,word
+caustic,word
+cerebral,word
+chronic,word
+circuitous,word
+circumspect,word
+clandestine,word
+cogent,word
+coherent,word
+cohesive,word
+colloquial,word
+commensurate,word
+complacent,word
+complicit,word
+concerted,word
+conciliatory,word
+concomitant,word
+concurrent,word
+condescending,word
+conducive,word
+congenial,word
+conscientious,word
+consequential,word
+conspicuous,word
+consummate,word
+contentious,word
+contingent,word
+contrite,word
+convoluted,word
+copious,word
+corrosive,word
+cosmopolitan,word
+covert,word
+credible,word
+credulous,word
+cryptic,word
+culpable,word
+cumbersome,word
+cumulative,word
+cursory,word
+cynical,word
+debilitating,word
+decadent,word
+deferential,word
+deficient,word
+definitive,word
+deft,word
+deleterious,word
+deliberate,word
+delinquent,word
+demonstrable,word
+derelict,word
+derisive,word
+derivative,word
+derogatory,word
+despondent,word
+despotic,word
+destitute,word
+desultory,word
+detrimental,word
+devious,word
+devout,word
+didactic,word
+diffident,word
+dilapidated,word
+diligent,word
+diminutive,word
+discernible,word
+discreet,word
+discrete,word
+discretionary,word
+disingenuous,word
+disparate,word
+dispassionate,word
+disproportionate,word
+disquieting,word
+dissident,word
+dissolute,word
+distraught,word
+divergent,word
+divisive,word
+docile,word
+dogmatic,word
+dormant,word
+draconian,word
+dubious,word
+duplicitous,word
+
+# ===== Nuance adjectives (E–I) =====
+ebullient,word
+eclectic,word
+edifying,word
+effervescent,word
+efficacious,word
+effusive,word
+egalitarian,word
+egregious,word
+elegiac,word
+eloquent,word
+elusive,word
+emblematic,word
+eminent,word
+empirical,word
+emphatic,word
+endemic,word
+enigmatic,word
+entrenched,word
+equitable,word
+equivocal,word
+erratic,word
+erroneous,word
+erudite,word
+esoteric,word
+ethereal,word
+evanescent,word
+evasive,word
+exacting,word
+exemplary,word
+exhaustive,word
+exorbitant,word
+expedient,word
+explicit,word
+exponential,word
+extraneous,word
+extravagant,word
+exuberant,word
+facetious,word
+fallacious,word
+fallible,word
+fastidious,word
+fatuous,word
+feasible,word
+fecund,word
+feeble,word
+fervent,word
+fickle,word
+fictitious,word
+flagrant,word
+fleeting,word
+flimsy,word
+florid,word
+formidable,word
+forthright,word
+fortuitous,word
+fraudulent,word
+fraught,word
+frivolous,word
+frugal,word
+furtive,word
+futile,word
+garrulous,word
+generic,word
+genteel,word
+germane,word
+glib,word
+grandiose,word
+gratuitous,word
+gregarious,word
+grievous,word
+grotesque,word
+gullible,word
+hackneyed,word
+hallowed,word
+haphazard,word
+hapless,word
+harrowing,word
+haughty,word
+hedonistic,word
+hegemonic,word
+heinous,word
+heretical,word
+hermetic,word
+heterogeneous,word
+holistic,word
+homogeneous,word
+hypothetical,word
+iconoclastic,word
+idiosyncratic,word
+idyllic,word
+ignominious,word
+illicit,word
+illusory,word
+imminent,word
+immutable,word
+impartial,word
+impassive,word
+impeccable,word
+impending,word
+imperative,word
+imperious,word
+impervious,word
+impetuous,word
+implacable,word
+implausible,word
+implicit,word
+impregnable,word
+impromptu,word
+imprudent,word
+impudent,word
+inadvertent,word
+inane,word
+incessant,word
+inchoate,word
+incipient,word
+incisive,word
+incongruous,word
+inconsequential,word
+incontrovertible,word
+incorrigible,word
+incremental,word
+incumbent,word
+indefatigable,word
+indelible,word
+indifferent,word
+indigenous,word
+indignant,word
+indiscriminate,word
+indispensable,word
+indolent,word
+indomitable,word
+ineffable,word
+inept,word
+inert,word
+inexorable,word
+inextricable,word
+infallible,word
+infamous,word
+infinitesimal,word
+ingenious,word
+ingenuous,word
+inimical,word
+iniquitous,word
+innate,word
+innocuous,word
+inordinate,word
+insatiable,word
+inscrutable,word
+insidious,word
+insipid,word
+insolent,word
+insular,word
+intangible,word
+integral,word
+intermittent,word
+intractable,word
+intransigent,word
+intrepid,word
+intricate,word
+intrinsic,word
+inveterate,word
+invidious,word
+irascible,word
+irrefutable,word
+irreverent,word
+irrevocable,word
+itinerant,word
+
+# ===== Nuance adjectives (J–P) =====
+jaded,word
+jocular,word
+judicious,word
+labyrinthine,word
+lackluster,word
+laconic,word
+languid,word
+latent,word
+laudable,word
+lavish,word
+lax,word
+lethargic,word
+listless,word
+lucid,word
+lucrative,word
+ludicrous,word
+lugubrious,word
+luminous,word
+magnanimous,word
+malevolent,word
+malicious,word
+malleable,word
+mandatory,word
+manifold,word
+marginal,word
+maudlin,word
+mawkish,word
+mediocre,word
+melancholy,word
+mellifluous,word
+mercurial,word
+meticulous,word
+mired,word
+moot,word
+morbid,word
+moribund,word
+morose,word
+multifaceted,word
+mundane,word
+munificent,word
+myopic,word
+myriad,word
+nascent,word
+nebulous,word
+nefarious,word
+negligent,word
+negligible,word
+nocturnal,word
+nominal,word
+nonchalant,word
+nondescript,word
+normative,word
+nostalgic,word
+notorious,word
+noxious,word
+nuanced,word
+obdurate,word
+oblique,word
+oblivious,word
+obsequious,word
+obsolete,word
+obstinate,word
+obtrusive,word
+obtuse,word
+odious,word
+officious,word
+ominous,word
+omnipotent,word
+omniscient,word
+onerous,word
+opaque,word
+opportune,word
+opulent,word
+ornate,word
+orthodox,word
+ostentatious,word
+overt,word
+overwrought,word
+palatable,word
+palpable,word
+paltry,word
+paramount,word
+parochial,word
+parsimonious,word
+partisan,word
+pathological,word
+patronizing,word
+pecuniary,word
+pedantic,word
+pedestrian,word
+pejorative,word
+penitent,word
+pensive,word
+perceptive,word
+peremptory,word
+perennial,word
+perfunctory,word
+peripheral,word
+pernicious,word
+perpetual,word
+perplexing,word
+pertinent,word
+petulant,word
+philanthropic,word
+phlegmatic,word
+piecemeal,word
+pious,word
+pivotal,word
+placid,word
+plaintive,word
+plausible,word
+pliable,word
+poignant,word
+polemical,word
+pompous,word
+ponderous,word
+porous,word
+portentous,word
+posthumous,word
+pragmatic,word
+precocious,word
+predatory,word
+predominant,word
+preeminent,word
+preposterous,word
+prescient,word
+prescriptive,word
+prestigious,word
+presumptuous,word
+pretentious,word
+prevalent,word
+pristine,word
+prodigious,word
+profligate,word
+profound,word
+prolific,word
+propitious,word
+prosaic,word
+protracted,word
+provincial,word
+provisional,word
+prudent,word
+puerile,word
+punctilious,word
+punitive,word
+pungent,word
+purported,word
+putative,word
+
+# ===== Nuance adjectives (Q–Z) =====
+quaint,word
+qualitative,word
+quantitative,word
+querulous,word
+quiescent,word
+quintessential,word
+quixotic,word
+rampant,word
+rancorous,word
+rapacious,word
+raucous,word
+recalcitrant,word
+reciprocal,word
+reclusive,word
+redolent,word
+redundant,word
+relentless,word
+remiss,word
+reprehensible,word
+reputable,word
+resilient,word
+resolute,word
+resounding,word
+restive,word
+reticent,word
+retrospective,word
+reverent,word
+rhetorical,word
+rigorous,word
+robust,word
+rudimentary,word
+ruthless,word
+sacrosanct,word
+sagacious,word
+salubrious,word
+salutary,word
+sanctimonious,word
+sanguine,word
+sardonic,word
+scathing,word
+scrupulous,word
+scurrilous,word
+seamless,word
+sedentary,word
+seditious,word
+seminal,word
+sensational,word
+sentient,word
+serene,word
+servile,word
+sinister,word
+skeptical,word
+slanderous,word
+sluggish,word
+somber,word
+sordid,word
+sparse,word
+specious,word
+speculative,word
+sporadic,word
+spurious,word
+squalid,word
+staid,word
+stark,word
+statutory,word
+steadfast,word
+stoic,word
+stolid,word
+stringent,word
+strident,word
+stultifying,word
+subliminal,word
+submissive,word
+subservient,word
+substantive,word
+succinct,word
+superficial,word
+superfluous,word
+supercilious,word
+surreptitious,word
+susceptible,word
+sycophantic,word
+symbiotic,word
+synonymous,word
+systemic,word
+taciturn,word
+tacit,word
+tangential,word
+tangible,word
+tantamount,word
+tawdry,word
+tedious,word
+temperate,word
+tempestuous,word
+tenable,word
+tenacious,word
+tentative,word
+tepid,word
+terse,word
+timorous,word
+torpid,word
+tortuous,word
+totalitarian,word
+tractable,word
+transient,word
+transitory,word
+trenchant,word
+trite,word
+truculent,word
+turbulent,word
+turgid,word
+unassailable,word
+unassuming,word
+uncanny,word
+unctuous,word
+unequivocal,word
+unfathomable,word
+unfettered,word
+unilateral,word
+unprecedented,word
+unremitting,word
+unscathed,word
+unscrupulous,word
+untenable,word
+unwieldy,word
+unwitting,word
+utilitarian,word
+vacuous,word
+vapid,word
+variegated,word
+vehement,word
+venal,word
+venerable,word
+verbose,word
+verdant,word
+vestigial,word
+viable,word
+vicarious,word
+vigilant,word
+vindictive,word
+virulent,word
+visceral,word
+vitriolic,word
+vociferous,word
+volatile,word
+voracious,word
+wanton,word
+wary,word
+whimsical,word
+willful,word
+wistful,word
+woeful,word
+wry,word
+zealous,word
+
+# ===== Abstract & editorial nouns (A–D) =====
+aberration,word
+abeyance,word
+abyss,word
+accolade,word
+acumen,word
+adage,word
+adherent,word
+admonition,word
+adversary,word
+adversity,word
+advocacy,word
+affinity,word
+affluence,word
+aftermath,word
+alacrity,word
+allegory,word
+allusion,word
+altruism,word
+ambiguity,word
+ambit,word
+anachronism,word
+analogy,word
+anarchy,word
+anecdote,word
+animosity,word
+anomaly,word
+antagonism,word
+antecedent,word
+antidote,word
+antipathy,word
+antithesis,word
+apathy,word
+apex,word
+aplomb,word
+apogee,word
+apotheosis,word
+apparition,word
+apprehension,word
+aptitude,word
+arbiter,word
+archetype,word
+ardor,word
+artifice,word
+ascendancy,word
+asceticism,word
+aspersion,word
+assertion,word
+asylum,word
+atrocity,word
+attrition,word
+audacity,word
+auspices,word
+austerity,word
+autonomy,word
+avarice,word
+aversion,word
+axiom,word
+backlash,word
+bane,word
+bastion,word
+bedlam,word
+behemoth,word
+benefactor,word
+benevolence,word
+bigotry,word
+blight,word
+bravado,word
+brevity,word
+brinkmanship,word
+bulwark,word
+bureaucracy,word
+byword,word
+cacophony,word
+cadence,word
+caliber,word
+calumny,word
+camaraderie,word
+candor,word
+canon,word
+caprice,word
+caricature,word
+catalyst,word
+catharsis,word
+caveat,word
+chagrin,word
+charade,word
+charlatan,word
+chasm,word
+chicanery,word
+chimera,word
+circumlocution,word
+clamor,word
+clemency,word
+cliché,word
+clout,word
+coalition,word
+coercion,word
+cognizance,word
+cohesion,word
+complacency,word
+complicity,word
+concord,word
+condescension,word
+conduit,word
+confluence,word
+connoisseur,word
+connotation,word
+consternation,word
+constituency,word
+contempt,word
+contention,word
+contingency,word
+conundrum,word
+convergence,word
+conviction,word
+corollary,word
+counterpart,word
+credence,word
+credibility,word
+criterion,word
+crux,word
+culmination,word
+cynicism,word
+dearth,word
+debacle,word
+debauchery,word
+decorum,word
+deference,word
+deficit,word
+deluge,word
+demagogue,word
+demeanor,word
+demise,word
+denizen,word
+denouement,word
+deposition,word
+depravity,word
+deprivation,word
+derision,word
+despot,word
+destitution,word
+deterrent,word
+detriment,word
+dexterity,word
+diatribe,word
+dichotomy,word
+dictum,word
+digression,word
+diligence,word
+discord,word
+discrepancy,word
+discretion,word
+disparity,word
+disposition,word
+dissonance,word
+diversion,word
+doctrine,word
+dogma,word
+dominion,word
+duplicity,word
+duress,word
+
+# ===== Abstract & editorial nouns (E–M) =====
+echelon,word
+edict,word
+efficacy,word
+effrontery,word
+elegy,word
+eloquence,word
+embargo,word
+enclave,word
+enigma,word
+enmity,word
+ennui,word
+entity,word
+entourage,word
+epiphany,word
+epitome,word
+epoch,word
+equanimity,word
+equilibrium,word
+equity,word
+erudition,word
+ethos,word
+etymology,word
+euphemism,word
+euphoria,word
+exodus,word
+exemplar,word
+exigency,word
+expediency,word
+exposition,word
+extremity,word
+facade,word
+facet,word
+faction,word
+fallacy,word
+felicity,word
+fervor,word
+fiasco,word
+fidelity,word
+figurehead,word
+flux,word
+foible,word
+foray,word
+forbearance,word
+foresight,word
+fortitude,word
+fracas,word
+fruition,word
+furor,word
+gaffe,word
+gambit,word
+gamut,word
+genesis,word
+gist,word
+gravitas,word
+grievance,word
+guile,word
+hallmark,word
+harbinger,word
+haven,word
+hegemony,word
+heresy,word
+heyday,word
+hiatus,word
+hierarchy,word
+homage,word
+hubris,word
+hyperbole,word
+hypocrisy,word
+iconoclast,word
+ideology,word
+idiosyncrasy,word
+ignominy,word
+impasse,word
+impediment,word
+impetus,word
+impropriety,word
+impunity,word
+inception,word
+incidence,word
+incursion,word
+indictment,word
+indifference,word
+indignation,word
+inertia,word
+infamy,word
+inference,word
+ingenuity,word
+iniquity,word
+innuendo,word
+insurgency,word
+integrity,word
+interlude,word
+interplay,word
+intricacy,word
+intuition,word
+invective,word
+irony,word
+jargon,word
+juggernaut,word
+juncture,word
+jurisdiction,word
+juxtaposition,word
+kudos,word
+largesse,word
+latitude,word
+leeway,word
+legacy,word
+lethargy,word
+levity,word
+liaison,word
+litany,word
+litigation,word
+longevity,word
+luminary,word
+magnitude,word
+malaise,word
+malice,word
+mandate,word
+manifesto,word
+maxim,word
+maelstrom,word
+melee,word
+menace,word
+mendacity,word
+metaphor,word
+milieu,word
+misnomer,word
+modicum,word
+momentum,word
+monopoly,word
+moratorium,word
+mores,word
+motif,word
+mystique,word
+
+# ===== Abstract & editorial nouns (N–Z) =====
+nadir,word
+nemesis,word
+nepotism,word
+nexus,word
+niche,word
+nomenclature,word
+nostalgia,word
+notion,word
+novelty,word
+obsolescence,word
+odyssey,word
+oligarchy,word
+omen,word
+onset,word
+onus,word
+opprobrium,word
+oration,word
+orthodoxy,word
+outset,word
+oversight,word
+panacea,word
+pandemonium,word
+panoply,word
+paradox,word
+paragon,word
+parity,word
+parlance,word
+parody,word
+pathos,word
+patriarchy,word
+patronage,word
+paucity,word
+pedigree,word
+penchant,word
+penury,word
+periphery,word
+perjury,word
+perseverance,word
+pinnacle,word
+pittance,word
+plaudits,word
+plethora,word
+plight,word
+ploy,word
+polemic,word
+populace,word
+posterity,word
+pragmatism,word
+precedent,word
+precept,word
+precipice,word
+precursor,word
+predicament,word
+predilection,word
+preponderance,word
+prerogative,word
+pretext,word
+probity,word
+proclivity,word
+prodigy,word
+progeny,word
+prognosis,word
+proliferation,word
+propensity,word
+propriety,word
+prose,word
+protagonist,word
+provenance,word
+providence,word
+proviso,word
+prowess,word
+proximity,word
+prudence,word
+purview,word
+quagmire,word
+qualm,word
+quandary,word
+quorum,word
+quota,word
+rancor,word
+rapport,word
+rapprochement,word
+rationale,word
+realm,word
+rebuttal,word
+recourse,word
+rectitude,word
+redemption,word
+regime,word
+remnant,word
+renaissance,word
+rendition,word
+reparation,word
+repercussion,word
+repertoire,word
+reprieve,word
+reprisal,word
+requisite,word
+resurgence,word
+reticence,word
+retribution,word
+reverence,word
+rhetoric,word
+rift,word
+rigor,word
+ruse,word
+sacrilege,word
+saga,word
+sanctuary,word
+satire,word
+savvy,word
+schism,word
+scion,word
+scourge,word
+scruple,word
+semblance,word
+sentiment,word
+serendipity,word
+skirmish,word
+solace,word
+solidarity,word
+soliloquy,word
+sophistry,word
+sovereignty,word
+spectrum,word
+stalemate,word
+stance,word
+stigma,word
+stint,word
+stratagem,word
+stricture,word
+subsidy,word
+subterfuge,word
+subtlety,word
+succession,word
+supremacy,word
+surfeit,word
+surrogate,word
+sycophant,word
+symmetry,word
+synergy,word
+synopsis,word
+synthesis,word
+tenet,word
+tenure,word
+testament,word
+threshold,word
+throng,word
+tirade,word
+totality,word
+trajectory,word
+travesty,word
+treatise,word
+trepidation,word
+tribulation,word
+truism,word
+turmoil,word
+tutelage,word
+tyranny,word
+umbrage,word
+undercurrent,word
+unrest,word
+upheaval,word
+upshot,word
+utopia,word
+vagary,word
+valor,word
+vanguard,word
+variance,word
+vendetta,word
+veneer,word
+veracity,word
+verisimilitude,word
+vernacular,word
+vestige,word
+vicissitude,word
+vigilance,word
+virtuoso,word
+vitriol,word
+volition,word
+vortex,word
+watershed,word
+windfall,word
+wrath,word
+writ,word
+zeal,word
+zeitgeist,word
+zenith,word
+
+# ===== Adverbs & discourse markers =====
+accordingly,word
+admittedly,word
+arguably,word
+conversely,word
+correspondingly,word
+decidedly,word
+duly,word
+emphatically,word
+hence,word
+henceforth,word
+hereby,word
+heretofore,word
+hitherto,word
+implicitly,word
+inadvertently,word
+incidentally,word
+indubitably,word
+inexorably,word
+invariably,word
+likewise,word
+manifestly,word
+markedly,word
+namely,word
+nonetheless,word
+notably,word
+overtly,word
+paradoxically,word
+parenthetically,word
+perforce,word
+plausibly,word
+predominantly,word
+presumably,word
+purportedly,word
+putatively,word
+reputedly,word
+seemingly,word
+scarcely,word
+seldom,word
+subsequently,word
+succinctly,word
+tacitly,word
+tangentially,word
+thereby,word
+therein,word
+thereof,word
+thereupon,word
+unduly,word
+unequivocally,word
+unwittingly,word
+vehemently,word
+vicariously,word
+whereby,word
+wherein,word
+whereupon,word
+wholly,word
+inasmuch as,collocation
+insofar as,collocation
+irrespective of,collocation
+in lieu of,collocation
+by virtue of,collocation
+in light of,collocation
+in tandem with,collocation
+in the wake of,collocation
+on the grounds that,collocation
+to the extent that,collocation
+with a view to,collocation
+in accordance with,collocation
+in conjunction with,collocation
+in the absence of,collocation
+on the premise that,collocation
+by the same token,collocation
+for all intents and purposes,collocation
+over and above,collocation
+at the expense of,collocation
+at the mercy of,collocation
+on the strength of,collocation
+under the auspices of,collocation
+in the throes of,collocation
+in the offing,collocation
+in earnest,collocation
+in retrospect,collocation
+in hindsight,collocation
+in principle,collocation
+by and large,collocation
+in no uncertain terms,collocation
+
+# ===== Borrowed fixed expressions =====
+vis-à-vis,word
+per se,word
+ipso facto,word
+de facto,word
+de jure,word
+ad hoc,word
+ad nauseam,word
+bona fide,word
+carte blanche,word
+fait accompli,word
+modus operandi,word
+non sequitur,word
+quid pro quo,word
+raison d'être,word
+status quo,word
+sine qua non,word
+tour de force,word
+laissez-faire,word
+en masse,word
+in situ,word
+a priori,word
+prima facie,word
+vice versa,word
+inter alia,word
+sui generis,word
+cause célèbre,word
+coup de grâce,word
+déjà vu,word
+enfant terrible,word
+esprit de corps,word
+nouveau riche,word
+persona non grata,word
+schadenfreude,word
+
+# ===== Formal phrasal & prepositional verbs (A–D) =====
+abide by,phrasal
+act on,phrasal
+act out,phrasal
+act up,phrasal
+add up to,phrasal
+adhere to,phrasal
+allow for,phrasal
+amount to,phrasal
+answer for,phrasal
+attend to,phrasal
+attribute to,phrasal
+back down,phrasal
+back off,phrasal
+back out of,phrasal
+bail out,phrasal
+bank on,phrasal
+bargain for,phrasal
+bear down on,phrasal
+bear on,phrasal
+bear up,phrasal
+bear with,phrasal
+beef up,phrasal
+blow over,phrasal
+border on,phrasal
+bottle up,phrasal
+bow out,phrasal
+bow to,phrasal
+branch out,phrasal
+breeze through,phrasal
+bring forth,phrasal
+bring off,phrasal
+bring on,phrasal
+bring round,phrasal
+brush aside,phrasal
+brush off,phrasal
+brush up on,phrasal
+build on,phrasal
+bump up,phrasal
+buy into,phrasal
+buy off,phrasal
+buy out,phrasal
+call forth,phrasal
+capitalize on,phrasal
+carry off,phrasal
+cash in on,phrasal
+cast aside,phrasal
+cast off,phrasal
+cater to,phrasal
+cave in,phrasal
+chalk up to,phrasal
+chime in,phrasal
+chip away at,phrasal
+churn out,phrasal
+clamp down on,phrasal
+close in on,phrasal
+come by,phrasal
+come down to,phrasal
+come down on,phrasal
+come forth,phrasal
+come in for,phrasal
+come of,phrasal
+come through,phrasal
+come up against,phrasal
+cordon off,phrasal
+count against,phrasal
+cover for,phrasal
+crack down on,phrasal
+crop up,phrasal
+cry out for,phrasal
+cut across,phrasal
+cut in,phrasal
+cut out for,phrasal
+dawn on,phrasal
+defer to,phrasal
+delve into,phrasal
+descend on,phrasal
+detract from,phrasal
+die down,phrasal
+die out,phrasal
+dig in,phrasal
+dish out,phrasal
+dispense with,phrasal
+dispose of,phrasal
+do away with,phrasal
+dote on,phrasal
+double down on,phrasal
+draw on,phrasal
+draw out,phrasal
+draw up,phrasal
+dredge up,phrasal
+drive at,phrasal
+drive home,phrasal
+drone on,phrasal
+drown out,phrasal
+drum up,phrasal
+dwell on,phrasal
+
+# ===== Formal phrasal & prepositional verbs (E–L) =====
+ease off,phrasal
+eat away at,phrasal
+eat into,phrasal
+edge out,phrasal
+egg on,phrasal
+eke out,phrasal
+enter into,phrasal
+even out,phrasal
+explain away,phrasal
+face down,phrasal
+face up to,phrasal
+fall back on,phrasal
+fall foul of,phrasal
+fall under,phrasal
+fan out,phrasal
+fend off,phrasal
+ferret out,phrasal
+fight off,phrasal
+figure in,phrasal
+fill in for,phrasal
+filter out,phrasal
+fire off,phrasal
+firm up,phrasal
+fit in with,phrasal
+fizzle out,phrasal
+flare up,phrasal
+flesh out,phrasal
+fob off,phrasal
+follow through,phrasal
+follow up on,phrasal
+fork out,phrasal
+forge ahead,phrasal
+frown upon,phrasal
+gear up,phrasal
+get across,phrasal
+get around to,phrasal
+get at,phrasal
+get back at,phrasal
+get down to,phrasal
+give off,phrasal
+give rise to,phrasal
+give way to,phrasal
+gloss over,phrasal
+go about,phrasal
+go back on,phrasal
+go down with,phrasal
+go in for,phrasal
+go off on,phrasal
+go overboard,phrasal
+go through with,phrasal
+grind down,phrasal
+grind out,phrasal
+grow on,phrasal
+hammer out,phrasal
+hand down,phrasal
+hang over,phrasal
+hark back to,phrasal
+have it out,phrasal
+head off,phrasal
+hem in,phrasal
+hit on,phrasal
+hit out at,phrasal
+hold forth,phrasal
+hold out against,phrasal
+hold with,phrasal
+home in on,phrasal
+hunker down,phrasal
+impinge on,phrasal
+iron out,phrasal
+jump at,phrasal
+keep abreast of,phrasal
+kick in,phrasal
+knock back,phrasal
+knuckle down,phrasal
+lapse into,phrasal
+lash out at,phrasal
+latch on to,phrasal
+laugh off,phrasal
+lay bare,phrasal
+lay claim to,phrasal
+lay into,phrasal
+lead on,phrasal
+lean on,phrasal
+leave off,phrasal
+let on,phrasal
+let up,phrasal
+level off,phrasal
+level with,phrasal
+lie in,phrasal
+lie with,phrasal
+live down,phrasal
+lock in,phrasal
+
+# ===== Formal phrasal & prepositional verbs (M–R) =====
+make do with,phrasal
+make for,phrasal
+make of,phrasal
+make off with,phrasal
+make over,phrasal
+mark down,phrasal
+measure up to,phrasal
+mete out,phrasal
+mull over,phrasal
+muscle in on,phrasal
+nail down,phrasal
+opt out of,phrasal
+own up to,phrasal
+pan out,phrasal
+paper over,phrasal
+pare down,phrasal
+part with,phrasal
+pass for,phrasal
+pass off as,phrasal
+pass over,phrasal
+patch up,phrasal
+peter out,phrasal
+phase in,phrasal
+pick apart,phrasal
+pick holes in,phrasal
+pick up on,phrasal
+pin down,phrasal
+pin on,phrasal
+pine for,phrasal
+pit against,phrasal
+play down,phrasal
+play on,phrasal
+play out,phrasal
+play up,phrasal
+plow through,phrasal
+plug away at,phrasal
+polish off,phrasal
+pore over,phrasal
+preside over,phrasal
+press ahead,phrasal
+press on,phrasal
+prevail upon,phrasal
+prey on,phrasal
+prop up,phrasal
+push for,phrasal
+put across,phrasal
+put down to,phrasal
+put forth,phrasal
+put forward,phrasal
+put paid to,phrasal
+puzzle out,phrasal
+rail against,phrasal
+rake in,phrasal
+ramp up,phrasal
+rattle off,phrasal
+reckon with,phrasal
+reel off,phrasal
+rein in,phrasal
+resort to,phrasal
+rest on,phrasal
+revel in,phrasal
+revert to,phrasal
+ride out,phrasal
+rise above,phrasal
+roll back,phrasal
+root out,phrasal
+rope in,phrasal
+round off,phrasal
+round on,phrasal
+run counter to,phrasal
+run up against,phrasal
+
+# ===== Formal phrasal & prepositional verbs (S–Z) =====
+scale back,phrasal
+see through,phrasal
+seize on,phrasal
+set about,phrasal
+set against,phrasal
+set apart,phrasal
+set in,phrasal
+settle for,phrasal
+shore up,phrasal
+shrug off,phrasal
+shy away from,phrasal
+side with,phrasal
+sift through,phrasal
+sit on,phrasal
+size up,phrasal
+skate over,phrasal
+skim over,phrasal
+slip up,phrasal
+smooth over,phrasal
+snap up,phrasal
+sound out,phrasal
+spark off,phrasal
+spell out,phrasal
+spill over,phrasal
+spin off,phrasal
+square up to,phrasal
+square with,phrasal
+squeeze out,phrasal
+stamp out,phrasal
+stand down,phrasal
+stand in for,phrasal
+stave off,phrasal
+step up,phrasal
+stop short of,phrasal
+strike down,phrasal
+strike out,phrasal
+string along,phrasal
+stumble upon,phrasal
+succumb to,phrasal
+swear by,phrasal
+tail off,phrasal
+take aback,phrasal
+take to,phrasal
+take up on,phrasal
+talk down,phrasal
+talk round,phrasal
+tamper with,phrasal
+taper off,phrasal
+tear into,phrasal
+tide over,phrasal
+tie in with,phrasal
+tip off,phrasal
+tone down,phrasal
+touch on,phrasal
+toy with,phrasal
+trade on,phrasal
+trail off,phrasal
+trickle down,phrasal
+trigger off,phrasal
+trump up,phrasal
+tune out,phrasal
+usher in,phrasal
+verge on,phrasal
+wade through,phrasal
+want for,phrasal
+ward off,phrasal
+wash over,phrasal
+water down,phrasal
+wear down,phrasal
+weed out,phrasal
+weigh in,phrasal
+weigh up,phrasal
+whip up,phrasal
+whittle down,phrasal
+win out,phrasal
+wind down,phrasal
+wrestle with,phrasal
+yield to,phrasal
+zero in on,phrasal
+zone out,phrasal
+
+# ===== Sophisticated idioms (argument & judgment) =====
+a bone of contention,idiom
+a catch-22,idiom
+a far cry from,idiom
+a foregone conclusion,idiom
+a grey area,idiom
+a knee-jerk reaction,idiom
+a law unto oneself,idiom
+a moot point,idiom
+a necessary evil,idiom
+a pyrrhic victory,idiom
+a sea change,idiom
+a slippery slope,idiom
+a tall order,idiom
+a vicious circle,idiom
+a watershed moment,idiom
+a double standard,idiom
+a case in point,idiom
+a stumbling block,idiom
+the crux of the matter,idiom
+a zero-sum game,idiom
+a level playing field,idiom
+the powers that be,idiom
+the lesser of two evils,idiom
+the be-all and end-all,idiom
+a mixed blessing,idiom
+a litmus test,idiom
+a leap of faith,idiom
+a means to an end,idiom
+a matter of course,idiom
+a chicken-and-egg situation,idiom
+a shot in the dark,idiom
+a sign of the times,idiom
+a thorn in one's side,idiom
+the devil is in the details,idiom
+a sticking point,idiom
+a tipping point,idiom
+the thin end of the wedge,idiom
+a sword of damocles,idiom
+the end justifies the means,idiom
+a fly in the ointment,idiom
+a red herring,idiom
+red tape,idiom
+the acid test,idiom
+the lion's share,idiom
+the tip of the iceberg,idiom
+the writing on the wall,idiom
+the jury is still out,idiom
+the other side of the coin,idiom
+a vested interest,idiom
+a vote of confidence,idiom
+dire straits,idiom
+add insult to injury,idiom
+against the grain,idiom
+at loggerheads,idiom
+at the eleventh hour,idiom
+back to square one,idiom
+bear the brunt of,idiom
+beg the question,idiom
+behind the curve,idiom
+beside the point,idiom
+bite the bullet,idiom
+blow out of proportion,idiom
+bury the hatchet,idiom
+call into question,idiom
+call the shots,idiom
+carry the day,idiom
+cast a long shadow,idiom
+change tack,idiom
+clutch at straws,idiom
+come to a head,idiom
+come to grips with,idiom
+come to terms with,idiom
+cross the rubicon,idiom
+cut both ways,idiom
+cut corners,idiom
+damn with faint praise,idiom
+draw a line in the sand,idiom
+err on the side of caution,idiom
+fall by the wayside,idiom
+fall from grace,idiom
+fall on deaf ears,idiom
+few and far between,idiom
+fly in the face of,idiom
+gain traction,idiom
+get to the bottom of,idiom
+get wind of,idiom
+grasp the nettle,idiom
+grist to the mill,idiom
+hang in the balance,idiom
+have a bearing on,idiom
+hold sway,idiom
+hold water,idiom
+in the same vein,idiom
+jump on the bandwagon,idiom
+keep at bay,idiom
+leave no stone unturned,idiom
+lose sight of,idiom
+make inroads into,idiom
+make or break,idiom
+miss the mark,idiom
+move the goalposts,idiom
+muddy the waters,idiom
+nip in the bud,idiom
+no stranger to,idiom
+not hold a candle to,idiom
+on a par with,idiom
+on thin ice,idiom
+open a can of worms,idiom
+pale in comparison,idiom
+pass muster,idiom
+pave the way for,idiom
+pay lip service to,idiom
+play devil's advocate,idiom
+play into the hands of,idiom
+preach to the choir,idiom
+pull the plug on,idiom
+put the cart before the horse,idiom
+raise the bar,idiom
+read between the lines,idiom
+reinvent the wheel,idiom
+ring hollow,idiom
+rise to the occasion,idiom
+rock the boat,idiom
+rub salt into the wound,idiom
+run the gamut,idiom
+scratch the surface,idiom
+set in stone,idiom
+set the stage for,idiom
+speak volumes,idiom
+split hairs,idiom
+stand the test of time,idiom
+steal a march on,idiom
+strike a chord,idiom
+strike a balance,idiom
+take issue with,idiom
+take precedence over,idiom
+take stock,idiom
+take with a pinch of salt,idiom
+tar with the same brush,idiom
+throw down the gauntlet,idiom
+throw the baby out with the bathwater,idiom
+tie up loose ends,idiom
+tip the balance,idiom
+toe the line,idiom
+tread a fine line,idiom
+turn a blind eye,idiom
+turn the tables,idiom
+up in arms,idiom
+walk a tightrope,idiom
+wear thin,idiom
+weather the storm,idiom
+bite off more than one can chew,idiom
+bear fruit,idiom
+bode well,idiom
+bring to bear,idiom
+bring to light,idiom
+bring to the fore,idiom
+call a spade a spade,idiom
+cast doubt on,idiom
+come into its own,idiom
+come to fruition,idiom
+cut one's losses,idiom
+dig in one's heels,idiom
+fall into place,idiom
+fend for oneself,idiom
+fight a losing battle,idiom
+find one's feet,idiom
+get a handle on,idiom
+give the benefit of the doubt,idiom
+go hand in hand,idiom
+go to great lengths,idiom
+hit home,idiom
+hold one's own,idiom
+in the grand scheme of things,idiom
+keep a low profile,idiom
+keep pace with,idiom
+know the ropes,idiom
+lay the groundwork,idiom
+leave much to be desired,idiom
+lend credence to,idiom
+lend weight to,idiom
+let sleeping dogs lie,idiom
+live beyond one's means,idiom
+make a mountain out of a molehill,idiom
+make headway,idiom
+make light of,idiom
+make the case for,idiom
+on the back burner,idiom
+on the horns of a dilemma,idiom
+put into perspective,idiom
+run its course,idiom
+see eye to eye,idiom
+sit well with,idiom
+stand in good stead,idiom
+take its toll,idiom
+take root,idiom
+take the plunge,idiom
+throw into sharp relief,idiom
+time will tell,idiom
+to little avail,idiom
+tread water,idiom
+turn the corner,idiom
+up to scratch,idiom
+wax lyrical,idiom
+wreak havoc,idiom
+at face value,idiom
+in its infancy,idiom
+on the verge of,idiom
+with impunity,idiom
+behind closed doors,idiom
+in the public eye,idiom
+come under fire,idiom
+mend fences,idiom
+the moral high ground,idiom
+
+# ===== Editorial collocations =====
+pose a threat,collocation
+wield influence,collocation
+exert pressure,collocation
+levy a tax,collocation
+incur a cost,collocation
+sustain losses,collocation
+shoulder the burden,collocation
+foot the bill,collocation
+flout the rules,collocation
+breach a contract,collocation
+overturn a ruling,collocation
+hand down a verdict,collocation
+enact legislation,collocation
+repeal a law,collocation
+lodge a complaint,collocation
+lodge an appeal,collocation
+file a lawsuit,collocation
+press charges,collocation
+draw criticism,collocation
+spark controversy,collocation
+fuel speculation,collocation
+stoke fears,collocation
+allay fears,collocation
+quell unrest,collocation
+curb inflation,collocation
+stem the tide,collocation
+reap the benefits,collocation
+yield results,collocation
+gain ground,collocation
+cede ground,collocation
+mount a challenge,collocation
+launch an inquiry,collocation
+tighten regulations,collocation
+impose sanctions,collocation
+lift sanctions,collocation
+broker a deal,collocation
+forge an alliance,collocation
+sever ties,collocation
+strain relations,collocation
+heighten tensions,collocation
+defuse tensions,collocation
+voice concern,collocation
+express reservations,collocation
+harbor doubts,collocation
+nurse a grudge,collocation
+draw a distinction,collocation
+draw a parallel,collocation
+provoke outrage,collocation
+trigger a backlash,collocation
+overwhelming evidence,collocation
+anecdotal evidence,collocation
+empirical evidence,collocation
+circumstantial evidence,collocation
+conclusive evidence,collocation
+mounting evidence,collocation
+sweeping reforms,collocation
+far-reaching consequences,collocation
+dire consequences,collocation
+unintended consequences,collocation
+a radical overhaul,collocation
+a stark contrast,collocation
+a marked improvement,collocation
+a concerted effort,collocation
+a daunting task,collocation
+a plausible explanation,collocation
+a viable alternative,collocation
+a lasting legacy,collocation
+a pressing issue,collocation
+a thorny issue,collocation
+a heated debate,collocation
+a bitter dispute,collocation
+common ground,collocation
+a delicate balance,collocation
+a tacit agreement,collocation
+a sweeping statement,collocation
+a blanket ban,collocation
+a stopgap measure,collocation
+rampant corruption,collocation
+abject poverty,collocation
+deep-seated prejudice,collocation
+deeply entrenched,collocation
+inextricably linked,collocation
+acutely aware,collocation
+highly contentious,collocation
+hotly contested,collocation
+widely regarded,collocation
+patently false,collocation
+categorically deny,collocation
+vehemently deny,collocation
+staunchly defend,collocation
+fully fledged,collocation
+come under scrutiny,collocation
+intense scrutiny,collocation
+
+# ===== Formal phrasal & prepositional verbs (supplement) =====
+cast about for,phrasal
+come clean,phrasal
+come into force,phrasal
+crowd out,phrasal
+dial back,phrasal
+dole out,phrasal
+drag on,phrasal
+fall in with,phrasal
+feed into,phrasal
+flag up,phrasal
+freeze out,phrasal
+hold off,phrasal
+keel over,phrasal
+kowtow to,phrasal
+lag behind,phrasal
+leaf through,phrasal
+lord it over,phrasal
+map out,phrasal
+mop up,phrasal
+pick over,phrasal
+pile on,phrasal
+plod on,phrasal
+ply with,phrasal
+point to,phrasal
+pull together,phrasal
+push through,phrasal
+rake over,phrasal
+read into,phrasal
+rough out,phrasal
+rub off on,phrasal
+scrape by,phrasal
+screen out,phrasal
+seal off,phrasal
+shake up,phrasal
+shut out,phrasal
+sign away,phrasal
+sketch out,phrasal
+slack off,phrasal
+smoke out,phrasal
+snap out of,phrasal
+soldier on,phrasal
+speak to,phrasal
+spring from,phrasal
+stack up,phrasal
+stand up to,phrasal
+stick by,phrasal
+sweep aside,phrasal
+take exception to,phrasal
+tap into,phrasal
+think through,phrasal
+throw off,phrasal
+tower over,phrasal
+trip up,phrasal
+wall off,phrasal
+wean off,phrasal
+while away,phrasal
+wriggle out of,phrasal
+yearn for,phrasal

@@ -53,21 +53,14 @@ butt in,phrasal
 drop off,phrasal
 hop on,phrasal
 hop off,phrasal
-log on,phrasal
-log off,phrasal
-mute,word
-unmute,word
 screen share,word
-breakout room,collocation
-conference call,collocation
-video call,collocation
-hybrid meeting,collocation
+breakout room,word
+conference call,word
 call a meeting,collocation
 hold a meeting,collocation
 run a meeting,collocation
 chair a meeting,collocation
 reschedule,word
-postpone,word
 push,word
 bump,word
 move up,phrasal
@@ -98,17 +91,10 @@ map out,phrasal
 set out,phrasal
 point out,phrasal
 bring up,phrasal
-raise,word
 come up,phrasal
 touch on,phrasal
 dwell on,phrasal
-elaborate,word
-clarify,word
-reiterate,word
-summarize,word
 delegate,word
-assign,word
-volunteer,word
 own,word
 owner,word
 driver,word
@@ -117,7 +103,7 @@ timekeeper,word
 note-taker,word
 scribe,word
 housekeeping,word
-ground rules,collocation
+ground rules,word
 parking lot,idiom
 offline,word
 take it offline,idiom
@@ -126,28 +112,22 @@ double-booked,word
 slot,word
 window,word
 availability,word
-calendar invite,collocation
+calendar invite,word
 tentative,word
-decline,word
-accept,word
-optional,word
-required,word
 recurring,word
 cadence,word
-weekly,word
 biweekly,word
 fortnightly,word
-quarterly,word
-standing meeting,collocation
-status update,collocation
-progress report,collocation
+standing meeting,word
+status update,word
+progress report,word
 on track,idiom
 off track,idiom
 behind schedule,collocation
 ahead of schedule,collocation
 blocker,word
 dependency,word
-next steps,collocation
+next steps,word
 to that end,idiom
 on that note,idiom
 with that said,idiom
@@ -159,7 +139,7 @@ off the record,idiom
 in a nutshell,idiom
 bottom line,idiom
 big picture,idiom
-30,000-foot view,idiom
+thirty-thousand-foot view,idiom
 deep dive,idiom
 drill down,phrasal
 zoom in,phrasal
@@ -170,16 +150,12 @@ get alignment,collocation
 reach a consensus,collocation
 reach an agreement,collocation
 make a decision,collocation
-come to a decision,collocation
 
 # ===== 2. Email & documents (이메일·문서) =====
-subject line,collocation
-recipient,word
-sender,word
+subject line,word
 cc,word
 bcc,word
 attachment,word
-attach,word
 forward,word
 reply all,phrasal
 thread,word
@@ -189,14 +165,10 @@ template,word
 signature,word
 salutation,word
 sign-off,word
-greeting,word
 closing,word
 disclaimer,word
 confidential,word
-urgent,word
-high priority,collocation
 acknowledge,word
-acknowledgment,word
 receipt,word
 confirm receipt,collocation
 hereby,word
@@ -204,7 +176,6 @@ herewith,word
 enclosed,word
 aforementioned,word
 as per,idiom
-per se,idiom
 re,word
 fyi,word
 asap,word
@@ -235,9 +206,7 @@ hear back,phrasal
 write back,phrasal
 revert,word
 look forward to,phrasal
-appreciate,word
 kindly,word
-hesitate,word
 advise,word
 further to,idiom
 in reference to,idiom
@@ -250,19 +219,13 @@ please find attached,collocation
 as discussed,collocation
 as requested,collocation
 as agreed,collocation
-as a follow-up,collocation
 to whom it may concern,idiom
 best regards,collocation
 kind regards,collocation
-warm regards,collocation
 yours sincerely,collocation
-yours faithfully,collocation
 memo,word
 memorandum,word
 circular,word
-bulletin,word
-newsletter,word
-announcement,word
 notice,word
 proposal,word
 quote,word
@@ -277,8 +240,7 @@ specification,word
 brief,word
 one-pager,word
 white paper,word
-case study,collocation
-report,word
+case study,word
 appendix,word
 annex,word
 exhibit,word
@@ -286,24 +248,15 @@ schedule,word
 addendum,word
 amendment,word
 revision,word
-version,word
 redline,word
 markup,word
-track changes,collocation
+track changes,word
 proofread,word
-typo,word
-formatting,word
-header,word
-footer,word
-bullet point,collocation
+bullet point,word
 boilerplate,word
 placeholder,word
-dummy,word
 mock-up,word
 wireframe,word
-blueprint,word
-checklist,word
-form,word
 fill in,phrasal
 fill out,phrasal
 tick off,phrasal
@@ -321,30 +274,1804 @@ send across,phrasal
 pass on,phrasal
 pass along,phrasal
 print out,phrasal
-scan,word
 file,word
 archive,word
-shred,word
 back up,phrasal
-upload,word
-download,word
-shared drive,collocation
-folder,word
-naming convention,collocation
+shared drive,word
+naming convention,word
 read-only,word
-access,word
-permission,word
-cover letter,collocation
-executive summary,collocation
-table of contents,collocation
-glossary,word
-footnote,word
-citation,word
-source,word
-reference,word
-abstract,word
-synopsis,word
+cover letter,word
+executive summary,word
+table of contents,word
 digest,word
 rundown,word
-overview,word
 snapshot,word
+
+# ===== 3. Negotiation (협상) =====
+negotiate,word
+negotiation,word
+bargain,word
+bargaining power,word
+concession,word
+concede,word
+trade-off,word
+give-and-take,idiom
+win-win,word
+zero-sum,word
+deadlock,word
+stalemate,word
+impasse,word
+counterpart,word
+counteroffer,word
+counterproposal,word
+bid up,phrasal
+underbid,word
+outbid,word
+haggle,word
+sweetener,word
+walk-away,word
+batna,word
+asking price,word
+list price,word
+anchor,word
+anchoring,word
+floor,word
+ceiling,word
+cap,word
+ballpark,word
+ballpark figure,idiom
+in the ballpark,idiom
+terms,word
+terms and conditions,word
+stipulate,word
+stipulation,word
+clause,word
+provision,word
+contingency,word
+contingent on,collocation
+subject to,collocation
+non-negotiable,word
+deal-breaker,word
+sticking point,idiom
+common ground,idiom
+middle ground,idiom
+meet halfway,idiom
+split the difference,idiom
+sweeten the deal,idiom
+seal the deal,idiom
+close the deal,collocation
+strike a deal,collocation
+cut a deal,idiom
+clinch,word
+hammer out,phrasal
+nail down,phrasal
+pin down,phrasal
+firm up,phrasal
+lock in,phrasal
+hold out,phrasal
+hold off,phrasal
+back down,phrasal
+back off,phrasal
+back out,phrasal
+cave in,phrasal
+give in,phrasal
+give way,phrasal
+stand firm,collocation
+hold firm,collocation
+hardball,word
+play hardball,idiom
+drive a hard bargain,idiom
+hard sell,idiom
+soft sell,idiom
+lowball,word
+highball,word
+good cop bad cop,idiom
+on the table,idiom
+off the table,idiom
+take it or leave it,idiom
+final offer,word
+best and final,word
+in good faith,idiom
+good faith,word
+bad faith,word
+arm's length,idiom
+quid pro quo,idiom
+reciprocal,word
+reciprocity,word
+mutually beneficial,collocation
+exclusive,word
+exclusivity,word
+first refusal,word
+goodwill,word
+rapport,word
+build rapport,collocation
+room for maneuver,idiom
+wiggle room,idiom
+leeway,word
+latitude,word
+margin for error,word
+upside,word
+downside,word
+walk away,phrasal
+come around,phrasal
+come down,phrasal
+budge,word
+yield,word
+relent,word
+settle,word
+settlement,word
+settle for,phrasal
+settle on,phrasal
+agree on,phrasal
+agree to,phrasal
+sign up,phrasal
+sign on,phrasal
+opt in,phrasal
+opt out,phrasal
+
+# ===== 4. Sales (영업) =====
+sales rep,word
+account executive,word
+account manager,word
+sales funnel,word
+funnel,word
+lead,word
+prospect,word
+prospecting,word
+qualify,word
+qualified lead,word
+cold call,word
+cold calling,word
+warm lead,word
+hot lead,word
+inbound,word
+outbound,word
+referral,word
+upsell,word
+cross-sell,word
+downsell,word
+bundle,word
+tier,word
+pricing,word
+price point,word
+markdown,word
+discount,word
+rebate,word
+volume discount,word
+wholesale,word
+retail,word
+msrp,word
+rrp,word
+commission,word
+quota,word
+target,word
+hit the target,collocation
+make quota,collocation
+exceed expectations,collocation
+over-deliver,word
+underperform,word
+outperform,word
+conversion,word
+conversion rate,word
+close rate,word
+win rate,word
+churn,word
+churn rate,word
+retention,word
+repeat business,word
+recurring revenue,word
+arr,word
+mrr,word
+booking,word
+backlog,word
+order book,word
+purchase order,word
+po,word
+sales order,word
+fulfillment,word
+turnaround,word
+turnaround time,word
+lead time,word
+demo,word
+pitch,word
+elevator pitch,idiom
+value proposition,word
+usp,word
+differentiator,word
+pain point,word
+objection,word
+handle objections,collocation
+rebuttal,word
+follow-through,word
+touchpoint,word
+cold email,word
+outreach,word
+drip campaign,word
+nurture,word
+land,word
+land a client,collocation
+win over,phrasal
+bring in,phrasal
+drum up,phrasal
+rake in,phrasal
+reel in,phrasal
+sell out,phrasal
+sell off,phrasal
+sell on,phrasal
+buy up,phrasal
+buy out,phrasal
+buy into,phrasal
+snap up,phrasal
+stock up,phrasal
+run out,phrasal
+knock off,phrasal
+mark down,phrasal
+mark up,phrasal
+price in,phrasal
+throw in,phrasal
+trade in,phrasal
+trade up,phrasal
+trade down,phrasal
+account,word
+key account,word
+book of business,idiom
+territory,word
+vertical,word
+segment,word
+decision-maker,word
+gatekeeper,word
+champion,word
+influencer,word
+end user,word
+buyer persona,word
+customer journey,word
+free trial,word
+freemium,word
+renewal,word
+lapse,word
+add-on,word
+license,word
+seat,word
+per seat,collocation
+contract value,word
+deal size,word
+average order value,word
+foot in the door,idiom
+sweet spot,idiom
+no-brainer,idiom
+slam dunk,idiom
+in the bag,idiom
+on the fence,idiom
+tire kicker,idiom
+close,word
+closer,word
+
+# ===== 5. Marketing (마케팅) =====
+brand,word
+branding,word
+rebrand,word
+brand awareness,word
+brand equity,word
+brand loyalty,word
+positioning,word
+tagline,word
+campaign,word
+launch,word
+soft launch,word
+go-to-market,word
+target audience,word
+target market,word
+demographic,word
+demographics,word
+psychographics,word
+segmentation,word
+niche,word
+mass market,word
+market share,word
+market penetration,word
+market research,word
+focus group,word
+survey,word
+sample size,word
+insight,word
+buzz,word
+hype,word
+viral,word
+go viral,collocation
+word of mouth,idiom
+organic,word
+earned media,word
+impression,word
+reach,word
+engagement,word
+click-through rate,word
+ctr,word
+cpc,word
+cpm,word
+cpa,word
+roi,word
+roas,word
+attribution,word
+traffic,word
+footfall,word
+bounce rate,word
+landing page,word
+call to action,word
+cta,word
+copy,word
+copywriting,word
+creative,word
+asset,word
+collateral,word
+placement,word
+product placement,word
+endorsement,word
+testimonial,word
+influencer marketing,word
+affiliate,word
+seo,word
+content marketing,word
+mailing list,word
+opt-in,word
+unsubscribe,word
+a/b test,word
+split test,word
+awareness,word
+consideration,word
+acquisition,word
+advocacy,word
+promotion,word
+loss leader,idiom
+flagship,word
+product line,word
+product range,word
+sku,word
+rollout,word
+roll back,phrasal
+phase out,phrasal
+phase in,phrasal
+bring out,phrasal
+put out,phrasal
+come out,phrasal
+take off,phrasal
+catch on,phrasal
+fizzle out,phrasal
+tail off,phrasal
+pick up,phrasal
+build up,phrasal
+play up,phrasal
+play down,phrasal
+talk up,phrasal
+hype up,phrasal
+water down,phrasal
+tone down,phrasal
+spin,word
+pr,word
+public relations,word
+press release,word
+media kit,word
+spokesperson,word
+publicity,word
+exposure,word
+visibility,word
+mindshare,word
+top of mind,idiom
+first mover,word
+early adopter,word
+laggard,word
+cannibalize,word
+cannibalization,word
+commoditize,word
+premium,word
+private label,word
+generic,word
+trademark,word
+sentiment,word
+customer base,word
+user base,word
+
+# ===== 6. Finance & accounting (재무·회계) =====
+liability,word
+equity,word
+balance sheet,word
+income statement,word
+profit and loss,word
+p&l,word
+cash flow,word
+statement,word
+ledger,word
+general ledger,word
+journal entry,word
+bookkeeping,word
+controller,word
+cfo,word
+audit,word
+audit trail,word
+reconcile,word
+reconciliation,word
+accrual,word
+accrue,word
+deferral,word
+deferred revenue,word
+prepaid,word
+depreciation,word
+amortization,word
+write-off,word
+write off,phrasal
+write down,phrasal
+impairment,word
+bad debt,word
+receivable,word
+accounts receivable,word
+payable,word
+accounts payable,word
+creditor,word
+debtor,word
+payment terms,word
+net 30,word
+due date,word
+overdue,word
+past due,collocation
+late fee,word
+remit,word
+disburse,word
+reimburse,word
+expense,word
+expense report,word
+out-of-pocket,word
+petty cash,word
+allowance,word
+per diem,word
+stipend,word
+retainer,word
+deposit,word
+down payment,word
+installment,word
+lump sum,word
+balance,word
+outstanding balance,word
+principal,word
+interest,word
+interest rate,word
+compound interest,word
+return,word
+return on investment,word
+ebitda,word
+gross profit,word
+net profit,word
+gross margin,word
+net margin,word
+operating margin,word
+profit margin,word
+top line,idiom
+cost of goods sold,word
+cogs,word
+opex,word
+capex,word
+operating expenses,word
+capital expenditure,word
+fixed cost,word
+variable cost,word
+sunk cost,word
+opportunity cost,word
+overhead cost,word
+unit cost,word
+cost center,word
+profit center,word
+break-even,word
+break even,phrasal
+breakeven point,word
+payback period,word
+burn rate,word
+runway,word
+cash burn,word
+liquidity,word
+solvent,word
+bankruptcy,word
+go under,phrasal
+go bust,idiom
+fold,word
+wind up,phrasal
+liquidate,word
+receivership,word
+restructuring,word
+refinance,word
+leverage ratio,word
+gearing,word
+debt-to-equity,word
+bond,word
+line of credit,word
+credit limit,word
+creditworthiness,word
+credit rating,word
+credit score,word
+default,word
+default on,phrasal
+underwrite,word
+capital,word
+working capital,word
+venture capital,word
+seed funding,word
+series a,word
+angel investor,word
+raise capital,collocation
+raise funds,collocation
+funding round,word
+valuation,word
+pre-money,word
+post-money,word
+dilution,word
+dilute,word
+stake,word
+shareholder,word
+share,word
+stock,word
+dividend,word
+payout,word
+buyback,word
+ipo,word
+go public,collocation
+listed,word
+float,word
+market cap,word
+blue chip,idiom
+bull market,word
+bear market,word
+bullish,word
+bearish,word
+rally,word
+slump,word
+spike,word
+dip,word
+rebound,word
+level off,phrasal
+flatten out,phrasal
+bottom out,phrasal
+trough,word
+volatility,word
+hedge,word
+portfolio,word
+diversify,word
+allocate,word
+budget,word
+budget line,word
+earmark,word
+ring-fence,word
+appropriation,word
+overspend,word
+over budget,collocation
+under budget,collocation
+within budget,collocation
+cost overrun,word
+variance,word
+variance analysis,word
+projection,word
+outlook,word
+guidance,word
+fiscal year,word
+fiscal,word
+year-end,word
+year-on-year,word
+yoy,word
+run rate,word
+annualized,word
+pro rata,idiom
+prorated,word
+gross,word
+net,word
+net of,collocation
+after tax,collocation
+pre-tax,word
+tax return,word
+tax deductible,collocation
+deductible,word
+withholding tax,word
+vat,word
+sales tax,word
+corporate tax,word
+tax bracket,word
+tax haven,word
+tax relief,word
+write-down,word
+windfall,word
+shortfall,word
+deficit,word
+surplus,word
+in the red,idiom
+in the black,idiom
+red ink,idiom
+cash cow,idiom
+rainy day fund,idiom
+cook the books,idiom
+creative accounting,idiom
+fudge the numbers,idiom
+balance the books,idiom
+pay off,phrasal
+pay out,phrasal
+pay back,phrasal
+pay down,phrasal
+pay up,phrasal
+pay in,phrasal
+pay into,phrasal
+put aside,phrasal
+set aside,phrasal
+put away,phrasal
+put down,phrasal
+put up,phrasal
+chip in,phrasal
+cash in,phrasal
+cash out,phrasal
+cough up,phrasal
+fork out,phrasal
+shell out,phrasal
+splash out,phrasal
+cut back,phrasal
+cut down,phrasal
+scale back,phrasal
+scale down,phrasal
+scale up,phrasal
+ramp up,phrasal
+ramp down,phrasal
+trim,word
+slash,word
+squeeze,word
+belt-tightening,word
+cost-cutting,word
+cost-effective,word
+cost-benefit analysis,word
+value for money,word
+economies of scale,word
+billing,word
+billable,word
+billable hours,word
+non-billable,word
+charge,word
+surcharge,word
+levy,word
+duty,word
+tariff,word
+wire transfer,word
+bank transfer,word
+direct debit,word
+standing order,word
+payroll,word
+
+# ===== 7. HR (인사) =====
+human resources,word
+recruit,word
+recruiter,word
+hiring manager,word
+headhunter,word
+talent,word
+talent pool,word
+job posting,word
+job description,word
+vacancy,word
+opening,word
+candidate,word
+shortlist,word
+screen,word
+background check,word
+reference check,word
+overqualified,word
+underqualified,word
+phone screen,word
+offer letter,word
+extend an offer,collocation
+turn down,phrasal
+counter,word
+salary,word
+compensation,word
+compensation package,word
+remuneration,word
+pay grade,word
+pay raise,word
+pay gap,word
+base pay,word
+base salary,word
+incentive,word
+perk,word
+fringe benefit,word
+benefits,word
+stock option,word
+vesting,word
+paid time off,word
+pto,word
+annual leave,word
+sick leave,word
+parental leave,word
+sabbatical,word
+leave of absence,word
+overtime,word
+time off in lieu,word
+flexitime,word
+core hours,word
+shift,word
+rota,word
+timesheet,word
+clock in,phrasal
+clock out,phrasal
+punch in,phrasal
+punch out,phrasal
+absenteeism,word
+no-show,word
+headcount,word
+understaffed,word
+short-staffed,word
+workforce,word
+personnel,word
+temp,word
+contractor,word
+freelancer,word
+gig,word
+probation,word
+probationary period,word
+fixed-term,word
+tenure,word
+seniority,word
+entry-level,word
+executive,word
+c-suite,word
+director,word
+line manager,word
+reporting line,word
+direct report,word
+report to,phrasal
+report into,phrasal
+dotted line,idiom
+org chart,word
+flat structure,word
+chain of command,word
+span of control,word
+position,word
+post,word
+function,word
+division,word
+subordinate,word
+peer,word
+mentor,word
+mentee,word
+buddy system,word
+induction,word
+orientation,word
+upskill,word
+reskill,word
+cross-train,word
+job rotation,word
+secondment,word
+transfer,word
+relocate,word
+demote,word
+step up,phrasal
+step down,phrasal
+step in,phrasal
+cover for,phrasal
+stand in,phrasal
+take over,phrasal
+hand over,phrasal
+handover,word
+succession planning,word
+career path,word
+career break,word
+performance review,word
+appraisal,word
+360 review,word
+kpi,word
+okr,word
+recognition,word
+merit-based,word
+underperformer,word
+high performer,word
+high potential,word
+pip,word
+disciplinary,word
+misconduct,word
+grievance,word
+whistleblower,word
+equal opportunity,word
+dei,word
+accommodation,word
+code of conduct,word
+employee handbook,word
+dress code,word
+business casual,word
+work ethic,word
+morale,word
+burnout,word
+burn out,phrasal
+work-life balance,word
+resign,word
+hand in one's notice,idiom
+give notice,collocation
+notice period,word
+exit interview,word
+offboarding,word
+attrition,word
+dismiss,word
+fire,word
+sack,word
+terminate,word
+let go,phrasal
+lay off,phrasal
+layoff,word
+redundancy,word
+redundant,word
+make redundant,collocation
+downsize,word
+rightsizing,word
+severance,word
+golden handshake,idiom
+golden parachute,idiom
+garden leave,word
+furlough,word
+hiring freeze,word
+payslip,word
+take-home pay,word
+union,word
+collective bargaining,word
+strike,word
+walkout,word
+industrial action,word
+dispute,word
+arbitration,word
+mediation,word
+remote work,word
+work from home,collocation
+wfh,word
+hot-desking,word
+cubicle,word
+headquarters,word
+branch,word
+site,word
+on-site,word
+offshore,word
+nearshore,word
+outsource,word
+insource,word
+
+# ===== 8. Project management & IT (프로젝트 관리·IT) =====
+project manager,word
+pm,word
+product owner,word
+scrum master,word
+sprint,word
+retrospective,word
+backlog grooming,word
+user story,word
+epic,word
+ticket,word
+defect,word
+hotfix,word
+patch,word
+release,word
+deploy,word
+go-live,word
+go live,collocation
+cutover,word
+rollback,word
+staging,word
+production,word
+sandbox,word
+environment,word
+build,word
+repository,word
+commit,word
+merge,word
+branch out,phrasal
+refactor,word
+technical debt,word
+legacy,word
+migration,word
+integration,word
+api,word
+endpoint,word
+on-premises,word
+uptime,word
+downtime,word
+outage,word
+incident,word
+root cause,word
+postmortem,word
+lessons learned,word
+sla,word
+throughput,word
+scalable,word
+scale,word
+failover,word
+disaster recovery,word
+business continuity,word
+breach,word
+phishing,word
+2fa,word
+sso,word
+admin,word
+end-of-life,word
+sunset,word
+deprecate,word
+decommission,word
+roadmap,word
+timeline,word
+gantt chart,word
+critical path,word
+wbs,word
+scope creep,word
+in scope,collocation
+out of scope,collocation
+descope,word
+acceptance criteria,word
+definition of done,word
+stage gate,word
+baseline,word
+tolerance,word
+buffer,word
+slack,word
+contingency plan,word
+plan b,idiom
+fallback,word
+fall back on,phrasal
+workaround,word
+work around,phrasal
+band-aid,idiom
+stopgap,word
+interim,word
+mvp,word
+prototype,word
+proof of concept,word
+poc,word
+pilot,word
+beta,word
+iterate,word
+agile,word
+waterfall,word
+kanban,word
+lean,word
+velocity,word
+burndown chart,word
+effort,word
+person-hour,word
+fte,word
+resource,word
+capacity,word
+utilization,word
+workload,word
+over capacity,collocation
+unblock,word
+in progress,collocation
+to do,collocation
+prioritize,word
+p0,word
+must-have,word
+nice-to-have,word
+showstopper,word
+mission-critical,word
+hard deadline,word
+drop-dead date,idiom
+cutoff,word
+freeze,word
+code freeze,word
+change request,word
+change management,word
+change order,word
+risk register,word
+mitigate,word
+constraint,word
+quality assurance,word
+qa,word
+uat,word
+smoke test,word
+end-to-end,word
+handoff,word
+hand off,phrasal
+kick back,phrasal
+send back,phrasal
+roll over,phrasal
+carry over,phrasal
+spill over,phrasal
+slip,word
+slippage,word
+overrun,word
+derail,word
+back on track,idiom
+get up to speed,idiom
+bring up to speed,idiom
+ramp-up,word
+learning curve,idiom
+onboard,word
+sponsor,word
+steering committee,word
+governance,word
+oversight,word
+dashboard,word
+rag status,word
+red flag,idiom
+green light,idiom
+go/no-go,word
+go-ahead,word
+give the go-ahead,collocation
+get the go-ahead,collocation
+rubber-stamp,idiom
+approver,word
+escalation,word
+turnkey,word
+out-of-the-box,word
+off-the-shelf,word
+bespoke,word
+tailor,word
+plug-and-play,idiom
+seamless,word
+streamline,word
+automate,word
+digital transformation,word
+workflow,word
+cycle time,word
+pivot table,word
+macro,word
+sync up,phrasal
+set up,phrasal
+shut down,phrasal
+key in,phrasal
+plug in,phrasal
+hook up,phrasal
+wire up,phrasal
+spin up,phrasal
+tear down,phrasal
+freeze up,phrasal
+glitch,word
+troubleshoot,word
+help desk,word
+knowledge base,word
+runbook,word
+playbook,word
+sop,word
+
+# ===== 9. Legal basics (법무 기초) =====
+contract,word
+agreement,word
+binding,word
+legally binding,word
+non-binding,word
+party,word
+counterparty,word
+third party,word
+signatory,word
+execute,word
+effective date,word
+commencement date,word
+term,word
+expiry,word
+auto-renew,word
+evergreen,word
+termination clause,word
+breach of contract,word
+material breach,word
+remedy,word
+cure period,word
+damages,word
+liquidated damages,word
+indemnify,word
+indemnity,word
+hold harmless,idiom
+liable,word
+limitation of liability,word
+warranty,word
+warrant,word
+representation,word
+representations and warranties,word
+covenant,word
+undertaking,word
+obligation,word
+duty of care,word
+fiduciary,word
+fiduciary duty,word
+due diligence,word
+regulatory,word
+regulator,word
+statutory,word
+jurisdiction,word
+governing law,word
+venue,word
+dispute resolution,word
+litigation,word
+claim,word
+counsel,word
+in-house counsel,word
+force majeure,word
+act of god,idiom
+severability,word
+waiver,word
+waive,word
+assignment,word
+assign rights,collocation
+subcontract,word
+subcontractor,word
+non-disclosure agreement,word
+nda,word
+confidentiality,word
+non-compete,word
+non-solicitation,word
+proprietary,word
+intellectual property,word
+patent,word
+royalty,word
+licensor,word
+licensee,word
+infringement,word
+trade secret,word
+know-how,word
+title,word
+lease,word
+escrow,word
+injunction,word
+cease and desist,word
+settle out of court,collocation
+class action,word
+precedent,word
+loophole,word
+gray area,idiom
+fine print,idiom
+red tape,idiom
+letter of intent,word
+loi,word
+memorandum of understanding,word
+mou,word
+term sheet,word
+master agreement,word
+statement of work,word
+sow,word
+framework agreement,word
+articles of incorporation,word
+incorporate,word
+limited liability,word
+llc,word
+sole proprietorship,word
+partnership,word
+subsidiary,word
+parent company,word
+holding company,word
+entity,word
+board of directors,word
+board,word
+non-executive director,word
+chairperson,word
+agm,word
+resolution,word
+pass a resolution,collocation
+veto,word
+antitrust,word
+monopoly,word
+price fixing,word
+collusion,word
+insider trading,word
+fraud,word
+embezzlement,word
+kickback,word
+money laundering,word
+sanctions,word
+data protection,word
+gdpr,word
+consent,word
+retention policy,word
+disclose,word
+disclosure,word
+accountability,word
+
+# ===== 10. Strategy (전략) =====
+strategy,word
+strategize,word
+mission statement,word
+core values,word
+value chain,word
+competitive advantage,word
+competitive edge,word
+edge,word
+moat,word
+differentiation,word
+market leader,word
+challenger,word
+incumbent,word
+disruptor,word
+disrupt,word
+disruption,word
+r&d,word
+core business,word
+core competency,word
+non-core,word
+diversify into,phrasal
+expand into,phrasal
+branch into,phrasal
+move into,phrasal
+break into,phrasal
+tap into,phrasal
+enter a market,collocation
+market entry,word
+organic growth,word
+merger,word
+m&a,word
+takeover,word
+hostile takeover,word
+buyout,word
+leveraged buyout,word
+spin-off,word
+spin off,phrasal
+carve-out,word
+carve out,phrasal
+divest,word
+divestiture,word
+hive off,phrasal
+offload,word
+consolidate,word
+consolidation,word
+synergy,word
+joint venture,word
+alliance,word
+partner with,phrasal
+team up,phrasal
+ecosystem,word
+platform,word
+vertical integration,word
+horizontal integration,word
+upstream,word
+downstream,word
+business model,word
+revenue stream,word
+monetize,word
+pricing strategy,word
+penetration pricing,word
+price skimming,word
+cost leadership,word
+value-based pricing,word
+dynamic pricing,word
+swot analysis,word
+barrier to entry,word
+switching cost,word
+competitive landscape,word
+best practice,word
+best-in-class,word
+gold standard,idiom
+state of the art,idiom
+cutting-edge,word
+bleeding edge,idiom
+future-proof,word
+horizon,word
+business plan,word
+scenario planning,word
+sensitivity analysis,word
+pivot,word
+pivot to,phrasal
+course correction,word
+realign,word
+reposition,word
+reorg,word
+shake-up,word
+shake up,phrasal
+overhaul,word
+revamp,word
+turnaround plan,word
+turn around,phrasal
+operating model,word
+footprint,word
+localization,word
+emerging market,word
+mature market,word
+saturated market,word
+white space,idiom
+blue ocean,idiom
+first-mover advantage,word
+fast follower,word
+network effect,word
+flywheel,word
+virtuous cycle,idiom
+vicious cycle,idiom
+tipping point,idiom
+inflection point,idiom
+critical mass,idiom
+hockey stick,idiom
+hypergrowth,word
+scale-up,word
+unicorn,word
+startup,word
+incubator,word
+accelerator,word
+bootstrap,word
+exit,word
+exit strategy,word
+sustainability,word
+esg,word
+csr,word
+shareholder value,word
+long game,idiom
+play the long game,idiom
+moonshot,idiom
+north star,idiom
+game plan,idiom
+game changer,idiom
+paradigm shift,idiom
+sea change,idiom
+step change,idiom
+quantum leap,idiom
+leapfrog,word
+catch up,phrasal
+keep up,phrasal
+fall behind,phrasal
+lag behind,phrasal
+pull ahead,phrasal
+get ahead,phrasal
+stay ahead,phrasal
+edge out,phrasal
+squeeze out,phrasal
+crowd out,phrasal
+muscle in,phrasal
+carve up,phrasal
+corner the market,idiom
+foothold,word
+gain a foothold,collocation
+beachhead,word
+land and expand,idiom
+lock-in,word
+vendor lock-in,word
+stickiness,word
+defensible,word
+
+# ===== 11. Operations & logistics (운영·물류) =====
+operations,word
+ops,word
+supply chain,word
+supplier,word
+vendor,word
+sourcing,word
+procure,word
+buyer,word
+requisition,word
+award,word
+award a contract,collocation
+inventory,word
+stockout,word
+out of stock,collocation
+in stock,collocation
+overstock,word
+dead stock,word
+safety stock,word
+reorder point,word
+replenish,word
+just-in-time,word
+kaizen,word
+continuous improvement,word
+six sigma,word
+defect rate,word
+scrap,word
+rework,word
+assembly line,word
+plant,word
+warehouse,word
+distribution center,word
+hub,word
+logistics,word
+freight,word
+carrier,word
+courier,word
+pallet,word
+consignment,word
+consignee,word
+bill of lading,word
+customs,word
+customs clearance,word
+clear customs,collocation
+incoterms,word
+fob,word
+dropship,word
+last mile,word
+proof of delivery,word
+dispatch,word
+return to sender,collocation
+reverse logistics,word
+rma,word
+backorder,word
+on back order,collocation
+ship out,phrasal
+send off,phrasal
+take delivery,collocation
+receiving,word
+acceptance,word
+nonconformance,word
+corrective action,word
+non-compliance,word
+certification,word
+batch,word
+lot,word
+pick,word
+pick and pack,word
+stage,word
+cross-docking,word
+fleet,word
+demurrage,word
+dwell time,word
+transit time,word
+in transit,collocation
+delivery window,word
+dock,word
+inventory turnover,word
+stock take,word
+cycle count,word
+shrinkage,word
+obsolescence,word
+shelf life,word
+cold chain,word
+make-to-order,word
+bill of materials,word
+raw material,word
+finished goods,word
+work in progress,word
+wip,word
+erp,word
+demand planning,word
+changeover,word
+takt time,word
+preventive maintenance,word
+break down,phrasal
+contract manufacturer,word
+oem,word
+white label,word
+on-time delivery,word
+fill rate,word
+service level,word
+supply disruption,word
+shortage,word
+glut,word
+oversupply,word
+ramp up production,collocation
+halt production,collocation
+idle,word
+run at full capacity,collocation
+
+# ===== 12. Customer service (고객 서비스) =====
+customer service,word
+customer success,word
+client,word
+customer satisfaction,word
+csat,word
+nps,word
+file a complaint,collocation
+lodge a complaint,collocation
+raise a ticket,collocation
+open a ticket,collocation
+close a ticket,collocation
+resolve,word
+resolution time,word
+first call resolution,word
+queue,word
+hold,word
+on hold,collocation
+put on hold,collocation
+call center,word
+agent,word
+frontline,word
+customer-facing,word
+back office,word
+front office,word
+hotline,word
+toll-free,word
+self-service,word
+callback,word
+call back,phrasal
+put through,phrasal
+get through,phrasal
+cut off,phrasal
+break up,phrasal
+speak up,phrasal
+bear with,phrasal
+compensate,word
+goodwill credit,word
+credit note,word
+refund,word
+exchange,word
+warranty claim,word
+money-back guarantee,word
+return policy,word
+dispute a charge,collocation
+chargeback,word
+defective,word
+damaged in transit,collocation
+loyal customer,word
+repeat customer,word
+win-back,word
+win back,phrasal
+retain,word
+retain customers,collocation
+customer lifetime value,word
+clv,word
+de-escalate,word
+tone,word
+script,word
+go the extra mile,idiom
+above and beyond,idiom
+white-glove service,idiom
+bend over backwards,idiom
+drop the ball,idiom
+fall through the cracks,idiom
+sort out,phrasal
+look into,phrasal
+see to,phrasal
+deal with,phrasal
+attend to,phrasal
+follow through,phrasal
+check on,phrasal
+check up on,phrasal
+get in touch,collocation
+stay in touch,collocation
+keep posted,collocation
+keep in the loop,idiom
+out of the loop,idiom
+service recovery,word
+
+# ===== 13. Presentations (발표) =====
+presentation,word
+slide deck,word
+deck,word
+pitch deck,word
+handout,word
+data point,word
+figure,word
+bullet,word
+backup slide,word
+speaker notes,word
+talking points,word
+storyline,word
+narrative,word
+segue,word
+hook,word
+icebreaker,word
+q&a,word
+engage the audience,collocation
+read the room,idiom
+dry run,idiom
+run-through,word
+walkthrough,word
+wrap-up,word
+closing remarks,word
+keynote,word
+panel,word
+panelist,word
+moderator,word
+webinar,word
+workshop,word
+summit,word
+trade show,word
+booth,word
+networking,word
+network,word
+business card,word
+track,word
+back up a claim,collocation
+substantiate,word
+underscore,word
+showcase,word
+sum up,phrasal
+round off,phrasal
+round up,phrasal
+boil down,phrasal
+build on,phrasal
+expand on,phrasal
+hone in on,phrasal
+home in on,phrasal
+skip over,phrasal
+glance over,phrasal
+gloss over,phrasal
+skim through,phrasal
+circle around,phrasal
+come back to,phrasal
+address a question,collocation
+field a question,collocation
+take questions,collocation
+defer a question,collocation
+put a pin in it,idiom
+hold that thought,idiom
+at a glance,idiom
+on the next slide,collocation
+over to you,idiom
+hand over to,phrasal
+pass over to,phrasal
+
+# ===== 14. Workplace small talk & office life (직장 생활·스몰토크) =====
+small talk,word
+water cooler talk,idiom
+break room,word
+coffee run,word
+grab a coffee,collocation
+grab lunch,collocation
+long time no see,idiom
+how's it going,idiom
+busy season,word
+crunch time,idiom
+hump day,idiom
+tgif,word
+clock off,phrasal
+call it a day,idiom
+head out,phrasal
+head off,phrasal
+pop out,phrasal
+pop in,phrasal
+drop by,phrasal
+drop in,phrasal
+swing by,phrasal
+stick around,phrasal
+run an errand,collocation
+commute,word
+corner office,idiom
+open office,word
+book a room,collocation
+team lunch,word
+team building,word
+happy hour,word
+leaving do,word
+send-off,word
+whip-round,word
+keep it up,idiom
+hang in there,idiom
+no worries,idiom
+fair enough,idiom
+sounds good,idiom
+works for me,idiom
+on it,idiom
+will do,idiom
+noted,idiom
+got it,idiom
+makes sense,idiom
+good catch,idiom
+good point,idiom
+good question,idiom
+fingers crossed,idiom
+take a rain check,idiom
+my plate is full,idiom
+on my plate,idiom
+swamped,word
+slammed,word
+snowed under,idiom
+up to my ears,idiom
+flat out,idiom
+burn the midnight oil,idiom
+pull an all-nighter,idiom
+work late,collocation
+work overtime,collocation
+work through lunch,collocation
+knock off early,collocation
+take a breather,idiom
+take five,idiom
+step out,phrasal
+be right back,idiom
+heads down,idiom
+in the zone,idiom
+in the weeds,idiom
+out of pocket,idiom
+off sick,collocation
+call in sick,collocation
+digital nomad,word
+side hustle,word
+moonlighting,word
+quiet quitting,word
+job hopping,word
+climb the ladder,idiom
+corporate ladder,idiom
+glass ceiling,idiom
+rat race,idiom
+nine-to-five,word
+dead-end job,idiom
+office politics,word
+brown-nose,idiom
+yes-man,idiom
+micromanage,word
+hands-off,word
+hands-on,word
+top brass,idiom
+higher-ups,idiom
+the powers that be,idiom
+trickle down,phrasal
+filter down,phrasal
+grapevine,idiom
+hear on the grapevine,idiom
+rumor mill,idiom
+
+# ===== 15. Workplace phrasal verbs (업무 구동사 보충) =====
+take on,phrasal
+bring on,phrasal
+bring about,phrasal
+carry out,phrasal
+put forward,phrasal
+put in for,phrasal
+put off,phrasal
+put across,phrasal
+get across,phrasal
+come across,phrasal
+get around to,phrasal
+get down to,phrasal
+get on with,phrasal
+go ahead,phrasal
+go for,phrasal
+go with,phrasal
+go along with,phrasal
+go through with,phrasal
+fall through,phrasal
+pull off,phrasal
+pull out,phrasal
+pull in,phrasal
+pull together,phrasal
+pull back,phrasal
+push through,phrasal
+push for,phrasal
+push ahead,phrasal
+press ahead,phrasal
+press on,phrasal
+call off,phrasal
+call for,phrasal
+call on,phrasal
+count on,phrasal
+bank on,phrasal
+draw on,phrasal
+dig into,phrasal
+look over,phrasal
+look through,phrasal
+read through,phrasal
+run by,phrasal
+run past,phrasal
+run up,phrasal
+hold up,phrasal
+hold back,phrasal
+take up,phrasal
+take back,phrasal
+take forward,phrasal
+turn over,phrasal
+turn out,phrasal
+turn up,phrasal
+work out,phrasal
+stand by,phrasal
+stand out,phrasal
+stand down,phrasal
+head up,phrasal
+line up,phrasal
+tie up,phrasal
+tie in,phrasal
+zero in on,phrasal
+factor in,phrasal
+build in,phrasal
+weed out,phrasal
+single out,phrasal
+rule out,phrasal
+pencil in,phrasal
+block out,phrasal
+clear up,phrasal
+top up,phrasal
+make up for,phrasal
+account for,phrasal
+bring down,phrasal
+stick to,phrasal
+stick with,phrasal
+come through,phrasal
+come up with,phrasal
+come down to,phrasal
+narrow down,phrasal
+whittle down,phrasal
+feed back,phrasal
+feed into,phrasal
+stem from,phrasal
+add up,phrasal
+tack on,phrasal
+pile up,phrasal
+stack up,phrasal
+cut out,phrasal
+cross off,phrasal
+see through,phrasal
+carry through,phrasal
+sign away,phrasal
+lead up to,phrasal
+give up on,phrasal
+open up,phrasal
+close down,phrasal
+set back,phrasal
+slow down,phrasal
+speed up,phrasal
+drop out,phrasal
+knock back,phrasal
+knock down,phrasal
+look to,phrasal
+look out for,phrasal
+stand behind,phrasal
+fall into place,idiom

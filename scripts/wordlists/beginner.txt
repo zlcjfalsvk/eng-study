@@ -285,7 +285,1876 @@ bite,word
 chew,word
 swallow,word
 eat,word
-hungry,word
 picnic,word
 lunch box,word
 fast food,word
+
+# --- home & furniture ---
+home,word
+house,word
+apartment,word
+room,word
+bedroom,word
+bathroom,word
+living room,word
+dining room,word
+garden,word
+yard,word
+garage,word
+roof,word
+wall,word
+floor,word
+ceiling,word
+door,word
+window,word
+stairs,word
+elevator,word
+key,word
+bed,word
+pillow,word
+blanket,word
+sofa,word
+chair,word
+table,word
+desk,word
+lamp,word
+clock,word
+mirror,word
+picture,word
+curtain,word
+carpet,word
+shelf,word
+closet,word
+drawer,word
+refrigerator,word
+fridge,word
+stove,word
+oven,word
+microwave,word
+sink,word
+toilet,word
+bathtub,word
+television,word
+tv,word
+radio,word
+telephone,word
+phone,word
+computer,word
+laptop,word
+camera,word
+fan,word
+heater,word
+air conditioner,word
+light bulb,word
+candle,word
+box,word
+bag,word
+basket,word
+bucket,word
+broom,word
+trash,word
+garbage,word
+trash can,word
+clean,word
+dirty,word
+tidy,word
+messy,word
+sweep,word
+wipe,word
+fix,word
+build,word
+move,word
+live,word
+stay,word
+visit,word
+knock,word
+ring,word
+lock,word
+upstairs,word
+downstairs,word
+inside,word
+outside,word
+address,word
+street,word
+neighborhood,word
+front door,word
+back door,word
+
+# --- school & study ---
+school,word
+class,word
+classroom,word
+lesson,word
+teacher,word
+student,word
+pupil,word
+principal,word
+homework,word
+test,word
+exam,word
+quiz,word
+grade,word
+score,word
+question,word
+answer,word
+subject,word
+math,word
+science,word
+english,word
+history,word
+art,word
+music,word
+pe,word
+pencil,word
+pen,word
+eraser,word
+ruler,word
+notebook,word
+textbook,word
+dictionary,word
+paper,word
+page,word
+backpack,word
+blackboard,word
+whiteboard,word
+chalk,word
+marker,word
+crayon,word
+scissors,word
+glue,word
+tape,word
+library,word
+gym,word
+playground,word
+cafeteria,word
+schoolyard,word
+uniform,word
+study,word
+learn,word
+teach,word
+read,word
+write,word
+spell,word
+count,word
+draw,word
+paint,word
+color,word
+listen,word
+speak,word
+say,word
+tell,word
+talk,word
+ask,word
+repeat,word
+practice,word
+remember,word
+forget,word
+know,word
+understand,word
+think,word
+guess,word
+try,word
+finish,word
+start,word
+begin,word
+stop,word
+wait,word
+sit,word
+stand,word
+raise,word
+line,word
+word,word
+sentence,word
+letter,word
+alphabet,word
+number,word
+story,word
+poem,word
+song,word
+map,word
+globe,word
+idea,word
+example,word
+mistake,word
+easy,word
+difficult,word
+simple,word
+smart,word
+clever,word
+stupid,word
+late,word
+early,word
+absent,word
+present,word
+semester,word
+vacation,word
+holiday,word
+field trip,word
+club,word
+team,word
+group,word
+partner,word
+rule,word
+homeroom,word
+
+# --- clothes & shopping ---
+clothes,word
+shirt,word
+t-shirt,word
+pants,word
+jeans,word
+shorts,word
+skirt,word
+dress,word
+jacket,word
+coat,word
+sweater,word
+hat,word
+cap,word
+scarf,word
+gloves,word
+socks,word
+shoes,word
+boots,word
+sneakers,word
+sandals,word
+belt,word
+tie,word
+pocket,word
+button,word
+zipper,word
+umbrella,word
+necklace,word
+earring,word
+wallet,word
+purse,word
+handbag,word
+suitcase,word
+wear,word
+fit,word
+size,word
+small,word
+medium,word
+large,word
+shop,word
+store,word
+market,word
+supermarket,word
+mall,word
+department store,word
+price,word
+cheap,word
+expensive,word
+money,word
+cash,word
+coin,word
+bill,word
+dollar,word
+cent,word
+credit card,word
+buy,word
+sell,word
+pay,word
+spend,word
+save,word
+cost,word
+sale,word
+discount,word
+receipt,word
+customer,word
+clerk,word
+cashier,word
+counter,word
+cart,word
+gift,word
+list,word
+shopping list,word
+new,word
+old,word
+beautiful,word
+cute,word
+nice,word
+ugly,word
+cool,word
+fashion,word
+style,word
+pair,word
+dozen,word
+piece,word
+bottle of water,collocation
+cup of coffee,collocation
+glass of milk,collocation
+slice of pizza,collocation
+loaf of bread,collocation
+bag of chips,collocation
+box of cereal,collocation
+can of soda,collocation
+
+# --- time, calendar & numbers ---
+time,word
+hour,word
+minute,word
+second,word
+day,word
+week,word
+weekend,word
+month,word
+year,word
+today,word
+tomorrow,word
+yesterday,word
+tonight,word
+morning,word
+afternoon,word
+evening,word
+night,word
+noon,word
+midnight,word
+monday,word
+tuesday,word
+wednesday,word
+thursday,word
+friday,word
+saturday,word
+sunday,word
+january,word
+february,word
+march,word
+april,word
+may,word
+june,word
+july,word
+august,word
+september,word
+october,word
+november,word
+december,word
+spring,word
+summer,word
+fall,word
+autumn,word
+winter,word
+season,word
+date,word
+calendar,word
+schedule,word
+o'clock,word
+half,word
+quarter,word
+past,word
+now,word
+then,word
+soon,word
+later,word
+ago,word
+before,word
+after,word
+during,word
+until,word
+since,word
+always,word
+usually,word
+often,word
+sometimes,word
+never,word
+once,word
+twice,word
+again,word
+still,word
+already,word
+yet,word
+just,word
+daily,word
+weekly,word
+monthly,word
+zero,word
+one,word
+two,word
+three,word
+four,word
+five,word
+six,word
+seven,word
+eight,word
+nine,word
+ten,word
+eleven,word
+twelve,word
+thirteen,word
+fourteen,word
+fifteen,word
+sixteen,word
+seventeen,word
+eighteen,word
+nineteen,word
+twenty,word
+thirty,word
+forty,word
+fifty,word
+sixty,word
+seventy,word
+eighty,word
+ninety,word
+hundred,word
+thousand,word
+million,word
+first,word
+third,word
+fourth,word
+fifth,word
+tenth,word
+next,word
+
+# --- weather & nature ---
+weather,word
+sunny,word
+cloudy,word
+rainy,word
+snowy,word
+windy,word
+foggy,word
+stormy,word
+warm,word
+freezing,word
+sun,word
+moon,word
+star,word
+sky,word
+cloud,word
+rain,word
+snow,word
+wind,word
+storm,word
+thunder,word
+lightning,word
+rainbow,word
+ice,word
+fog,word
+temperature,word
+degree,word
+forecast,word
+nature,word
+tree,word
+flower,word
+grass,word
+leaf,word
+leaves,word
+plant,word
+seed,word
+root,word
+branch,word
+wood,word
+forest,word
+mountain,word
+hill,word
+river,word
+lake,word
+sea,word
+ocean,word
+beach,word
+sand,word
+island,word
+rock,word
+stone,word
+field,word
+farm,word
+desert,word
+cave,word
+waterfall,word
+pond,word
+earth,word
+world,word
+land,word
+air,word
+fire,word
+smoke,word
+dust,word
+mud,word
+sunrise,word
+sunset,word
+shadow,word
+rose,word
+sunflower,word
+tulip,word
+
+# --- animals ---
+animal,word
+dog,word
+cat,word
+puppy,word
+kitten,word
+bird,word
+cow,word
+pig,word
+horse,word
+sheep,word
+goat,word
+duck,word
+hen,word
+rabbit,word
+mouse,word
+rat,word
+monkey,word
+lion,word
+tiger,word
+bear,word
+elephant,word
+giraffe,word
+zebra,word
+snake,word
+frog,word
+turtle,word
+fox,word
+wolf,word
+deer,word
+camel,word
+kangaroo,word
+panda,word
+dolphin,word
+whale,word
+shark,word
+octopus,word
+crab,word
+penguin,word
+owl,word
+eagle,word
+parrot,word
+chick,word
+butterfly,word
+bee,word
+ant,word
+spider,word
+mosquito,word
+fly,word
+worm,word
+snail,word
+insect,word
+zoo,word
+cage,word
+nest,word
+wing,word
+tail,word
+feather,word
+fur,word
+paw,word
+bark,word
+feed,word
+wild,word
+dinosaur,word
+dragon,word
+
+# --- town, places & transport ---
+city,word
+town,word
+village,word
+country,word
+building,word
+bank,word
+post office,word
+police station,word
+fire station,word
+church,word
+temple,word
+museum,word
+theater,word
+cinema,word
+movie theater,word
+park,word
+bus stop,word
+station,word
+airport,word
+hotel,word
+bookstore,word
+drugstore,word
+pharmacy,word
+flower shop,word
+toy store,word
+hair salon,word
+office,word
+factory,word
+bridge,word
+road,word
+corner,word
+block,word
+sign,word
+traffic light,word
+crosswalk,word
+sidewalk,word
+parking lot,word
+gas station,word
+stadium,word
+pool,word
+swimming pool,word
+amusement park,word
+fountain,word
+bench,word
+tower,word
+palace,word
+castle,word
+car,word
+bus,word
+taxi,word
+train,word
+subway,word
+bicycle,word
+bike,word
+motorcycle,word
+truck,word
+van,word
+boat,word
+ship,word
+airplane,word
+plane,word
+helicopter,word
+rocket,word
+ticket,word
+seat,word
+driver,word
+passenger,word
+drive,word
+ride,word
+walk,word
+run,word
+sail,word
+cross,word
+traffic,word
+trip,word
+travel,word
+journey,word
+tour,word
+tourist,word
+passport,word
+luggage,word
+way,word
+direction,word
+left,word
+straight,word
+near,word
+far,word
+north,word
+south,word
+east,word
+west,word
+arrive,word
+return,word
+enter,word
+exit,word
+entrance,word
+gate,word
+platform,word
+wheel,word
+engine,word
+helmet,word
+seat belt,word
+
+# --- jobs, hobbies & sports ---
+job,word
+worker,word
+farmer,word
+police officer,word
+firefighter,word
+pilot,word
+soldier,word
+scientist,word
+artist,word
+singer,word
+dancer,word
+actor,word
+actress,word
+writer,word
+painter,word
+musician,word
+engineer,word
+lawyer,word
+baker,word
+butcher,word
+mail carrier,word
+businessman,word
+boss,word
+king,word
+queen,word
+prince,word
+princess,word
+hero,word
+hobby,word
+game,word
+toy,word
+doll,word
+robot,word
+ball,word
+balloon,word
+kite,word
+puzzle,word
+card,word
+board game,word
+video game,word
+cartoon,word
+movie,word
+film,word
+show,word
+concert,word
+festival,word
+party,word
+magic,word
+joke,word
+comic book,word
+sport,word
+soccer,word
+football,word
+baseball,word
+basketball,word
+volleyball,word
+tennis,word
+badminton,word
+golf,word
+swimming,word
+skating,word
+skiing,word
+jogging,word
+hiking,word
+camping,word
+fishing,word
+cycling,word
+bowling,word
+boxing,word
+race,word
+match,word
+player,word
+coach,word
+goal,word
+win,word
+lose,word
+kick,word
+throw,word
+catch,word
+hit,word
+jump,word
+climb,word
+swim,word
+dance,word
+sing,word
+skate,word
+ski,word
+piano,word
+guitar,word
+violin,word
+drum,word
+flute,word
+band,word
+stage,word
+prize,word
+medal,word
+trophy,word
+champion,word
+winner,word
+loser,word
+point,word
+chess,word
+hide-and-seek,word
+jump rope,word
+
+# --- basic verbs ---
+be,word
+do,word
+see,word
+want,word
+need,word
+use,word
+find,word
+put,word
+bring,word
+carry,word
+hold,word
+keep,word
+let,word
+help,word
+send,word
+meet,word
+love,word
+hate,word
+hope,word
+wish,word
+feel,word
+touch,word
+smell,word
+hear,word
+sound,word
+seem,word
+become,word
+happen,word
+grow,word
+die,word
+kill,word
+hide,word
+follow,word
+lead,word
+pull,word
+push,word
+lift,word
+drop,word
+shake,word
+roll,word
+bend,word
+fold,word
+hang,word
+close,word
+shut,word
+cover,word
+fill,word
+empty,word
+pack,word
+pick,word
+choose,word
+decide,word
+plan,word
+agree,word
+believe,word
+borrow,word
+lend,word
+share,word
+join,word
+invite,word
+welcome,word
+thank,word
+greet,word
+introduce,word
+shout,word
+whisper,word
+explain,word
+describe,word
+promise,word
+lie,word
+argue,word
+fight,word
+hurry,word
+relax,word
+enjoy,word
+prefer,word
+mind,word
+care,word
+worry,word
+surprise,word
+scare,word
+bother,word
+cheer,word
+clap,word
+wave,word
+nod,word
+look,word
+stare,word
+search,word
+collect,word
+gather,word
+dig,word
+serve,word
+wake,word
+pass,word
+reach,word
+receive,word
+accept,word
+refuse,word
+allow,word
+forgive,word
+excuse,word
+hug,word
+kiss,word
+marry,word
+celebrate,word
+pray,word
+protect,word
+waste,word
+earn,word
+own,word
+belong,word
+contain,word
+weigh,word
+measure,word
+add,word
+subtract,word
+multiply,word
+divide,word
+copy,word
+print,word
+type,word
+click,word
+text,word
+chat,word
+email,word
+post,word
+upload,word
+download,word
+delete,word
+record,word
+act,word
+perform,word
+pretend,word
+imagine,word
+wonder,word
+notice,word
+realize,word
+expect,word
+suppose,word
+matter,word
+suit,word
+compare,word
+solve,word
+create,word
+design,word
+invent,word
+discover,word
+destroy,word
+damage,word
+repair,word
+burn,word
+melt,word
+freeze,word
+shine,word
+blow,word
+float,word
+flow,word
+spill,word
+splash,word
+crash,word
+bump,word
+slip,word
+hop,word
+skip,word
+crawl,word
+chase,word
+escape,word
+attack,word
+steal,word
+rob,word
+cheat,word
+punish,word
+obey,word
+
+# --- basic adjectives ---
+good,word
+bad,word
+big,word
+little,word
+long,word
+high,word
+low,word
+wide,word
+narrow,word
+deep,word
+thick,word
+young,word
+fast,word
+quick,word
+slow,word
+loud,word
+quiet,word
+noisy,word
+bright,word
+dark,word
+soft,word
+rough,word
+smooth,word
+wet,word
+dry,word
+sharp,word
+dull,word
+round,word
+flat,word
+square,word
+curly,word
+same,word
+different,word
+real,word
+true,word
+false,word
+wrong,word
+correct,word
+important,word
+special,word
+famous,word
+popular,word
+rich,word
+poor,word
+safe,word
+dangerous,word
+busy,word
+lazy,word
+careful,word
+careless,word
+polite,word
+rude,word
+friendly,word
+shy,word
+brave,word
+honest,word
+funny,word
+silly,word
+serious,word
+strange,word
+interesting,word
+boring,word
+exciting,word
+wonderful,word
+great,word
+terrible,word
+awful,word
+perfect,word
+lucky,word
+ready,word
+sure,word
+able,word
+possible,word
+useful,word
+favorite,word
+whole,word
+every,word
+each,word
+other,word
+another,word
+both,word
+all,word
+some,word
+any,word
+many,word
+much,word
+few,word
+several,word
+enough,word
+most,word
+main,word
+only,word
+alone,word
+together,word
+alive,word
+dead,word
+asleep,word
+awake,word
+huge,word
+tiny,word
+giant,word
+gentle,word
+calm,word
+crazy,word
+proud,word
+jealous,word
+curious,word
+afraid,word
+glad,word
+sorry,word
+okay,word
+ok,word
+alright,word
+usual,word
+common,word
+normal,word
+ordinary,word
+modern,word
+ancient,word
+national,word
+foreign,word
+local,word
+public,word
+private,word
+natural,word
+human,word
+
+# --- feelings ---
+happy,word
+sad,word
+angry,word
+mad,word
+excited,word
+bored,word
+scared,word
+surprised,word
+nervous,word
+worried,word
+lonely,word
+upset,word
+pleased,word
+thankful,word
+hopeful,word
+confused,word
+embarrassed,word
+disappointed,word
+interested,word
+fun,word
+joy,word
+fear,word
+anger,word
+feeling,word
+mood,word
+luck,word
+trouble,word
+problem,word
+peace,word
+
+# --- colors & shapes ---
+red,word
+blue,word
+yellow,word
+green,word
+black,word
+white,word
+brown,word
+pink,word
+purple,word
+gray,word
+gold,word
+silver,word
+circle,word
+triangle,word
+rectangle,word
+diamond,word
+shape,word
+dot,word
+stripe,word
+
+# --- function words, adverbs & pronouns ---
+i,word
+you,word
+he,word
+she,word
+it,word
+we,word
+they,word
+me,word
+him,word
+her,word
+us,word
+them,word
+my,word
+your,word
+his,word
+its,word
+our,word
+their,word
+mine,word
+yours,word
+this,word
+that,word
+these,word
+those,word
+here,word
+there,word
+where,word
+when,word
+why,word
+how,word
+what,word
+who,word
+which,word
+whose,word
+the,word
+a,word
+an,word
+and,word
+but,word
+or,word
+so,word
+because,word
+if,word
+than,word
+as,word
+to,word
+of,word
+in,word
+on,word
+at,word
+for,word
+with,word
+from,word
+by,word
+about,word
+up,word
+down,word
+over,word
+under,word
+between,word
+behind,word
+above,word
+below,word
+across,word
+along,word
+around,word
+through,word
+into,word
+out,word
+off,word
+away,word
+very,word
+too,word
+also,word
+really,word
+quite,word
+almost,word
+even,word
+maybe,word
+perhaps,word
+probably,word
+well,word
+badly,word
+slowly,word
+quickly,word
+quietly,word
+loudly,word
+carefully,word
+suddenly,word
+finally,word
+everywhere,word
+somewhere,word
+anywhere,word
+nowhere,word
+something,word
+anything,word
+nothing,word
+everything,word
+yes,word
+no,word
+not,word
+please,word
+thanks,word
+hello,word
+hi,word
+bye,word
+goodbye,word
+oh,word
+wow,word
+ouch,word
+hey,word
+can,word
+could,word
+will,word
+would,word
+should,word
+must,word
+might,word
+shall,word
+
+# --- phrasal verbs: daily routine ---
+wake up,phrasal
+sit down,phrasal
+stand up,phrasal
+lie down,phrasal
+get dressed,phrasal
+take a seat,phrasal
+go to bed,phrasal
+stay up,phrasal
+sleep in,phrasal
+get ready,phrasal
+hurry up,phrasal
+calm down,phrasal
+cheer up,phrasal
+grow up,phrasal
+dress up,phrasal
+eat out,phrasal
+eat up,phrasal
+drink up,phrasal
+clean up,phrasal
+tidy up,phrasal
+wash up,phrasal
+wash off,phrasal
+dry off,phrasal
+warm up,phrasal
+cool down,phrasal
+heat up,phrasal
+put away,phrasal
+put back,phrasal
+put down,phrasal
+put in,phrasal
+put out,phrasal
+put off,phrasal
+put up,phrasal
+put together,phrasal
+take out,phrasal
+take away,phrasal
+take back,phrasal
+take down,phrasal
+take up,phrasal
+take in,phrasal
+take over,phrasal
+take apart,phrasal
+take after,phrasal
+take care of,phrasal
+throw away,phrasal
+throw out,phrasal
+throw up,phrasal
+try on,phrasal
+try out,phrasal
+turn up,phrasal
+turn down,phrasal
+turn around,phrasal
+turn over,phrasal
+turn into,phrasal
+turn back,phrasal
+turn out,phrasal
+turn in,phrasal
+switch on,phrasal
+switch off,phrasal
+plug in,phrasal
+shut down,phrasal
+shut off,phrasal
+log in,phrasal
+log out,phrasal
+sign in,phrasal
+sign out,phrasal
+sign up,phrasal
+print out,phrasal
+zoom in,phrasal
+zoom out,phrasal
+back up,phrasal
+scroll down,phrasal
+scroll up,phrasal
+charge up,phrasal
+fill in,phrasal
+fill out,phrasal
+fill up,phrasal
+write down,phrasal
+write back,phrasal
+write out,phrasal
+read out,phrasal
+read over,phrasal
+look up,phrasal
+look at,phrasal
+look out,phrasal
+look around,phrasal
+look back,phrasal
+look down,phrasal
+look over,phrasal
+look into,phrasal
+look like,phrasal
+look forward to,phrasal
+look up to,phrasal
+look out for,phrasal
+listen to,phrasal
+listen up,phrasal
+wait for,phrasal
+ask for,phrasal
+pay for,phrasal
+pay back,phrasal
+pay off,phrasal
+care for,phrasal
+think about,phrasal
+think of,phrasal
+think over,phrasal
+talk about,phrasal
+talk to,phrasal
+talk back,phrasal
+speak up,phrasal
+speak out,phrasal
+shout out,phrasal
+call back,phrasal
+call off,phrasal
+call out,phrasal
+call up,phrasal
+ring up,phrasal
+hang up,phrasal
+hang on,phrasal
+hang out,phrasal
+hold on,phrasal
+hold up,phrasal
+hold out,phrasal
+hold back,phrasal
+hold on to,phrasal
+
+# --- phrasal verbs: movement ---
+come in,phrasal
+come out,phrasal
+come back,phrasal
+come over,phrasal
+come along,phrasal
+come down,phrasal
+come up,phrasal
+come from,phrasal
+come across,phrasal
+come down with,phrasal
+go out,phrasal
+go in,phrasal
+go back,phrasal
+go away,phrasal
+go ahead,phrasal
+go on,phrasal
+go up,phrasal
+go down,phrasal
+go off,phrasal
+go over,phrasal
+go through,phrasal
+go along,phrasal
+go after,phrasal
+go by,phrasal
+go for,phrasal
+go out with,phrasal
+get on,phrasal
+get off,phrasal
+get in,phrasal
+get out,phrasal
+get out of,phrasal
+get back,phrasal
+get away,phrasal
+get over,phrasal
+get through,phrasal
+get together,phrasal
+get along,phrasal
+get along with,phrasal
+get around,phrasal
+get by,phrasal
+get down,phrasal
+get to,phrasal
+get home,phrasal
+get lost,phrasal
+run away,phrasal
+run out,phrasal
+run out of,phrasal
+run into,phrasal
+run after,phrasal
+run off,phrasal
+run over,phrasal
+walk away,phrasal
+walk in,phrasal
+walk out,phrasal
+walk around,phrasal
+jump in,phrasal
+jump up,phrasal
+jump over,phrasal
+climb up,phrasal
+climb down,phrasal
+fall down,phrasal
+fall off,phrasal
+fall over,phrasal
+fall asleep,phrasal
+fall behind,phrasal
+move in,phrasal
+move out,phrasal
+move on,phrasal
+move over,phrasal
+step back,phrasal
+step in,phrasal
+step out,phrasal
+stand by,phrasal
+stand out,phrasal
+stand up for,phrasal
+stay in,phrasal
+stay out,phrasal
+stay away,phrasal
+stay over,phrasal
+sit back,phrasal
+sit up,phrasal
+sit around,phrasal
+head for,phrasal
+head back,phrasal
+set off,phrasal
+set out,phrasal
+set up,phrasal
+set down,phrasal
+show up,phrasal
+show off,phrasal
+show around,phrasal
+turn away,phrasal
+pass by,phrasal
+pass out,phrasal
+pass away,phrasal
+pass on,phrasal
+drop by,phrasal
+drop in,phrasal
+drop off,phrasal
+drop out,phrasal
+stop by,phrasal
+stop over,phrasal
+pop in,phrasal
+pull over,phrasal
+pull out,phrasal
+pull up,phrasal
+pull down,phrasal
+push back,phrasal
+push up,phrasal
+check in,phrasal
+check out,phrasal
+check up on,phrasal
+see off,phrasal
+bring back,phrasal
+bring up,phrasal
+bring in,phrasal
+bring along,phrasal
+bring over,phrasal
+bring out,phrasal
+send back,phrasal
+send out,phrasal
+send off,phrasal
+carry on,phrasal
+carry out,phrasal
+catch up,phrasal
+catch up with,phrasal
+keep up,phrasal
+keep up with,phrasal
+keep on,phrasal
+keep away,phrasal
+keep off,phrasal
+keep out,phrasal
+hand in,phrasal
+hand out,phrasal
+hand over,phrasal
+give back,phrasal
+give away,phrasal
+give out,phrasal
+give in,phrasal
+let in,phrasal
+let out,phrasal
+let down,phrasal
+let go,phrasal
+let go of,phrasal
+leave out,phrasal
+leave behind,phrasal
+lift up,phrasal
+pick out,phrasal
+pick on,phrasal
+point out,phrasal
+point at,phrasal
+line up,phrasal
+lock up,phrasal
+knock down,phrasal
+knock out,phrasal
+knock over,phrasal
+break down,phrasal
+break up,phrasal
+break in,phrasal
+break out,phrasal
+blow up,phrasal
+blow out,phrasal
+blow away,phrasal
+burn down,phrasal
+burn out,phrasal
+cut down,phrasal
+cut off,phrasal
+cut out,phrasal
+cut up,phrasal
+chop up,phrasal
+clear up,phrasal
+clear out,phrasal
+cover up,phrasal
+dig up,phrasal
+do up,phrasal
+do over,phrasal
+do without,phrasal
+end up,phrasal
+figure out,phrasal
+find out,phrasal
+fix up,phrasal
+help out,phrasal
+join in,phrasal
+kick off,phrasal
+kick out,phrasal
+light up,phrasal
+make up,phrasal
+make out,phrasal
+make it,phrasal
+mess up,phrasal
+mix up,phrasal
+open up,phrasal
+pack up,phrasal
+pile up,phrasal
+play with,phrasal
+play along,phrasal
+save up,phrasal
+sell out,phrasal
+settle down,phrasal
+shake off,phrasal
+shop around,phrasal
+shut up,phrasal
+sleep over,phrasal
+slow down,phrasal
+speed up,phrasal
+sort out,phrasal
+split up,phrasal
+start over,phrasal
+stick to,phrasal
+stick out,phrasal
+sum up,phrasal
+team up,phrasal
+tear up,phrasal
+tie up,phrasal
+tip over,phrasal
+use up,phrasal
+wear out,phrasal
+wear off,phrasal
+watch out,phrasal
+watch out for,phrasal
+wipe out,phrasal
+wipe off,phrasal
+work out,phrasal
+work on,phrasal
+wrap up,phrasal
+agree with,phrasal
+apologize for,phrasal
+belong to,phrasal
+believe in,phrasal
+count on,phrasal
+deal with,phrasal
+depend on,phrasal
+dream of,phrasal
+hear about,phrasal
+hear from,phrasal
+laugh at,phrasal
+smile at,phrasal
+wave at,phrasal
+worry about,phrasal
+know about,phrasal
+learn about,phrasal
+care about,phrasal
+cheer on,phrasal
+feel like,phrasal
+be into,phrasal
+
+# --- idioms & fixed expressions ---
+break a leg,idiom
+hit the books,idiom
+hit the sack,idiom
+hit the hay,idiom
+call it a day,idiom
+long time no see,idiom
+see you later,idiom
+see you soon,idiom
+no problem,idiom
+never mind,idiom
+of course,idiom
+by the way,idiom
+in a hurry,idiom
+on time,idiom
+in time,idiom
+at last,idiom
+all right,idiom
+so far,idiom
+so-so,idiom
+take your time,idiom
+up to you,idiom
+keep in touch,idiom
+hang in there,idiom
+under the weather,idiom
+once in a while,idiom
+from time to time,idiom
+all day long,idiom
+at the same time,idiom
+in the end,idiom
+at first,idiom
+at least,idiom
+as well,idiom
+a lot,idiom
+a little,idiom
+a few,idiom
+kind of,idiom
+sort of,idiom
+for example,idiom
+for sure,idiom
+no way,idiom
+you bet,idiom
+good luck,idiom
+have fun,idiom
+be careful,idiom
+what's up,idiom
+how come,idiom
+in fact,idiom
+on foot,idiom
+by hand,idiom
+by heart,idiom
+on sale,idiom
+for free,idiom
+on the way,idiom
+on my way,idiom
+at home,idiom
+at school,idiom
+at work,idiom
+in front of,idiom
+next to,idiom
+on top of,idiom
+in the middle of,idiom
+right now,idiom
+right away,idiom
+as soon as possible,idiom
+little by little,idiom
+step by step,idiom
+one by one,idiom
+side by side,idiom
+hand in hand,idiom
+face to face,idiom
+day by day,idiom
+over and over,idiom
+again and again,idiom
+more or less,idiom
+sooner or later,idiom
+here and there,idiom
+now and then,idiom
+up and down,idiom
+back and forth,idiom
+out of order,idiom
+out of date,idiom
+on the phone,idiom
+on tv,idiom
+at night,idiom
+in the morning,idiom
+in the afternoon,idiom
+in the evening,idiom
+at noon,idiom
+in a minute,idiom
+in a second,idiom
+for a while,idiom
+a long time ago,idiom
+these days,idiom
+all the time,idiom
+every day,idiom
+every other day,idiom
+at the moment,idiom
+for now,idiom
+not yet,idiom
+not at all,idiom
+no matter what,idiom
+after all,idiom
+first of all,idiom
+at the end of the day,idiom
+in other words,idiom
+on the other hand,idiom
+the same to you,idiom
+me too,idiom
+me neither,idiom
+good job,idiom
+well done,idiom
+nice to meet you,idiom
+excuse me,idiom
+bless you,idiom
+help yourself,idiom
+make yourself at home,idiom
+after you,idiom
+here you are,idiom
+here we go,idiom
+there you go,idiom
+let's see,idiom
+guess what,idiom
+hold your horses,idiom
+easy as pie,idiom
+cost an arm and a leg,idiom
+rain cats and dogs,idiom
+a couch potato,idiom
+a bookworm,idiom
+a sweet tooth,idiom
+an early bird,idiom
+a night owl,idiom
+a chicken,idiom
+a copycat,idiom
+cold feet,idiom
+butterflies in my stomach,idiom
+all ears,idiom
+keep an eye on,idiom
+give me a hand,idiom
+on the tip of my tongue,idiom
+a big mouth,idiom
+pull my leg,idiom
+in hot water,idiom
+cry over spilt milk,idiom
+the apple of my eye,idiom
+a piece of my mind,idiom
+once upon a time,idiom
+happily ever after,idiom
+better late than never,idiom
+practice makes perfect,idiom
+time flies,idiom
+no pain no gain,idiom
+the early bird catches the worm,idiom
+two heads are better than one,idiom
+it's a small world,idiom
+it's not my day,idiom
+fingers crossed,idiom
+high five,idiom
+thumbs up,idiom
+heads up,idiom
+chill out,idiom
+my bad,idiom
+make a wish,idiom
+
+# --- collocations ---
+make friends,collocation
+make the bed,collocation
+make noise,collocation
+make money,collocation
+make a plan,collocation
+make dinner,collocation
+make a phone call,collocation
+make a decision,collocation
+take a shower,collocation
+take a bath,collocation
+take a picture,collocation
+take a walk,collocation
+take a nap,collocation
+take a bus,collocation
+take a taxi,collocation
+take medicine,collocation
+take a test,collocation
+take notes,collocation
+take turns,collocation
+do homework,collocation
+do the dishes,collocation
+do the laundry,collocation
+do exercise,collocation
+do your best,collocation
+do a favor,collocation
+have breakfast,collocation
+have lunch,collocation
+have dinner,collocation
+have a cold,collocation
+have a party,collocation
+have a seat,collocation
+have a headache,collocation
+have a rest,collocation
+have a look,collocation
+have a chat,collocation
+go shopping,collocation
+go swimming,collocation
+go to school,collocation
+go home,collocation
+go to work,collocation
+go for a walk,collocation
+go on a trip,collocation
+go to the movies,collocation
+play soccer,collocation
+play the piano,collocation
+play a game,collocation
+play cards,collocation
+ride a bike,collocation
+brush your teeth,collocation
+wash your hands,collocation
+wash the dishes,collocation
+set the table,collocation
+clean the room,collocation
+feed the dog,collocation
+walk the dog,collocation
+water the plants,collocation
+catch a cold,collocation
+catch a bus,collocation
+get married,collocation
+get better,collocation
+get a job,collocation
+get a haircut,collocation
+get some rest,collocation
+keep a diary,collocation
+keep a secret,collocation
+keep quiet,collocation
+tell a story,collocation
+tell a lie,collocation
+tell the truth,collocation
+tell the time,collocation
+ask a question,collocation
+answer the phone,collocation
+pay attention,collocation
+say hello,collocation
+say sorry,collocation
+say goodbye,collocation
+turn left,collocation
+turn right,collocation
+cross the street,collocation
+heavy rain,collocation
+strong wind,collocation
+best friend,collocation
+hard work,collocation
+free time,collocation
+spare time,collocation
+full name,collocation
+first name,collocation
+last name,collocation
+phone number,collocation
+home address,collocation

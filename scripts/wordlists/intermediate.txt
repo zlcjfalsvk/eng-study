@@ -2,8 +2,6 @@
 # format: headword,type   (word | phrasal | idiom | collocation)
 
 # --- news, politics & society ---
-government,word
-election,word
 candidate,word
 campaign,word
 vote,word
@@ -15,8 +13,6 @@ democracy,word
 citizen,word
 citizenship,word
 nation,word
-national,word
-international,word
 global,word
 border,word
 immigration,word
@@ -29,23 +25,17 @@ reform,word
 debate,word
 legislation,word
 authority,word
-official,word
-announce,word
 announcement,word
 declare,word
 statement,word
 spokesperson,word
 press,word
-journalist,word
 headline,word
 coverage,word
 broadcast,word
-report,word
 reporter,word
 editor,word
-article,word
 column,word
-source,word
 rumor,word
 scandal,word
 corruption,word
@@ -66,7 +56,6 @@ terrorism,word
 violence,word
 victim,word
 survivor,word
-disaster,word
 emergency,word
 earthquake,word
 flood,word
@@ -76,10 +65,8 @@ wildfire,word
 evacuate,word
 rescue,word
 aid,word
-charity,word
 donate,word
 donation,word
-volunteer,word
 poverty,word
 wealth,word
 inequality,word
@@ -92,7 +79,6 @@ growth,word
 trade,word
 export,word
 import,word
-industry,word
 industrial,word
 manufacture,word
 production,word
@@ -111,31 +97,22 @@ loss,word
 revenue,word
 income,word
 wage,word
-salary,word
 pension,word
 welfare,word
-benefit,word
-population,word
 census,word
 urban,word
 rural,word
 suburb,word
-community,word
-neighborhood,word
 housing,word
 landlord,word
 tenant,word
 mortgage,word
-rent,word
 property,word
 homeless,word
-society,word
-social,word
 generation,word
 elderly,word
 youth,word
 adolescent,word
-teenager,word
 adulthood,word
 gender,word
 equality,word
@@ -147,13 +124,9 @@ majority,word
 religion,word
 religious,word
 faith,word
-tradition,word
-traditional,word
 custom,word
 heritage,word
 identity,word
-culture,word
-cultural,word
 diversity,word
 ethnic,word
 tribe,word
@@ -168,11 +141,10 @@ liberty,word
 justice,word
 
 # --- crime, law & justice ---
-crime,word
 criminal,word
 suspect,word
 arrest,word
-charge sheet,collocation
+commit a crime,collocation
 accuse,word
 accusation,word
 witness,word
@@ -182,31 +154,23 @@ investigate,word
 investigation,word
 detective,word
 trial,word
-court,word
 judge,word
 jury,word
-lawyer,word
 attorney,word
 defend,word
 defense,word
-prosecute,word
 guilty,word
 innocent,word
-sentence,word
-punish,word
 punishment,word
 penalty,word
 fine,word
-prison,word
 jail,word
 release,word
 theft,word
 thief,word
-rob,word
 robbery,word
 burglar,word
 burglary,word
-murder,word
 kidnap,word
 fraud,word
 bribe,word
@@ -228,13 +192,10 @@ regulation,word
 restrict,word
 restriction,word
 enforce,word
-obey,word
 disobey,word
-comply,word
 appeal,word
 verdict,word
 convict,word
-conviction,word
 confess,word
 confession,word
 deny,word
@@ -268,10 +229,7 @@ breach,word
 
 # --- travel & transport ---
 destination,word
-journey,word
 voyage,word
-tour,word
-tourist,word
 tourism,word
 sightseeing,word
 itinerary,word
@@ -285,18 +243,12 @@ check-in,word
 checkout,word
 reception,word
 receptionist,word
-luggage,word
 baggage,word
-suitcase,word
-backpack,word
-passport,word
 visa,word
 customs,word
-declare goods,collocation
+book a flight,collocation
 departure,word
 arrival,word
-delay,word
-cancel,word
 cancellation,word
 board,word
 boarding pass,collocation
@@ -310,12 +262,9 @@ layover,word
 connection,word
 transfer,word
 terminal,word
-platform,word
 fare,word
 commute,word
 commuter,word
-passenger,word
-pedestrian,word
 crossing,word
 roundabout,word
 highway,word
@@ -329,12 +278,10 @@ traffic jam,collocation
 rush hour,collocation
 congestion,word
 vehicle,word
-motorcycle,word
 scooter,word
 ferry,word
 cruise,word
 yacht,word
-harbor,word
 port,word
 dock,word
 anchor,word
@@ -351,12 +298,9 @@ cliff,word
 valley,word
 canyon,word
 glacier,word
-waterfall,word
 wilderness,word
 trail,word
 hike,word
-camping,word
-tent,word
 souvenir,word
 guidebook,word
 brochure,word
@@ -367,7 +311,6 @@ insure,word
 vaccination,word
 embassy,word
 consulate,word
-abroad,word
 overseas,word
 domestic,word
 expedition,word
@@ -391,7 +334,6 @@ unemployed,word
 recruit,word
 recruitment,word
 hire,word
-fire,word
 resign,word
 resignation,word
 retire,word
@@ -404,7 +346,6 @@ coworker,word
 supervisor,word
 manager,word
 executive,word
-staff,word
 workforce,word
 intern,word
 internship,word
@@ -425,18 +366,15 @@ interviewer,word
 reference,word
 appoint,word
 appointment,word
-schedule,word
 deadline,word
 shift,word
 overtime,word
 workload,word
-task,word
 duty,word
 responsibility,word
 responsible,word
 department,word
 division,word
-branch,word
 headquarters,word
 corporation,word
 enterprise,word
@@ -449,7 +387,6 @@ competitor,word
 competition,word
 competitive,word
 strategy,word
-goal,word
 target,word
 objective,word
 achieve,word
@@ -519,19 +456,16 @@ forward,word
 reply,word
 regarding,word
 sincerely,word
-colleague relationship,collocation
+meet a deadline,collocation
 
 # --- feelings & emotions ---
 anxious,word
 anxiety,word
-nervous,word
 tense,word
 stressed,word
 stress,word
 relieved,word
 relief,word
-calm,word
-relaxed,word
 content,word
 satisfied,word
 satisfaction,word
@@ -542,16 +476,13 @@ cheerful,word
 joyful,word
 grateful,word
 gratitude,word
-proud,word
 pride,word
 ashamed,word
 shame,word
-embarrassed,word
 embarrassment,word
 humiliated,word
-guilty feeling,collocation
+burst into tears,collocation
 regret,word
-disappointed,word
 disappointment,word
 frustrated,word
 frustration,word
@@ -559,13 +490,10 @@ annoyed,word
 irritated,word
 furious,word
 rage,word
-temper,word
 resent,word
-jealous,word
 jealousy,word
 envy,word
 envious,word
-lonely,word
 loneliness,word
 miserable,word
 depressed,word
@@ -574,14 +502,10 @@ grief,word
 mourn,word
 sorrow,word
 gloomy,word
-upset,word
-hurt,word
 offended,word
 insulted,word
-confused,word
 confusion,word
 puzzled,word
-curious,word
 curiosity,word
 eager,word
 enthusiastic,word
@@ -597,8 +521,6 @@ confidence,word
 insecure,word
 hesitant,word
 reluctant,word
-indifferent,word
-bored,word
 boredom,word
 amused,word
 amusement,word
@@ -606,17 +528,13 @@ fascinated,word
 impressed,word
 astonished,word
 amazed,word
-shocked,word
 horrified,word
 terrified,word
 terror,word
 frightened,word
-scared,word
-fear,word
 panic,word
 dread,word
 desperate,word
-hopeful,word
 hopeless,word
 optimistic,word
 pessimistic,word
@@ -634,9 +552,1673 @@ respect,word
 disgusted,word
 disgust,word
 overwhelmed,word
-mood,word
 moody,word
 sensitive,word
 emotional,word
 touching,word
 moving,word
+
+# --- relationships & people ---
+relationship,word
+acquaintance,word
+companion,word
+partnership,word
+spouse,word
+fiancé,word
+engaged,word
+engagement,word
+wedding,word
+marriage,word
+divorce,word
+separation,word
+widow,word
+relative,word
+ancestor,word
+descendant,word
+sibling,word
+stepmother,word
+in-laws,word
+nephew,word
+niece,word
+household,word
+upbringing,word
+raise children,collocation
+adopt,word
+adoption,word
+orphan,word
+guardian,word
+bond,word
+loyal,word
+loyalty,word
+faithful,word
+trust,word
+trustworthy,word
+betray,word
+betrayal,word
+honesty,word
+dishonest,word
+sincere,word
+genuine,word
+reliable,word
+dependable,word
+supportive,word
+caring,word
+considerate,word
+thoughtful,word
+generous,word
+generosity,word
+selfish,word
+greedy,word
+mean,word
+cruel,word
+politeness,word
+courteous,word
+respectful,word
+arrogant,word
+modest,word
+humble,word
+stubborn,word
+flexible,word
+easygoing,word
+outgoing,word
+sociable,word
+reserved,word
+introvert,word
+extrovert,word
+talkative,word
+sensible,word
+get on with,phrasal
+fall out,phrasal
+ask out,phrasal
+look down on,phrasal
+put up with,phrasal
+stick up for,phrasal
+rely on,phrasal
+grow apart,phrasal
+drift apart,phrasal
+reach out,phrasal
+lose touch,idiom
+quarrel,word
+dispute,word
+disagree,word
+disagreement,word
+compromise,word
+apologize,word
+apology,word
+forgiveness,word
+tolerate,word
+tolerant,word
+intolerant,word
+gossip,word
+flatter,word
+compliment,word
+criticize,word
+criticism,word
+blame,word
+accuse someone of,collocation
+praise,word
+encourage,word
+encouragement,word
+discourage,word
+persuade,word
+convince,word
+influence,word
+manipulate,word
+pressure,word
+peer pressure,collocation
+bully,word
+tease,word
+mock,word
+ignore,word
+neglect,word
+abandon,word
+reject,word
+rejection,word
+acceptance,word
+greeting,word
+introduction,word
+host,word
+invitation,word
+attend,word
+attendance,word
+gathering,word
+reunion,word
+celebration,word
+anniversary,word
+ceremony,word
+funeral,word
+congratulate,word
+embrace,word
+shake hands,collocation
+wink,word
+yell,word
+scream,word
+giggle,word
+grin,word
+frown,word
+sigh,word
+glance,word
+gaze,word
+blush,word
+
+# --- opinion, argument & academic basics ---
+viewpoint,word
+perspective,word
+attitude,word
+belief,word
+assume,word
+assumption,word
+presume,word
+indicate,word
+indication,word
+imply,word
+implication,word
+suggestion,word
+propose,word
+proposal,word
+recommend,word
+recommendation,word
+state,word
+insist,word
+emphasize,word
+emphasis,word
+make a point,collocation
+highlight,word
+mention,word
+refer to,phrasal
+cite,word
+quote,word
+quotation,word
+summarize,word
+summary,word
+conclude,word
+conclusion,word
+interpret,word
+interpretation,word
+analyze,word
+analysis,word
+examine,word
+draw a conclusion,collocation
+observe,word
+observation,word
+identify,word
+define,word
+definition,word
+classify,word
+category,word
+comparison,word
+contrast,word
+distinguish,word
+distinction,word
+differ,word
+difference,word
+similarity,word
+resemble,word
+consistent,word
+demonstrate,word
+illustrate,word
+prove,word
+disprove,word
+confirm,word
+justify,word
+justification,word
+oppose,word
+opposition,word
+contradict,word
+challenge,word
+doubt,word
+doubtful,word
+convincing,word
+persuasive,word
+reasonable,word
+unreasonable,word
+logical,word
+illogical,word
+rational,word
+irrational,word
+valid,word
+invalid,word
+relevant,word
+irrelevant,word
+accurate,word
+accuracy,word
+inaccurate,word
+precise,word
+vague,word
+obvious,word
+evident,word
+apparent,word
+apparently,word
+clearly,word
+certainty,word
+uncertain,word
+likely,word
+unlikely,word
+probable,word
+probability,word
+possibility,word
+potential,word
+estimate,word
+calculate,word
+measurement,word
+statistic,word
+survey,word
+questionnaire,word
+respondent,word
+sample,word
+researcher,word
+experiment,word
+hypothesis,word
+theory,word
+theoretical,word
+practical,word
+method,word
+approach,word
+technique,word
+procedure,word
+process,word
+factor,word
+element,word
+aspect,word
+feature,word
+characteristic,word
+quality,word
+quantity,word
+proportion,word
+percentage,word
+rate,word
+ratio,word
+average,word
+vast majority,collocation
+trend,word
+pattern,word
+tendency,word
+tend to,phrasal
+vary,word
+variety,word
+various,word
+range,word
+scale,word
+extent,word
+limit,word
+limitation,word
+maximum,word
+minimum,word
+significant,word
+significance,word
+considerable,word
+substantial,word
+slight,word
+minor,word
+major,word
+crucial,word
+essential,word
+vital,word
+fundamental,word
+primary,word
+secondary,word
+initial,word
+previous,word
+former,word
+latter,word
+subsequent,word
+eventual,word
+ultimate,word
+general,word
+specific,word
+particular,word
+individual,word
+overall,word
+entire,word
+partial,word
+
+# --- health, body & lifestyle ---
+symptom,word
+diagnose,word
+diagnosis,word
+treatment,word
+treat,word
+cure,word
+recover,word
+recovery,word
+heal,word
+injury,word
+injured,word
+wound,word
+bruise,word
+sprain,word
+fracture,word
+bleed,word
+swollen,word
+infection,word
+infect,word
+virus,word
+bacteria,word
+disease,word
+illness,word
+allergy,word
+allergic,word
+asthma,word
+diabetes,word
+cancer,word
+stroke,word
+heart attack,collocation
+blood pressure,collocation
+pulse,word
+breath,word
+nausea,word
+vomit,word
+faint,word
+exhausted,word
+exhaustion,word
+fatigue,word
+insomnia,word
+prescription,word
+prescribe,word
+tablet,word
+dose,word
+painkiller,word
+antibiotic,word
+vaccine,word
+injection,word
+surgery,word
+surgeon,word
+operation,word
+physician,word
+specialist,word
+therapist,word
+therapy,word
+pharmacist,word
+clinic,word
+ward,word
+ambulance,word
+first aid,collocation
+checkup,word
+nutrition,word
+nutritious,word
+obesity,word
+overweight,word
+calorie,word
+protein,word
+vitamin,word
+fiber,word
+digest,word
+digestion,word
+appetite,word
+vegetarian,word
+organic,word
+ingredient,word
+flavor,word
+bland,word
+crispy,word
+raw,word
+grill,word
+roast,word
+stir,word
+chop,word
+slice,word
+peel,word
+portion,word
+cuisine,word
+appetizer,word
+beverage,word
+fitness,word
+workout,word
+stretch,word
+muscle,word
+joint,word
+spine,word
+skull,word
+lung,word
+liver,word
+kidney,word
+organ,word
+nerve,word
+skeleton,word
+posture,word
+hygiene,word
+addiction,word
+addicted,word
+routine,word
+leisure,word
+work-life balance,collocation
+
+# --- environment, nature & science ---
+environment,word
+environmental,word
+pollution,word
+pollute,word
+emission,word
+carbon,word
+climate,word
+climate change,collocation
+global warming,collocation
+greenhouse,word
+fossil fuel,collocation
+renewable,word
+solar,word
+wind power,collocation
+nuclear,word
+fuel,word
+petrol,word
+recycle,word
+recycling,word
+litter,word
+landfill,word
+disposable,word
+reusable,word
+sustainable,word
+conserve,word
+conservation,word
+preserve,word
+protection,word
+endangered,word
+extinct,word
+extinction,word
+species,word
+habitat,word
+ecosystem,word
+wildlife,word
+creature,word
+mammal,word
+reptile,word
+predator,word
+prey,word
+hunt,word
+breed,word
+evolve,word
+evolution,word
+adapt,word
+adaptation,word
+survive,word
+survival,word
+rainforest,word
+swamp,word
+soil,word
+mineral,word
+crop,word
+harvest,word
+fertilizer,word
+pesticide,word
+irrigation,word
+oxygen,word
+hydrogen,word
+chemical,word
+substance,word
+liquid,word
+solid,word
+gas,word
+evaporate,word
+dissolve,word
+atom,word
+molecule,word
+cell,word
+gene,word
+genetic,word
+biology,word
+organism,word
+gravity,word
+orbit,word
+satellite,word
+astronaut,word
+telescope,word
+microscope,word
+laboratory,word
+scientific,word
+discovery,word
+invention,word
+innovation,word
+breakthrough,word
+room temperature,collocation
+humidity,word
+humid,word
+thunderstorm,word
+breeze,word
+mild,word
+boiling,word
+volcano,word
+eruption,word
+tsunami,word
+avalanche,word
+landslide,word
+
+# --- technology, media & communication ---
+technology,word
+technological,word
+device,word
+gadget,word
+software,word
+hardware,word
+application form,collocation
+install,word
+upgrade,word
+network,word
+wireless,word
+signal,word
+bandwidth,word
+database,word
+server,word
+browser,word
+search engine,collocation
+username,word
+hack,word
+hacker,word
+privacy,word
+cybersecurity,word
+virus protection,collocation
+backup,word
+storage,word
+artificial intelligence,collocation
+automatic,word
+automation,word
+virtual,word
+screen time,collocation
+notification,word
+subscribe,word
+subscription,word
+stream,word
+podcast,word
+influencer,word
+follower,word
+viral,word
+go viral,idiom
+social media,collocation
+mass media,collocation
+audience,word
+viewer,word
+documentary,word
+episode,word
+sitcom,word
+soap opera,collocation
+reality show,collocation
+celebrity,word
+fame,word
+publicity,word
+recording,word
+edit,word
+publisher,word
+publication,word
+journal,word
+magazine,word
+circulation,word
+communicate,word
+communication,word
+respond,word
+response,word
+inform,word
+information,word
+informative,word
+express,word
+expression,word
+convey,word
+interrupt,word
+interruption,word
+misunderstand,word
+misunderstanding,word
+clarify,word
+explanation,word
+description,word
+discussion,word
+dialogue,word
+translation,word
+interpreter,word
+bilingual,word
+fluent,word
+fluency,word
+accent,word
+dialect,word
+pronounce,word
+pronunciation,word
+literacy,word
+
+# --- education, arts & culture ---
+educational,word
+curriculum,word
+syllabus,word
+term paper,collocation
+lecture hall,collocation
+tuition,word
+scholarship,word
+grant,word
+loan,word
+bachelor,word
+master's degree,collocation
+graduate,word
+graduation,word
+undergraduate,word
+postgraduate,word
+faculty,word
+tutor,word
+assignment,word
+thesis,word
+dissertation,word
+plagiarism,word
+cheat on a test,collocation
+pass an exam,collocation
+fail an exam,collocation
+revise,word
+revision,word
+memorize,word
+concentrate,word
+concentration,word
+distract,word
+distraction,word
+attention span,collocation
+wisdom,word
+intelligence,word
+intelligent,word
+talent,word
+talented,word
+gifted,word
+genius,word
+creative,word
+creativity,word
+imagination,word
+imaginative,word
+inspire,word
+inspiration,word
+literature,word
+novelist,word
+poet,word
+poetry,word
+fiction,word
+nonfiction,word
+biography,word
+autobiography,word
+plot,word
+theme,word
+setting,word
+narrator,word
+chapter,word
+genre,word
+masterpiece,word
+classic,word
+contemporary,word
+medieval,word
+sculpture,word
+sculptor,word
+portrait,word
+landscape painting,collocation
+gallery,word
+exhibition,word
+exhibit,word
+curator,word
+architecture,word
+architect,word
+trendy,word
+orchestra,word
+conductor,word
+composer,word
+compose,word
+composition,word
+melody,word
+rhythm,word
+lyrics,word
+chorus,word
+album,word
+performer,word
+rehearse,word
+rehearsal,word
+audition,word
+playwright,word
+drama,word
+tragedy,word
+comedy,word
+applause,word
+applaud,word
+critic,word
+carnival,word
+parade,word
+costume,word
+myth,word
+legend,word
+folk,word
+philosophy,word
+philosopher,word
+psychology,word
+psychologist,word
+sociology,word
+economics,word
+geography,word
+chemistry,word
+physics,word
+engineering,word
+mathematics,word
+
+# --- money, shopping & consumer life ---
+expense,word
+costly,word
+bargain,word
+refund,word
+warranty,word
+guarantee,word
+purchase,word
+payment,word
+installment,word
+deposit,word
+withdraw,word
+withdrawal,word
+transaction,word
+transfer money,collocation
+bank account,collocation
+savings,word
+interest rate,collocation
+invest,word
+credit,word
+debit card,collocation
+invoice,word
+fee,word
+charge a fee,collocation
+tip,word
+allowance,word
+pocket money,collocation
+luxury,word
+luxurious,word
+brand-new,word
+secondhand,word
+quality control,collocation
+counterfeit,word
+fake,word
+auction,word
+bid,word
+label,word
+packaging,word
+checkout counter,collocation
+queue,word
+trolley,word
+grocery,word
+boutique,word
+vendor,word
+complain,word
+complaint,word
+
+# --- phrasal verbs: everyday & general ---
+bring about,phrasal
+bring down,phrasal
+break into,phrasal
+break off,phrasal
+call for,phrasal
+call in,phrasal
+come across as,phrasal
+come forward,phrasal
+come round,phrasal
+cut back on,phrasal
+cut down on,phrasal
+end up with,phrasal
+fall apart,phrasal
+fall for,phrasal
+fall through,phrasal
+get ahead,phrasal
+get away with,phrasal
+get back to,phrasal
+get into,phrasal
+get rid of,phrasal
+get together with,phrasal
+give up,phrasal
+give up on,phrasal
+go along with,phrasal
+go into,phrasal
+go without,phrasal
+grow out of,phrasal
+hang around,phrasal
+keep away from,phrasal
+let off,phrasal
+live on,phrasal
+live up to,phrasal
+look after,phrasal
+look ahead,phrasal
+look through,phrasal
+make up for,phrasal
+make up one's mind,idiom
+narrow down,phrasal
+pull through,phrasal
+put aside,phrasal
+put on,phrasal
+put through,phrasal
+run through,phrasal
+run up,phrasal
+rule out,phrasal
+see to,phrasal
+set aside,phrasal
+set back,phrasal
+stand for,phrasal
+step down,phrasal
+stick with,phrasal
+take on,phrasal
+talk into,phrasal
+talk out of,phrasal
+talk over,phrasal
+tell apart,phrasal
+tell off,phrasal
+think up,phrasal
+turn to,phrasal
+wake up to,phrasal
+wind up,phrasal
+work up,phrasal
+write off,phrasal
+write up,phrasal
+build up,phrasal
+burst out,phrasal
+catch on,phrasal
+close down,phrasal
+cope with,phrasal
+cross out,phrasal
+dry up,phrasal
+fight back,phrasal
+freak out,phrasal
+jot down,phrasal
+lay off,phrasal
+lay out,phrasal
+measure up,phrasal
+miss out on,phrasal
+opt for,phrasal
+own up,phrasal
+pass up,phrasal
+pour down,phrasal
+pull off,phrasal
+rip off,phrasal
+roll out,phrasal
+scale down,phrasal
+screw up,phrasal
+settle in,phrasal
+sink in,phrasal
+splash out,phrasal
+stock up,phrasal
+storm out,phrasal
+stress out,phrasal
+tag along,phrasal
+top up,phrasal
+track down,phrasal
+trade in,phrasal
+tune in,phrasal
+
+# --- idioms & fixed expressions ---
+a piece of cake,idiom
+once in a blue moon,idiom
+hit the nail on the head,idiom
+get the hang of,idiom
+give someone the benefit of the doubt,idiom
+go the extra mile,idiom
+in a nutshell,idiom
+kill two birds with one stone,idiom
+let the cat out of the bag,idiom
+miss the boat,idiom
+on the fence,idiom
+on the ball,idiom
+on second thought,idiom
+out of the blue,idiom
+pull someone's leg,idiom
+sit on the fence,idiom
+speak of the devil,idiom
+spill the beans,idiom
+the last straw,idiom
+through thick and thin,idiom
+twist someone's arm,idiom
+up in the air,idiom
+a blessing in disguise,idiom
+beat around the bush,idiom
+bite off more than you can chew,idiom
+burn the midnight oil,idiom
+by the skin of your teeth,idiom
+cross your fingers,idiom
+down to earth,idiom
+every cloud has a silver lining,idiom
+face the music,idiom
+get cold feet,idiom
+get out of hand,idiom
+get something off your chest,idiom
+get your act together,idiom
+go with the flow,idiom
+have a lot on your plate,idiom
+have mixed feelings,idiom
+hit rock bottom,idiom
+in the same boat,idiom
+it's not rocket science,idiom
+jump to conclusions,idiom
+keep your chin up,idiom
+keep your fingers crossed,idiom
+learn the ropes,idiom
+lose your temper,idiom
+make a long story short,idiom
+make the most of,idiom
+not my cup of tea,idiom
+off the top of my head,idiom
+on cloud nine,idiom
+over the moon,idiom
+play it by ear,idiom
+play it safe,idiom
+pull yourself together,idiom
+rain or shine,idiom
+ring a bell,idiom
+rule of thumb,idiom
+run out of steam,idiom
+sleep on it,idiom
+so far so good,idiom
+stab in the back,idiom
+take it easy,idiom
+take with a grain of salt,idiom
+the ball is in your court,idiom
+the elephant in the room,idiom
+think outside the box,idiom
+throw in the towel,idiom
+to be honest,idiom
+touch base,idiom
+turn over a new leaf,idiom
+under pressure,idiom
+when pigs fly,idiom
+word of mouth,idiom
+you can say that again,idiom
+a drop in the ocean,idiom
+actions speak louder than words,idiom
+add fuel to the fire,idiom
+as a matter of fact,idiom
+behind the scenes,idiom
+bend over backwards,idiom
+blow off steam,idiom
+catch someone off guard,idiom
+come in handy,idiom
+couch potato,idiom
+cry over spilled milk,idiom
+easier said than done,idiom
+fair and square,idiom
+feel like a million dollars,idiom
+for the time being,idiom
+from scratch,idiom
+get a grip,idiom
+get the picture,idiom
+give it a shot,idiom
+go down the drain,idiom
+hands down,idiom
+have a say,idiom
+have second thoughts,idiom
+head over heels,idiom
+in the nick of time,idiom
+keep something under wraps,idiom
+kill time,idiom
+know by heart,idiom
+long shot,idiom
+make a difference,idiom
+make a fuss,idiom
+mind your own business,idiom
+on a tight budget,idiom
+on the go,idiom
+on the spot,idiom
+out of the question,idiom
+over my dead body,idiom
+pay the price,idiom
+pros and cons,idiom
+put yourself in someone's shoes,idiom
+safe and sound,idiom
+save face,idiom
+second nature,idiom
+take advantage of,idiom
+take for granted,idiom
+tie the knot,idiom
+to make matters worse,idiom
+up to date,idiom
+wear many hats,idiom
+win-win situation,idiom
+
+# --- collocations ---
+make an effort,collocation
+make a mistake,collocation
+make progress,collocation
+make an appointment,collocation
+take responsibility,collocation
+take a risk,collocation
+take part in,collocation
+take a break,collocation
+take place,collocation
+take into account,collocation
+pay a compliment,collocation
+pay a visit,collocation
+catch someone's attention,collocation
+keep a promise,collocation
+break a promise,collocation
+break the law,collocation
+break a record,collocation
+set a record,collocation
+set an example,collocation
+reach an agreement,collocation
+reach a decision,collocation
+come to an end,collocation
+come into effect,collocation
+have an impact on,collocation
+have access to,collocation
+have in common,collocation
+give a speech,collocation
+run a business,collocation
+run a risk,collocation
+play a role,collocation
+play a part,collocation
+hold a meeting,collocation
+hold an election,collocation
+strongly disagree,collocation
+highly recommend,collocation
+deeply concerned,collocation
+widely available,collocation
+fully aware,collocation
+heavy traffic,collocation
+strong evidence,collocation
+close friend,collocation
+quick glance,collocation
+common sense,collocation
+general public,collocation
+public transport,collocation
+living standards,collocation
+side effect,collocation
+
+# --- phrasal verbs: B1-B2 (additional) ---
+account for,phrasal
+add up,phrasal
+ask around,phrasal
+back out,phrasal
+black out,phrasal
+block off,phrasal
+boil down to,phrasal
+boss around,phrasal
+bounce back,phrasal
+break away,phrasal
+break even,phrasal
+break through,phrasal
+bring forward,phrasal
+bring together,phrasal
+bump into,phrasal
+butt in,phrasal
+call on,phrasal
+carry through,phrasal
+cash in,phrasal
+chase up,phrasal
+chicken out,phrasal
+chip in,phrasal
+chop down,phrasal
+clean out,phrasal
+clear away,phrasal
+come about,phrasal
+come around,phrasal
+come off,phrasal
+come out with,phrasal
+come under,phrasal
+conjure up,phrasal
+crack up,phrasal
+cross off,phrasal
+curl up,phrasal
+cut back,phrasal
+deal in,phrasal
+dive in,phrasal
+doze off,phrasal
+draw back,phrasal
+draw in,phrasal
+dream up,phrasal
+dress down,phrasal
+drift off,phrasal
+fade away,phrasal
+feel up to,phrasal
+finish off,phrasal
+fit in,phrasal
+flag down,phrasal
+flick through,phrasal
+fool around,phrasal
+frown on,phrasal
+get through to,phrasal
+get up to,phrasal
+give way,phrasal
+go against,phrasal
+go around,phrasal
+go beyond,phrasal
+go on about,phrasal
+go under,phrasal
+grow into,phrasal
+hang out with,phrasal
+head out,phrasal
+hit back,phrasal
+hold against,phrasal
+hold down,phrasal
+hunt down,phrasal
+keep at,phrasal
+keep back,phrasal
+keep down,phrasal
+knock off,phrasal
+lash out,phrasal
+lay down,phrasal
+lead up to,phrasal
+lift off,phrasal
+lighten up,phrasal
+link up,phrasal
+live off,phrasal
+look in on,phrasal
+loosen up,phrasal
+lose out,phrasal
+make do,phrasal
+meet up,phrasal
+nod off,phrasal
+occur to,phrasal
+opt out,phrasal
+pencil in,phrasal
+perk up,phrasal
+phase out,phrasal
+piece together,phrasal
+pitch in,phrasal
+pop up,phrasal
+
+# --- phrasal verbs: more (r-w) ---
+read up on,phrasal
+reason with,phrasal
+reflect on,phrasal
+result in,phrasal
+round up,phrasal
+run across,phrasal
+run down,phrasal
+run for,phrasal
+see about,phrasal
+sell off,phrasal
+send for,phrasal
+send in,phrasal
+settle up,phrasal
+sign off,phrasal
+single out,phrasal
+sit through,phrasal
+sneak out,phrasal
+soak up,phrasal
+spread out,phrasal
+spring up,phrasal
+start off,phrasal
+start out,phrasal
+start up,phrasal
+step aside,phrasal
+stir up,phrasal
+stop off,phrasal
+straighten out,phrasal
+stretch out,phrasal
+strike up,phrasal
+talk down to,phrasal
+talk through,phrasal
+tear down,phrasal
+tell on,phrasal
+think ahead,phrasal
+think back,phrasal
+throw in,phrasal
+touch down,phrasal
+touch up,phrasal
+trade off,phrasal
+trick into,phrasal
+trip over,phrasal
+tuck in,phrasal
+turn against,phrasal
+vouch for,phrasal
+wait on,phrasal
+wait up,phrasal
+walk out on,phrasal
+warm to,phrasal
+wash away,phrasal
+weigh down,phrasal
+win back,phrasal
+win over,phrasal
+work off,phrasal
+work through,phrasal
+work towards,phrasal
+
+# --- words: additional B1-B2 ---
+abolish,word
+absorb,word
+abundant,word
+accelerate,word
+accessible,word
+accompany,word
+accumulate,word
+acknowledge,word
+acquire,word
+adequate,word
+adjust,word
+adjustment,word
+advocate,word
+alter,word
+alternative,word
+ambition,word
+ambitious,word
+anticipate,word
+appropriate,word
+approve,word
+approval,word
+arise,word
+arrange,word
+arrangement,word
+assemble,word
+assign,word
+assist,word
+assistance,word
+assure,word
+attempt,word
+authentic,word
+awareness,word
+awkward,word
+barrier,word
+beneficial,word
+bias,word
+boost,word
+boundary,word
+broaden,word
+burden,word
+capable,word
+capacity,word
+cautious,word
+circumstance,word
+collapse,word
+commitment,word
+complex,word
+complicated,word
+component,word
+concept,word
+conduct,word
+confront,word
+consequence,word
+consequently,word
+constantly,word
+consult,word
+consume,word
+consumption,word
+context,word
+contribute,word
+contribution,word
+controversial,word
+controversy,word
+convenient,word
+conventional,word
+cooperate,word
+cooperation,word
+cope,word
+criteria,word
+deliberately,word
+deserve,word
+despite,word
+detect,word
+determine,word
+devote,word
+disrupt,word
+distinct,word
+dominate,word
+dramatic,word
+dramatically,word
+efficient,word
+efficiency,word
+eliminate,word
+emerge,word
+enable,word
+encounter,word
+enhance,word
+ensure,word
+establish,word
+ethical,word
+eventually,word
+exceed,word
+exclude,word
+expose,word
+flaw,word
+frequently,word
+generate,word
+gradually,word
+implement,word
+inevitable,word
+initiative,word
+insight,word
+intend,word
+intention,word
+involve,word
+isolate,word
+maintain,word
+mature,word
+meanwhile,word
+merely,word
+modify,word
+moreover,word
+nevertheless,word
+numerous,word
+obtain,word
+occur,word
+ongoing,word
+otherwise,word
+outcome,word
+overcome,word
+participate,word
+perceive,word
+perception,word
+permanent,word
+persist,word
+phenomenon,word
+possess,word
+predict,word
+priority,word
+prominent,word
+pursue,word
+rapidly,word
+recognize,word
+regardless,word
+remarkable,word
+require,word
+requirement,word
+resolve,word
+retain,word
+reveal,word
+seek,word
+sufficient,word
+tackle,word
+temporary,word
+thorough,word
+transform,word
+undergo,word
+undertake,word
+urgent,word
+whereas,word
+widespread,word
+
+# --- idioms: additional ---
+against the clock,idiom
+at all costs,idiom
+behind someone's back,idiom
+burn bridges,idiom
+clear the air,idiom
+cut to the chase,idiom
+draw the line,idiom
+food for thought,idiom
+get carried away,idiom
+get the ball rolling,idiom
+go back to the drawing board,idiom
+hit the road,idiom
+in the heat of the moment,idiom
+lose track of,idiom
+steal the show,idiom
+walk on eggshells,idiom
+
+# --- additional B1-B2 words, phrasals, idioms & collocations ---
+accustomed,word
+affordable,word
+amateur,word
+annual,word
+appliance,word
+approximately,word
+attractive,word
+background,word
+behave,word
+behavior,word
+belongings,word
+cautiously,word
+chaos,word
+chaotic,word
+circulate,word
+comfort,word
+comfortable,word
+compulsory,word
+confidential,word
+confirm a booking,collocation
+confusing,word
+convenience store,collocation
+cozy,word
+decline,word
+decorate,word
+decoration,word
+dedicate,word
+dedicated,word
+delicate,word
+dense,word
+desirable,word
+dim,word
+disadvantage,word
+durable,word
+dusty,word
+economical,word
+effective,word
+effectively,word
+elegant,word
+enjoyable,word
+entertaining,word
+entertainment,word
+exhausting,word
+fabulous,word
+faulty,word
+fierce,word
+filthy,word
+fragile,word
+frank,word
+frankly,word
+gorgeous,word
+graceful,word
+harmful,word
+harmless,word
+hesitate,word
+hesitation,word
+hollow,word
+horrible,word
+identical,word
+immediately,word
+impatient,word
+impolite,word
+impressive,word
+inconvenient,word
+inexpensive,word
+informal,word
+instant,word
+instantly,word
+keen,word
+lively,word
+loose,word
+loosen,word
+marvelous,word
+memorable,word
+neat,word
+noticeable,word
+obedient,word
+odd,word
+optional,word
+outstanding,word
+peculiar,word
+plain,word
+pleasant,word
+plentiful,word
+precious,word
+prompt,word
+punctual,word
+pure,word
+rare,word
+raw material,collocation
+regular basis,collocation
+remote,word
+ridiculous,word
+severe,word
+severely,word
+shallow,word
+shiny,word
+silent,word
+spacious,word
+spectacular,word
+splendid,word
+steady,word
+steep,word
+sticky,word
+stiff,word
+strict,word
+striking,word
+stunning,word
+suitable,word
+superb,word
+tender,word
+terrific,word
+tight,word
+tough,word
+tremendous,word
+tricky,word
+typical,word
+typically,word
+unbearable,word
+unfair,word
+unique,word
+unusual,word
+useless,word
+vast,word
+visible,word
+vivid,word
+weird,word
+wicked,word
+worthwhile,word
+bring up to date,phrasal
+check over,phrasal
+come to light,idiom
+cut it out,idiom
+dig into,phrasal
+drop a hint,idiom
+fall in love,collocation
+fall ill,collocation
+get in touch,idiom
+give a hand,idiom
+go bankrupt,collocation
+go wrong,collocation
+have a go,idiom
+have a word with,idiom
+in advance,idiom
+in charge of,idiom
+in the long term,idiom
+keep track of,idiom
+look on the bright side,idiom
+lose weight,collocation
+make a living,collocation
+make an excuse,collocation
+make room for,collocation
+make sure,collocation
+on behalf of,idiom
+on purpose,idiom
+on the whole,idiom
+run a test,collocation
+take a chance,collocation
+to some extent,idiom
+under control,idiom
+up to,idiom
+
+# --- phrasal verbs: additional (B1-B2) ---
+add on,phrasal
+aim at,phrasal
+apply for,phrasal
+approve of,phrasal
+arrive at,phrasal
+base on,phrasal
+be off,phrasal
+be over,phrasal
+be up to,phrasal
+block out,phrasal
+boil over,phrasal
+book up,phrasal
+break up with,phrasal
+brighten up,phrasal
+buckle down,phrasal
+buckle up,phrasal
+budget for,phrasal
+bundle up,phrasal
+burst into,phrasal
+button up,phrasal
+buy up,phrasal
+call around,phrasal
+camp out,phrasal
+cancel out,phrasal
+cater for,phrasal
+chase after,phrasal
+cheat on,phrasal
+check off,phrasal
+check on,phrasal
+chew over,phrasal
+cling to,phrasal
+clock in,phrasal
+clock out,phrasal
+close up,phrasal
+cloud over,phrasal
+come away,phrasal
+come back to,phrasal
+come first,phrasal
+come out of,phrasal
+comment on,phrasal
+complain about,phrasal
+confide in,phrasal
+contend with,phrasal
+cook up,phrasal
+cough up,phrasal
+count towards,phrasal
+crash out,phrasal
+creep up on,phrasal
+cry out,phrasal
+cut loose,phrasal
+cut short,phrasal
+decide on,phrasal
+dip into,phrasal
+disagree with,phrasal
+dive into,phrasal
+drag out,phrasal
+dress for,phrasal
+drive up,phrasal
+dry out,phrasal
+dust off,phrasal
+ease up,phrasal
+empty out,phrasal
+end in,phrasal
+fall away,phrasal
+fall back,phrasal
+fall in,phrasal
+fall short of,phrasal
+feed on,phrasal
+fight on,phrasal
+fire up,phrasal
+fish for,phrasal
+fit out,phrasal
+flake out,phrasal
+flip through,phrasal
+flood in,phrasal
+focus on,phrasal
+fold away,phrasal
+freeze over,phrasal
+freshen up,phrasal
+frighten off,phrasal
+fuss over,phrasal
+gain on,phrasal
+gang up on,phrasal
+gather up,phrasal
+get a move on,idiom
+get back together,phrasal
+get even with,phrasal
+get it over with,idiom
+get past,phrasal
+get stuck in,phrasal
+get the better of,idiom
+get under way,idiom
+go ahead with,phrasal
+go all out,idiom
+go back to,phrasal
+go easy on,idiom
+go for it,idiom
+go from bad to worse,idiom
+go on with,phrasal
+go out for,phrasal
+go through the roof,idiom
+go up against,phrasal
+grow back,phrasal
+hack into,phrasal
+hand off,phrasal
+hand on,phrasal
+hang around with,phrasal
+hang onto,phrasal
+hash out,phrasal
+have back,phrasal
+have it out with,idiom
+have on,phrasal
+have over,phrasal
+head into,phrasal
+head towards,phrasal
+head up,phrasal
+hear of,phrasal
+hear out,phrasal
+hide out,phrasal
+hinge on,phrasal
+hint at,phrasal
+hire out,phrasal
+hit upon,phrasal
+hold out for,phrasal
+hold to,phrasal
+hole up,phrasal
+hop in,phrasal
+hunt out,phrasal
+hurry along,phrasal
