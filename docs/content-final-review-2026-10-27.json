@@ -1,0 +1,617 @@
+{
+  "date": "2026-10-27",
+  "baseCommit": "69e872c2644e18d5e02bbf232907d122f15d8356",
+  "scope": {
+    "entries": 8911,
+    "senses": 13955,
+    "vocabularyExamples": 28001,
+    "grammarTopics": 20,
+    "grammarSections": 82,
+    "grammarExamples": 258,
+    "semanticReview": "Grammar explanations and contextual error labels, scanner flags, targeted usage notes, and a deterministic 32-entry sample. Prior Korean-gloss review is recorded separately in content-review-2026-10-27.json.",
+    "newStratifiedSampleIds": [
+      "b-w-taxi",
+      "b-w-keep",
+      "b-p-bring-back",
+      "b-p-scroll-down",
+      "b-i-nice-to-meet-you",
+      "b-i-no-matter-what",
+      "b-c-have-a-cold",
+      "b-c-do-the-dishes",
+      "i-w-prohibit",
+      "i-w-unique",
+      "i-p-carry-through",
+      "i-p-hinge-on",
+      "i-i-get-your-act-together",
+      "i-i-against-the-clock",
+      "i-c-take-part-in",
+      "i-c-confirm-a-booking",
+      "a-w-iniquitous",
+      "a-w-paradoxically",
+      "a-p-follow-up-on",
+      "a-p-face-down",
+      "a-i-on-the-verge-of",
+      "a-i-a-litmus-test",
+      "a-c-cede-ground",
+      "a-c-reap-the-benefits",
+      "z-w-cost-overrun",
+      "z-w-holding-company",
+      "z-p-trade-in",
+      "z-p-step-out",
+      "z-i-drop-dead-date",
+      "z-i-keep-it-up",
+      "z-c-call-in-sick",
+      "z-c-take-delivery"
+    ]
+  },
+  "preservation": {
+    "vocabularyIdentityAndOrder": true,
+    "vocabularySenseAndExampleCounts": true,
+    "vocabularyExampleTexts": true,
+    "grammarIdentityAndExampleCounts": true,
+    "grammarEnglishExampleTexts": true
+  },
+  "automatedFindings": {
+    "missingWordlistEntries": 0,
+    "duplicateGrammarIds": 0,
+    "withinEntryDuplicateEnglishExamples": 0,
+    "crossEntryDuplicateEnglishExampleGroups": 106,
+    "crossEntryDuplicatesDisposition": "Shared beginner sentences teach different target words; not removed automatically.",
+    "lexicalFormScannerFlags": 18,
+    "lexicalFormScannerDisposition": "Reviewed: contractions, inflections, possessives, article variants and separated phrasal verbs; no confirmed missing-target errors.",
+    "placeholderScannerDisposition": "Only TBD examples matched; TBD is the actual headword and is not unfinished content."
+  },
+  "changes": [
+    {
+      "path": "g-be-vs-do-present.sections[0].body",
+      "reason": "Distinguish main-verb be from auxiliary be.",
+      "before": "be동사(am/is/are)는 \"~이다, ~에 있다, ~한 상태다\"를 나타냅니다. 주어에 따라 모양이 바뀝니다.\n`I am` / `You, We, They are` / `He, She, It is`\n뒤에는 명사·형용사·장소가 옵니다. 동작(먹다, 가다)에는 쓰지 않습니다.",
+      "after": "be동사(am/is/are)는 \"~이다, ~에 있다, ~한 상태다\"를 나타냅니다. 주어에 따라 모양이 바뀝니다.\n`I am` / `You, We, They are` / `He, She, It is`\n뒤에는 명사·형용사·장소가 옵니다. 현재형에서 일반동사 원형 앞에 be동사를 덧붙이지 않습니다: `I am go.` (X). 다만 진행형(`I am going.`)과 수동태(`It is made here.`)에서는 be가 조동사로 쓰입니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/be-expressions-with-be"
+      ]
+    },
+    {
+      "path": "g-be-vs-do-present.sections[1].body",
+      "reason": "The original blanket ban contradicts progressive and passive constructions.",
+      "before": "일반동사(eat, work, like 등)는 동작이나 습관을 나타냅니다. **3인칭 단수(he/she/it) 주어일 때 동사에 -s/-es**를 붙이는 것이 핵심입니다.\n`I work` / `She works` / `He watches` / `It goes`\nbe동사와 일반동사를 한 문장에 같이 쓰지 않습니다.",
+      "after": "일반동사(eat, work, like 등)는 동작이나 습관을 나타냅니다. **3인칭 단수(he/she/it) 주어일 때 동사에 -s/-es**를 붙이는 것이 핵심입니다.\n`I work` / `She works` / `He watches` / `It goes`\n현재형 평서문에서는 일반동사 원형 앞에 be를 덧붙이지 않습니다: `She plays.` (O), `She is play.` (X). 진행형의 `She is playing.`처럼 be와 다른 동사가 함께 쓰이는 구조는 가능합니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/be-expressions-with-be"
+      ]
+    },
+    {
+      "path": "g-present-continuous-vs-simple.sections[2].examples[1].wrong",
+      "reason": "Progressive love can express a current, vivid experience; it is not categorically ungrammatical.",
+      "before": "She's loving this song so much.",
+      "after": null,
+      "sources": [
+        "https://downloads.bbc.co.uk/learningenglish/lowerintermediate/unit25/u25_6min_grammar_state_verbs.pdf"
+      ]
+    },
+    {
+      "path": "g-present-continuous-vs-simple.sections[2].body",
+      "reason": "State-verb guidance needs a usage qualification.",
+      "before": "**상태 동사**는 보통 진행형으로 쓰지 않습니다. 감정(like, love, hate), 생각(know, believe, understand), 소유(have, own), 감각(see, hear) 등이 대표적입니다.\n`I'm knowing` (X) → `I know` (O)\n단, `have`가 \"먹다/시간을 보내다\" 뜻일 때는 진행형이 가능합니다: `I'm having lunch.`",
+      "after": "**상태 동사**는 보통 진행형으로 쓰지 않습니다. 감정(like, love, hate), 생각(know, believe, understand), 소유(have, own), 감각(see, hear) 등이 대표적입니다.\n`I'm knowing` (X) → `I know` (O)\n단, `have`가 \"먹다/시간을 보내다\" 뜻일 때는 진행형이 가능합니다: `I'm having lunch.`\n다만 `love/like`는 지금 느끼는 즐거움·반응을 강조할 때 구어에서 진행형으로도 씁니다: `She is loving this song.` 일반적인 취향에는 단순현재를 쓰는 것이 기본입니다.",
+      "sources": [
+        "https://downloads.bbc.co.uk/learningenglish/lowerintermediate/unit25/u25_6min_grammar_state_verbs.pdf"
+      ]
+    },
+    {
+      "path": "g-present-continuous-vs-simple.pitfalls",
+      "reason": "Do not mark temporary routines or all progressive state verbs as errors.",
+      "before": [
+        "한국어 \"~하고 있어요\"를 습관에도 써서 `I'm going to the gym every day.`처럼 쓰는 실수 (습관은 단순현재)",
+        "진행형에서 be동사 누락: `I studying now.` → `I'm studying now.`",
+        "상태 동사 진행형: `I'm liking it.` → `I like it.`",
+        "`What do you do?`(직업)와 `What are you doing?`(지금 하는 일)을 혼동"
+      ],
+      "after": [
+        "평소 습관은 보통 단순현재로 표현한다. `I go to the gym every day.`가 기본이지만, `I am going to the gym every day these days.`처럼 요즘의 일시적인 반복에는 진행형도 가능하다.",
+        "진행형에서 be동사 누락: `I studying now.` → `I'm studying now.`",
+        "know처럼 상태 의미로 진행형을 잘 쓰지 않는 동사에 주의: `I am knowing him.` → `I know him.`. love/like 등은 일시적인 느낌을 강조하는 구어 용법이 있다.",
+        "`What do you do?`(직업)와 `What are you doing?`(지금 하는 일)을 혼동"
+      ],
+      "sources": [
+        "https://downloads.bbc.co.uk/learningenglish/lowerintermediate/unit25/u25_6min_grammar_state_verbs.pdf"
+      ]
+    },
+    {
+      "path": "g-articles-a-an-the-basics.summary",
+      "reason": "A possessive or demonstrative can license a singular count noun without an article.",
+      "before": "한국어에는 없는 관사는 \"처음 말하는 것(a/an)\"과 \"서로 아는 그것(the)\"의 차이입니다. 셀 수 있는 단수 명사는 관사 없이 혼자 쓰이지 못합니다.",
+      "after": "한국어에는 없는 관사는 \"아직 특정되지 않은 하나(a/an)\"와 \"서로 어느 것인지 아는 대상(the)\"을 구별합니다. 셀 수 있는 단수 보통명사에는 일반적으로 a/an, the, my, this 같은 한정사가 필요합니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/a-an-the"
+      ]
+    },
+    {
+      "path": "g-articles-a-an-the-basics.sections[2].examples[0].wrong",
+      "reason": "A lunch can denote an event or a particular meal; a blanket error label is too strong.",
+      "before": "I usually have a lunch at noon.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/a-an-the"
+      ]
+    },
+    {
+      "path": "g-articles-a-an-the-basics.sections[2].examples[1].wrong",
+      "reason": "The cats and the dogs is grammatical when referring to identifiable animals.",
+      "before": "The cats are cleaner than the dogs, I think.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/a-an-the"
+      ]
+    },
+    {
+      "path": "g-articles-a-an-the-basics.sections[2].body",
+      "reason": "Explain reference and countability rather than labeling context-dependent forms ungrammatical.",
+      "before": "**일반적인 것 전체**를 말할 때 복수 명사나 셀 수 없는 명사는 관사 없이 씁니다: `I like dogs.`, `Music helps me focus.`\n식사·언어·운동·대부분의 나라 이름도 무관사입니다: `have lunch`, `speak Korean`, `play soccer`, `live in Korea`\n반면 `the Philippines`, `the United States`처럼 복수형 나라 이름은 the를 씁니다.",
+      "after": "**일반적인 것 전체**를 말할 때 복수 명사나 셀 수 없는 명사는 관사 없이 씁니다: `I like dogs.`, `Music helps me focus.`\n식사·언어·운동·대부분의 나라 이름도 무관사입니다: `have lunch`, `speak Korean`, `play soccer`, `live in Korea`\n반면 `the Philippines`, `the United States`처럼 복수형 나라 이름은 the를 씁니다.\n`the cats/the dogs`는 특정한 고양이·개들을 가리킬 때 가능합니다. 종류 전체를 비교할 때는 `Cats/Dogs`로 씁니다. 식사도 행사나 특정한 한 끼를 셀 때는 `a lunch`, `a special dinner`처럼 쓸 수 있습니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/a-an-the"
+      ]
+    },
+    {
+      "path": "g-countable-uncountable-quantifiers.sections[1].examples[1].wrong",
+      "reason": "Some can occur under negation with a different scope; the absence reading calls for any.",
+      "before": "I don't have some cash on me.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/some"
+      ]
+    },
+    {
+      "path": "g-countable-uncountable-quantifiers.sections[1].body",
+      "reason": "Qualify the polarity rule with a clear partial-negation example.",
+      "before": "`some`과 `any`는 셀 수 있는 복수 명사와 셀 수 없는 명사 **둘 다**에 씁니다.\n`some`은 **긍정문**에, `any`는 **부정문·의문문**에 쓰는 것이 기본입니다.\n단, 권유하거나 요청할 때(Yes를 기대할 때)는 의문문에도 `some`을 씁니다: `Would you like some coffee?`",
+      "after": "`some`과 `any`는 셀 수 있는 복수 명사와 셀 수 없는 명사 **둘 다**에 씁니다.\n`some`은 **긍정문**에, `any`는 **부정문·의문문**에 쓰는 것이 기본입니다.\n단, 권유하거나 요청할 때(Yes를 기대할 때)는 의문문에도 `some`을 씁니다: `Would you like some coffee?`\nsome이 부정문에서 항상 틀리는 것은 아닙니다. `I do not like some of these songs.`는 \"이 노래들 중 일부는 좋아하지 않는다\"는 뜻입니다. \"하나도 없다\"를 말하려면 `not ... any`를 씁니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/some"
+      ]
+    },
+    {
+      "path": "g-countable-uncountable-quantifiers.pitfalls",
+      "reason": "Avoid a blanket ban on some in negative clauses.",
+      "before": [
+        "`informations`, `advices`, `furnitures`, `homeworks` 처럼 셀 수 없는 명사에 -s를 붙이는 실수",
+        "`much people`, `many money`처럼 many/much를 거꾸로 쓰는 실수",
+        "부정문에 some 사용: `I don't have some time.` → `I don't have any time.`",
+        "`a bread`, `a paper`(종이)처럼 물질 명사에 a를 붙이는 실수 (`a piece of ~` 사용)"
+      ],
+      "after": [
+        "`informations`, `advices`, `furnitures`, `homeworks` 처럼 셀 수 없는 명사에 -s를 붙이는 실수",
+        "`much people`, `many money`처럼 many/much를 거꾸로 쓰는 실수",
+        "\"시간이 전혀 없다\"는 `I do not have any time.`로 표현한다. some을 포함한 부정문은 문맥에 따라 일부에만 부정이 걸릴 수 있어 뜻을 확인해야 한다.",
+        "`a bread`, `a paper`(종이)처럼 물질 명사에 a를 붙이는 실수 (`a piece of ~` 사용)"
+      ],
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/some"
+      ]
+    },
+    {
+      "path": "g-present-perfect-vs-past.sections[1].examples[0].wrong",
+      "reason": "Did you ever is a grammatical past question and also occurs for experience in American speech.",
+      "before": "Did you ever go to New York?",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/british-and-%2Bamerican-english"
+      ]
+    },
+    {
+      "path": "g-present-perfect-vs-past.sections[1].body",
+      "reason": "Describe regional and contextual variation.",
+      "before": "\"~해 본 적 있다\"는 **경험**은 현재완료로 말합니다. 언제인지보다 \"지금까지의 인생에서 있었느냐\"가 초점이기 때문입니다.\n`Have you ever been to Japan?` / `I've never tried sushi.`\n단, 경험을 구체적으로 이야기하기 시작하면 **과거시제로 전환**합니다: `Yes, I have. I went there in 2019.`",
+      "after": "\"~해 본 적 있다\"는 **경험**은 현재완료로 말합니다. 언제인지보다 \"지금까지의 인생에서 있었느냐\"가 초점이기 때문입니다.\n`Have you ever been to Japan?` / `I've never tried sushi.`\n단, 경험을 구체적으로 이야기하기 시작하면 **과거시제로 전환**합니다: `Yes, I have. I went there in 2019.`\n미국 영어 회화에서는 경험을 물을 때 `Did you ever ...?`도 사용합니다. 또 과거의 끝난 기간 안에서의 경험을 물을 때도 과거형이 가능합니다. 현재까지의 경험을 묻는 기본형으로는 `Have you ever ...?`를 익히세요.",
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/british-and-%2Bamerican-english"
+      ]
+    },
+    {
+      "path": "g-present-perfect-vs-past.sections[2].examples[2].wrong",
+      "reason": "How long are you in Korea can ask about an arranged stay; it is not inherently ungrammatical.",
+      "before": "How long are you in Korea?",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/british-and-%2Bamerican-english"
+      ]
+    },
+    {
+      "path": "g-present-perfect-vs-past.sections[2].body",
+      "reason": "Distinguish elapsed duration from a stay or schedule.",
+      "before": "과거에 시작해서 **지금까지 계속되는** 상태는 현재완료입니다.\n`for + 기간`(for three years), `since + 시작 시점`(since 2021, since I moved here)\n한국어 \"3년째 여기 살아요\"를 `I live here for three years.`(X)로 쓰기 쉽지만, 과거부터 이어지므로 `I've lived here for three years.`가 맞습니다.",
+      "after": "과거에 시작해서 **지금까지 계속되는** 상태는 현재완료입니다.\n`for + 기간`(for three years), `since + 시작 시점`(since 2021, since I moved here)\n한국어 \"3년째 여기 살아요\"를 `I live here for three years.`(X)로 쓰기 쉽지만, 과거부터 이어지므로 `I've lived here for three years.`가 맞습니다.\n`How long have you been in Korea?`는 지금까지 머문 기간을 묻습니다. `How long are you in Korea?`는 문맥에 따라 체류 일정이나 예정 기간을 물을 수 있어 두 질문의 초점이 다릅니다.",
+      "sources": []
+    },
+    {
+      "path": "g-present-perfect-vs-past.pitfalls",
+      "reason": "Keep the rule consistent with American usage.",
+      "before": [
+        "`ago`, `yesterday`, `last ~`와 현재완료를 같이 쓰는 실수: `I've seen him yesterday.` → `I saw him yesterday.`",
+        "\"~째 하고 있다\"를 단순현재로 쓰는 실수: `I live here for 3 years.` → `I've lived here for 3 years.`",
+        "경험을 물을 때 `Did you ever...?` 대신 `Have you ever...?`",
+        "`have been to`(다녀왔다)와 `have gone to`(가서 지금 없다) 혼동"
+      ],
+      "after": [
+        "`ago`, `yesterday`, `last ~`와 현재완료를 같이 쓰는 실수: `I've seen him yesterday.` → `I saw him yesterday.`",
+        "\"~째 하고 있다\"를 단순현재로 쓰는 실수: `I live here for 3 years.` → `I've lived here for 3 years.`",
+        "현재까지의 경험을 묻는 기본형은 `Have you ever ...?`. 미국 영어 회화의 `Did you ever ...?`도 무조건 오답으로 보지 않는다.",
+        "`have been to`(다녀왔다)와 `have gone to`(가서 지금 없다) 혼동"
+      ],
+      "sources": [
+        "https://dictionary.cambridge.org/us/grammar/british-grammar/british-and-%2Bamerican-english"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.sections[1].heading",
+      "reason": "Modal possibility is not a fixed numerical probability.",
+      "before": "may / might / could: 아마 ~일지도 (50% 안팎)",
+      "after": "may / might / could: 아마 ~일지도 (가능성)",
+      "sources": [
+        "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-present"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.sections[1].body",
+      "reason": "Qualify the modal probability and negation guidance.",
+      "before": "확신이 약할 때는 `may`, `might`, `could`를 씁니다. 세 가지는 거의 같은 뜻이고, `might`가 조금 더 불확실한 느낌입니다.\n부정은 `may not`, `might not`을 씁니다. **`could not`은 \"그럴 리 없다\"는 뜻**이므로 \"아닐지도\"에는 쓰지 않습니다.\n`He might not come.`(안 올지도) vs `He couldn't come.`(올 수 없었다/올 리 없다)",
+      "after": "가능성을 열어 두고 말할 때 `may`, `might`, `could`를 씁니다. 상황·어조에 따라 느낌이 달라지며 확률을 일정한 숫자로 정할 수는 없습니다.\n\"아닐지도\"는 보통 `may not`, `might not`으로 표현합니다. `could not`은 문맥에 따라 과거의 불가능이나 강한 부정 추측을 나타냅니다.\n`He might not come.`(안 올지도) vs `He could not come.`(올 수 없었다 등)",
+      "sources": [
+        "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-present"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.sections[1].examples[2].wrong",
+      "reason": "The rejected sentence can express an uncertain past inability; its meaning differs from the target sentence.",
+      "before": "He couldn't get the message in time, maybe.",
+      "after": null,
+      "sources": [
+        "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-present"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.sections[2].body",
+      "reason": "Distinguish denying possibility from inferring a negative proposition.",
+      "before": "`must`의 반대는 `must not`이 아니라 **`can't`**입니다. \"논리적으로 불가능하다\"는 뜻입니다.\n`That can't be true.` → 사실일 리가 없다\n`must not`은 보통 \"~하면 안 된다\"는 금지의 뜻으로 쓰입니다. 추측에서는 헷갈리지 않게 `can't`를 쓰세요.",
+      "after": "근거상 \"그럴 리 없다\"고 강하게 부정할 때는 보통 `cannot/can't`를 씁니다.\n`That can't be true.` → 사실일 리가 없다\n`must not`은 금지를 나타내는 경우가 많습니다. 다만 특히 미국 영어에서는 \"분명 ~이 아닌 모양이다\"라는 부정 내용의 추론에도 쓰이므로 문맥을 봐야 합니다.",
+      "sources": [
+        "https://ssu.elearning.unipd.it/pluginfile.php/422897/mod_folder/content/0/Swan_Practical_English_Usage_3ed.pdf?forcedownload=1",
+        "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-present"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.sections[2].examples[0].wrong",
+      "reason": "Must not can be used for a negative deduction, especially in American English.",
+      "before": "That must not be right. Let me check again.",
+      "after": null,
+      "sources": [
+        "https://ssu.elearning.unipd.it/pluginfile.php/422897/mod_folder/content/0/Swan_Practical_English_Usage_3ed.pdf?forcedownload=1"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.sections[3].body",
+      "reason": "Should have also expresses expectation, not only regret or criticism.",
+      "before": "이미 일어난 일을 추측할 때는 `조동사 + have + 과거분사`를 씁니다.\n`must have p.p.`(~했음이 틀림없다), `may/might have p.p.`(~했을지도), `can't have p.p.`(~했을 리 없다)\n`should have p.p.`(~했어야 했는데)는 추측이 아니라 **후회·비난**이니 구분하세요.",
+      "after": "이미 일어난 일을 추측할 때는 `조동사 + have + 과거분사`를 씁니다.\n`must have p.p.`(~했음이 틀림없다), `may/might have p.p.`(~했을지도), `can't have p.p.`(~했을 리 없다)\n`should have p.p.`는 \"~했어야 했는데\"라는 후회·비판뿐 아니라 \"이미 ~했을 것으로 예상된다\"라는 기대·추측도 나타냅니다. `The parcel should have arrived by now.`는 \"지금쯤 소포가 도착했을 것이다\"라는 예상이 될 수 있습니다.",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/us/definition/english/should"
+      ]
+    },
+    {
+      "path": "g-modals-of-deduction.pitfalls",
+      "reason": "Do not teach valid maybe or must-not constructions as grammatical errors.",
+      "before": [
+        "강한 부정 추측에 `must not`을 쓰는 실수 (추측의 반대는 `can't`)",
+        "\"~일지도 모른다\"를 `maybe`로만 처리하고 조동사를 안 쓰는 습관 (`Maybe he is busy.` → `He might be busy.`)",
+        "과거 추측에서 `have` 누락: `She must missed it.` → `She must have missed it.`",
+        "`could not`을 \"아닐지도\"로 오해 (실제로는 \"그럴 리 없다/할 수 없었다\")"
+      ],
+      "after": [
+        "\"그럴 리 없다\"는 강한 부정 추측은 보통 `cannot/can't`로 표현한다. `must not`은 금지인지 부정 내용의 추론인지 문맥을 확인한다.",
+        "`Maybe he is busy.`와 `He might be busy.`는 모두 가능하다. maybe는 부사이고 might는 동사원형 앞에 오는 조동사라는 구조 차이를 구별한다.",
+        "과거 추측에서 `have` 누락: `She must missed it.` → `She must have missed it.`",
+        "`He might not come.`(안 올지도)와 `He could not come.`(올 수 없었다 등)을 문맥 없이 같은 뜻으로 바꾸지 않는다."
+      ],
+      "sources": [
+        "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/modals-deductions-about-present",
+        "https://ssu.elearning.unipd.it/pluginfile.php/422897/mod_folder/content/0/Swan_Practical_English_Usage_3ed.pdf?forcedownload=1"
+      ]
+    },
+    {
+      "path": "g-relative-clauses.sections[4].body",
+      "reason": "Non-defining clauses add information and also admit whose/whom; commas do not mechanically count siblings.",
+      "before": "콤마 없이 쓰면 **어느 것인지 좁혀 주는** 정보(제한적), 콤마를 넣으면 **덧붙이는** 정보(계속적)입니다.\n`My brother who lives in Busan is a chef.` → 형제가 여럿인데 그중 부산에 사는 형\n`My brother, who lives in Busan, is a chef.` → 형제가 한 명이고 덧붙여서 부산에 산다\n**콤마 뒤에는 `that`을 쓸 수 없고** `who/which`만 씁니다.",
+      "after": "콤마 없이 쓰면 **어느 것인지 좁혀 주는** 정보(제한적), 콤마를 넣으면 **덧붙이는** 정보(계속적)입니다.\n`My brother who lives in Busan is a chef.` → 형제가 여럿인데 그중 부산에 사는 형\n`My brother, who lives in Busan, is a chef.` → 어느 형인지 이미 알 수 있고 부산에 산다는 정보를 덧붙임. 이 문장만으로 형제가 반드시 한 명이라고 단정하지는 않음\n**계속적 관계절에서는 `that`을 쓸 수 없습니다.** 역할에 따라 `who/whom/whose/which` 등을 씁니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/uk/grammar/british-grammar/relative-clauses-defining-and-"
+      ]
+    },
+    {
+      "path": "g-infinitive-vs-gerund.sections[0].body",
+      "reason": "Need + -ing is a valid passive-meaning construction.",
+      "before": "to부정사는 **아직 하지 않은 일, 하려는 일**과 어울리는 경향이 있습니다.\n`want, hope, plan, decide, expect, promise, agree, refuse, need, would like, learn, afford, manage`\n`I want to go.`, `We decided to leave early.`\n이 동사들 뒤에 -ing를 쓰면 틀립니다: `I want going` (X)",
+      "after": "to부정사는 **아직 하지 않은 일, 하려는 일**과 어울리는 경향이 있습니다.\n`want, hope, plan, decide, expect, promise, agree, refuse, need, would like, learn, afford, manage`\n`I want to go.`, `We decided to leave early.`\n원하는 일·계획하는 일을 말하는 이 용법에서는 정해진 to부정사 패턴을 익힙니다: `I want to go.` (O), `I want going.` (X).\n다만 `need`는 \"~될 필요가 있다\"는 뜻으로 -ing도 취합니다: `The car needs cleaning.` = `The car needs to be cleaned.`",
+      "sources": [
+        "https://downloads.bbc.co.uk/worldservice/learningenglish/grammarchallenge/pdfs/8_need_expert.pdf"
+      ]
+    },
+    {
+      "path": "g-comparatives-superlatives-as-as.sections[1].body",
+      "reason": "A comparative does not require an explicit than-complement.",
+      "before": "비교급 뒤에는 **`than`**을 씁니다. 한국어 \"보다\"에 끌려 `then`이나 `from`을 쓰지 않도록 주의하세요.\n비교 대상은 같은 종류여야 합니다: `Seoul's traffic is worse than Busan's.`(교통 vs 교통)\n차이의 정도는 `much, a lot, far, a little, slightly`로 강조합니다. `very`는 비교급 앞에 쓰지 않습니다.",
+      "after": "비교급 뒤에 비교 대상을 이어 말할 때는 **`than`**을 씁니다. 대상이 문맥상 분명하면 `This is better.`처럼 than 없이도 쓸 수 있습니다. 한국어 \"보다\"에 끌려 `then`이나 `from`을 쓰지 않도록 주의하세요.\n비교 대상은 같은 종류여야 합니다: `Seoul's traffic is worse than Busan's.`(교통 vs 교통)\n차이의 정도는 `much, a lot, far, a little, slightly`로 강조합니다. `very`는 비교급 앞에 쓰지 않습니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting"
+      ]
+    },
+    {
+      "path": "g-comparatives-superlatives-as-as.sections[2].body",
+      "reason": "Possessives are used instead of the before superlatives.",
+      "before": "셋 이상 중에서 최고를 말할 때 **`the`를 꼭 붙입니다**: `the tallest`, `the most expensive`\n범위는 `in + 장소/집단`(in the class, in Korea) 또는 `of + 복수`(of all, of the three)로 표시합니다.\n`one of the + 최상급 + 복수명사` 패턴도 자주 씁니다: `one of the best restaurants`",
+      "after": "집단 중에서 최고를 말할 때 최상급 앞에는 보통 **`the`**를 씁니다: `the tallest`, `the most expensive`. 다만 `my best friend`처럼 소유격이 있으면 the를 덧붙이지 않습니다.\n범위는 `in + 장소/집단`(in the class, in Korea) 또는 `of + 복수`(of all, of the three)로 표시합니다.\n`one of the + 최상급 + 복수명사` 패턴도 자주 씁니다: `one of the best restaurants`",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting"
+      ]
+    },
+    {
+      "path": "g-comparatives-superlatives-as-as.pitfalls",
+      "reason": "Keep summary rules compatible with comparative ellipsis and possessives.",
+      "before": [
+        "`more better`, `more easier`처럼 비교급을 이중으로 만드는 실수",
+        "`than`을 `then`으로 쓰거나 생략하는 실수",
+        "최상급 앞 `the` 누락: `best way` → `the best way`",
+        "`as ... as` 사이에 비교급을 넣는 실수: `as bigger as` → `as big as`"
+      ],
+      "after": [
+        "`more better`, `more easier`처럼 비교급을 이중으로 만드는 실수",
+        "비교 대상을 이어 말할 때 `than`을 `then`으로 쓰거나 빠뜨리는 실수. 비교 대상이 생략된 `This is better.`는 가능하다.",
+        "명사 앞 최상급에는 보통 the를 쓴다: `the best way`. 다만 `my best friend`처럼 소유격이 있으면 the를 쓰지 않는다.",
+        "`as ... as` 사이에 비교급을 넣는 실수: `as bigger as` → `as big as`"
+      ],
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting"
+      ]
+    },
+    {
+      "path": "g-comparatives-superlatives-as-as.sections[2].examples[0].ko",
+      "reason": "The subject refers to pizza, not a restaurant or place.",
+      "before": "여기가 동네에서 최고의 피자예요.",
+      "after": "이 피자가 이 동네에서 최고예요.",
+      "sources": []
+    },
+    {
+      "path": "g-perfect-continuous-future-perfect.pitfalls",
+      "reason": "By marks a deadline in both sentences; it does not mean on Friday.",
+      "before": [
+        "상태 동사를 완료진행으로 쓰는 실수: `I've been knowing him` → `I've known him`",
+        "`by the time` 절에 will을 넣는 실수 (시간·조건절은 현재형)",
+        "미래완료와 단순미래 혼동: `I will finish by Friday.`(금요일에 끝낼 것) vs `I will have finished by Friday.`(금요일까지는 끝나 있을 것)",
+        "현재완료진행의 `for/since`를 과거시제와 섞어 쓰는 실수 (`I was waiting since 2 o'clock.`)"
+      ],
+      "after": [
+        "상태 동사를 완료진행으로 쓰는 실수: `I've been knowing him` → `I've known him`",
+        "`by the time` 절에 will을 넣는 실수 (시간·조건절은 현재형)",
+        "단순미래와 미래완료 모두 by Friday를 쓸 수 있다. `I will finish by Friday.`는 \"금요일까지 끝내겠다\"는 계획·예측이고, `I will have finished by Friday.`는 \"금요일까지 끝난 상태일 것\"에 초점을 둔다.",
+        "현재완료진행의 `for/since`를 과거시제와 섞어 쓰는 실수 (`I was waiting since 2 o'clock.`)"
+      ],
+      "sources": [
+        "https://dictionary.cambridge.org/uk/grammar/british-grammar/by"
+      ]
+    },
+    {
+      "path": "g-biz-email-request-decline-followup.sections[0].examples[0].wrong",
+      "reason": "This is grammatical English; directness or suitability depends on the relationship and purpose.",
+      "before": "Send me the updated figures by Thursday.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-email-request-decline-followup.sections[1].examples[1].wrong",
+      "reason": "This is grammatical English; directness or suitability depends on the relationship and purpose.",
+      "before": "It is difficult to meet that deadline.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-email-request-decline-followup.sections[2].examples[2].wrong",
+      "reason": "This is grammatical English; directness or suitability depends on the relationship and purpose.",
+      "before": "Why haven't you replied to my email yet?",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-meeting-opinion-agree-summarize.sections[2].examples[0].wrong",
+      "reason": "This is grammatical English; directness or suitability depends on the relationship and purpose.",
+      "before": "You're wrong. The timing is bad.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-conditionals-suggestions.sections[2].examples[2].wrong",
+      "reason": "This is grammatical English; directness or suitability depends on the relationship and purpose.",
+      "before": "You must start with a smaller pilot.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-passive-voice-objective.sections[1].examples[0].wrong",
+      "reason": "This is grammatical English; directness or suitability depends on the relationship and purpose.",
+      "before": "You attached the wrong file.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-email-request-decline-followup.sections[0].body",
+      "reason": "Separate pragmatic advice from grammatical correctness. Also avoid treating declarative hedges as questions or politeness as a fixed cross-cultural ranking. Also avoid treating declarative hedges as questions or politeness as a fixed cross-cultural ranking.",
+      "before": "`Please send me ...`는 틀리지 않지만 명령처럼 들릴 수 있습니다. 격식 이메일에서는 **`Could you ...?`, `Would you be able to ...?`, `I would appreciate it if you could ...`**가 안전합니다.\n긴급할수록 오히려 더 정중하게 쓰는 것이 영어권 관례입니다.\n`I was wondering if you could ...`는 가장 부드러운 요청입니다.",
+      "after": "`Please send me ...`는 틀리지 않지만 명령처럼 들릴 수 있습니다. 격식 이메일에서는 **`Could you ...?`, `Would you be able to ...?`, `I would appreciate it if you could ...`**가 안전합니다.\n긴급한 요청은 구체적인 기한과 이유를 명확히 하고, 관계와 상황에 맞는 정중함을 유지하세요.\n`I was wondering if you could ...`는 매우 완곡한 요청 표현입니다.\n직접적인 명령문도 문법적으로는 맞으며 업무 지시·긴급 상황 등에서 쓰입니다. 외부 고객에게 정중히 요청하려면 관계와 상황에 맞춰 의문문 형태로 완화할 수 있습니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-meeting-opinion-agree-summarize.sections[2].body",
+      "reason": "Direct disagreement is a register choice. Also avoid treating declarative hedges as questions or politeness as a fixed cross-cultural ranking.",
+      "before": "직접 `You're wrong`, `I disagree`는 거칠게 들립니다. **먼저 인정하고(`I see your point`) → `but/however` → 근거** 순으로 말합니다.\n`I see your point, but I'm not sure that's the best approach.`\n`I'm not sure I agree.`, `I have some concerns about ...`, `Have we considered ...?`처럼 **질문형**으로 바꾸면 더 부드럽습니다.\n한국어 \"글쎄요\"에 해당하는 말로는 `I'm not so sure about that.`이 자연스럽습니다.",
+      "after": "직접 `You're wrong`, `I disagree`는 거칠게 들립니다. **먼저 인정하고(`I see your point`) → `but/however` → 근거** 순으로 말합니다.\n`I see your point, but I'm not sure that's the best approach.`\n`I'm not sure I agree.`, `I have some concerns about ...`, `Have we considered ...?`처럼 **완곡한 표현이나 질문형**으로 바꾸면 더 부드럽습니다.\n한국어 \"글쎄요\"에 해당하는 말로는 `I'm not so sure about that.`이 자연스럽습니다.\n`I disagree.`나 `You are wrong.` 자체가 문법 오류는 아닙니다. 반대 강도와 상대와의 관계를 고려해 직접적인 표현이나 완곡한 표현을 선택합니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-conditionals-suggestions.sections[2].body",
+      "reason": "Obligation and suggestion differ in communicative purpose.",
+      "before": "`would`는 **가정의 거리감**을 만들어 제안을 부드럽게 합니다.\n`It would be great if you could ...` / `Would it be possible to ...?` / `I would suggest ...` / `We would prefer ...`\n`I suggest`보다 `I would suggest`가, `It is better`보다 `It would be better`가 덜 단정적입니다.\n`What if we ...?`, `How about ...?`, `Why don't we ...?`는 회의에서 아이디어를 던질 때 자연스럽습니다.",
+      "after": "`would`는 **가정의 거리감**을 만들어 제안을 부드럽게 합니다.\n`It would be great if you could ...` / `Would it be possible to ...?` / `I would suggest ...` / `We would prefer ...`\n`I suggest`보다 `I would suggest`가, `It is better`보다 `It would be better`가 덜 단정적입니다.\n`What if we ...?`, `How about ...?`, `Why don't we ...?`는 회의에서 아이디어를 던질 때 자연스럽습니다.\n`You must ...`는 의무나 강한 지시를 말할 때 문법적으로 가능합니다. 상대에게 선택 가능한 제안을 하려는 상황에서는 would 등을 써서 강도를 낮출 수 있습니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-passive-voice-objective.sections[1].body",
+      "reason": "An active statement is not a grammatical error.",
+      "before": "문제를 알릴 때 `You made a mistake.`는 **상대를 직접 비난**하는 느낌입니다. 수동태로 바꾸면 사람이 아닌 **사건**에 초점이 가서 외교적입니다.\n`A mistake was made in the invoice.`\n`It appears that ...`, `It seems that ...`을 덧붙이면 더 완곡해집니다.\n단, 자신의 책임을 숨기려고 남용하면 오히려 신뢰를 잃으니, **사과할 때는 능동태(`We made an error.`)**가 더 진정성 있게 들립니다.",
+      "after": "문제를 알릴 때 `You made a mistake.`는 **상대를 직접 비난**하는 느낌입니다. 수동태로 바꾸면 사람이 아닌 **사건**에 초점이 가서 외교적입니다.\n`A mistake was made in the invoice.`\n`It appears that ...`, `It seems that ...`을 덧붙이면 더 완곡해집니다.\n단, 자신의 책임을 숨기려고 남용하면 오히려 신뢰를 잃으니, **사과할 때는 능동태(`We made an error.`)**가 더 진정성 있게 들립니다.\n`You attached the wrong file.`도 문법적으로 맞는 문장입니다. 행위자를 직접 지적할 필요가 있는지, 완곡하게 상황만 알릴지에 따라 능동태와 수동태를 고릅니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/be-expressions-with-be",
+        "https://dictionary.cambridge.org/grammar/british-grammar/politeness_2"
+      ]
+    },
+    {
+      "path": "g-biz-conditionals-suggestions.sections[3].body",
+      "reason": "Unless means except if; a negative exception clause is possible.",
+      "before": "`unless`는 \"~하지 않는 한\"(= if not)입니다. 이미 부정이 들어 있으므로 **unless 뒤에 not을 또 쓰지 않습니다**.\n`We'll proceed unless we hear otherwise.`\n`otherwise`는 \"그렇지 않으면\"으로 결과를 경고할 때, `in that case`는 \"그 경우라면\"으로 상대 조건에 반응할 때 씁니다.\n`unless`는 협박처럼 들릴 수 있으니 고객 응대에서는 `if ... not`이 더 부드러울 때가 있습니다.",
+      "after": "`unless`는 \"~하지 않는 한\"(= if not)입니다. 따라서 if not을 unless로 바꿀 때 원래 not까지 기계적으로 남기면 의도한 조건이 달라집니다. 다만 예외 조건 자체가 부정이면 부정형이 올 수도 있습니다: `Do not call me unless you cannot find the address.`(주소를 못 찾는 경우에만 전화하세요).\n`We'll proceed unless we hear otherwise.`\n`otherwise`는 \"그렇지 않으면\"으로 결과를 경고할 때, `in that case`는 \"그 경우라면\"으로 상대 조건에 반응할 때 씁니다.\n`unless`는 협박처럼 들릴 수 있으니 고객 응대에서는 `if ... not`이 더 부드러울 때가 있습니다.",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/unless"
+      ]
+    },
+    {
+      "path": "g-biz-conditionals-suggestions.sections[3].examples[0].wrong",
+      "reason": "The negative clause changes the exception condition; it is not structurally impossible.",
+      "before": "We'll proceed with the plan unless we don't hear otherwise.",
+      "after": null,
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/unless"
+      ]
+    },
+    {
+      "path": "g-biz-conditionals-suggestions.pitfalls",
+      "reason": "Explain the semantic scope instead of banning all negation.",
+      "before": [
+        "if절에 will 사용: `If you will order...` → `If you order...`",
+        "`unless ... not` 이중 부정",
+        "제안을 `You must`, `You should`로 시작해 지시처럼 들리는 경우 (`I would suggest ...`, `It might be worth ...`)",
+        "`Should you ...` 도치를 의문문으로 오해하거나, 뒤에 물음표를 붙이는 실수"
+      ],
+      "after": [
+        "if절에 will 사용: `If you will order...` → `If you order...`",
+        "if not을 unless로 바꾸면서 not까지 그대로 남겨 의도한 조건을 뒤집는 실수. unless 뒤의 부정형 자체가 항상 문법 오류인 것은 아니다.",
+        "제안을 `You must`, `You should`로 시작해 지시처럼 들리는 경우 (`I would suggest ...`, `It might be worth ...`)",
+        "`Should you ...` 도치를 의문문으로 오해하거나, 뒤에 물음표를 붙이는 실수"
+      ],
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/unless"
+      ]
+    },
+    {
+      "path": "g-biz-numbers-trends-prepositions.sections[1].body",
+      "reason": "Steadily describes a regular trend, not a point on a magnitude scale.",
+      "before": "**증가**: `increase, rise, grow, go up, climb, jump, surge, double`\n**감소**: `decrease, fall, drop, decline, go down, plunge, halve`\n**유지**: `remain stable, stay flat, level off, plateau`\n**변동**: `fluctuate`\n강도는 부사로: `slightly`(약간) → `steadily`(꾸준히) → `significantly`(상당히) → `sharply / dramatically`(급격히)\n`raise`는 타동사(\"~을 올리다\")이고 `rise`는 자동사(\"오르다\")라는 차이에 주의하세요.",
+      "after": "**증가**: `increase, rise, grow, go up, climb, jump, surge, double`\n**감소**: `decrease, fall, drop, decline, go down, plunge, halve`\n**유지**: `remain stable, stay flat, level off, plateau`\n**변동**: `fluctuate`\n변화의 크기·양상은 부사로 나타냅니다: `slightly`(약간), `significantly`(상당히), `sharply/dramatically`(급격히·큰 폭으로). `steadily`(꾸준히)는 지속적이고 규칙적인 추세를 말하므로 이들과 하나의 강도 순서로 배열하지 않습니다.\n`raise`는 타동사(\"~을 올리다\")이고 `rise`는 자동사(\"오르다\")라는 차이에 주의하세요.",
+      "sources": [
+        "https://dictionary.cambridge.org/us/dictionary/english/steadily"
+      ]
+    },
+    {
+      "path": "g-biz-numbers-trends-prepositions.sections[2].examples[2].ko",
+      "reason": "Accounted for here gives the cause of complaints, rather than a category making up the complaints.",
+      "before": "배송 지연이 불만의 대부분을 차지했습니다.",
+      "after": "배송 지연이 대부분의 불만을 초래했습니다.",
+      "sources": []
+    },
+    {
+      "path": "b-p-scroll-down.senses[0].meaningEn",
+      "reason": "Describe viewport navigation rather than reversing the movement of the displayed content.",
+      "before": "to move the text or images on a screen downward to see what comes next",
+      "after": "to move toward the bottom of a page or document on a screen to see the content below",
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/scroll?q=to+scroll"
+      ]
+    },
+    {
+      "path": "b-p-scroll-up.senses[0].meaningEn",
+      "reason": "Describe viewport navigation rather than reversing the movement of the displayed content.",
+      "before": "to move the text or images on a screen upward to see what came before",
+      "after": "to move toward the top of a page or document on a screen to see the content above",
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/scroll?q=to+scroll"
+      ]
+    },
+    {
+      "path": "b-w-hundred.senses[0].note",
+      "reason": "The original a-or-one requirement contradicted its own two hundred example.",
+      "before": "앞에 a 나 one 이 꼭 붙음: a hundred / one hundred. 숫자 뒤에서는 복수 -s 를 붙이지 않음(two hundred, two hundreds ✗).",
+      "after": "100은 a hundred / one hundred라고 한다. 다른 수량은 two hundred, several hundred처럼 앞에 수나 수량 표현을 쓴다. 정확한 수 뒤에서는 hundred에 복수 -s를 붙이지 않는다(two hundred, two hundreds ✗).",
+      "sources": [
+        "https://dictionary.cambridge.org/grammar/british-grammar/number"
+      ]
+    },
+    {
+      "path": "b-w-need.senses[0].antonyms",
+      "reason": "Want is a related contrasting concept, not the opposite of need; the existing usage note already explains the distinction.",
+      "before": [
+        "want"
+      ],
+      "after": null,
+      "sources": []
+    }
+  ],
+  "limitations": [
+    "No claim of exhaustive independent dictionary verification of all 13,955 senses, all pronunciation entries, or all 28,001 vocabulary translations.",
+    "Automatic validation proves structural consistency, not semantic correctness."
+  ],
+  "validation": {
+    "status": "passed",
+    "schema": "all 8,911 entries and 20 grammar topics",
+    "regressionTests": {
+      "passed": 17,
+      "failed": 0
+    },
+    "productionBuild": "content generation, TypeScript, Vite and PWA passed",
+    "generatedDataIntegrity": "all 8,911 compact/legacy records and relation targets match",
+    "browser": {
+      "grammarTopics": 20,
+      "changedVocabularyEntries": 4,
+      "checks": [
+        "error labels match corrected JSON",
+        "corrected by-Friday explanation visible",
+        "no horizontal overflow at 390px",
+        "corrected vocabulary loaded from small shards"
+      ],
+      "pageErrors": []
+    },
+    "reviewRecordIntegrity": "all 50 before/after records match HEAD and working content",
+    "diffWhitespace": "passed"
+  },
+  "changeSummary": {
+    "vocabularyEntries": 4,
+    "grammarTopics": 15,
+    "changedFields": 50,
+    "removedContextDependentErrorLabels": 15,
+    "grammarExampleTranslations": 2
+  }
+}
