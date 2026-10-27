@@ -93,6 +93,42 @@ function shuffled<T>(items: T[], random: () => number): T[] {
   return out
 }
 
+// The index objects are immutable. Normalize only candidates we actually inspect,
+// and reuse them on the next quiz instead of preparing all 8,000+ words up front.
+function prepare(e: IndexItem) {
+  const keywords = e.k.split('|')
+  return {
+    headword: norm(e.h), keywords: new Set(keywords.map(norm)),
+    meanings: [e.m, ...keywords.filter((k) => /[가-힣]/.test(k))].flatMap(aliases),
+  }
+}
+const prepared = new WeakMap<IndexItem, ReturnType<typeof prepare>>()
+const candidateGroups = new WeakMap<IndexItem[], Map<string, IndexItem[][]>>()
+
+function groupsFor(all: IndexItem[], entry: Entry): IndexItem[][] {
+  let cache = candidateGroups.get(all)
+  if (!cache) { cache = new Map(); candidateGroups.set(all, cache) }
+  const key = `${entry.level}:${entry.type}`
+  let groups = cache.get(key)
+  if (!groups) {
+    groups = [[], [], [], []]
+    for (const e of all) groups[(e.l === entry.level ? 0 : 2) + (e.t === entry.type ? 0 : 1)].push(e)
+    cache.set(key, groups)
+  }
+  return groups
+}
+
+/** Partial Fisher–Yates: sample without replacement, allocating only visited slots. */
+function* sample(items: IndexItem[], random: () => number) {
+  const swapped = new Map<number, number>()
+  for (let left = items.length; left > 0; left--) {
+    const slot = Math.floor(random() * left)
+    const index = swapped.get(slot) ?? slot
+    swapped.set(slot, swapped.get(left - 1) ?? left - 1)
+    yield items[index]
+  }
+}
+
 export function quizPool(items: IndexItem[], progress: Record<string, Progress>, scope: QuizScope, level: string, lastStudyIds: string[], now = Date.now()): IndexItem[] {
   const day = todayKey(new Date(now))
   const last = new Set(lastStudyIds)
@@ -107,22 +143,32 @@ export function quizPool(items: IndexItem[], progress: Record<string, Progress>,
 export function buildQuestions(entries: Entry[], all: IndexItem[], kinds: Kind[], random = Math.random): Question[] {
   if (!kinds.length) return []
   const questions: Question[] = []
-  const prepared = all.map((e) => ({
-    e, headword: norm(e.h), keywords: new Set(e.k.split('|').map(norm)),
-    meanings: [e.m, ...e.k.split('|').filter((k) => /[가-힣]/.test(k))].flatMap(aliases),
-  }))
   for (const entry of entries) {
     const senseIdx = Math.floor(random() * entry.senses.length)
     const sense = entry.senses[senseIdx]
     const family = posFamily(sense.pos)
     const excluded = new Set([entry.headword, ...(entry.forms ?? []), ...entry.senses.flatMap((s) => s.synonyms ?? [])].map(norm))
     const meanings = entry.senses.flatMap((s) => aliases(s.meaningKo))
-    const candidates = shuffled(prepared.filter((c) => c.e.id !== entry.id && !excluded.has(c.headword)
-      && !c.keywords.has(norm(entry.headword)) && !overlaps(meanings, c.meanings)).map((c) => c.e), random)
-      .sort((a, b) => Number(b.l === entry.level) - Number(a.l === entry.level) || Number(b.t === entry.type) - Number(a.t === entry.type))
-    const unique = (answer: string, values: string[]) => {
+    const headword = norm(entry.headword)
+    const collect = (answer: string, value: (e: IndexItem) => string | null) => {
       const seen = new Set([norm(answer)])
-      return values.filter((v) => { const key = norm(v); if (!key || seen.has(key)) return false; seen.add(key); return true }).slice(0, 3)
+      const choices: string[] = []
+      for (const group of groupsFor(all, entry)) {
+        for (const e of sample(group, random)) {
+          if (e.id === entry.id) continue
+          const text = value(e)
+          if (!text) continue
+          const key = norm(text)
+          if (!key || seen.has(key)) continue
+          let c = prepared.get(e)
+          if (!c) { c = prepare(e); prepared.set(e, c) }
+          if (excluded.has(c.headword) || c.keywords.has(headword) || overlaps(meanings, c.meanings)) continue
+          seen.add(key)
+          choices.push(text)
+          if (choices.length === 3) return choices
+        }
+      }
+      return choices
     }
     let kind = kinds[Math.floor(random() * kinds.length)]
     let example = sense.examples[0]
@@ -135,8 +181,8 @@ export function buildQuestions(entries: Entry[], all: IndexItem[], kinds: Kind[]
       example = sense.examples[Math.floor(random() * sense.examples.length)]
       const blank = blankOut(example.en, entry, sense)
       if (blank) {
-        distract = unique(blank.answer, candidates.filter((e) => e.t === entry.type && e.p?.some((p) => posFamily(p) === family))
-          .map((e) => inflect(e.h, blank.form)).filter((s): s is string => !!s))
+        distract = collect(blank.answer, (e) => e.t === entry.type && e.p?.some((p) => posFamily(p) === family)
+          ? inflect(e.h, blank.form) : null)
         if (distract.length === 3) {
           prompt = blank.prompt; answer = blank.answer; promptSub = example.ko; speakText = undefined
         } else kind = 'meaning'
@@ -144,10 +190,10 @@ export function buildQuestions(entries: Entry[], all: IndexItem[], kinds: Kind[]
     }
     if (kind === 'word') {
       prompt = sense.meaningKo; promptSub = `[${sense.context}] ${sense.meaningEn}`; speakText = undefined
-      answer = entry.headword; distract = unique(answer, candidates.map((e) => e.h))
+      answer = entry.headword; distract = collect(answer, (e) => e.h)
     } else if (kind === 'meaning') {
       prompt = entry.headword; promptSub = `[${sense.context}] ${sense.pos}`; speakText = entry.headword
-      answer = sense.meaningKo; distract = unique(answer, candidates.map((e) => e.m))
+      answer = sense.meaningKo; distract = collect(answer, (e) => e.m)
     }
     if (distract.length < 3) continue
     questions.push({ kind, entry, senseIdx, prompt, promptSub, speakText, answer, example, options: shuffled([answer, ...distract], random) })

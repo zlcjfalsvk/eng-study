@@ -3,7 +3,7 @@ import { LEVELS } from '../data/types'
 
 // 콘텐츠는 빌드 시 public/data/ 에 생성된 정적 JSON 을 런타임에 fetch 한다 (scripts/build-data.ts 참고).
 // 목록·검색·학습 대상 선정은 레벨별 경량 색인(index.json)만으로 처리하고,
-// 전체 항목(뜻·예문)은 200개 단위 샤드에서 필요한 것만 받는다. 서비스 워커가 받은 파일을 캐시한다.
+// 전체 항목(뜻·예문)은 추천순 32개 단위 샤드에서 필요한 것만 받는다. 이전 200개 샤드도 지원한다.
 
 export interface IndexItem {
   id: string
@@ -16,6 +16,7 @@ export interface IndexItem {
   g: string[] // 태그
   k: string // 검색 키워드
   s: number // 샤드 번호
+  x?: number // 추천순 compact 샤드 번호 (이전 색인에는 없음)
   r?: number // 레벨 안의 추천 학습 순서 (이전 캐시에는 없을 수 있음)
   p?: string[] // 품사 (퀴즈 보기 구성)
 }
@@ -27,7 +28,8 @@ export interface Manifest {
   grammar: number
 }
 
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/'
+const baseURL = import.meta.env?.BASE_URL ?? '/'
+const BASE = baseURL.endsWith('/') ? baseURL : baseURL + '/'
 const memo = new Map<string, Promise<unknown>>()
 
 function getJSON<T>(path: string): Promise<T> {
@@ -54,9 +56,10 @@ export async function loadIndex(level: Level): Promise<IndexItem[]> {
   const key = `index:${level}`
   const cached = memo.get(key)
   if (cached) return cached as Promise<IndexItem[]>
-  // 추천 순서·퀴즈 품사 정보가 없는 이전 서비스 워커 색인과 구분한다.
+  // 작은 샤드 정보가 없는 이전 서비스 워커 색인과 구분한다.
   // 오프라인일 때는 이미 받아 둔 이전 색인으로도 계속 탐색할 수 있다.
-  const p = getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=2`)
+  const p = getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=3`)
+    .catch(() => getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=2`))
     .catch(() => getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=1`))
     .catch(() => getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json`))
     .then((items) => items.map((i) => ({ ...i, l: level })))
@@ -66,12 +69,25 @@ export async function loadIndex(level: Level): Promise<IndexItem[]> {
 }
 
 export async function loadAllIndexes(): Promise<IndexItem[]> {
-  const lists = await Promise.all(LEVELS.map((l) => loadIndex(l)))
-  return lists.flat()
+  const key = 'index:all'
+  let cached = memo.get(key) as Promise<IndexItem[]> | undefined
+  if (!cached) {
+    cached = Promise.all(LEVELS.map((l) => loadIndex(l))).then((lists) => lists.flat())
+    memo.set(key, cached)
+  }
+  return cached
 }
 
 export function loadShard(level: Level, shard: number): Promise<Entry[]> {
   return getJSON<Entry[]>(`${level}/${shard}.json`)
+}
+
+function loadItemShard(item: IndexItem): Promise<Entry[]> {
+  // Keep the old URLs and numbering: cached old indexes still point at 200-item shards.
+  if (item.x == null) return loadShard(item.l, item.s)
+  return getJSON<Entry[]>(`${item.l}/compact/${item.x}.json`)
+    .then((entries) => entries.some((e) => e.id === item.id) ? entries : loadShard(item.l, item.s))
+    .catch(() => loadShard(item.l, item.s))
 }
 
 export function levelOfId(id: string): Level {
@@ -92,30 +108,37 @@ export async function loadEntry(id: string): Promise<Entry | undefined> {
   const index = await loadIndex(level)
   const item = index.find((i) => i.id === id)
   if (!item) return undefined
-  const shard = await loadShard(level, item.s)
+  const shard = await loadItemShard(item)
   return shard.find((e) => e.id === id)
 }
 
 /** 여러 항목을 샤드 단위로 묶어 받는다. 입력 순서를 유지한다. */
 export async function loadEntries(ids: string[]): Promise<Entry[]> {
-  const byLevel = new Map<Level, Set<number>>()
-  const indexes = new Map<Level, IndexItem[]>()
+  const levels = [...new Set(ids.map(levelOfId))]
+  const lists = await Promise.all(levels.map((lv) => loadIndex(lv)))
+  const indexes = new Map(lists.flat().map((item) => [item.id, item]))
+  const shards = new Map<string, IndexItem>()
   for (const id of ids) {
-    const lv = levelOfId(id)
-    if (!indexes.has(lv)) indexes.set(lv, await loadIndex(lv))
-    const item = indexes.get(lv)!.find((i) => i.id === id)
+    const item = indexes.get(id)
     if (!item) continue
-    if (!byLevel.has(lv)) byLevel.set(lv, new Set())
-    byLevel.get(lv)!.add(item.s)
+    // Include the legacy shard in the key so each can fall back independently.
+    shards.set(`${item.l}:${item.x ?? 'legacy'}:${item.s}`, item)
   }
   const found = new Map<string, Entry>()
   await Promise.all(
-    [...byLevel].flatMap(([lv, shards]) =>
-      [...shards].map(async (s) => {
-        for (const e of await loadShard(lv, s)) found.set(e.id, e)
-      }),
-    ),
+    [...shards.values()].map(async (item) => {
+      for (const e of await loadItemShard(item)) found.set(e.id, e)
+    }),
   )
+  // A stale compact shard may contain the group's first ID but miss another one.
+  const missing = new Map<string, IndexItem>()
+  for (const id of ids) {
+    const item = indexes.get(id)
+    if (!found.has(id) && item?.x != null) missing.set(`${item.l}:${item.s}`, item)
+  }
+  await Promise.all([...missing.values()].map(async (item) => {
+    for (const e of await loadShard(item.l, item.s)) found.set(e.id, e)
+  }))
   return ids.map((id) => found.get(id)).filter((e): e is Entry => !!e)
 }
 

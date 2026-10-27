@@ -96,6 +96,38 @@ test('older offline indexes without part-of-speech metadata use meaning question
   assert.equal(q.options.length, 4)
 })
 
+test('quiz choices prefer matching level and type, then exhaust other groups without replacement', () => {
+  const target = entry('buy', '구매하다')
+  target.senses[0].synonyms = ['purchase']
+  const same = [entry('walk', '걷다'), entry('run', '달리다'), entry('drive', '운전하다')]
+  const otherType = entry('look for', '찾다'); otherType.type = 'phrasal'
+  const otherLevel = entry('budget', '예산', 'n.', 'business')
+  const all = [target, entry('purchase', '사다'), ...same, otherType, otherLevel].map(index)
+  const [preferred] = buildQuestions([target], all, ['word'], () => 0)
+  assert.deepEqual(new Set(preferred.options), new Set(['buy', 'walk', 'run', 'drive']))
+  const sparse = [target, same[0], otherType, otherLevel].map(index)
+  const [fallback] = buildQuestions([target], sparse, ['word'], () => 0)
+  assert.deepEqual(new Set(fallback.options), new Set(['buy', 'walk', 'look for', 'budget']))
+  assert.deepEqual(buildQuestions([target], [target, same[0]].map(index), ['word'], () => 0), [])
+})
+
+test('ten questions sample a bounded number of candidates from a large index, including cached repeats', () => {
+  const entries = Array.from({ length: 5000 }, (_, i) => entry(`word${i}`, `의미${i}`))
+  const all = entries.map(index)
+  let draws = 0
+  const random = () => { draws++; return 0.37 }
+  for (let repeat = 0; repeat < 2; repeat++) {
+    draws = 0
+    const questions = buildQuestions(entries.slice(0, 10), all, ['word'], random)
+    assert.equal(questions.length, 10)
+    assert.ok(draws < 200, `Should stop after choosing distractors; made ${draws} random draws`)
+    for (const q of questions) {
+      assert.equal(new Set(q.options.map((s) => s.toLowerCase())).size, 4)
+      assert.ok(q.options.includes(q.answer))
+    }
+  }
+})
+
 test('a one-word studied scope stays one word; today and session scopes cross levels and respect local dates', () => {
   const now = new Date(2026, 9, 27, 12).getTime()
   const previousDay = new Date(2026, 9, 26, 23, 59).getTime()

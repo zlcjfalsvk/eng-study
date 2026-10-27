@@ -40,6 +40,7 @@ export default function Browse() {
 
   const { data, loading } = useAsync(() => (level === 'all' ? loadAllIndexes() : loadIndex(level)), [level])
   const progress = useStore((s) => s.progress)
+  const ordered = useMemo(() => orderIndex(data ?? [], order), [data, order])
 
   useEffect(() => {
     setShown(PAGE)
@@ -47,7 +48,7 @@ export default function Browse() {
 
   const filtered = useMemo(() => {
     if (!data) return []
-    let list: IndexItem[] = data
+    let list: IndexItem[] = ordered
     list = list.filter((e) => matchesTopic(e, topic))
     if (type !== 'all') list = list.filter((e) => e.t === type)
     if (filter !== 'all') {
@@ -70,8 +71,9 @@ export default function Browse() {
         return true
       })
     }
-    return searchIndex(orderIndex(list, order), dq)
-  }, [data, filter, type, dq, progress, order, topic])
+    return searchIndex(list, dq)
+  }, [data, ordered, filter, type, dq, progress, topic])
+  const visible = useMemo(() => filtered.slice(0, shown), [filtered, shown])
 
   function setParam(k: string, v: string) {
     const next = new URLSearchParams(sp)
@@ -171,7 +173,7 @@ export default function Browse() {
       ) : (
         <>
           <p className="mb-2 mt-1 text-xs text-slate-500">{filtered.length.toLocaleString()}개</p>
-          <EntryList items={filtered.slice(0, shown)} showLevel={level === 'all'} />
+          <EntryList items={visible} showLevel={level === 'all'} />
           {shown < filtered.length && (
             <button type="button" onClick={() => setShown((n) => n + PAGE)} className="mt-3 w-full rounded-xl border border-slate-200 bg-white py-2.5 text-sm font-medium text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
               더 보기 ({filtered.length - shown}개 남음)

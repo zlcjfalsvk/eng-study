@@ -8,6 +8,7 @@ export const CONTENT_DIR = join(ROOT, 'content')
 export const OUT_DIR = join(ROOT, 'public/data')
 export const LEVELS: Level[] = ['beginner', 'intermediate', 'advanced', 'business']
 export const SHARD_SIZE = 200
+export const COMPACT_SHARD_SIZE = 32
 
 export function levelFile(level: Level) {
   return join(CONTENT_DIR, `${level}.jsonl`)

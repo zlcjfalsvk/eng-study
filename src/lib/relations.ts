@@ -1,4 +1,6 @@
 import type { EntryType, Level } from '../data/types'
+import { levelOfId } from './content'
+import { relationShard } from './relation-shard'
 
 // scripts/relations.ts 가 빌드 시 만든 색인. 상세 화면에서 다른 레벨 파일을 내려받지 않고 연관 단어를 보여 준다.
 export type RelKind = 'd' | 'b' | 's' | 'a' | 'r' | 'e'
@@ -24,19 +26,27 @@ export const REL_LABEL: Record<RelKind, string> = {
 }
 export const REL_ORDER: RelKind[] = ['d', 'b', 'r', 's', 'a', 'e']
 
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/'
-let cache: Promise<RelationsFile | null> | null = null
-function load() {
-  if (!cache) {
-    cache = fetch(`${BASE}data/relations.json`, { cache: 'no-cache' })
-      .then((r) => (r.ok ? (r.json() as Promise<RelationsFile>) : null))
-      .catch(() => null)
+const baseURL = import.meta.env?.BASE_URL ?? '/'
+const BASE = baseURL.endsWith('/') ? baseURL : baseURL + '/'
+const cache = new Map<string, Promise<RelationsFile>>()
+function loadFile(path: string): Promise<RelationsFile> {
+  let pending = cache.get(path)
+  if (!pending) {
+    pending = fetch(`${BASE}data/${path}`, { cache: 'no-cache' })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+        return r.json() as Promise<RelationsFile>
+      })
+      .catch((error) => { cache.delete(path); throw error })
+    cache.set(path, pending)
   }
-  return cache
+  return pending
 }
 
 export async function getRelated(id: string): Promise<{ kind: RelKind; items: RelCard[] }[]> {
-  const f = await load()
+  const f = await loadFile(`relations/${levelOfId(id)}/${relationShard(id)}.json`)
+    .catch(() => loadFile('relations.json')) // previously cached offline data
+    .catch(() => null)
   if (!f) return []
   const r = f.rel[id]
   if (!r) return []

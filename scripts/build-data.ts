@@ -5,13 +5,16 @@
 //   data/grammar.json           문법 주제
 //   data/<level>/index.json     목록·검색용 경량 색인 (id, 표제어, 첫 뜻, 상황, 검색 키워드, 샤드 번호)
 //   data/<level>/<n>.json       200개 단위 샤드 (전체 Entry)
+//   data/<level>/compact/<n>.json  추천순 32개 단위 샤드 (현재 앱)
+//   data/relations/<level>/<n>.json ID별로 나눈 연관 색인 + 대상 카드
 import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { Entry } from '../src/data/types.ts'
-import { LEVELS, OUT_DIR, SHARD_SIZE } from './lib/content-io.ts'
+import { LEVELS, OUT_DIR, SHARD_SIZE, COMPACT_SHARD_SIZE } from './lib/content-io.ts'
 import { buildRelations } from './relations.ts'
 import { validateAll } from './validate.ts'
 import { readLearningRanks } from './lib/learning-order.ts'
+import { RELATION_SHARDS, relationShard } from '../src/lib/relation-shard.ts'
 
 export interface IndexItem {
   id: string
@@ -23,6 +26,7 @@ export interface IndexItem {
   g: string[] // 태그
   k: string // 검색 키워드: 변화형 | 모든 meaningKo | 유의어 (소문자)
   s: number // 샤드 번호
+  x: number // 추천순 compact 샤드 번호
   r: number // 레벨 안의 추천 학습 순서 (1부터)
   p: string[] // 품사
 }
@@ -47,6 +51,16 @@ for (const lv of LEVELS) {
   all.push(...list)
   const dir = join(OUT_DIR, lv)
   mkdirSync(dir, { recursive: true })
+  const compactDir = join(dir, 'compact')
+  mkdirSync(compactDir, { recursive: true })
+  const compact = list.slice().sort((a, b) => learningRanks.get(a.id)! - learningRanks.get(b.id)!)
+  const compactShard = new Map<string, number>()
+  for (let i = 0; i < compact.length; i += COMPACT_SHARD_SIZE) {
+    const shard = i / COMPACT_SHARD_SIZE
+    const chunk = compact.slice(i, i + COMPACT_SHARD_SIZE)
+    writeFileSync(join(compactDir, `${shard}.json`), JSON.stringify(chunk))
+    for (const e of chunk) compactShard.set(e.id, shard)
+  }
   const index: IndexItem[] = []
   const byType: Record<string, number> = {}
   for (let i = 0; i < list.length; i += SHARD_SIZE) {
@@ -71,6 +85,7 @@ for (const lv of LEVELS) {
         g: e.tags ?? [],
         k: Array.from(kw).join('|'),
         s: shard,
+        x: compactShard.get(e.id)!,
         r: learningRanks.get(e.id)!,
         p: [...new Set(e.senses.map((s) => s.pos))],
       })
@@ -83,7 +98,26 @@ for (const lv of LEVELS) {
 writeFileSync(join(OUT_DIR, 'grammar.json'), JSON.stringify(r.grammar))
 const relations = buildRelations(all)
 writeFileSync(join(OUT_DIR, 'relations.json'), JSON.stringify(relations))
+mkdirSync(join(OUT_DIR, 'relations'), { recursive: true })
+for (const lv of LEVELS) {
+  const shards = Array.from({ length: RELATION_SHARDS }, () => ({
+    rel: {} as typeof relations.rel, cards: {} as typeof relations.cards,
+  }))
+  for (const e of r.levels[lv]) {
+    const groups = relations.rel[e.id]
+    if (!groups) continue
+    const { rel, cards } = shards[relationShard(e.id)]
+    rel[e.id] = groups
+    for (const ids of Object.values(groups)) {
+      for (const id of ids ?? []) cards[id] = relations.cards[id]
+    }
+  }
+  const dir = join(OUT_DIR, 'relations', lv)
+  mkdirSync(dir, { recursive: true })
+  for (const [n, shard] of shards.entries()) writeFileSync(join(dir, `${n}.json`), JSON.stringify(shard))
+}
 writeFileSync(join(OUT_DIR, 'manifest.json'), JSON.stringify(manifest, null, 2))
 
 const relCount = Object.values(relations.rel).reduce((n, x) => n + Object.values(x).reduce((m, a) => m + (a?.length ?? 0), 0), 0)
-console.log(`→ public/data/: 표제어 ${all.length}개 (샤드 ${Object.values(manifest.levels).reduce((n, l) => n + l.shards, 0)}개), 문법 ${r.grammar.length}개, 연관 ${relCount}개`)
+const compactCount = LEVELS.reduce((n, lv) => n + Math.ceil(r.levels[lv].length / COMPACT_SHARD_SIZE), 0)
+console.log(`→ public/data/: 표제어 ${all.length}개 (소형 샤드 ${compactCount}개, 기존 샤드 ${Object.values(manifest.levels).reduce((n, l) => n + l.shards, 0)}개), 문법 ${r.grammar.length}개, 연관 ${relCount}개`)

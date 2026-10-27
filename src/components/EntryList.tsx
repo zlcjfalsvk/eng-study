@@ -1,10 +1,11 @@
+import { memo } from 'react'
 import { Link } from 'react-router'
 import type { IndexItem } from '../lib/content'
 import { useStore } from '../store/progress'
 import { SpeakButton } from './SpeakButton'
 import { ChevronRight, LevelBadge, StatusDot, TypeBadge, cx } from './ui'
 
-export function EntryRow({ item, showLevel }: { item: IndexItem; showLevel?: boolean }) {
+export const EntryRow = memo(function EntryRow({ item, showLevel }: { item: IndexItem; showLevel?: boolean }) {
   const p = useStore((s) => s.progress[item.id])
   return (
     <Link to={`/entry/${item.id}`} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-3 py-3 active:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:active:bg-slate-800">
@@ -32,9 +33,9 @@ export function EntryRow({ item, showLevel }: { item: IndexItem; showLevel?: boo
       <ChevronRight className="shrink-0 text-slate-300" />
     </Link>
   )
-}
+})
 
-export function EntryList({ items, showLevel, className }: { items: IndexItem[]; showLevel?: boolean; className?: string }) {
+export const EntryList = memo(function EntryList({ items, showLevel, className }: { items: IndexItem[]; showLevel?: boolean; className?: string }) {
   return (
     <div className={cx('flex flex-col gap-2', className)}>
       {items.map((e) => (
@@ -42,4 +43,4 @@ export function EntryList({ items, showLevel, className }: { items: IndexItem[];
       ))}
     </div>
   )
-}
+})
