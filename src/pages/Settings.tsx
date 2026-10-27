@@ -178,7 +178,7 @@ export default function Settings() {
           <dl className="mt-3 text-sm">
             <div className="flex items-baseline gap-4">
               <dt className="shrink-0 text-slate-500 dark:text-slate-400">제작자</dt>
-              <dd className="font-medium">cheolcheo</dd>
+              <dd className="font-medium">cheolcheol</dd>
             </div>
           </dl>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
