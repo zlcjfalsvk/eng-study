@@ -57,6 +57,7 @@ export async function loadIndex(level: Level): Promise<IndexItem[]> {
   // 추천 순서·퀴즈 품사 정보가 없는 이전 서비스 워커 색인과 구분한다.
   // 오프라인일 때는 이미 받아 둔 이전 색인으로도 계속 탐색할 수 있다.
   const p = getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=2`)
+    .catch(() => getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json?order=1`))
     .catch(() => getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json`))
     .then((items) => items.map((i) => ({ ...i, l: level })))
     .catch(() => [] as IndexItem[]) // 콘텐츠가 없는 레벨은 빈 목록

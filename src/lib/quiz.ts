@@ -135,7 +135,7 @@ export function buildQuestions(entries: Entry[], all: IndexItem[], kinds: Kind[]
       example = sense.examples[Math.floor(random() * sense.examples.length)]
       const blank = blankOut(example.en, entry, sense)
       if (blank) {
-        distract = unique(blank.answer, candidates.filter((e) => e.t === entry.type && (!e.p || e.p.some((p) => posFamily(p) === family)))
+        distract = unique(blank.answer, candidates.filter((e) => e.t === entry.type && e.p?.some((p) => posFamily(p) === family))
           .map((e) => inflect(e.h, blank.form)).filter((s): s is string => !!s))
         if (distract.length === 3) {
           prompt = blank.prompt; answer = blank.answer; promptSub = example.ko; speakText = undefined

@@ -89,6 +89,13 @@ test('known synonyms, alternate senses, forms, duplicate headwords, and duplicat
   }
 })
 
+test('older offline indexes without part-of-speech metadata use meaning questions safely', () => {
+  const legacy = [go, ...others].map((e) => { const item = index(e); delete item.p; return item })
+  const [q] = buildQuestions([go], legacy, ['blank'], () => 0)
+  assert.equal(q.kind, 'meaning')
+  assert.equal(q.options.length, 4)
+})
+
 test('a one-word studied scope stays one word; today and session scopes cross levels and respect local dates', () => {
   const now = new Date(2026, 9, 27, 12).getTime()
   const previousDay = new Date(2026, 9, 26, 23, 59).getTime()
