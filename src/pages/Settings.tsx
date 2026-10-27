@@ -3,6 +3,7 @@ import { LEVELS } from '../data/types'
 import { LEVEL_META } from '../lib/content'
 import { getEnglishVoices, isTTSSupported, onVoicesChanged, speak } from '../lib/tts'
 import { STORAGE_KEY, useStore } from '../store/progress'
+import { STORAGE_BACKEND, requestPersistentStorage, storageInfo } from '../store/storage'
 import { Button, Card, Chip, Page, cx } from '../components/ui'
 
 export default function Settings() {
@@ -17,6 +18,10 @@ export default function Settings() {
   const [msg, setMsg] = useState<string | null>(null)
   const [confirmReset, setConfirmReset] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null)
+  const [store, setStore] = useState<Awaited<ReturnType<typeof storageInfo>> | null>(null)
+  useEffect(() => {
+    storageInfo().then(setStore)
+  }, [])
 
   useEffect(() => onVoicesChanged(() => setVoices(getEnglishVoices())), [])
 
@@ -72,7 +77,24 @@ export default function Settings() {
             <Mini label="북마크" v={counts.bookmarked} />
             <Mini label="연속 학습" v={`${streak}일`} />
           </div>
-          <p className="mt-2 text-xs text-slate-400">총 {days}일 학습 · 기록은 이 브라우저(localStorage)에만 저장됩니다. 기기를 바꾸려면 아래에서 내보내기/불러오기를 사용하세요.</p>
+          <p className="mt-2 text-xs text-slate-400">
+            총 {days}일 학습 · 기록은 이 브라우저({STORAGE_BACKEND === 'indexeddb' ? 'IndexedDB' : 'localStorage'})에만 저장됩니다. 기기를 바꾸려면 아래에서 내보내기/불러오기를 사용하세요.
+          </p>
+          {store && (
+            <p className="mt-1 flex flex-wrap items-center gap-x-2 text-xs text-slate-400">
+              {store.persisted === true ? (
+                <span className="text-emerald-600">✓ 영구 저장 승인됨</span>
+              ) : store.persisted === false ? (
+                <>
+                  <span className="text-amber-600">영구 저장 미승인 (오래 안 쓰면 브라우저가 지울 수 있음)</span>
+                  <button type="button" className="underline" onClick={() => requestPersistentStorage().then(() => storageInfo().then(setStore))}>
+                    요청
+                  </button>
+                </>
+              ) : null}
+              {store.usage != null && <span>· 사용량 {(store.usage / 1024).toFixed(0)}KB</span>}
+            </p>
+          )}
         </Card>
 
         <Card>

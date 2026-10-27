@@ -1,6 +1,6 @@
 # Eng — 상황별 영단어·구동사·영문법 학습 앱
 
-한국어 화자를 위한 모바일 우선 영어 학습 웹앱입니다. 단어의 뜻을 한두 개가 아니라 **상황(context)별로 분리**해서 보여 주고, 각 뜻마다 예문(영/한)과 **브라우저 내장 음성(TTS)** 을 제공합니다. 학습 기록은 브라우저(localStorage)에 저장되며 서버가 없습니다.
+한국어 화자를 위한 모바일 우선 영어 학습 웹앱입니다. 단어의 뜻을 한두 개가 아니라 **상황(context)별로 분리**해서 보여 주고, 각 뜻마다 예문(영/한)과 **브라우저 내장 음성(TTS)** 을 제공합니다. 학습 기록은 브라우저(IndexedDB)에 저장되며 서버가 없습니다.
 
 ## 기능
 
@@ -67,7 +67,7 @@ pnpm generate --level beginner --count 10 --dry-run   # API 호출 없이 후보
 
 ## 학습 기록 저장
 
-`localStorage` 키 `eng-progress-v1` 에 단어별 SRS 상태(ease·interval·due·reps), 일별 통계, 문법 읽음 표시, 설정이 저장됩니다. 설정 화면에서 JSON 으로 내보내기/불러오기 할 수 있습니다.
+IndexedDB(데이터베이스 `eng-study`, 키 `eng-progress-v1`)에 단어별 SRS 상태(ease·interval·due·reps), 일별 통계, 문법 읽음 표시, 설정이 저장됩니다. IndexedDB 를 쓸 수 없는 환경에서는 localStorage 로 폴백하고, 예전 버전이 localStorage 에 남긴 기록은 첫 실행 때 자동으로 이전됩니다. 시작 시 `navigator.storage.persist()` 로 영구 저장을 요청하며, 설정 화면에서 승인 여부와 사용량을 볼 수 있습니다. JSON 내보내기/불러오기로 기기 간 이동이 가능합니다.
 
 ## 음성
 

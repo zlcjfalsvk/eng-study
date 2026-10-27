@@ -1,8 +1,9 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router'
 import { BottomNav } from './components/BottomNav'
 import { Spinner } from './components/ui'
 import { useStore } from './store/progress'
+import { requestPersistentStorage } from './store/storage'
 
 const Home = lazy(() => import('./pages/Home'))
 const Browse = lazy(() => import('./pages/Browse'))
@@ -34,7 +35,23 @@ function ThemeSync() {
   return null
 }
 
+/** IndexedDB 는 비동기라서 저장된 기록을 다 읽기 전에 화면을 그리면 빈 진도가 잠깐 보인다. 읽을 때까지 기다린다. */
+function useHydrated() {
+  const [hydrated, setHydrated] = useState(useStore.persist.hasHydrated())
+  useEffect(() => {
+    const unsub = useStore.persist.onFinishHydration(() => setHydrated(true))
+    if (useStore.persist.hasHydrated()) setHydrated(true)
+    return unsub
+  }, [])
+  return hydrated
+}
+
 export default function App() {
+  const hydrated = useHydrated()
+  useEffect(() => {
+    if (hydrated) void requestPersistentStorage()
+  }, [hydrated])
+  if (!hydrated) return <Spinner />
   return (
     <HashRouter>
       <ScrollToTop />

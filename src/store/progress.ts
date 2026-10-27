@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import type { Level, Progress } from '../data/types'
 import { grade as srsGrade, markKnown as srsMarkKnown, newProgress, todayKey, type Grade } from '../lib/srs'
+import { progressStorage } from './storage'
 
 export interface Settings {
   voiceURI?: string
@@ -123,7 +124,7 @@ export const useStore = create<State>()(
     }),
     {
       name: STORAGE_KEY,
-      storage: createJSONStorage(() => localStorage),
+      storage: createJSONStorage(() => progressStorage),
       version: 1,
     },
   ),
