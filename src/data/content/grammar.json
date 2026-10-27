@@ -1,0 +1,1923 @@
+[
+  {
+    "id": "g-be-vs-do-present",
+    "title": "Be Verbs vs. Action Verbs (Present Simple)",
+    "titleKo": "be동사 vs 일반동사 현재형",
+    "level": "beginner",
+    "category": "시제",
+    "summary": "영어 문장은 be동사 문장과 일반동사 문장으로 나뉘고, 부정문·의문문 만드는 방법이 다릅니다. 두 종류를 섞어 쓰는 것이 초급에서 가장 흔한 실수입니다.",
+    "sections": [
+      {
+        "heading": "be동사: 상태·신분·위치를 말할 때",
+        "body": "be동사(am/is/are)는 \"~이다, ~에 있다, ~한 상태다\"를 나타냅니다. 주어에 따라 모양이 바뀝니다.\n`I am` / `You, We, They are` / `He, She, It is`\n뒤에는 명사·형용사·장소가 옵니다. 동작(먹다, 가다)에는 쓰지 않습니다.",
+        "examples": [
+          {
+            "en": "I am a nurse at a small hospital.",
+            "ko": "저는 작은 병원의 간호사예요."
+          },
+          {
+            "en": "She is really tired today.",
+            "ko": "그녀는 오늘 정말 피곤해요."
+          },
+          {
+            "en": "My keys are on the kitchen table.",
+            "ko": "내 열쇠는 부엌 식탁 위에 있어요."
+          }
+        ]
+      },
+      {
+        "heading": "일반동사: 동작·습관을 말할 때",
+        "body": "일반동사(eat, work, like 등)는 동작이나 습관을 나타냅니다. **3인칭 단수(he/she/it) 주어일 때 동사에 -s/-es**를 붙이는 것이 핵심입니다.\n`I work` / `She works` / `He watches` / `It goes`\nbe동사와 일반동사를 한 문장에 같이 쓰지 않습니다.",
+        "examples": [
+          {
+            "en": "I work from home on Fridays.",
+            "ko": "저는 금요일마다 재택근무를 해요."
+          },
+          {
+            "en": "He likes spicy food a lot.",
+            "ko": "그는 매운 음식을 아주 좋아해요.",
+            "wrong": "He like spicy food a lot."
+          },
+          {
+            "en": "She plays tennis every weekend.",
+            "ko": "그녀는 주말마다 테니스를 쳐요.",
+            "wrong": "She is play tennis every weekend."
+          }
+        ]
+      },
+      {
+        "heading": "부정문: not vs do not",
+        "body": "**be동사 부정**은 be동사 뒤에 `not`만 붙입니다. (is not = isn't, are not = aren't)\n**일반동사 부정**은 `do not(don't)` / `does not(doesn't)`를 동사 앞에 두고, 동사는 **원형**으로 돌아갑니다.\n`She doesn't like` (O) / `She doesn't likes` (X)",
+        "examples": [
+          {
+            "en": "I'm not hungry right now.",
+            "ko": "지금은 배고프지 않아요.",
+            "wrong": "I don't hungry right now."
+          },
+          {
+            "en": "She doesn't eat meat or fish.",
+            "ko": "그녀는 고기도 생선도 안 먹어요.",
+            "wrong": "She doesn't eats meat or fish."
+          },
+          {
+            "en": "We don't have class on Monday.",
+            "ko": "우리는 월요일에 수업이 없어요.",
+            "wrong": "We aren't have class on Monday."
+          }
+        ]
+      },
+      {
+        "heading": "의문문: be동사는 앞으로, 일반동사는 Do/Does",
+        "body": "**be동사 의문문**은 be동사를 주어 앞으로 보냅니다. `Are you ready?`\n**일반동사 의문문**은 문장 앞에 `Do/Does`를 두고 동사는 원형입니다. `Does she work here?`\n대답도 같은 종류로 합니다: `Yes, I am.` / `Yes, she does.`",
+        "examples": [
+          {
+            "en": "Are you from Busan or Daegu?",
+            "ko": "부산 출신이세요, 대구 출신이세요?",
+            "wrong": "Do you from Busan or Daegu?"
+          },
+          {
+            "en": "Does your brother live in Seoul?",
+            "ko": "남동생이 서울에 살아요?",
+            "wrong": "Does your brother lives in Seoul?"
+          },
+          {
+            "en": "Do they know the answer?",
+            "ko": "그들이 답을 알아요?",
+            "wrong": "Are they know the answer?"
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "한국어 \"~해요\"를 그대로 옮겨 `I am go to work.`처럼 be동사와 일반동사를 같이 쓰는 실수",
+      "3인칭 단수 -s 누락: `He play` → `He plays`",
+      "형용사 앞 be동사 누락: `I very tired.` → `I am very tired.`",
+      "일반동사 부정에 be동사 사용: `I am not know.` → `I don't know.`"
+    ]
+  },
+  {
+    "id": "g-present-continuous-vs-simple",
+    "title": "Present Continuous vs. Present Simple",
+    "titleKo": "현재진행 vs 단순현재",
+    "level": "beginner",
+    "category": "시제",
+    "summary": "단순현재는 \"늘 그렇다(습관·사실)\", 현재진행은 \"지금 이 순간 그러고 있다\"입니다. 한국어로는 둘 다 \"~해요\"라서 구분이 특히 어렵습니다.",
+    "sections": [
+      {
+        "heading": "단순현재: 습관·반복·일반적 사실",
+        "body": "매일, 보통, 항상 하는 일이나 변하지 않는 사실에 씁니다. `every day`, `usually`, `always`, `never` 같은 빈도 표현과 자주 쓰입니다.\n지금 하고 있는지와는 상관없습니다. \"나는 커피를 마신다(커피파다)\"처럼 **성향**을 말하는 느낌입니다.",
+        "examples": [
+          {
+            "en": "I drink coffee every morning.",
+            "ko": "저는 매일 아침 커피를 마셔요."
+          },
+          {
+            "en": "She usually takes the subway to work.",
+            "ko": "그녀는 보통 지하철로 출근해요."
+          },
+          {
+            "en": "Water boils at one hundred degrees.",
+            "ko": "물은 100도에서 끓어요."
+          }
+        ]
+      },
+      {
+        "heading": "현재진행: 지금 이 순간 또는 요즘",
+        "body": "`be + 동사-ing` 형태로 **말하는 순간 진행 중인 일**을 나타냅니다. `now`, `right now`, `at the moment`와 자주 쓰입니다.\n또한 \"요즘 (일시적으로)\" 하고 있는 일에도 씁니다. `I'm learning Spanish these days.`\n단순현재와 대비해 보면 차이가 분명해집니다.",
+        "examples": [
+          {
+            "en": "I'm drinking coffee right now.",
+            "ko": "저 지금 커피 마시고 있어요."
+          },
+          {
+            "en": "She is taking a taxi today because it is raining.",
+            "ko": "오늘은 비가 와서 그녀는 택시를 타고 있어요."
+          },
+          {
+            "en": "We're staying with my parents this month.",
+            "ko": "이번 달은 부모님 댁에서 지내고 있어요."
+          }
+        ]
+      },
+      {
+        "heading": "진행형으로 잘 쓰지 않는 동사",
+        "body": "**상태 동사**는 보통 진행형으로 쓰지 않습니다. 감정(like, love, hate), 생각(know, believe, understand), 소유(have, own), 감각(see, hear) 등이 대표적입니다.\n`I'm knowing` (X) → `I know` (O)\n단, `have`가 \"먹다/시간을 보내다\" 뜻일 때는 진행형이 가능합니다: `I'm having lunch.`",
+        "examples": [
+          {
+            "en": "I know what you mean.",
+            "ko": "무슨 말인지 알아요.",
+            "wrong": "I'm knowing what you mean."
+          },
+          {
+            "en": "She loves this song so much.",
+            "ko": "그녀는 이 노래를 정말 좋아해요.",
+            "wrong": "She's loving this song so much."
+          },
+          {
+            "en": "I'm having lunch with a friend now.",
+            "ko": "지금 친구랑 점심 먹고 있어요."
+          }
+        ]
+      },
+      {
+        "heading": "A vs B: 같은 동사, 다른 뜻",
+        "body": "같은 동사라도 시제에 따라 의미가 달라집니다.\n`I work in Seoul.` → 직장이 서울에 있다(사실)\n`I'm working in Seoul.` → 지금/요즘 서울에서 일하는 중(일시적)\n**영구적이면 단순현재, 일시적이면 현재진행**이라고 기억하세요.",
+        "examples": [
+          {
+            "en": "He lives in Daejeon with his family.",
+            "ko": "그는 가족과 대전에 살아요. (거주지)"
+          },
+          {
+            "en": "He is living in Daejeon for a few months.",
+            "ko": "그는 몇 달 동안 대전에서 지내고 있어요. (일시적)"
+          },
+          {
+            "en": "What do you do? I teach English.",
+            "ko": "무슨 일 하세요? 영어를 가르쳐요."
+          },
+          {
+            "en": "What are you doing? I am grading papers.",
+            "ko": "뭐 하고 있어요? 시험지 채점 중이에요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "한국어 \"~하고 있어요\"를 습관에도 써서 `I'm going to the gym every day.`처럼 쓰는 실수 (습관은 단순현재)",
+      "진행형에서 be동사 누락: `I studying now.` → `I'm studying now.`",
+      "상태 동사 진행형: `I'm liking it.` → `I like it.`",
+      "`What do you do?`(직업)와 `What are you doing?`(지금 하는 일)을 혼동"
+    ]
+  },
+  {
+    "id": "g-past-simple-regular-irregular",
+    "title": "Past Simple: Regular and Irregular Verbs",
+    "titleKo": "과거시제: 규칙·불규칙 동사",
+    "level": "beginner",
+    "category": "시제",
+    "summary": "끝난 일을 말할 때는 과거시제를 씁니다. 규칙동사는 -ed를 붙이지만, 자주 쓰는 동사일수록 불규칙 변화가 많아 따로 외워야 합니다.",
+    "sections": [
+      {
+        "heading": "규칙동사: -ed를 붙인다",
+        "body": "대부분의 동사는 뒤에 `-ed`를 붙이면 과거형이 됩니다. 철자 규칙 몇 가지만 주의하세요.\n`work → worked`, `live → lived`(e로 끝나면 d만), `study → studied`(자음+y는 ied), `stop → stopped`(단모음+단자음은 자음 추가)\n발음은 /t/, /d/, /ɪd/ 세 가지로 갈리지만 철자는 모두 -ed입니다.",
+        "examples": [
+          {
+            "en": "I worked late last night.",
+            "ko": "어젯밤 늦게까지 일했어요."
+          },
+          {
+            "en": "We studied together for the exam.",
+            "ko": "우리는 시험을 위해 같이 공부했어요."
+          },
+          {
+            "en": "The bus stopped right in front of me.",
+            "ko": "버스가 바로 내 앞에 멈췄어요."
+          }
+        ]
+      },
+      {
+        "heading": "불규칙동사: 모양이 완전히 바뀐다",
+        "body": "자주 쓰는 동사일수록 불규칙입니다. 대표적인 것부터 외우세요.\n`go → went`, `have → had`, `eat → ate`, `see → saw`, `come → came`, `take → took`, `make → made`, `get → got`, `buy → bought`, `think → thought`\n`put, cut, read`처럼 모양이 안 바뀌는 동사도 있습니다(read는 발음만 /red/로 바뀜).",
+        "examples": [
+          {
+            "en": "I went to Jeju last weekend.",
+            "ko": "지난 주말에 제주도에 갔어요.",
+            "wrong": "I goed to Jeju last weekend."
+          },
+          {
+            "en": "She bought a new laptop yesterday.",
+            "ko": "그녀는 어제 새 노트북을 샀어요.",
+            "wrong": "She buyed a new laptop yesterday."
+          },
+          {
+            "en": "We had a great time at the party.",
+            "ko": "파티에서 정말 즐거웠어요."
+          }
+        ]
+      },
+      {
+        "heading": "부정문과 의문문: did + 동사원형",
+        "body": "과거 부정문은 `didn't + 동사원형`, 의문문은 `Did + 주어 + 동사원형`입니다. **`did`가 이미 과거를 나타내므로 뒤의 동사는 원형**으로 돌아갑니다.\n`I didn't went` (X) → `I didn't go` (O)\nbe동사 과거(was/were)는 did 없이 `wasn't / Were you...?`로 씁니다.",
+        "examples": [
+          {
+            "en": "I didn't see the message until this morning.",
+            "ko": "오늘 아침에야 그 메시지를 봤어요.",
+            "wrong": "I didn't saw the message until this morning."
+          },
+          {
+            "en": "Did you eat breakfast today?",
+            "ko": "오늘 아침 먹었어요?",
+            "wrong": "Did you ate breakfast today?"
+          },
+          {
+            "en": "Were you at the office yesterday?",
+            "ko": "어제 사무실에 있었어요?",
+            "wrong": "Did you were at the office yesterday?"
+          }
+        ]
+      },
+      {
+        "heading": "과거를 나타내는 시간 표현",
+        "body": "과거시제는 보통 **언제 끝났는지** 알려주는 표현과 함께 씁니다.\n`yesterday`, `last night/week/year`, `two days ago`, `in 2019`, `when I was a child`\n이런 표현이 있으면 현재완료(have + p.p.)가 아니라 과거시제를 써야 합니다.",
+        "examples": [
+          {
+            "en": "I moved to Seoul three years ago.",
+            "ko": "3년 전에 서울로 이사했어요.",
+            "wrong": "I have moved to Seoul three years ago."
+          },
+          {
+            "en": "We met in college back in 2015.",
+            "ko": "우리는 2015년에 대학에서 만났어요."
+          },
+          {
+            "en": "She called me last night around ten.",
+            "ko": "그녀가 어젯밤 열 시쯤 전화했어요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "불규칙동사에 -ed를 붙이는 실수: `goed`, `buyed`, `teached` → `went`, `bought`, `taught`",
+      "`didn't` 뒤에 과거형을 또 쓰는 실수: `didn't went` → `didn't go`",
+      "`ago`, `yesterday`, `last ~`와 현재완료를 함께 쓰는 실수",
+      "be동사 과거에 did 사용: `Did you were busy?` → `Were you busy?`"
+    ]
+  },
+  {
+    "id": "g-articles-a-an-the-basics",
+    "title": "Articles: a / an / the (Basics)",
+    "titleKo": "관사 a / an / the 기초",
+    "level": "beginner",
+    "category": "관사/명사",
+    "summary": "한국어에는 없는 관사는 \"처음 말하는 것(a/an)\"과 \"서로 아는 그것(the)\"의 차이입니다. 셀 수 있는 단수 명사는 관사 없이 혼자 쓰이지 못합니다.",
+    "sections": [
+      {
+        "heading": "a / an: 여럿 중 하나, 처음 언급",
+        "body": "`a/an`은 **셀 수 있는 단수 명사** 앞에 붙어 \"(어떤) 하나\"를 뜻합니다. 듣는 사람이 아직 어느 것인지 모를 때 씁니다.\n`an`은 철자가 아니라 **발음이 모음으로 시작**할 때 씁니다: `an hour`(h 묵음), `a university`(/ju/ 발음).\n직업을 말할 때도 꼭 붙입니다: `I'm a teacher.`",
+        "examples": [
+          {
+            "en": "I bought a new phone yesterday.",
+            "ko": "어제 새 휴대폰을 하나 샀어요."
+          },
+          {
+            "en": "She is an engineer at a startup.",
+            "ko": "그녀는 스타트업의 엔지니어예요.",
+            "wrong": "She is engineer at startup."
+          },
+          {
+            "en": "It took about an hour to get there.",
+            "ko": "거기 가는 데 한 시간쯤 걸렸어요.",
+            "wrong": "It took about a hour to get there."
+          }
+        ]
+      },
+      {
+        "heading": "the: 서로 아는 바로 그것",
+        "body": "`the`는 말하는 사람과 듣는 사람이 **어느 것인지 아는** 명사 앞에 씁니다.\n1) 앞에서 이미 언급한 것: `I saw a dog. The dog was huge.`\n2) 상황상 하나뿐인 것: `the door`, `the sun`, `the kitchen`\n3) 수식어로 특정된 것: `the book on the desk`\n단수·복수·셀 수 없는 명사 모두에 붙을 수 있습니다.",
+        "examples": [
+          {
+            "en": "I got a letter. The letter was from my aunt.",
+            "ko": "편지를 받았어요. 그 편지는 이모한테서 온 거였어요."
+          },
+          {
+            "en": "Could you close the window, please?",
+            "ko": "창문 좀 닫아 주시겠어요?"
+          },
+          {
+            "en": "The coffee at this place is really good.",
+            "ko": "이 가게 커피 정말 맛있어요."
+          }
+        ]
+      },
+      {
+        "heading": "관사를 쓰지 않는 경우",
+        "body": "**일반적인 것 전체**를 말할 때 복수 명사나 셀 수 없는 명사는 관사 없이 씁니다: `I like dogs.`, `Music helps me focus.`\n식사·언어·운동·대부분의 나라 이름도 무관사입니다: `have lunch`, `speak Korean`, `play soccer`, `live in Korea`\n반면 `the Philippines`, `the United States`처럼 복수형 나라 이름은 the를 씁니다.",
+        "examples": [
+          {
+            "en": "I usually have lunch at noon.",
+            "ko": "보통 정오에 점심을 먹어요.",
+            "wrong": "I usually have a lunch at noon."
+          },
+          {
+            "en": "Cats are cleaner than dogs, I think.",
+            "ko": "고양이가 개보다 깨끗한 것 같아요.",
+            "wrong": "The cats are cleaner than the dogs, I think."
+          },
+          {
+            "en": "She speaks Japanese and a little French.",
+            "ko": "그녀는 일본어와 프랑스어를 조금 해요."
+          }
+        ]
+      },
+      {
+        "heading": "A vs B: 관사가 뜻을 바꾼다",
+        "body": "같은 문장도 관사에 따라 뜻이 달라집니다.\n`I need a pen.` → 아무 펜이나 하나\n`I need the pen.` → (네가 가진/아까 그) 바로 그 펜\n`go to school`(학교에 다니다, 공부하러) vs `go to the school`(그 학교 건물에 가다)\n관사를 \"뜻의 일부\"로 생각하면 감이 빨리 잡힙니다.",
+        "examples": [
+          {
+            "en": "Can I borrow a pen? Any pen is fine.",
+            "ko": "펜 하나 빌릴 수 있을까요? 아무거나 괜찮아요."
+          },
+          {
+            "en": "Can I borrow the pen you used earlier?",
+            "ko": "아까 쓰시던 그 펜 좀 빌릴 수 있을까요?"
+          },
+          {
+            "en": "My kids go to school by bus.",
+            "ko": "우리 아이들은 버스로 학교에 다녀요."
+          },
+          {
+            "en": "I went to the school to meet her teacher.",
+            "ko": "담임 선생님을 만나러 학교에 갔어요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "셀 수 있는 단수 명사를 관사 없이 쓰는 실수: `I have car.` → `I have a car.`",
+      "직업 앞 관사 누락: `He is doctor.` → `He is a doctor.`",
+      "일반적인 것에 the를 붙이는 실수: `I like the music.` → `I like music.`(음악 전반)",
+      "`a hour`, `an university`처럼 철자만 보고 a/an을 고르는 실수 (발음 기준)"
+    ]
+  },
+  {
+    "id": "g-countable-uncountable-quantifiers",
+    "title": "Countable / Uncountable Nouns with some, any, many, much",
+    "titleKo": "셀 수 있는·없는 명사와 some / any / many / much",
+    "level": "beginner",
+    "category": "관사/명사",
+    "summary": "영어는 명사를 \"셀 수 있는 것\"과 \"셀 수 없는 것\"으로 나누고, 그에 따라 쓰는 수량 표현이 달라집니다. 한국어에서는 세는 것을 영어에서는 못 세는 경우가 많아 주의가 필요합니다.",
+    "sections": [
+      {
+        "heading": "셀 수 있는 명사 vs 셀 수 없는 명사",
+        "body": "**셀 수 있는 명사**는 하나·둘 셀 수 있고 복수형(-s)이 있습니다: `apple, chair, idea, friend`\n**셀 수 없는 명사**는 덩어리·물질·추상 개념이라 복수형이 없고 a/an도 못 붙입니다: `water, rice, money, information, advice, furniture, homework`\n한국어로는 \"정보 두 개\"가 자연스럽지만 영어에서는 `two pieces of information`이라고 해야 합니다.",
+        "examples": [
+          {
+            "en": "I need some information about the schedule.",
+            "ko": "일정에 관한 정보가 좀 필요해요.",
+            "wrong": "I need some informations about the schedule."
+          },
+          {
+            "en": "She gave me good advice.",
+            "ko": "그녀가 좋은 조언을 해 줬어요.",
+            "wrong": "She gave me a good advice."
+          },
+          {
+            "en": "We bought three chairs and a table.",
+            "ko": "의자 세 개와 탁자 하나를 샀어요."
+          }
+        ]
+      },
+      {
+        "heading": "some vs any: 긍정문과 부정문·의문문",
+        "body": "`some`과 `any`는 셀 수 있는 복수 명사와 셀 수 없는 명사 **둘 다**에 씁니다.\n`some`은 **긍정문**에, `any`는 **부정문·의문문**에 쓰는 것이 기본입니다.\n단, 권유하거나 요청할 때(Yes를 기대할 때)는 의문문에도 `some`을 씁니다: `Would you like some coffee?`",
+        "examples": [
+          {
+            "en": "There are some cookies in the jar.",
+            "ko": "병에 쿠키가 좀 있어요."
+          },
+          {
+            "en": "I don't have any cash on me.",
+            "ko": "지금 현금이 하나도 없어요.",
+            "wrong": "I don't have some cash on me."
+          },
+          {
+            "en": "Do you have any questions so far?",
+            "ko": "여기까지 질문 있으세요?"
+          },
+          {
+            "en": "Would you like some tea?",
+            "ko": "차 좀 드시겠어요?"
+          }
+        ]
+      },
+      {
+        "heading": "many vs much vs a lot of",
+        "body": "`many`는 **셀 수 있는 복수 명사**, `much`는 **셀 수 없는 명사**와 씁니다.\n`many friends`, `much time`\n일상 긍정문에서는 둘 다 `a lot of`로 바꿔 쓰는 것이 더 자연스럽습니다. `much`는 특히 부정문·의문문에서 주로 씁니다: `I don't have much time.`",
+        "examples": [
+          {
+            "en": "How many people are coming tonight?",
+            "ko": "오늘 밤 몇 명이나 와요?"
+          },
+          {
+            "en": "We don't have much time left.",
+            "ko": "남은 시간이 별로 없어요.",
+            "wrong": "We don't have many time left."
+          },
+          {
+            "en": "She has a lot of experience in sales.",
+            "ko": "그녀는 영업 경험이 많아요."
+          }
+        ]
+      },
+      {
+        "heading": "셀 수 없는 명사를 세는 법",
+        "body": "셀 수 없는 명사는 **단위**를 붙여 셉니다.\n`a cup of coffee`, `a glass of water`, `a piece of advice`, `a slice of bread`, `two bottles of wine`, `a piece of furniture`\n단, 카페에서 주문할 때처럼 \"한 잔\"이 분명한 상황에서는 `two coffees`처럼 말하기도 합니다.",
+        "examples": [
+          {
+            "en": "Can I get two cups of coffee, please?",
+            "ko": "커피 두 잔 주시겠어요?"
+          },
+          {
+            "en": "Let me give you a piece of advice.",
+            "ko": "조언 하나 할게요.",
+            "wrong": "Let me give you an advice."
+          },
+          {
+            "en": "We need a few more pieces of furniture.",
+            "ko": "가구가 몇 점 더 필요해요.",
+            "wrong": "We need a few more furnitures."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "`informations`, `advices`, `furnitures`, `homeworks` 처럼 셀 수 없는 명사에 -s를 붙이는 실수",
+      "`much people`, `many money`처럼 many/much를 거꾸로 쓰는 실수",
+      "부정문에 some 사용: `I don't have some time.` → `I don't have any time.`",
+      "`a bread`, `a paper`(종이)처럼 물질 명사에 a를 붙이는 실수 (`a piece of ~` 사용)"
+    ]
+  },
+  {
+    "id": "g-present-perfect-vs-past",
+    "title": "Present Perfect vs. Past Simple",
+    "titleKo": "현재완료 vs 과거시제",
+    "level": "intermediate",
+    "category": "시제",
+    "summary": "과거시제는 \"언제\" 끝난 일이고, 현재완료는 \"지금과 연결된\" 과거입니다. 한국어에는 현재완료가 없어서 둘 다 \"~했다\"로 번역되는 것이 혼란의 원인입니다.",
+    "sections": [
+      {
+        "heading": "핵심 차이: 끝난 시점 vs 현재와의 연결",
+        "body": "**과거시제**는 과거의 특정 시점에 일어난, 지금과는 분리된 일입니다. `yesterday`, `in 2020`, `two hours ago`처럼 **시점**이 함께 옵니다.\n**현재완료**(`have/has + p.p.`)는 과거에 일어났지만 **지금에 영향을 주거나 지금까지 이어지는** 일입니다. 정확한 시점은 말하지 않습니다.\n`I lost my keys.`(잃어버렸다, 지금은 모름) vs `I've lost my keys.`(잃어버려서 지금 없다)",
+        "examples": [
+          {
+            "en": "I lost my wallet last week.",
+            "ko": "지난주에 지갑을 잃어버렸어요."
+          },
+          {
+            "en": "I've lost my wallet, so I can't pay.",
+            "ko": "지갑을 잃어버려서 지금 결제를 못 해요."
+          },
+          {
+            "en": "She's gone to lunch. She'll be back soon.",
+            "ko": "점심 먹으러 갔어요. 곧 돌아올 거예요."
+          }
+        ]
+      },
+      {
+        "heading": "경험: ever / never / before",
+        "body": "\"~해 본 적 있다\"는 **경험**은 현재완료로 말합니다. 언제인지보다 \"지금까지의 인생에서 있었느냐\"가 초점이기 때문입니다.\n`Have you ever been to Japan?` / `I've never tried sushi.`\n단, 경험을 구체적으로 이야기하기 시작하면 **과거시제로 전환**합니다: `Yes, I have. I went there in 2019.`",
+        "examples": [
+          {
+            "en": "Have you ever been to New York?",
+            "ko": "뉴욕에 가 본 적 있어요?",
+            "wrong": "Did you ever go to New York?"
+          },
+          {
+            "en": "I've never eaten Indian food before.",
+            "ko": "인도 음식을 먹어 본 적이 없어요."
+          },
+          {
+            "en": "Yes, I have. I went there two years ago.",
+            "ko": "네, 있어요. 2년 전에 갔었어요."
+          }
+        ]
+      },
+      {
+        "heading": "계속: for / since / how long",
+        "body": "과거에 시작해서 **지금까지 계속되는** 상태는 현재완료입니다.\n`for + 기간`(for three years), `since + 시작 시점`(since 2021, since I moved here)\n한국어 \"3년째 여기 살아요\"를 `I live here for three years.`(X)로 쓰기 쉽지만, 과거부터 이어지므로 `I've lived here for three years.`가 맞습니다.",
+        "examples": [
+          {
+            "en": "I've worked at this company for five years.",
+            "ko": "이 회사에서 5년째 일하고 있어요.",
+            "wrong": "I work at this company for five years."
+          },
+          {
+            "en": "We've known each other since high school.",
+            "ko": "우리는 고등학교 때부터 아는 사이예요."
+          },
+          {
+            "en": "How long have you been in Korea?",
+            "ko": "한국에 온 지 얼마나 됐어요?",
+            "wrong": "How long are you in Korea?"
+          }
+        ]
+      },
+      {
+        "heading": "A vs B: 함께 쓰는 시간 표현",
+        "body": "시간 표현이 시제를 결정하는 경우가 많습니다.\n**과거시제와 함께**: `yesterday`, `last week`, `ago`, `in 2015`, `when I was young`\n**현재완료와 함께**: `already`, `yet`, `just`, `ever`, `never`, `so far`, `recently`, `for/since`\n`today`, `this week`처럼 아직 안 끝난 기간은 현재완료가 자연스럽습니다: `I've had three coffees today.`",
+        "examples": [
+          {
+            "en": "I've already finished the report.",
+            "ko": "보고서는 이미 끝냈어요."
+          },
+          {
+            "en": "Have you sent the email yet?",
+            "ko": "이메일 아직 안 보냈어요?"
+          },
+          {
+            "en": "I finished the report yesterday afternoon.",
+            "ko": "어제 오후에 보고서를 끝냈어요.",
+            "wrong": "I've finished the report yesterday afternoon."
+          },
+          {
+            "en": "She's just left the office.",
+            "ko": "그녀는 방금 퇴근했어요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "`ago`, `yesterday`, `last ~`와 현재완료를 같이 쓰는 실수: `I've seen him yesterday.` → `I saw him yesterday.`",
+      "\"~째 하고 있다\"를 단순현재로 쓰는 실수: `I live here for 3 years.` → `I've lived here for 3 years.`",
+      "경험을 물을 때 `Did you ever...?` 대신 `Have you ever...?`",
+      "`have been to`(다녀왔다)와 `have gone to`(가서 지금 없다) 혼동"
+    ]
+  },
+  {
+    "id": "g-modals-of-deduction",
+    "title": "Modals of Deduction: must / may / might / can't",
+    "titleKo": "조동사의 추측: must / may / might / can't",
+    "level": "intermediate",
+    "category": "조동사",
+    "summary": "조동사는 \"의무·허가\" 외에 \"얼마나 확신하는가\"를 나타내는 데도 씁니다. must(틀림없다) → may/might/could(아마도) → can't(그럴 리 없다)의 확신 단계로 기억하세요.",
+    "sections": [
+      {
+        "heading": "must: 틀림없이 ~일 것이다 (강한 확신)",
+        "body": "근거를 보고 **거의 확실하다**고 판단할 때 `must + 동사원형`을 씁니다. \"~해야 한다\"는 의무의 must와 모양은 같지만 문맥으로 구분됩니다.\n`She must be tired.` → (야근했으니) 피곤할 게 틀림없다\n주로 `must be`, `must have`, `must know`처럼 상태 동사와 함께 씁니다.",
+        "examples": [
+          {
+            "en": "You worked all night. You must be exhausted.",
+            "ko": "밤새 일했잖아요. 엄청 피곤하겠어요."
+          },
+          {
+            "en": "The lights are on. Someone must be home.",
+            "ko": "불이 켜져 있네요. 누군가 집에 있는 게 틀림없어요."
+          },
+          {
+            "en": "He must know the answer. He wrote the book.",
+            "ko": "그는 답을 알 거예요. 그 책을 썼으니까요."
+          }
+        ]
+      },
+      {
+        "heading": "may / might / could: 아마 ~일지도 (50% 안팎)",
+        "body": "확신이 약할 때는 `may`, `might`, `could`를 씁니다. 세 가지는 거의 같은 뜻이고, `might`가 조금 더 불확실한 느낌입니다.\n부정은 `may not`, `might not`을 씁니다. **`could not`은 \"그럴 리 없다\"는 뜻**이므로 \"아닐지도\"에는 쓰지 않습니다.\n`He might not come.`(안 올지도) vs `He couldn't come.`(올 수 없었다/올 리 없다)",
+        "examples": [
+          {
+            "en": "She might be in a meeting right now.",
+            "ko": "그녀는 지금 회의 중일지도 몰라요."
+          },
+          {
+            "en": "It may rain later, so bring an umbrella.",
+            "ko": "나중에 비가 올지도 모르니 우산 챙기세요."
+          },
+          {
+            "en": "He might not get the message in time.",
+            "ko": "그가 메시지를 제때 못 볼 수도 있어요.",
+            "wrong": "He couldn't get the message in time, maybe."
+          }
+        ]
+      },
+      {
+        "heading": "can't: 그럴 리가 없다 (강한 부정 추측)",
+        "body": "`must`의 반대는 `must not`이 아니라 **`can't`**입니다. \"논리적으로 불가능하다\"는 뜻입니다.\n`That can't be true.` → 사실일 리가 없다\n`must not`은 보통 \"~하면 안 된다\"는 금지의 뜻으로 쓰입니다. 추측에서는 헷갈리지 않게 `can't`를 쓰세요.",
+        "examples": [
+          {
+            "en": "That can't be right. Let me check again.",
+            "ko": "그럴 리가 없어요. 다시 확인해 볼게요.",
+            "wrong": "That must not be right. Let me check again."
+          },
+          {
+            "en": "He can't be at work. It's Sunday.",
+            "ko": "그가 회사에 있을 리 없어요. 일요일이잖아요."
+          },
+          {
+            "en": "You can't be hungry. You just ate.",
+            "ko": "배고플 리가 없어요. 방금 먹었잖아요."
+          }
+        ]
+      },
+      {
+        "heading": "과거 추측: 조동사 + have + p.p.",
+        "body": "이미 일어난 일을 추측할 때는 `조동사 + have + 과거분사`를 씁니다.\n`must have p.p.`(~했음이 틀림없다), `may/might have p.p.`(~했을지도), `can't have p.p.`(~했을 리 없다)\n`should have p.p.`(~했어야 했는데)는 추측이 아니라 **후회·비난**이니 구분하세요.",
+        "examples": [
+          {
+            "en": "She must have missed the train.",
+            "ko": "그녀는 기차를 놓친 게 틀림없어요."
+          },
+          {
+            "en": "I might have left my phone in the taxi.",
+            "ko": "택시에 휴대폰을 두고 내렸을지도 몰라요."
+          },
+          {
+            "en": "He can't have finished it already.",
+            "ko": "그가 벌써 끝냈을 리가 없어요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "강한 부정 추측에 `must not`을 쓰는 실수 (추측의 반대는 `can't`)",
+      "\"~일지도 모른다\"를 `maybe`로만 처리하고 조동사를 안 쓰는 습관 (`Maybe he is busy.` → `He might be busy.`)",
+      "과거 추측에서 `have` 누락: `She must missed it.` → `She must have missed it.`",
+      "`could not`을 \"아닐지도\"로 오해 (실제로는 \"그럴 리 없다/할 수 없었다\")"
+    ]
+  },
+  {
+    "id": "g-relative-clauses",
+    "title": "Relative Clauses: who / which / that / whose / where",
+    "titleKo": "관계대명사",
+    "level": "intermediate",
+    "category": "문장구조",
+    "summary": "관계대명사는 두 문장을 하나로 묶어 명사를 설명합니다. 한국어와 달리 설명이 명사 \"뒤\"에 오고, 대명사가 중복되지 않는다는 점이 핵심입니다.",
+    "sections": [
+      {
+        "heading": "기본 구조: 명사 + 관계절",
+        "body": "관계절은 **명사 바로 뒤**에 붙어서 그 명사를 설명합니다. 한국어는 \"내가 어제 만난 사람\"처럼 설명이 앞에 오지만 영어는 `the person who I met yesterday`로 뒤에 옵니다.\n사람은 `who`(또는 that), 사물·동물은 `which`(또는 that)를 씁니다.\n관계대명사가 관계절 안에서 주어 역할을 하면 **주격**, 목적어 역할을 하면 **목적격**입니다.",
+        "examples": [
+          {
+            "en": "I have a friend who lives in Berlin.",
+            "ko": "베를린에 사는 친구가 한 명 있어요."
+          },
+          {
+            "en": "This is the book which changed my life.",
+            "ko": "이게 제 인생을 바꾼 책이에요."
+          },
+          {
+            "en": "The woman who called you is my manager.",
+            "ko": "당신한테 전화한 여자분이 제 매니저예요."
+          }
+        ]
+      },
+      {
+        "heading": "대명사 중복 금지 (가장 흔한 실수)",
+        "body": "관계대명사가 이미 그 명사를 가리키므로, 관계절 안에서 **같은 것을 가리키는 대명사를 또 쓰면 안 됩니다**.\n`the car which I bought it` (X) → `the car which I bought` (O)\n관계절 끝에 전치사가 남는 경우도 자연스럽습니다: `the house that I grew up in`",
+        "examples": [
+          {
+            "en": "This is the car that I bought last month.",
+            "ko": "이게 지난달에 산 차예요.",
+            "wrong": "This is the car that I bought it last month."
+          },
+          {
+            "en": "The hotel where we stayed was very clean.",
+            "ko": "우리가 묵은 호텔은 아주 깨끗했어요.",
+            "wrong": "The hotel where we stayed there was very clean."
+          },
+          {
+            "en": "She is the person I was talking about.",
+            "ko": "그분이 제가 말하던 그 사람이에요."
+          }
+        ]
+      },
+      {
+        "heading": "목적격 관계대명사는 생략 가능",
+        "body": "관계대명사가 관계절의 **목적어**일 때는 생략할 수 있고, 회화에서는 생략하는 쪽이 더 자연스럽습니다.\n`the movie (that) we watched` → 관계절에 주어 we가 따로 있음 → 생략 가능\n`the movie that made me cry` → that이 주어 → 생략 불가\n관계대명사 바로 뒤에 **주어가 있으면 생략 가능**이라고 기억하세요.",
+        "examples": [
+          {
+            "en": "The movie we watched last night was boring.",
+            "ko": "어젯밤 본 영화는 지루했어요."
+          },
+          {
+            "en": "That's the restaurant I told you about.",
+            "ko": "거기가 제가 말했던 식당이에요."
+          },
+          {
+            "en": "The man who fixed my laptop was very kind.",
+            "ko": "제 노트북을 고쳐 준 분이 아주 친절했어요.",
+            "wrong": "The man fixed my laptop was very kind."
+          }
+        ]
+      },
+      {
+        "heading": "whose / where / when",
+        "body": "`whose`는 **소유**(\"~의\")를 나타내며 뒤에 명사가 바로 옵니다: `a friend whose sister is a doctor`\n`where`는 **장소**, `when`은 **시간**을 설명합니다. 이때 관계절 안에 장소·시간 부사(there, then)를 다시 쓰지 않습니다.\n`where` 대신 `in which`도 가능하지만 회화에서는 `where`가 자연스럽습니다.",
+        "examples": [
+          {
+            "en": "I met a man whose brother works at Google.",
+            "ko": "형이 구글에서 일하는 남자를 만났어요."
+          },
+          {
+            "en": "This is the cafe where we first met.",
+            "ko": "여기가 우리가 처음 만난 카페예요."
+          },
+          {
+            "en": "I still remember the day when I got the job.",
+            "ko": "그 일자리를 얻은 날을 아직도 기억해요."
+          }
+        ]
+      },
+      {
+        "heading": "콤마가 있는 관계절 (계속적 용법)",
+        "body": "콤마 없이 쓰면 **어느 것인지 좁혀 주는** 정보(제한적), 콤마를 넣으면 **덧붙이는** 정보(계속적)입니다.\n`My brother who lives in Busan is a chef.` → 형제가 여럿인데 그중 부산에 사는 형\n`My brother, who lives in Busan, is a chef.` → 형제가 한 명이고 덧붙여서 부산에 산다\n**콤마 뒤에는 `that`을 쓸 수 없고** `who/which`만 씁니다.",
+        "examples": [
+          {
+            "en": "My sister, who lives in Tokyo, is visiting next week.",
+            "ko": "도쿄에 사는 제 여동생이 다음 주에 와요.",
+            "wrong": "My sister, that lives in Tokyo, is visiting next week."
+          },
+          {
+            "en": "We stayed at the Grand Hotel, which was surprisingly cheap.",
+            "ko": "그랜드 호텔에 묵었는데, 놀랄 만큼 쌌어요."
+          },
+          {
+            "en": "He failed the test, which surprised everyone.",
+            "ko": "그가 시험에 떨어졌고, 그건 모두를 놀라게 했어요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "관계절 안에 대명사를 중복: `the book which I read it` → `the book which I read`",
+      "주격 관계대명사를 생략하는 실수: `The man fixed my laptop was kind.` → `The man who fixed...`",
+      "콤마 뒤에 that 사용: `, that` → `, which / , who`",
+      "사람에게 which 사용: `the teacher which taught me` → `the teacher who taught me`"
+    ]
+  },
+  {
+    "id": "g-infinitive-vs-gerund",
+    "title": "To-Infinitive vs. Gerund",
+    "titleKo": "to부정사 vs 동명사",
+    "level": "intermediate",
+    "category": "문장구조",
+    "summary": "동사 뒤에 다른 동사를 이어 쓸 때 to부정사(to do)를 쓸지 동명사(doing)를 쓸지는 앞 동사가 결정합니다. 뜻이 달라지는 동사(stop, remember, try 등)는 특히 중요합니다.",
+    "sections": [
+      {
+        "heading": "to부정사를 쓰는 동사: 앞으로·목표",
+        "body": "to부정사는 **아직 하지 않은 일, 하려는 일**과 어울리는 경향이 있습니다.\n`want, hope, plan, decide, expect, promise, agree, refuse, need, would like, learn, afford, manage`\n`I want to go.`, `We decided to leave early.`\n이 동사들 뒤에 -ing를 쓰면 틀립니다: `I want going` (X)",
+        "examples": [
+          {
+            "en": "I want to learn how to cook Thai food.",
+            "ko": "태국 음식 요리하는 법을 배우고 싶어요.",
+            "wrong": "I want learning how to cook Thai food."
+          },
+          {
+            "en": "We decided to take the earlier flight.",
+            "ko": "우리는 더 이른 비행기를 타기로 했어요."
+          },
+          {
+            "en": "She promised to call me back tonight.",
+            "ko": "그녀가 오늘 밤 다시 전화하겠다고 약속했어요."
+          }
+        ]
+      },
+      {
+        "heading": "동명사를 쓰는 동사: 이미·일반적 행위",
+        "body": "동명사(-ing)는 **이미 하고 있거나 경험한 일, 행위 자체**와 어울립니다.\n`enjoy, finish, mind, avoid, keep, suggest, consider, practice, give up, can't help, look forward to`\n`I enjoy reading.`, `He finished writing the report.`\n특히 `look forward to`의 `to`는 **전치사**라서 뒤에 -ing가 옵니다: `I look forward to meeting you.`",
+        "examples": [
+          {
+            "en": "I enjoy walking along the river at night.",
+            "ko": "밤에 강가를 따라 걷는 걸 좋아해요.",
+            "wrong": "I enjoy to walk along the river at night."
+          },
+          {
+            "en": "Have you finished writing the report?",
+            "ko": "보고서 다 썼어요?"
+          },
+          {
+            "en": "I look forward to meeting you next week.",
+            "ko": "다음 주에 뵙기를 기대하고 있습니다.",
+            "wrong": "I look forward to meet you next week."
+          },
+          {
+            "en": "Would you mind opening the window?",
+            "ko": "창문 좀 열어 주시겠어요?"
+          }
+        ]
+      },
+      {
+        "heading": "둘 다 가능하지만 뜻이 달라지는 동사",
+        "body": "`stop, remember, forget, try, regret`은 뒤에 무엇이 오느냐에 따라 뜻이 바뀝니다.\n`stop to smoke`(담배 피우려고 멈추다) vs `stop smoking`(담배를 끊다)\n`remember to lock`(잠글 것을 기억하다, 미래) vs `remember locking`(잠근 것을 기억하다, 과거)\n`try to open`(열려고 애쓰다) vs `try opening`(한번 열어 보다, 시도)\n**to = 앞으로 할 일, -ing = 이미 한 일/행위 자체**로 기억하세요.",
+        "examples": [
+          {
+            "en": "He stopped smoking two years ago.",
+            "ko": "그는 2년 전에 담배를 끊었어요."
+          },
+          {
+            "en": "He stopped to smoke outside the building.",
+            "ko": "그는 건물 밖에서 담배를 피우려고 멈췄어요."
+          },
+          {
+            "en": "Remember to lock the door when you leave.",
+            "ko": "나갈 때 문 잠그는 거 잊지 마세요."
+          },
+          {
+            "en": "I remember locking the door this morning.",
+            "ko": "오늘 아침에 문 잠근 기억이 나요."
+          }
+        ]
+      },
+      {
+        "heading": "둘 다 가능하고 뜻이 거의 같은 동사",
+        "body": "`like, love, hate, prefer, start, begin, continue`는 둘 다 쓸 수 있고 의미 차이가 거의 없습니다.\n`I like to swim.` ≈ `I like swimming.`\n단, `would like`는 항상 to부정사입니다: `I'd like to order now.`\n또 `start/begin`이 진행형일 때는 -ing를 피합니다: `It's starting to rain.` (O) / `It's starting raining.` (어색)",
+        "examples": [
+          {
+            "en": "I love cooking on weekends.",
+            "ko": "주말에 요리하는 걸 아주 좋아해요."
+          },
+          {
+            "en": "I love to cook on weekends.",
+            "ko": "주말에 요리하는 걸 아주 좋아해요."
+          },
+          {
+            "en": "I'd like to book a table for two.",
+            "ko": "두 명 자리를 예약하고 싶어요.",
+            "wrong": "I'd like booking a table for two."
+          },
+          {
+            "en": "It's starting to get cold outside.",
+            "ko": "밖이 추워지기 시작했어요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "`enjoy to do`, `finish to do`, `mind to do`처럼 동명사 동사 뒤에 to부정사를 쓰는 실수",
+      "`look forward to meet you` → `look forward to meeting you` (to가 전치사)",
+      "`stop to do`를 \"~하는 것을 멈추다\"로 오해 (실제로는 \"~하려고 멈추다\")",
+      "`would like doing` → `would like to do`"
+    ]
+  },
+  {
+    "id": "g-comparatives-superlatives-as-as",
+    "title": "Comparatives, Superlatives, and as...as",
+    "titleKo": "비교급·최상급과 as...as",
+    "level": "intermediate",
+    "category": "문장구조",
+    "summary": "둘을 비교하면 비교급(-er / more), 셋 이상 중 최고는 최상급(the -est / the most), 같은 정도는 as...as를 씁니다. -er과 more를 동시에 쓰거나 than을 빠뜨리는 실수가 잦습니다.",
+    "sections": [
+      {
+        "heading": "비교급: -er vs more",
+        "body": "**1음절 형용사**는 `-er`(tall → taller, big → bigger), **3음절 이상**은 `more`(expensive → more expensive)를 씁니다.\n2음절은 -y로 끝나면 `-ier`(happy → happier), 그 외는 대부분 `more`(more careful)입니다.\n불규칙: `good → better`, `bad → worse`, `far → farther/further`\n**-er과 more를 함께 쓰지 않습니다**: `more taller` (X)",
+        "examples": [
+          {
+            "en": "This bag is cheaper than that one.",
+            "ko": "이 가방이 저것보다 싸요.",
+            "wrong": "This bag is more cheaper than that one."
+          },
+          {
+            "en": "The new office is more convenient for me.",
+            "ko": "새 사무실이 저한테는 더 편리해요."
+          },
+          {
+            "en": "Her English is much better than mine.",
+            "ko": "그녀의 영어는 저보다 훨씬 나아요.",
+            "wrong": "Her English is much gooder than mine."
+          }
+        ]
+      },
+      {
+        "heading": "than과 비교 대상 맞추기",
+        "body": "비교급 뒤에는 **`than`**을 씁니다. 한국어 \"보다\"에 끌려 `then`이나 `from`을 쓰지 않도록 주의하세요.\n비교 대상은 같은 종류여야 합니다: `Seoul's traffic is worse than Busan's.`(교통 vs 교통)\n차이의 정도는 `much, a lot, far, a little, slightly`로 강조합니다. `very`는 비교급 앞에 쓰지 않습니다.",
+        "examples": [
+          {
+            "en": "The train is faster than the bus.",
+            "ko": "기차가 버스보다 빨라요.",
+            "wrong": "The train is faster then the bus."
+          },
+          {
+            "en": "Today is a lot warmer than yesterday.",
+            "ko": "오늘이 어제보다 훨씬 따뜻해요.",
+            "wrong": "Today is very warmer than yesterday."
+          },
+          {
+            "en": "My commute is longer than yours.",
+            "ko": "제 통근 시간이 당신보다 길어요."
+          }
+        ]
+      },
+      {
+        "heading": "최상급: the + -est / the most",
+        "body": "셋 이상 중에서 최고를 말할 때 **`the`를 꼭 붙입니다**: `the tallest`, `the most expensive`\n범위는 `in + 장소/집단`(in the class, in Korea) 또는 `of + 복수`(of all, of the three)로 표시합니다.\n`one of the + 최상급 + 복수명사` 패턴도 자주 씁니다: `one of the best restaurants`",
+        "examples": [
+          {
+            "en": "This is the best pizza in town.",
+            "ko": "여기가 동네에서 최고의 피자예요.",
+            "wrong": "This is best pizza in town."
+          },
+          {
+            "en": "She is the most experienced person on the team.",
+            "ko": "그녀가 팀에서 가장 경험이 많은 사람이에요."
+          },
+          {
+            "en": "It's one of the oldest buildings in Seoul.",
+            "ko": "서울에서 가장 오래된 건물 중 하나예요.",
+            "wrong": "It's one of the oldest building in Seoul."
+          }
+        ]
+      },
+      {
+        "heading": "as...as: 같은 정도, not as...as: 덜하다",
+        "body": "`as + 형용사/부사 원급 + as`로 \"~만큼 ~하다\"를 나타냅니다. 가운데는 **원급**이 들어갑니다(비교급 아님).\n부정 `not as ... as`는 \"~만큼 ~하지 않다\", 즉 **덜하다**는 뜻입니다. `not as big as` = `smaller than`\n`twice as ~ as`(두 배), `as ~ as possible`(가능한 한) 같은 패턴도 익혀 두세요.",
+        "examples": [
+          {
+            "en": "He is as tall as his father now.",
+            "ko": "그는 이제 아버지만큼 키가 커요.",
+            "wrong": "He is as taller as his father now."
+          },
+          {
+            "en": "This phone isn't as expensive as I expected.",
+            "ko": "이 휴대폰은 생각보다 비싸지 않네요."
+          },
+          {
+            "en": "Please reply as soon as possible.",
+            "ko": "가능한 한 빨리 답장 주세요."
+          },
+          {
+            "en": "The new model is twice as fast as the old one.",
+            "ko": "새 모델이 구형보다 두 배 빨라요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "`more better`, `more easier`처럼 비교급을 이중으로 만드는 실수",
+      "`than`을 `then`으로 쓰거나 생략하는 실수",
+      "최상급 앞 `the` 누락: `best way` → `the best way`",
+      "`as ... as` 사이에 비교급을 넣는 실수: `as bigger as` → `as big as`"
+    ]
+  },
+  {
+    "id": "g-conditionals-second-third-mixed",
+    "title": "Conditionals: Second, Third, and Mixed",
+    "titleKo": "가정법: 2형·3형·혼합",
+    "level": "advanced",
+    "category": "가정법",
+    "summary": "현실과 다른 상황을 상상할 때 가정법을 씁니다. 지금 사실과 반대면 2형(과거형), 과거 사실과 반대면 3형(과거완료), 둘이 섞이면 혼합형입니다.",
+    "sections": [
+      {
+        "heading": "2형: 지금 사실과 반대 (If + 과거, would + 원형)",
+        "body": "현재나 미래의 **비현실적·가능성 낮은** 상황을 가정합니다. if절에 **과거형**을 쓰지만 뜻은 현재입니다.\n`If I had more time, I would travel more.` → 지금 시간이 없다\nbe동사는 격식체에서 주어와 상관없이 `were`를 씁니다: `If I were you, ...`\n1형(`If it rains, I'll stay home.`)은 실제 가능한 일이므로 현재형을 쓴다는 점과 대비하세요.",
+        "examples": [
+          {
+            "en": "If I had more time, I would learn the piano.",
+            "ko": "시간이 더 있다면 피아노를 배울 텐데요.",
+            "wrong": "If I have more time, I would learn the piano."
+          },
+          {
+            "en": "If I were you, I would take the offer.",
+            "ko": "제가 당신이라면 그 제안을 받아들이겠어요."
+          },
+          {
+            "en": "What would you do if you won the lottery?",
+            "ko": "복권에 당첨되면 뭘 하실 거예요?"
+          }
+        ]
+      },
+      {
+        "heading": "3형: 과거 사실과 반대 (If + had p.p., would have p.p.)",
+        "body": "이미 지나간 일을 **\"그때 ~했더라면 ~했을 텐데\"**라고 후회하거나 상상할 때 씁니다. 바꿀 수 없는 과거이므로 가장 비현실적입니다.\nif절: `had + 과거분사`, 주절: `would/could/might + have + 과거분사`\n`If I had studied harder, I would have passed.` → 실제로는 공부를 안 해서 떨어졌다",
+        "examples": [
+          {
+            "en": "If I had left earlier, I would have caught the train.",
+            "ko": "더 일찍 나왔더라면 기차를 탔을 텐데요.",
+            "wrong": "If I left earlier, I would have caught the train."
+          },
+          {
+            "en": "If you had told me, I could have helped you.",
+            "ko": "말해 줬더라면 도와줄 수 있었을 텐데요."
+          },
+          {
+            "en": "We wouldn't have met if I hadn't moved here.",
+            "ko": "제가 여기로 이사 오지 않았다면 우린 못 만났을 거예요."
+          }
+        ]
+      },
+      {
+        "heading": "혼합형: 과거의 원인 → 현재의 결과",
+        "body": "가장 흔한 혼합형은 **과거 조건(3형 if절) + 현재 결과(2형 주절)**입니다.\n`If I had taken that job, I would be in London now.` → 그때 안 받아서 지금 런던에 없다\n반대로 **현재 상태(2형 if절) + 과거 결과(3형 주절)**도 가능합니다.\n`If I were taller, I would have made the team.` → 키가 작아서(지속 상태) 그때 팀에 못 들었다",
+        "examples": [
+          {
+            "en": "If I had taken that job, I would be in London now.",
+            "ko": "그 일자리를 받아들였더라면 지금 런던에 있을 텐데요."
+          },
+          {
+            "en": "If she hadn't missed the flight, she'd be here already.",
+            "ko": "비행기를 안 놓쳤다면 그녀는 벌써 여기 있을 거예요."
+          },
+          {
+            "en": "If I weren't so shy, I would have asked her out.",
+            "ko": "제가 그렇게 수줍지 않았다면 데이트 신청을 했을 거예요."
+          }
+        ]
+      },
+      {
+        "heading": "wish / if only / without / otherwise",
+        "body": "`I wish + 과거형`은 현재에 대한 아쉬움, `I wish + had p.p.`는 과거에 대한 후회입니다. 가정법 2형·3형의 시제 규칙이 그대로 적용됩니다.\n`If only`는 wish보다 강한 아쉬움입니다.\nif 없이도 가정의 뜻이 숨어 있는 표현: `Without your help, I couldn't have done it.`, `I was busy; otherwise I would have come.`",
+        "examples": [
+          {
+            "en": "I wish I lived closer to the office.",
+            "ko": "사무실 근처에 살면 좋을 텐데요.",
+            "wrong": "I wish I live closer to the office."
+          },
+          {
+            "en": "I wish I hadn't said that to her.",
+            "ko": "그녀에게 그 말을 안 했더라면 좋았을 텐데요."
+          },
+          {
+            "en": "Without your help, I couldn't have finished on time.",
+            "ko": "당신 도움이 없었다면 제때 못 끝냈을 거예요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "if절에 would를 넣는 실수: `If I would have time...` → `If I had time...`",
+      "3형에서 if절을 단순과거로 쓰는 실수: `If I knew earlier, I would have...` → `If I had known...`",
+      "2형 과거형을 보고 \"과거 이야기\"로 오해 (뜻은 현재·미래)",
+      "`I wish I can` → `I wish I could` (wish 뒤는 한 시제 뒤로)"
+    ]
+  },
+  {
+    "id": "g-participle-clauses",
+    "title": "Participle Clauses",
+    "titleKo": "분사구문",
+    "level": "advanced",
+    "category": "문장구조",
+    "summary": "분사구문은 접속사와 주어를 생략하고 -ing / p.p.로 시작해 문장을 압축하는 방식입니다. 글에서 자주 쓰이며, 주절의 주어와 분사의 주체가 같아야 한다는 규칙이 핵심입니다.",
+    "sections": [
+      {
+        "heading": "만드는 법: 접속사·주어 삭제 → 동사를 -ing로",
+        "body": "두 절의 주어가 같을 때, 종속절의 **접속사와 주어를 지우고 동사를 -ing**로 바꿉니다.\n`When I opened the door, I saw a cat.` → `Opening the door, I saw a cat.`\n의미는 시간(~할 때), 이유(~해서), 동시동작(~하면서), 결과 등 문맥에 따라 해석됩니다.\n부정은 분사 앞에 `Not`을 둡니다: `Not knowing the answer, I stayed quiet.`",
+        "examples": [
+          {
+            "en": "Walking to work, I ran into an old friend.",
+            "ko": "걸어서 출근하다가 옛 친구를 우연히 만났어요."
+          },
+          {
+            "en": "Feeling tired, she went to bed early.",
+            "ko": "피곤해서 그녀는 일찍 잠자리에 들었어요."
+          },
+          {
+            "en": "Not knowing what to say, I just smiled.",
+            "ko": "뭐라고 해야 할지 몰라서 그냥 웃었어요."
+          }
+        ]
+      },
+      {
+        "heading": "수동 분사구문: p.p.로 시작",
+        "body": "종속절이 **수동태**이면 `being`을 생략하고 **과거분사**로 시작합니다.\n`Because it was written in haste, the report has errors.` → `Written in haste, the report has errors.`\n현재분사(-ing)는 **능동**(\"~하면서\"), 과거분사는 **수동**(\"~된 채로\")이라는 구분이 중요합니다.\n`Surprised by the news`(놀라게 된) vs `Surprising everyone`(모두를 놀라게 하며)",
+        "examples": [
+          {
+            "en": "Built in 1920, the house still looks solid.",
+            "ko": "1920년에 지어졌지만 그 집은 여전히 튼튼해 보여요."
+          },
+          {
+            "en": "Surprised by the result, he said nothing.",
+            "ko": "결과에 놀라서 그는 아무 말도 안 했어요.",
+            "wrong": "Surprising by the result, he said nothing."
+          },
+          {
+            "en": "Left alone in the office, I finished the slides.",
+            "ko": "사무실에 혼자 남아서 슬라이드를 마무리했어요."
+          }
+        ]
+      },
+      {
+        "heading": "완료 분사구문: Having p.p.",
+        "body": "분사의 동작이 주절보다 **먼저 끝났음**을 분명히 할 때 `Having + 과거분사`를 씁니다.\n`After I had finished the report, I went home.` → `Having finished the report, I went home.`\n단순 -ing로도 순서가 분명하면 굳이 having을 쓰지 않아도 됩니다. 원인·결과처럼 **선후가 의미상 중요할 때** 씁니다.",
+        "examples": [
+          {
+            "en": "Having finished the report, I finally went home.",
+            "ko": "보고서를 끝내고 나서야 집에 갔어요."
+          },
+          {
+            "en": "Having lived in Spain, she speaks Spanish fluently.",
+            "ko": "스페인에서 살았던 덕에 그녀는 스페인어가 유창해요."
+          },
+          {
+            "en": "Having missed breakfast, I was starving by noon.",
+            "ko": "아침을 걸러서 정오쯤엔 배가 몹시 고팠어요."
+          }
+        ]
+      },
+      {
+        "heading": "현수분사(dangling participle): 주어가 어긋나면 안 된다",
+        "body": "분사의 **의미상 주어는 주절의 주어와 같아야** 합니다. 다르면 문장이 우스꽝스럽거나 틀립니다.\n`Walking down the street, the building looked old.` (X) → 건물이 걸어갔다는 뜻이 됨\n→ `Walking down the street, I noticed the building looked old.`\n주어가 다르면 분사 앞에 주어를 남기거나(독립분사구문: `Weather permitting, ...`), 그냥 접속사절로 쓰세요.",
+        "examples": [
+          {
+            "en": "Walking down the street, I noticed the old building.",
+            "ko": "길을 걷다가 그 오래된 건물을 봤어요.",
+            "wrong": "Walking down the street, the building looked old."
+          },
+          {
+            "en": "Weather permitting, we will have the picnic outside.",
+            "ko": "날씨가 괜찮으면 밖에서 소풍을 할 거예요."
+          },
+          {
+            "en": "Generally speaking, Korean winters are dry and cold.",
+            "ko": "일반적으로 말해서 한국의 겨울은 건조하고 추워요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "주절 주어와 분사 주어가 다른 현수분사 (`Driving home, the rain started.`)",
+      "수동 의미에 -ing를 쓰는 실수: `Surprising by the news` → `Surprised by the news`",
+      "분사구문을 과하게 써서 문장이 모호해지는 경우 — 회화에서는 접속사절이 더 자연스러움",
+      "`Having p.p.`와 `Being p.p.` 혼동 (Being은 보통 생략)"
+    ]
+  },
+  {
+    "id": "g-inversion",
+    "title": "Inversion",
+    "titleKo": "도치",
+    "level": "advanced",
+    "category": "문장구조",
+    "summary": "도치는 강조나 격식을 위해 주어와 (조)동사의 순서를 바꾸는 구문입니다. 부정어가 문장 앞에 나오면 의문문 어순이 된다는 것이 핵심 규칙입니다.",
+    "sections": [
+      {
+        "heading": "부정어·제한어가 앞에 오면 도치",
+        "body": "`Never, Rarely, Seldom, Little, Hardly, Not only, Under no circumstances, At no time` 등이 **강조를 위해 문장 맨 앞**에 오면 뒤는 **의문문 어순**(조동사 + 주어 + 동사)이 됩니다.\n`I have never seen such a mess.` → `Never have I seen such a mess.`\n일반동사일 때는 `do/does/did`를 끌어옵니다: `Rarely does he complain.`\n격식체·글말에서 쓰이며 회화에서는 강한 감정을 표현할 때 씁니다.",
+        "examples": [
+          {
+            "en": "Never have I seen such a beautiful sunset.",
+            "ko": "이렇게 아름다운 노을은 처음 봐요.",
+            "wrong": "Never I have seen such a beautiful sunset."
+          },
+          {
+            "en": "Rarely does she miss a deadline.",
+            "ko": "그녀는 마감을 놓치는 일이 거의 없어요.",
+            "wrong": "Rarely she misses a deadline."
+          },
+          {
+            "en": "Under no circumstances should you share your password.",
+            "ko": "어떤 경우에도 비밀번호를 공유해서는 안 됩니다."
+          }
+        ]
+      },
+      {
+        "heading": "Not only ... but also / Hardly ... when / No sooner ... than",
+        "body": "짝을 이루는 도치 표현입니다.\n`Not only did he apologize, but he also paid for the damage.` → **앞 절만 도치**, but 뒤는 정상 어순\n`Hardly had I sat down when the phone rang.` → 앉자마자 전화가 울렸다 (과거완료 + when)\n`No sooner had we left than it started raining.` → 떠나자마자 비가 왔다 (과거완료 + than)\n`Hardly/No sooner` 뒤는 과거완료라는 점을 기억하세요.",
+        "examples": [
+          {
+            "en": "Not only did he apologize, but he also fixed it.",
+            "ko": "그는 사과했을 뿐 아니라 고쳐 주기까지 했어요.",
+            "wrong": "Not only he apologized, but he also fixed it."
+          },
+          {
+            "en": "Hardly had I sat down when the phone rang.",
+            "ko": "앉자마자 전화가 울렸어요."
+          },
+          {
+            "en": "No sooner had we arrived than the show began.",
+            "ko": "우리가 도착하자마자 공연이 시작됐어요."
+          }
+        ]
+      },
+      {
+        "heading": "So / Neither / Nor: \"나도\"",
+        "body": "상대 말에 동의할 때 쓰는 짧은 도치입니다. **긍정에는 `So + 조동사 + 주어`**, **부정에는 `Neither/Nor + 조동사 + 주어`**를 씁니다.\n`I love jazz.` → `So do I.`\n`I can't swim.` → `Neither can I.`\n조동사는 앞 문장의 동사 종류와 시제에 맞춥니다: `I was late.` → `So was I.`",
+        "examples": [
+          {
+            "en": "I love this song. So do I.",
+            "ko": "이 노래 정말 좋아. 나도.",
+            "wrong": "I love this song. So I do."
+          },
+          {
+            "en": "I haven't finished yet. Neither have I.",
+            "ko": "아직 못 끝냈어. 나도.",
+            "wrong": "I haven't finished yet. Me too."
+          },
+          {
+            "en": "She was at the party, and so was her brother.",
+            "ko": "그녀는 파티에 있었고, 그녀의 남동생도 있었어요."
+          }
+        ]
+      },
+      {
+        "heading": "if 생략 도치: Had / Were / Should",
+        "body": "격식체에서 가정법의 `if`를 생략하고 **had / were / should를 앞으로** 보냅니다.\n`If I had known, ...` → `Had I known, ...`\n`If I were you, ...` → `Were I you, ...` (드묾) / `Were it not for ...`(~가 없다면)\n`If you should need help, ...` → `Should you need help, ...` → 비즈니스 이메일에서 매우 흔함\n부정은 축약하지 않습니다: `Had I not seen it` (O) / `Hadn't I seen it` (X)",
+        "examples": [
+          {
+            "en": "Had I known about the traffic, I would have left earlier.",
+            "ko": "교통 상황을 알았더라면 더 일찍 나왔을 거예요."
+          },
+          {
+            "en": "Should you have any questions, please let me know.",
+            "ko": "질문이 있으시면 알려 주세요."
+          },
+          {
+            "en": "Were it not for her support, I would have quit.",
+            "ko": "그녀의 지지가 없었다면 그만뒀을 거예요."
+          }
+        ]
+      },
+      {
+        "heading": "장소·방향 부사구 도치",
+        "body": "`Here, There, On the table, In the corner` 같은 **장소 표현이 앞에 오면 주어와 동사(be, come, go, stand 등)가 바뀝니다**. 이때는 조동사 없이 본동사가 바로 앞으로 옵니다.\n`Here comes the bus.`, `On the wall hung a huge painting.`\n단, **주어가 대명사이면 도치하지 않습니다**: `Here it comes.` (O) / `Here comes it.` (X)",
+        "examples": [
+          {
+            "en": "Here comes the bus. Hurry up!",
+            "ko": "버스 온다. 서둘러!"
+          },
+          {
+            "en": "On the desk was a note from my boss.",
+            "ko": "책상 위에 상사가 남긴 메모가 있었어요."
+          },
+          {
+            "en": "There goes our last chance.",
+            "ko": "마지막 기회가 날아가네요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "부정어가 앞에 왔는데 평서문 어순을 유지하는 실수: `Never I have...` → `Never have I...`",
+      "`Not only` 뒤에만 도치하고 `but also` 뒤에도 도치하는 실수",
+      "부정문 동의에 `Me too` 사용: `I don't like it. Me too.` → `Me neither. / Neither do I.`",
+      "if 생략 도치에서 축약형 사용: `Hadn't I known` → `Had I not known`"
+    ]
+  },
+  {
+    "id": "g-noun-clauses-that-whether-what",
+    "title": "Noun Clauses: that / whether / if / what",
+    "titleKo": "명사절과 접속사 that / whether / what",
+    "level": "advanced",
+    "category": "문장구조",
+    "summary": "명사절은 절 전체가 주어·목적어·보어 역할을 합니다. \"~라는 것\"은 that, \"~인지 아닌지\"는 whether/if, \"~하는 것(무엇)\"은 what이며, 절 안은 항상 평서문 어순입니다.",
+    "sections": [
+      {
+        "heading": "that절: \"~라는 것\" (사실·생각·말)",
+        "body": "`that + 완전한 문장`은 사실이나 생각의 내용을 나타냅니다. `think, know, believe, say, hope, hear` 등의 목적어로 가장 많이 쓰이며, 이때 **that은 생략 가능**합니다.\n`I think (that) he's right.`\n주어 자리에서는 생략하지 않고, 보통 가주어 `It`을 써서 뒤로 보냅니다: `It's clear that she's talented.`\n`the fact that`, `the news that`처럼 명사 뒤에 붙어 내용을 설명하기도 합니다(동격).",
+        "examples": [
+          {
+            "en": "I heard that the meeting was moved to Friday.",
+            "ko": "회의가 금요일로 옮겨졌다고 들었어요."
+          },
+          {
+            "en": "It's obvious that he didn't read the email.",
+            "ko": "그가 이메일을 안 읽은 게 분명해요."
+          },
+          {
+            "en": "The fact that she apologized means a lot.",
+            "ko": "그녀가 사과했다는 사실이 큰 의미가 있어요."
+          }
+        ]
+      },
+      {
+        "heading": "whether / if절: \"~인지 아닌지\"",
+        "body": "Yes/No로 답할 수 있는 **의문**을 명사절로 만들 때 `whether` 또는 `if`를 씁니다.\n`I don't know if she's coming.` = `I don't know whether she's coming.`\n차이: **전치사 뒤, to부정사 앞, 주어 자리, `or not` 바로 앞**에는 `whether`만 가능합니다.\n`It depends on whether ...`, `whether to go`, `Whether he agrees is unclear.`\n절 안은 **평서문 어순**입니다: `if she is coming` (O) / `if is she coming` (X)",
+        "examples": [
+          {
+            "en": "I'm not sure whether he received my message.",
+            "ko": "그가 제 메시지를 받았는지 잘 모르겠어요.",
+            "wrong": "I'm not sure whether did he receive my message."
+          },
+          {
+            "en": "Let me know if you can make it tomorrow.",
+            "ko": "내일 올 수 있는지 알려 주세요."
+          },
+          {
+            "en": "We haven't decided whether to accept the offer.",
+            "ko": "그 제안을 받아들일지 아직 결정 못 했어요.",
+            "wrong": "We haven't decided if to accept the offer."
+          }
+        ]
+      },
+      {
+        "heading": "what절: \"~하는 것 / 무엇을 ~하는지\"",
+        "body": "`what`은 **불완전한 문장**을 이끕니다. what 자체가 절 안에서 주어나 목적어 역할을 하기 때문입니다.\n`what she said` → said의 목적어가 what\n`that she said it` → 완전한 문장\n**that + 완전한 문장, what + 목적어/주어가 빠진 문장**으로 구분하세요. what절은 \"~하는 것\"으로 해석되며 `the thing which`와 같습니다.",
+        "examples": [
+          {
+            "en": "I didn't understand what she meant.",
+            "ko": "그녀가 무슨 뜻으로 말했는지 이해가 안 됐어요.",
+            "wrong": "I didn't understand that she meant."
+          },
+          {
+            "en": "What matters most is your health.",
+            "ko": "가장 중요한 것은 건강이에요."
+          },
+          {
+            "en": "Tell me what you need, and I will get it.",
+            "ko": "필요한 게 뭔지 말해 주면 가져다줄게요."
+          }
+        ]
+      },
+      {
+        "heading": "간접의문문: 의문사절의 어순",
+        "body": "의문사(`who, where, when, why, how`)로 시작하는 명사절도 **평서문 어순**입니다. 직접 질문에서 쓰던 do/does/did는 사라집니다.\n`Where does he live?` → `I don't know where he lives.`\n`What time is it?` → `Do you know what time it is?`\n한국인 학습자가 가장 많이 틀리는 지점이니 **의문사 뒤에는 주어 + 동사**를 반복해서 익히세요.",
+        "examples": [
+          {
+            "en": "Do you know where the nearest station is?",
+            "ko": "가장 가까운 역이 어디인지 아세요?",
+            "wrong": "Do you know where is the nearest station?"
+          },
+          {
+            "en": "I wonder why he left so early.",
+            "ko": "그가 왜 그렇게 일찍 떠났는지 궁금해요.",
+            "wrong": "I wonder why did he leave so early."
+          },
+          {
+            "en": "Can you tell me how much this costs?",
+            "ko": "이거 얼마인지 알려 주실 수 있어요?",
+            "wrong": "Can you tell me how much does this cost?"
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "명사절 안에 의문문 어순을 쓰는 실수: `I don't know where is he.` → `where he is`",
+      "`that`과 `what` 혼동: `what` 뒤는 불완전한 문장, `that` 뒤는 완전한 문장",
+      "`if to do`, `on if` 처럼 whether만 가능한 자리에 if 사용",
+      "`I think that` 뒤에 쉼표를 넣거나, 주어 자리의 that절에서 that 생략"
+    ]
+  },
+  {
+    "id": "g-perfect-continuous-future-perfect",
+    "title": "Perfect Continuous and Future Perfect",
+    "titleKo": "완료진행형과 미래완료",
+    "level": "advanced",
+    "category": "시제",
+    "summary": "완료진행형은 \"계속 ~해 오고 있다\"는 지속과 과정을, 미래완료는 \"미래의 어느 시점까지 ~하게 될 것이다\"라는 완료를 나타냅니다. 기준 시점이 어디인지 잡는 것이 핵심입니다.",
+    "sections": [
+      {
+        "heading": "현재완료진행: 지금까지 계속 (have been -ing)",
+        "body": "`have/has been + -ing`는 과거에 시작해 **지금까지 계속되거나 방금 끝난 동작**을 강조합니다.\n현재완료(`have + p.p.`)가 **결과·횟수**에 초점이라면, 완료진행은 **과정·기간**에 초점입니다.\n`I've read this book.`(다 읽었다, 결과) vs `I've been reading this book.`(읽는 중이다, 과정)\n`for/since/how long/all day`와 자주 쓰이고, 방금 끝난 일의 흔적을 설명할 때도 씁니다: `You look tired. Have you been running?`",
+        "examples": [
+          {
+            "en": "I've been waiting here for over an hour.",
+            "ko": "여기서 한 시간 넘게 기다리고 있어요."
+          },
+          {
+            "en": "She's been working on this project since March.",
+            "ko": "그녀는 3월부터 이 프로젝트를 진행해 오고 있어요."
+          },
+          {
+            "en": "You're out of breath. Have you been running?",
+            "ko": "숨이 차네요. 달리기하고 왔어요?"
+          },
+          {
+            "en": "I've read that article twice.",
+            "ko": "그 기사를 두 번 읽었어요. (결과·횟수)"
+          }
+        ]
+      },
+      {
+        "heading": "과거완료진행: 과거 어느 시점까지 계속 (had been -ing)",
+        "body": "기준점을 **과거의 한 시점**으로 옮기면 `had been + -ing`가 됩니다. \"그때까지 ~해 오고 있었다\"는 뜻입니다.\n`When I arrived, they had been waiting for two hours.` → 내가 도착한 시점(과거)까지 두 시간 기다리는 중이었다\n과거의 결과에 대한 **원인·배경**을 설명할 때 자주 씁니다: `He was tired because he had been studying all night.`",
+        "examples": [
+          {
+            "en": "By the time I got there, they had been waiting for two hours.",
+            "ko": "제가 도착했을 땐 그들이 두 시간째 기다리고 있었어요."
+          },
+          {
+            "en": "She was exhausted because she had been working all weekend.",
+            "ko": "주말 내내 일해서 그녀는 지쳐 있었어요."
+          },
+          {
+            "en": "The ground was wet. It had been raining all night.",
+            "ko": "땅이 젖어 있었어요. 밤새 비가 왔던 거죠."
+          }
+        ]
+      },
+      {
+        "heading": "미래완료: 미래 시점까지 완료 (will have p.p.)",
+        "body": "`will have + 과거분사`는 **미래의 특정 시점까지 어떤 일이 끝나 있을 것**임을 나타냅니다.\n`By next year, I will have graduated.` → 내년이라는 시점에 졸업이 완료된 상태\n`by + 미래 시점`(by Friday, by the time you arrive, by 2030)과 함께 쓰입니다.\n**`by the time` 절 안은 현재형**입니다: `by the time you arrive` (O) / `by the time you will arrive` (X)",
+        "examples": [
+          {
+            "en": "By Friday, I will have finished the whole report.",
+            "ko": "금요일까지는 보고서를 다 끝내 놓을 거예요."
+          },
+          {
+            "en": "By the time you arrive, we'll have eaten dinner.",
+            "ko": "당신이 도착할 때쯤이면 우리는 저녁을 다 먹었을 거예요.",
+            "wrong": "By the time you will arrive, we'll have eaten dinner."
+          },
+          {
+            "en": "Next month, they will have been married for ten years.",
+            "ko": "다음 달이면 그들은 결혼한 지 10년이 돼요."
+          }
+        ]
+      },
+      {
+        "heading": "미래완료진행과 시제 한눈에 비교",
+        "body": "`will have been + -ing`는 미래 시점까지 **계속되고 있을 기간**을 강조합니다.\n`By June, I will have been working here for five years.`\n세 시제를 기준점으로 정리하면:\n현재 기준 → `have been -ing` / 과거 기준 → `had been -ing` / 미래 기준 → `will have been -ing`\n기준 시점만 바뀌고 \"그때까지 계속\"이라는 뜻은 동일합니다.",
+        "examples": [
+          {
+            "en": "By June, I will have been working here for five years.",
+            "ko": "6월이면 여기서 일한 지 5년이 돼요."
+          },
+          {
+            "en": "At nine, she'll have been driving for twelve hours.",
+            "ko": "9시면 그녀는 12시간째 운전하고 있는 거예요."
+          },
+          {
+            "en": "By the end of the day, we will have been talking for hours.",
+            "ko": "하루가 끝날 때쯤이면 우리는 몇 시간째 이야기하고 있을 거예요."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "상태 동사를 완료진행으로 쓰는 실수: `I've been knowing him` → `I've known him`",
+      "`by the time` 절에 will을 넣는 실수 (시간·조건절은 현재형)",
+      "미래완료와 단순미래 혼동: `I will finish by Friday.`(금요일에 끝낼 것) vs `I will have finished by Friday.`(금요일까지는 끝나 있을 것)",
+      "현재완료진행의 `for/since`를 과거시제와 섞어 쓰는 실수 (`I was waiting since 2 o'clock.`)"
+    ]
+  },
+  {
+    "id": "g-biz-email-request-decline-followup",
+    "title": "Formal Email: Requests, Declining, and Follow-ups",
+    "titleKo": "이메일 격식 표현: 요청·거절·후속",
+    "level": "business",
+    "category": "비즈니스 글쓰기",
+    "summary": "비즈니스 이메일은 \"짧고 정중하게\"가 원칙입니다. 요청은 간접 의문문으로 부드럽게, 거절은 감사 → 거절 → 대안 순서로, 후속은 압박 없이 상기시키는 표현을 씁니다.",
+    "sections": [
+      {
+        "heading": "정중한 요청: 의문문 형태로 부드럽게",
+        "body": "`Please send me ...`는 틀리지 않지만 명령처럼 들릴 수 있습니다. 격식 이메일에서는 **`Could you ...?`, `Would you be able to ...?`, `I would appreciate it if you could ...`**가 안전합니다.\n긴급할수록 오히려 더 정중하게 쓰는 것이 영어권 관례입니다.\n`I was wondering if you could ...`는 가장 부드러운 요청입니다.",
+        "examples": [
+          {
+            "en": "Could you send me the updated figures by Thursday?",
+            "ko": "목요일까지 업데이트된 수치를 보내 주실 수 있을까요?",
+            "wrong": "Send me the updated figures by Thursday."
+          },
+          {
+            "en": "I would appreciate it if you could review the draft.",
+            "ko": "초안을 검토해 주시면 감사하겠습니다."
+          },
+          {
+            "en": "Would you be able to join a short call tomorrow?",
+            "ko": "내일 짧은 통화에 참여하실 수 있을까요?"
+          }
+        ]
+      },
+      {
+        "heading": "정중한 거절: 감사 → 거절 → 대안",
+        "body": "영어 이메일의 거절은 **쿠션 → 이유 → 대안** 순서가 기본입니다. `No`를 직접 쓰기보다 `Unfortunately`, `I'm afraid`로 시작합니다.\n`Thank you for ... Unfortunately, ... However, ...`\n이유는 짧게, 대안은 구체적으로 제시하면 관계가 유지됩니다.\n한국어 \"어렵습니다\"를 `It is difficult`로 직역하면 \"노력하면 된다\"로 읽힐 수 있으니, 확실한 거절은 `I won't be able to`로 씁니다.",
+        "examples": [
+          {
+            "en": "Thank you for the offer. Unfortunately, I have a prior commitment.",
+            "ko": "제안 감사합니다. 아쉽지만 선약이 있습니다."
+          },
+          {
+            "en": "I'm afraid we won't be able to meet that deadline.",
+            "ko": "죄송하지만 그 마감일은 맞추기 어려울 것 같습니다.",
+            "wrong": "It is difficult to meet that deadline."
+          },
+          {
+            "en": "However, I could have it ready by next Wednesday instead.",
+            "ko": "다만 다음 주 수요일까지는 준비할 수 있습니다."
+          }
+        ]
+      },
+      {
+        "heading": "후속 메일: 압박 없이 상기시키기",
+        "body": "답장이 없을 때는 **`I'm following up on ...`, `I wanted to check in on ...`, `Just a gentle reminder that ...`**로 시작합니다.\n`Why didn't you reply?`처럼 추궁하는 표현은 피하고, 상대가 바쁠 수 있음을 전제로 씁니다.\n마지막에 **구체적인 다음 행동**을 제시하면 답장을 받기 쉽습니다: `Could you let me know by Friday?`",
+        "examples": [
+          {
+            "en": "I'm following up on my email from last week.",
+            "ko": "지난주에 보낸 이메일 관련해 다시 연락드립니다."
+          },
+          {
+            "en": "Just a gentle reminder that the form is due Friday.",
+            "ko": "양식 제출 마감이 금요일임을 다시 한번 알려 드립니다."
+          },
+          {
+            "en": "I wanted to check in on the status of the contract.",
+            "ko": "계약 진행 상황을 확인하고자 연락드립니다.",
+            "wrong": "Why haven't you replied to my email yet?"
+          }
+        ]
+      },
+      {
+        "heading": "시작과 마무리 표현",
+        "body": "**시작**: `I hope this email finds you well.`(격식) / `I'm writing to ...`(목적 밝히기) / `Thank you for your prompt reply.`\n**마무리**: `Please let me know if you have any questions.` / `I look forward to hearing from you.` / `Thank you in advance for your help.`\n서명 앞 인사는 `Best regards,`(일반), `Kind regards,`(조금 더 정중), `Sincerely,`(가장 격식)가 무난합니다.",
+        "examples": [
+          {
+            "en": "I am writing to confirm our meeting on Tuesday.",
+            "ko": "화요일 회의를 확인하고자 메일 드립니다."
+          },
+          {
+            "en": "Please let me know if you have any questions.",
+            "ko": "질문이 있으시면 알려 주세요."
+          },
+          {
+            "en": "I look forward to hearing from you soon.",
+            "ko": "곧 답장 주시기를 기다리겠습니다.",
+            "wrong": "I look forward to hear from you soon."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "요청을 명령문으로 쓰는 실수: `Send me the file.` → `Could you send me the file?`",
+      "\"어렵습니다\"를 `It is difficult`로 직역해 거절 의사가 전달되지 않는 경우",
+      "`look forward to hear` → `look forward to hearing`",
+      "`Dear Mr. John`처럼 이름(first name)에 Mr.를 붙이는 실수 (`Dear Mr. Smith` 또는 `Dear John`)"
+    ]
+  },
+  {
+    "id": "g-biz-meeting-opinion-agree-summarize",
+    "title": "Meeting Language: Opinions, Agreeing/Disagreeing, Summarizing",
+    "titleKo": "회의 표현: 의견 제시·동의/반대·요약",
+    "level": "business",
+    "category": "비즈니스 회화",
+    "summary": "영어 회의에서는 의견을 \"완화 표현\"으로 감싸고, 반대할 때도 먼저 인정한 뒤 but으로 잇습니다. 마무리에는 결정 사항과 담당자를 명확히 요약하는 패턴을 씁니다.",
+    "sections": [
+      {
+        "heading": "의견 제시: 강도 조절하기",
+        "body": "의견의 강도에 따라 표현을 고릅니다.\n**부드럽게**: `I feel like ...`, `It seems to me that ...`, `I'd say ...`\n**중립**: `In my opinion, ...`, `I think ...`, `From my perspective, ...`\n**강하게**: `I strongly believe ...`, `I'm convinced that ...`\n`I think`만 반복하지 말고 상황에 맞게 바꿔 쓰면 훨씬 자연스럽습니다. 발언권을 얻을 때는 `Can I jump in here?`, `If I may add something ...`을 씁니다.",
+        "examples": [
+          {
+            "en": "It seems to me that we need more time for testing.",
+            "ko": "제 생각엔 테스트에 시간이 더 필요한 것 같습니다."
+          },
+          {
+            "en": "From my perspective, the bigger risk is the timeline.",
+            "ko": "제 관점에서는 더 큰 리스크는 일정입니다."
+          },
+          {
+            "en": "Can I jump in here? I have a quick point.",
+            "ko": "잠깐 끼어들어도 될까요? 짧게 한 가지만요."
+          }
+        ]
+      },
+      {
+        "heading": "동의하기",
+        "body": "단순 `Yes`보다 **정도**를 담아 표현합니다.\n`I completely agree.` / `That's a fair point.` / `I'm with you on that.` / `Exactly.`\n부분 동의: `I agree up to a point, but ...` / `I see where you're coming from, but ...`\n동의하면서 덧붙이기: `Building on what Sarah said, ...`",
+        "examples": [
+          {
+            "en": "That's a fair point. I hadn't considered that.",
+            "ko": "타당한 지적이네요. 그 점은 생각 못 했어요."
+          },
+          {
+            "en": "I'm with you on that. Let's move forward.",
+            "ko": "그 점은 동의합니다. 진행하시죠."
+          },
+          {
+            "en": "Building on what Minji said, we could also cut costs.",
+            "ko": "민지 씨 말씀에 덧붙이자면, 비용 절감도 가능합니다."
+          }
+        ]
+      },
+      {
+        "heading": "반대하기: 인정 → but → 근거",
+        "body": "직접 `You're wrong`, `I disagree`는 거칠게 들립니다. **먼저 인정하고(`I see your point`) → `but/however` → 근거** 순으로 말합니다.\n`I see your point, but I'm not sure that's the best approach.`\n`I'm not sure I agree.`, `I have some concerns about ...`, `Have we considered ...?`처럼 **질문형**으로 바꾸면 더 부드럽습니다.\n한국어 \"글쎄요\"에 해당하는 말로는 `I'm not so sure about that.`이 자연스럽습니다.",
+        "examples": [
+          {
+            "en": "I see your point, but I'm not sure the timing is right.",
+            "ko": "무슨 말씀인지 알지만, 시기가 맞는지 확신이 안 섭니다.",
+            "wrong": "You're wrong. The timing is bad."
+          },
+          {
+            "en": "I have some concerns about the budget, to be honest.",
+            "ko": "솔직히 예산에 대해 우려가 좀 있습니다."
+          },
+          {
+            "en": "Have we considered what happens if the vendor is late?",
+            "ko": "공급사가 늦을 경우에 대해 고려해 봤나요?"
+          }
+        ]
+      },
+      {
+        "heading": "요약과 마무리: 결정·담당·기한",
+        "body": "회의 끝에는 **결정 사항, 담당자, 기한**을 정리합니다.\n`To sum up, ...` / `So, to recap, we've agreed to ...` / `Let me summarize what we've decided.`\n액션 아이템은 `[사람] will [행동] by [기한]` 형식이 명확합니다: `Jiho will send the proposal by Friday.`\n확인을 구할 때는 `Does that sound right to everyone?`, `Did I miss anything?`으로 마무리합니다.",
+        "examples": [
+          {
+            "en": "To recap, we've agreed to launch in March.",
+            "ko": "정리하면, 3월에 출시하기로 합의했습니다."
+          },
+          {
+            "en": "Jiho will send the revised proposal by Friday.",
+            "ko": "지호 씨가 금요일까지 수정된 제안서를 보낼 겁니다."
+          },
+          {
+            "en": "Does that sound right to everyone? Did I miss anything?",
+            "ko": "다들 괜찮으신가요? 빠진 거 없나요?"
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "`I think`만 반복하거나, 반대로 모든 의견에 `maybe`를 붙여 자신 없게 들리는 경우",
+      "반대할 때 쿠션 없이 `No` 또는 `I disagree`로 시작하는 실수",
+      "`I agree with you`를 `I agree you`, `I'm agree`로 쓰는 실수",
+      "요약 없이 회의를 끝내 담당·기한이 불명확해지는 경우 (영어 회의 문화에서는 명시가 기본)"
+    ]
+  },
+  {
+    "id": "g-biz-conditionals-suggestions",
+    "title": "Conditionals and Suggestions in Business: if / should / would",
+    "titleKo": "비즈니스 조건·제안 표현: if / should / would",
+    "level": "business",
+    "category": "비즈니스 회화",
+    "summary": "비즈니스에서 조건과 제안은 상대를 압박하지 않으면서 선택지를 제시하는 도구입니다. 직접적인 if 조건, 격식의 should 도치, 부드러운 would 가정을 상황별로 구분해 씁니다.",
+    "sections": [
+      {
+        "heading": "if로 조건 제시: 협상의 기본",
+        "body": "`If you ..., we can/will ...` 구조로 **조건부 제안**을 합니다. 1형 조건문이므로 if절은 현재형입니다.\n`If you order 500 units, we can offer a 10% discount.`\n조건을 강조할 때는 `provided that`, `as long as`, `on condition that`을 씁니다. 모두 \"~하는 조건으로\"라는 뜻이며 if보다 격식적입니다.\n상대가 조건을 못 받아들일 가능성을 열어 둘 때는 `If that doesn't work for you, ...`로 이어 갑니다.",
+        "examples": [
+          {
+            "en": "If you order five hundred units, we can offer a discount.",
+            "ko": "500개를 주문하시면 할인을 제공할 수 있습니다.",
+            "wrong": "If you will order five hundred units, we can offer a discount."
+          },
+          {
+            "en": "We can extend the deadline, provided that the scope stays the same.",
+            "ko": "범위가 그대로라는 조건으로 마감을 연장할 수 있습니다."
+          },
+          {
+            "en": "If that doesn't work for you, we can look at other options.",
+            "ko": "그게 안 맞으시면 다른 선택지를 알아보겠습니다."
+          }
+        ]
+      },
+      {
+        "heading": "Should you ... / In case ...: 격식 있는 조건",
+        "body": "격식 이메일에서는 `If you should ...`의 if를 생략하고 **`Should you ...`**로 도치합니다. \"혹시 ~하시면\"이라는 정중한 뉘앙스입니다.\n`Should you have any questions, please contact me.`\n`In case` 는 \"~할 경우에 대비해서\"라는 뜻으로 **예방 조치**를 말할 때 씁니다: `I've attached the file in case you need it.`\n`In case of + 명사`는 안내문 표현입니다: `In case of emergency, ...`",
+        "examples": [
+          {
+            "en": "Should you need further information, please let me know.",
+            "ko": "추가 정보가 필요하시면 알려 주십시오."
+          },
+          {
+            "en": "Should the shipment be delayed, we will notify you immediately.",
+            "ko": "배송이 지연될 경우 즉시 알려 드리겠습니다."
+          },
+          {
+            "en": "I've attached the agenda in case you haven't seen it.",
+            "ko": "혹시 못 보셨을까 봐 안건을 첨부합니다."
+          }
+        ]
+      },
+      {
+        "heading": "would로 부드럽게 제안·요청하기",
+        "body": "`would`는 **가정의 거리감**을 만들어 제안을 부드럽게 합니다.\n`It would be great if you could ...` / `Would it be possible to ...?` / `I would suggest ...` / `We would prefer ...`\n`I suggest`보다 `I would suggest`가, `It is better`보다 `It would be better`가 덜 단정적입니다.\n`What if we ...?`, `How about ...?`, `Why don't we ...?`는 회의에서 아이디어를 던질 때 자연스럽습니다.",
+        "examples": [
+          {
+            "en": "It would be great if you could confirm by Monday.",
+            "ko": "월요일까지 확인해 주시면 정말 좋겠습니다."
+          },
+          {
+            "en": "Would it be possible to move the call to three?",
+            "ko": "통화를 3시로 옮기는 게 가능할까요?"
+          },
+          {
+            "en": "I would suggest starting with a smaller pilot.",
+            "ko": "더 작은 파일럿부터 시작하는 것을 제안드립니다.",
+            "wrong": "You must start with a smaller pilot."
+          },
+          {
+            "en": "What if we split the project into two phases?",
+            "ko": "프로젝트를 두 단계로 나누면 어떨까요?"
+          }
+        ]
+      },
+      {
+        "heading": "unless / otherwise / in that case",
+        "body": "`unless`는 \"~하지 않는 한\"(= if not)입니다. 이미 부정이 들어 있으므로 **unless 뒤에 not을 또 쓰지 않습니다**.\n`We'll proceed unless we hear otherwise.`\n`otherwise`는 \"그렇지 않으면\"으로 결과를 경고할 때, `in that case`는 \"그 경우라면\"으로 상대 조건에 반응할 때 씁니다.\n`unless`는 협박처럼 들릴 수 있으니 고객 응대에서는 `if ... not`이 더 부드러울 때가 있습니다.",
+        "examples": [
+          {
+            "en": "We'll proceed with the plan unless we hear otherwise.",
+            "ko": "별다른 말씀이 없으면 계획대로 진행하겠습니다.",
+            "wrong": "We'll proceed with the plan unless we don't hear otherwise."
+          },
+          {
+            "en": "Please sign by Friday. Otherwise, the price may change.",
+            "ko": "금요일까지 서명해 주세요. 그렇지 않으면 가격이 바뀔 수 있습니다."
+          },
+          {
+            "en": "In that case, let's push the launch to April.",
+            "ko": "그렇다면 출시를 4월로 미루죠."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "if절에 will 사용: `If you will order...` → `If you order...`",
+      "`unless ... not` 이중 부정",
+      "제안을 `You must`, `You should`로 시작해 지시처럼 들리는 경우 (`I would suggest ...`, `It might be worth ...`)",
+      "`Should you ...` 도치를 의문문으로 오해하거나, 뒤에 물음표를 붙이는 실수"
+    ]
+  },
+  {
+    "id": "g-biz-passive-voice-objective",
+    "title": "Passive Voice for Objectivity and Diplomacy",
+    "titleKo": "수동태와 객관적·외교적 표현",
+    "level": "business",
+    "category": "비즈니스 글쓰기",
+    "summary": "수동태는 \"누가\"보다 \"무엇이 일어났는가\"에 초점을 둡니다. 비즈니스에서는 책임 주체를 흐리거나, 개인이 아닌 조직의 결정임을 나타내거나, 보고서를 객관적으로 쓸 때 전략적으로 씁니다.",
+    "sections": [
+      {
+        "heading": "수동태 기본: be + p.p. (+ by 행위자)",
+        "body": "`주어 + be동사 + 과거분사` 구조이며, 행위자는 `by ~`로 덧붙이거나 **생략**합니다.\n`The team approved the budget.` → `The budget was approved (by the team).`\n시제는 be동사로 표현합니다: `is sent`(현재) / `was sent`(과거) / `has been sent`(현재완료) / `will be sent`(미래)\n수동태를 만들 수 있는 것은 **목적어가 있는 동사(타동사)**뿐입니다. `happen, occur, arrive`는 수동태가 없습니다.",
+        "examples": [
+          {
+            "en": "The budget was approved yesterday afternoon.",
+            "ko": "예산은 어제 오후에 승인되었습니다."
+          },
+          {
+            "en": "Your order has been shipped and will arrive Friday.",
+            "ko": "주문하신 상품이 발송되었으며 금요일에 도착할 예정입니다."
+          },
+          {
+            "en": "The accident happened around noon.",
+            "ko": "사고는 정오쯤 발생했습니다.",
+            "wrong": "The accident was happened around noon."
+          }
+        ]
+      },
+      {
+        "heading": "책임 주체 흐리기: 비난 대신 사실",
+        "body": "문제를 알릴 때 `You made a mistake.`는 **상대를 직접 비난**하는 느낌입니다. 수동태로 바꾸면 사람이 아닌 **사건**에 초점이 가서 외교적입니다.\n`A mistake was made in the invoice.`\n`It appears that ...`, `It seems that ...`을 덧붙이면 더 완곡해집니다.\n단, 자신의 책임을 숨기려고 남용하면 오히려 신뢰를 잃으니, **사과할 때는 능동태(`We made an error.`)**가 더 진정성 있게 들립니다.",
+        "examples": [
+          {
+            "en": "It appears that the wrong file was attached.",
+            "ko": "잘못된 파일이 첨부된 것으로 보입니다.",
+            "wrong": "You attached the wrong file."
+          },
+          {
+            "en": "The deadline was not communicated clearly to the team.",
+            "ko": "마감일이 팀에 명확히 전달되지 않았습니다."
+          },
+          {
+            "en": "We made an error in your invoice, and we apologize.",
+            "ko": "청구서에 저희 실수가 있었습니다. 사과드립니다."
+          }
+        ]
+      },
+      {
+        "heading": "조직의 결정·정책: 개인 의견이 아님을 표시",
+        "body": "규정, 정책, 조직 차원의 결정을 전달할 때는 수동태가 \"내가 정한 게 아니라 **정해진 것**\"이라는 거리를 만들어 줍니다.\n`It has been decided that ...` / `Employees are required to ...` / `Applications must be submitted by ...`\n거절 통보에도 유용합니다: `Your request could not be approved at this time.`\n단, 너무 수동태만 이어지면 차갑게 읽히므로 중간중간 `We` 주어를 섞습니다.",
+        "examples": [
+          {
+            "en": "It has been decided that the office will close early Friday.",
+            "ko": "금요일에는 사무실을 일찍 닫기로 결정되었습니다."
+          },
+          {
+            "en": "All expense reports must be submitted by the fifth.",
+            "ko": "모든 경비 보고서는 5일까지 제출되어야 합니다."
+          },
+          {
+            "en": "Unfortunately, your request could not be approved at this time.",
+            "ko": "아쉽게도 요청하신 건은 이번에 승인되지 못했습니다."
+          }
+        ]
+      },
+      {
+        "heading": "보고서의 객관적 서술과 능동태의 균형",
+        "body": "보고서·논문에서는 **절차와 결과**를 수동태로 써서 객관성을 높입니다: `Data was collected from 200 users.`, `The results are shown in Table 2.`\n하지만 **행동과 책임을 분명히 해야 할 때**(액션 아이템, 제안, 성과)는 능동태가 더 명확하고 힘이 있습니다: `Our team reduced costs by 15%.`\n원칙: **사실·절차 = 수동**, **행동·책임·성과 = 능동**.",
+        "examples": [
+          {
+            "en": "The survey was conducted over a two-week period.",
+            "ko": "설문은 2주에 걸쳐 실시되었습니다."
+          },
+          {
+            "en": "The results are summarized in the table below.",
+            "ko": "결과는 아래 표에 요약되어 있습니다."
+          },
+          {
+            "en": "Our team reduced delivery time by twenty percent.",
+            "ko": "저희 팀은 배송 시간을 20% 단축했습니다."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "자동사를 수동태로 쓰는 실수: `was happened`, `was occurred`, `was arrived`",
+      "`be` 누락: `The report sent yesterday.` → `The report was sent yesterday.`",
+      "모든 문장을 수동태로 써서 책임 소재와 행동 주체가 불분명한 보고서",
+      "사과할 때 수동태로 책임을 회피하는 인상(`Mistakes were made.`)을 주는 경우"
+    ]
+  },
+  {
+    "id": "g-biz-numbers-trends-prepositions",
+    "title": "Describing Numbers and Trends: increase by/to, account for, Prepositions",
+    "titleKo": "숫자·추세 표현: increase by/to, account for, 전치사",
+    "level": "business",
+    "category": "비즈니스 글쓰기",
+    "summary": "수치를 말할 때 전치사 하나로 \"얼마만큼 변했는지(by)\"와 \"얼마가 되었는지(to)\"가 갈립니다. 증감 동사, 비율 표현, 기간·시점 전치사를 정확히 쓰면 보고가 훨씬 명확해집니다.",
+    "sections": [
+      {
+        "heading": "increase by vs increase to: 변화량 vs 도달점",
+        "body": "**`by`는 변화량**(\"~만큼\"), **`to`는 도달점**(\"~까지/~로\")입니다.\n`Sales increased by 10%.` → 10%만큼 올랐다\n`Sales increased to $1.1 million.` → 110만 달러가 되었다\n`from A to B`로 시작점과 끝점을 함께 말할 수 있습니다: `rose from 50 to 65`\n`increased 10%`처럼 전치사를 생략하기도 하지만, 글에서는 `by`를 넣는 것이 명확합니다.",
+        "examples": [
+          {
+            "en": "Revenue increased by twelve percent last quarter.",
+            "ko": "지난 분기 매출이 12% 증가했습니다."
+          },
+          {
+            "en": "Revenue increased to two million dollars last quarter.",
+            "ko": "지난 분기 매출이 200만 달러로 증가했습니다."
+          },
+          {
+            "en": "Costs fell from eighty thousand to sixty-five thousand.",
+            "ko": "비용이 8만에서 6만 5천으로 줄었습니다.",
+            "wrong": "Costs fell from eighty thousand by sixty-five thousand."
+          }
+        ]
+      },
+      {
+        "heading": "증감 동사와 강도 부사",
+        "body": "**증가**: `increase, rise, grow, go up, climb, jump, surge, double`\n**감소**: `decrease, fall, drop, decline, go down, plunge, halve`\n**유지**: `remain stable, stay flat, level off, plateau`\n**변동**: `fluctuate`\n강도는 부사로: `slightly`(약간) → `steadily`(꾸준히) → `significantly`(상당히) → `sharply / dramatically`(급격히)\n`raise`는 타동사(\"~을 올리다\")이고 `rise`는 자동사(\"오르다\")라는 차이에 주의하세요.",
+        "examples": [
+          {
+            "en": "Prices rose sharply in the first half of the year.",
+            "ko": "상반기에 가격이 급격히 올랐습니다.",
+            "wrong": "Prices raised sharply in the first half of the year."
+          },
+          {
+            "en": "We raised our prices by five percent in March.",
+            "ko": "저희는 3월에 가격을 5% 인상했습니다."
+          },
+          {
+            "en": "User numbers remained stable throughout the quarter.",
+            "ko": "사용자 수는 분기 내내 안정적으로 유지되었습니다."
+          },
+          {
+            "en": "Traffic fluctuated between two and three thousand a day.",
+            "ko": "트래픽은 하루 2천에서 3천 사이를 오갔습니다."
+          }
+        ]
+      },
+      {
+        "heading": "account for / make up / represent: 비율",
+        "body": "전체 중 차지하는 비율은 **`account for`, `make up`, `represent`**로 표현합니다. 세 가지는 거의 같은 뜻입니다.\n`Mobile accounts for 60% of total traffic.`\n`account for`는 \"~의 원인을 설명하다\"라는 뜻도 있습니다: `Weather accounted for most of the delays.`\n비율 비교에는 `the majority of`, `a quarter of`, `two-thirds of`, `nearly half of` 같은 표현도 자주 씁니다.",
+        "examples": [
+          {
+            "en": "Mobile users account for sixty percent of total traffic.",
+            "ko": "모바일 사용자가 전체 트래픽의 60%를 차지합니다."
+          },
+          {
+            "en": "Asia makes up nearly half of our revenue.",
+            "ko": "아시아가 매출의 거의 절반을 차지합니다."
+          },
+          {
+            "en": "Shipping delays accounted for most of the complaints.",
+            "ko": "배송 지연이 불만의 대부분을 차지했습니다."
+          }
+        ]
+      },
+      {
+        "heading": "시점·기간 전치사: in / on / at / by / within / over",
+        "body": "`in 2024`, `in Q3`, `in March`(월·연도·분기) / `on March 5th`(날짜) / `at the end of the year`(특정 시점)\n`by Friday` = 금요일**까지는** 완료 / `until Friday` = 금요일**까지 계속**\n`within three days`(3일 이내에) / `over the past year`(지난 1년에 걸쳐) / `during the pilot`(파일럿 기간 동안)\n`by`와 `until`의 혼동이 특히 많습니다: `Send it by Friday.`(마감) vs `I'll be away until Friday.`(지속)",
+        "examples": [
+          {
+            "en": "Please submit the report by the end of the month.",
+            "ko": "월말까지 보고서를 제출해 주세요.",
+            "wrong": "Please submit the report until the end of the month."
+          },
+          {
+            "en": "Sales grew steadily over the past three years.",
+            "ko": "지난 3년에 걸쳐 매출이 꾸준히 성장했습니다."
+          },
+          {
+            "en": "We expect to break even within eighteen months.",
+            "ko": "18개월 이내에 손익분기점에 도달할 것으로 예상합니다."
+          },
+          {
+            "en": "The contract was signed on March fifth in Singapore.",
+            "ko": "계약은 3월 5일 싱가포르에서 체결되었습니다."
+          }
+        ]
+      }
+    ],
+    "pitfalls": [
+      "`increase by`(변화량)와 `increase to`(도달점) 혼동",
+      "`rise`(자동사)와 `raise`(타동사) 혼동: `Prices raised` → `Prices rose`",
+      "`by`(마감)와 `until`(지속) 혼동: `submit until Friday` → `submit by Friday`",
+      "`percent`와 `percentage` 혼동: `10 percent`(숫자와 함께), `the percentage of`(비율 개념)"
+    ]
+  }
+]

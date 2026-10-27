@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-10-27T01:32:15.135Z",
+  "levels": {
+    "beginner": {
+      "total": 45,
+      "byType": {
+        "word": 30,
+        "phrasal": 10,
+        "collocation": 3,
+        "idiom": 2
+      }
+    },
+    "intermediate": {
+      "total": 45,
+      "byType": {
+        "word": 30,
+        "phrasal": 10,
+        "idiom": 3,
+        "collocation": 2
+      }
+    },
+    "advanced": {
+      "total": 45,
+      "byType": {
+        "word": 30,
+        "phrasal": 10,
+        "idiom": 5
+      }
+    },
+    "business": {
+      "total": 45,
+      "byType": {
+        "word": 30,
+        "phrasal": 10,
+        "idiom": 3,
+        "collocation": 2
+      }
+    }
+  },
+  "grammar": 20
+}

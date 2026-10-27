@@ -1,0 +1,78 @@
+# Eng — 상황별 영단어·구동사·영문법 학습 앱
+
+한국어 화자를 위한 모바일 우선 영어 학습 웹앱입니다. 단어의 뜻을 한두 개가 아니라 **상황(context)별로 분리**해서 보여 주고, 각 뜻마다 예문(영/한)과 **브라우저 내장 음성(TTS)** 을 제공합니다. 학습 기록은 브라우저(localStorage)에 저장되며 서버가 없습니다.
+
+## 기능
+
+- **레벨 4단계**: 초급(A1–A2) · 중급(B1–B2) · 고급(C1–C2) · 비즈니스
+- **단어장**: 검색(표제어·뜻·예문), 레벨/유형(단어·구동사·관용구·연어)/학습 상태 필터, 북마크
+- **상세**: 상황별 뜻 탭, 예문 음성 재생, 유의어·반의어·용법 노트, 관련 단어
+- **학습(플래시카드)**: SM-2 기반 간격 반복. 다시/어려움/알겠음/쉬움 → 다음 복습 시점 자동 계산
+- **퀴즈**: 뜻 고르기 · 단어 고르기 · 빈칸 채우기. 틀린 단어는 복습 큐로
+- **문법 정리**: 레벨별 주제, 예문 음성, 흔한 오류(✗) 표시, 한국인이 자주 틀리는 포인트
+- **설정**: 음성/속도 선택, 하루 새 단어 목표, 카드 앞면(영→한 / 한→영), 테마, 기록 내보내기/불러오기
+- **PWA**: 홈 화면에 설치 가능, 오프라인 동작
+
+## 실행
+
+```bash
+pnpm install
+pnpm dev        # http://localhost:5173
+pnpm build      # 콘텐츠 검증 → 타입체크 → dist/ 빌드 (정적 호스팅 어디든 배포 가능)
+pnpm preview
+```
+
+라우팅은 해시(`/#/browse/...`) 방식이라 GitHub Pages·S3 등 정적 호스팅에서 새로고침해도 404 가 나지 않습니다.
+
+## 콘텐츠
+
+```
+src/data/types.ts            # Entry / Sense / GrammarTopic 타입 (콘텐츠 계약)
+src/data/schema.ts           # zod 스키마
+src/data/content/
+  beginner.json              # 레벨별 어휘 (Entry[])
+  intermediate.json
+  advanced.json
+  business.json
+  grammar.json               # 문법 주제 (GrammarTopic[])
+  manifest.json              # 개수 요약 (pnpm validate 가 자동 생성)
+```
+
+- `pnpm validate` — 모든 콘텐츠 파일을 검증하고 `manifest.json` 을 갱신합니다. (id 형식, 중복, 예문에 표제어 포함 여부 등)
+- 현재 시드 데이터: 레벨당 45개 표제어(총 180개, 뜻 394개) + 문법 20주제.
+
+### 대량 생성 (Claude API)
+
+레벨당 1,500~2,000개 목표는 `scripts/generate.ts` 로 채웁니다. 구조화 출력(JSON 스키마 강제)을 사용하고, 배치마다 파일에 바로 저장되므로 중단해도 안전합니다.
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...      # 또는 `ant auth login`
+pnpm generate --level intermediate --count 200
+pnpm generate --level business --count 100 --wordlist scripts/wordlists/business.txt
+pnpm generate --level beginner --count 10 --dry-run   # API 호출 없이 후보만 확인
+```
+
+| 옵션 | 기본값 | 설명 |
+|---|---|---|
+| `--level` | (필수) | beginner / intermediate / advanced / business |
+| `--count` | 50 | 이번 실행에서 추가할 표제어 수 |
+| `--batch` | 8 | 요청 1회당 표제어 수 |
+| `--concurrency` | 3 | 동시 요청 수 |
+| `--types` | word:70,phrasal:20,idiom:7,collocation:3 | 유형 비율 |
+| `--wordlist` | 없음 | 표제어 목록 파일. 없으면 모델이 후보 제안 |
+| `--model` | claude-opus-5-5 | 사용 모델 |
+| `--effort` | medium | low / medium / high |
+
+비용 감각: 표제어 1개당 출력 약 400~700 토큰. Opus 5.5 기준 2,000개 ≈ 출력 1.2M 토큰 ≈ $25 안팎 (입력·시스템 프롬프트 캐시 포함 시 조금 더). 품질을 먼저 확인하려면 `--count 20` 으로 시작하세요.
+
+## 학습 기록 저장
+
+`localStorage` 키 `eng-progress-v1` 에 단어별 SRS 상태(ease·interval·due·reps), 일별 통계, 문법 읽음 표시, 설정이 저장됩니다. 설정 화면에서 JSON 으로 내보내기/불러오기 할 수 있습니다.
+
+## 음성
+
+Web Speech API(`speechSynthesis`)를 사용합니다. iOS/macOS 는 Samantha·Ava, Chrome 은 Google US English, Windows 는 Aria/Jenny 등 기기에 설치된 영어 음성을 자동 선택하며 설정에서 바꿀 수 있습니다. 서버나 API 키가 필요 없습니다.
+
+## 기술 스택
+
+Vite 8 · React 19 · TypeScript · Tailwind CSS 4 · react-router 8 · zustand(persist) · vite-plugin-pwa · zod · @anthropic-ai/sdk(생성 스크립트 전용)

@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "a-w-ambivalent",
+    "headword": "ambivalent",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/æmˈbɪvələnt/",
+    "tags": ["emotion", "opinion", "essay"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "감정/관계",
+        "meaningKo": "양가적인, 상반된 감정이 공존하는",
+        "meaningEn": "having mixed or contradictory feelings about something at the same time",
+        "register": "formal",
+        "examples": [
+          { "en": "She remained deeply ambivalent about leaving the city she had grown up in.", "ko": "그녀는 자신이 자란 도시를 떠나는 것에 대해 여전히 깊은 양가감정을 느꼈다." },
+          { "en": "Many voters feel ambivalent toward a candidate they admire but do not trust.", "ko": "많은 유권자가 존경은 하지만 신뢰하지는 않는 후보에게 양가적인 감정을 느낀다." },
+          { "en": "His ambivalence toward fame runs through every chapter of the memoir.", "ko": "명성에 대한 그의 양가감정이 회고록의 모든 장을 관통한다." }
+        ],
+        "synonyms": ["torn", "conflicted"],
+        "antonyms": ["unequivocal", "wholehearted"],
+        "note": "'무관심한(indifferent)'이 아니라 '좋기도 싫기도 한' 상태. ambivalent about/toward + 대상. 명사형 ambivalence."
+      }
+    ]
+  },
+  {
+    "id": "a-w-undermine",
+    "headword": "undermine",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˌʌndərˈmaɪn/",
+    "tags": ["politics", "argument", "essay"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "정치/사회",
+        "meaningKo": "(권위·신뢰·제도를) 서서히 약화시키다, 훼손하다",
+        "meaningEn": "to gradually weaken or damage something such as confidence, authority, or a system",
+        "register": "formal",
+        "examples": [
+          { "en": "Repeated scandals have undermined public trust in the institution.", "ko": "거듭된 스캔들이 그 기관에 대한 대중의 신뢰를 훼손했다." },
+          { "en": "Critics argue the bill would quietly undermine judicial independence.", "ko": "비판자들은 그 법안이 사법부의 독립성을 은밀히 약화시킬 것이라고 주장한다." },
+          { "en": "Nothing undermines a leader faster than being caught in a lie.", "ko": "거짓말이 들통나는 것만큼 지도자를 빠르게 무너뜨리는 것은 없다." }
+        ],
+        "synonyms": ["erode", "subvert", "weaken"],
+        "antonyms": ["bolster", "reinforce"],
+        "note": "weaken 보다 '눈에 띄지 않게, 밑에서부터' 갉아먹는 뉘앙스. undermine trust / authority / credibility / efforts 가 대표 콜로케이션."
+      },
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(주장·전제의) 근거를 무너뜨리다, 반박하다",
+        "meaningEn": "to make an argument or assumption less convincing by attacking its basis",
+        "register": "formal",
+        "examples": [
+          { "en": "The new data seriously undermine the paper's central assumption.", "ko": "새로운 데이터는 그 논문의 핵심 전제를 심각하게 흔든다." },
+          { "en": "One counterexample is enough to undermine a universal claim.", "ko": "보편적 주장을 무너뜨리는 데는 반례 하나면 충분하다." }
+        ],
+        "synonyms": ["refute", "call into question"],
+        "note": "refute 가 '틀렸음을 입증'이라면 undermine 은 '설득력을 떨어뜨림'에 가깝다. 완전 반박이 아닐 때 이 단어가 더 정확하다."
+      }
+    ]
+  },
+  {
+    "id": "a-w-pervasive",
+    "headword": "pervasive",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/pərˈveɪsɪv/",
+    "tags": ["society", "essay"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "정치/사회",
+        "meaningKo": "만연한, 구석구석 스며든",
+        "meaningEn": "spreading widely throughout an area or a group, often in a way that is hard to escape",
+        "register": "formal",
+        "examples": [
+          { "en": "Corruption had become so pervasive that bribes were simply called fees.", "ko": "부패가 너무 만연해서 뇌물을 그냥 수수료라고 불렀다." },
+          { "en": "The essay traces the pervasive influence of advertising on how we speak.", "ko": "그 에세이는 광고가 우리의 말투에 미치는 전방위적 영향을 추적한다." },
+          { "en": "A pervasive sense of unease hangs over the novel's opening chapters.", "ko": "소설의 첫 장들에는 온통 불안의 기운이 감돈다." }
+        ],
+        "synonyms": ["widespread", "ubiquitous"],
+        "note": "widespread 는 '넓게 퍼진'이라는 범위 중심, pervasive 는 '스며들어 빠져나올 수 없는' 느낌. 부정적 대상(corruption, bias, anxiety)과 자주 결합."
+      }
+    ]
+  },
+  {
+    "id": "a-w-nuance",
+    "headword": "nuance",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈnuːɑːns/",
+    "tags": ["language", "essay", "argument"],
+    "senses": [
+      {
+        "pos": "n.",
+        "context": "학술/글쓰기",
+        "meaningKo": "미묘한 차이, 뉘앙스",
+        "meaningEn": "a very slight difference in meaning, feeling, tone, or expression",
+        "register": "formal",
+        "examples": [
+          { "en": "Translation inevitably loses some of the nuance of the original.", "ko": "번역은 원문의 미묘한 뉘앙스를 어느 정도 잃을 수밖에 없다." },
+          { "en": "The headline flattens a debate that is full of nuance.", "ko": "그 헤드라인은 미묘한 차이로 가득한 논쟁을 납작하게 만들어 버린다." },
+          { "en": "She has an ear for the nuances of regional speech.", "ko": "그녀는 지역 말투의 미묘한 차이를 알아듣는 귀가 있다." }
+        ],
+        "synonyms": ["subtlety", "shade"]
+      },
+      {
+        "pos": "adj.",
+        "context": "뉴스/시사",
+        "meaningKo": "(nuanced) 섬세한, 단순화하지 않은",
+        "meaningEn": "(nuanced) showing awareness of fine distinctions rather than oversimplifying",
+        "register": "formal",
+        "examples": [
+          { "en": "The report offers a more nuanced picture than the headlines suggest.", "ko": "그 보고서는 헤드라인이 암시하는 것보다 훨씬 섬세한 그림을 제시한다." },
+          { "en": "We need a nuanced debate, not slogans shouted across the aisle.", "ko": "우리에게 필요한 건 통로 건너편으로 외치는 구호가 아니라 섬세한 토론이다." }
+        ],
+        "note": "형용사 nuanced 가 사설·리뷰에서 매우 자주 쓰임. a nuanced view / approach / portrayal. 반대 뉘앙스는 simplistic, black-and-white."
+      }
+    ]
+  },
+  {
+    "id": "a-w-mitigate",
+    "headword": "mitigate",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈmɪtɪɡeɪt/",
+    "tags": ["policy", "environment", "law"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "정치/사회",
+        "meaningKo": "(피해·위험·심각성을) 완화하다, 경감하다",
+        "meaningEn": "to make something harmful or severe less serious or less damaging",
+        "register": "formal",
+        "examples": [
+          { "en": "Cities are planting trees to mitigate the effects of extreme heat.", "ko": "도시들은 폭염의 영향을 완화하기 위해 나무를 심고 있다." },
+          { "en": "Early intervention can mitigate the long-term damage of childhood poverty.", "ko": "조기 개입은 아동 빈곤의 장기적 피해를 줄일 수 있다." },
+          { "en": "The court cited mitigating circumstances in handing down a lighter sentence.", "ko": "법원은 더 가벼운 형을 선고하며 정상 참작 사유를 언급했다." }
+        ],
+        "synonyms": ["alleviate", "lessen"],
+        "antonyms": ["aggravate", "exacerbate"],
+        "note": "reduce 가 양을 줄이는 중립어라면 mitigate 는 '나쁜 것의 심각성을 낮춘다'는 뜻. mitigate risk / impact / damage. 'mitigate against' 는 흔한 오용(militate against 와 혼동)."
+      }
+    ]
+  },
+  {
+    "id": "a-w-compelling",
+    "headword": "compelling",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/kəmˈpelɪŋ/",
+    "tags": ["argument", "literature", "review"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(논거·증거가) 설득력 있는, 반박하기 어려운",
+        "meaningEn": "so convincing or strong that it is difficult to argue against",
+        "register": "formal",
+        "examples": [
+          { "en": "The prosecution presented compelling evidence that the documents were forged.", "ko": "검찰은 문서가 위조되었다는 설득력 있는 증거를 제시했다." },
+          { "en": "There is a compelling case for taxing carbon at the border.", "ko": "국경에서 탄소세를 부과해야 할 강력한 근거가 있다." },
+          { "en": "I found her argument compelling, though I still disagree with its conclusion.", "ko": "결론에는 여전히 동의하지 않지만 그녀의 논증은 설득력 있었다." }
+        ],
+        "synonyms": ["persuasive", "cogent"],
+        "note": "convincing 보다 한 단계 강하고 격식 있음. a compelling reason / case / argument / evidence."
+      },
+      {
+        "pos": "adj.",
+        "context": "문학/묘사",
+        "meaningKo": "(이야기·인물이) 눈을 뗄 수 없는, 몰입하게 하는",
+        "meaningEn": "holding your attention so strongly that you cannot stop reading or watching",
+        "examples": [
+          { "en": "The novel's villain is far more compelling than its hero.", "ko": "그 소설의 악당은 주인공보다 훨씬 더 매혹적이다." },
+          { "en": "It is a compelling account of one family's flight from war.", "ko": "전쟁을 피해 달아난 한 가족의 이야기를 흡인력 있게 그려냈다." }
+        ],
+        "synonyms": ["gripping", "riveting"],
+        "note": "interesting 의 고급 대체어. 서평·영화평에서 a compelling narrative / character / read 로 자주 등장."
+      }
+    ]
+  },
+  {
+    "id": "a-w-conceive",
+    "headword": "conceive",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/kənˈsiːv/",
+    "tags": ["thought", "essay", "health"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(생각·계획을) 구상하다, 착상하다",
+        "meaningEn": "to form an idea or plan in the mind, especially an original one",
+        "register": "formal",
+        "examples": [
+          { "en": "The project was conceived as a bridge between art and engineering.", "ko": "그 프로젝트는 예술과 공학을 잇는 다리로 구상되었다." },
+          { "en": "She conceived the novel during a long winter in Vermont.", "ko": "그녀는 버몬트에서 보낸 긴 겨울 동안 그 소설을 구상했다." }
+        ],
+        "synonyms": ["devise", "envision"],
+        "note": "수동형 be conceived as/of 가 매우 흔함. 명사형 conception(구상, 개념) 과 함께 익힐 것."
+      },
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(~을) 상상하다, 생각해 낼 수 있다 (주로 부정문)",
+        "meaningEn": "to be able to imagine something, usually used in negatives or questions",
+        "register": "formal",
+        "examples": [
+          { "en": "It is hard to conceive of a world without the printing press.", "ko": "인쇄술이 없는 세상을 상상하기란 어렵다." },
+          { "en": "I cannot conceive how anyone could defend such a policy.", "ko": "누가 그런 정책을 옹호할 수 있는지 나로서는 도무지 이해가 안 된다." },
+          { "en": "Scarcely conceivable a decade ago, remote surgery is now routine.", "ko": "10년 전만 해도 상상하기 어려웠던 원격 수술이 이제는 일상이 되었다." }
+        ],
+        "note": "conceive of + 명사. 형용사 conceivable / inconceivable 도 에세이 빈출."
+      },
+      {
+        "pos": "v.",
+        "context": "건강/병원",
+        "meaningKo": "임신하다",
+        "meaningEn": "to become pregnant",
+        "examples": [
+          { "en": "Couples who struggle to conceive often face years of uncertainty.", "ko": "임신이 어려운 부부들은 종종 수년간의 불확실함을 겪는다." },
+          { "en": "She conceived naturally after two unsuccessful rounds of IVF.", "ko": "그녀는 두 차례 시험관 시술에 실패한 뒤 자연 임신했다." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a-w-render",
+    "headword": "render",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈrendər/",
+    "tags": ["essay", "law", "literature"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(어떤 상태로) 만들다",
+        "meaningEn": "to cause someone or something to be in a particular state",
+        "register": "formal",
+        "examples": [
+          { "en": "The flood rendered thousands of homes uninhabitable overnight.", "ko": "홍수로 하룻밤 사이에 수천 채의 집이 살 수 없는 상태가 되었다." },
+          { "en": "New evidence has rendered the earlier verdict untenable.", "ko": "새 증거로 인해 이전 판결은 유지될 수 없게 되었다." },
+          { "en": "The news rendered him speechless for a full minute.", "ko": "그 소식에 그는 꼬박 1분 동안 말을 잃었다." }
+        ],
+        "note": "render + 목적어 + 형용사 구조. make 의 격식체이며 결과 형용사는 주로 useless, obsolete, meaningless, powerless 등 부정적."
+      },
+      {
+        "pos": "v.",
+        "context": "문학/묘사",
+        "meaningKo": "(예술적으로) 표현하다, 묘사하다; 번역하다",
+        "meaningEn": "to represent or express something in words, art, or another language",
+        "register": "formal",
+        "examples": [
+          { "en": "The painter renders light on water with astonishing delicacy.", "ko": "그 화가는 물 위의 빛을 놀랍도록 섬세하게 표현한다." },
+          { "en": "The phrase is notoriously difficult to render into English.", "ko": "그 구절은 영어로 옮기기가 악명 높게 어렵다." }
+        ],
+        "synonyms": ["depict", "translate"],
+        "note": "render A into B = A를 B로 번역하다. 명사형 rendering(표현물, 번역본)."
+      },
+      {
+        "pos": "v.",
+        "context": "법률",
+        "meaningKo": "(판결·서비스·도움을) 제공하다, 내리다",
+        "meaningEn": "to give or deliver a judgment, service, or assistance officially",
+        "register": "formal",
+        "examples": [
+          { "en": "The jury rendered its verdict after only three hours of deliberation.", "ko": "배심원단은 단 세 시간의 심의 끝에 평결을 내렸다." },
+          { "en": "He was paid handsomely for services rendered to the crown.", "ko": "그는 왕실에 제공한 봉사의 대가로 후하게 보수를 받았다." }
+        ],
+        "note": "render a verdict / judgment, services rendered(제공된 용역) 는 법률·회계 고정 표현."
+      }
+    ]
+  },
+  {
+    "id": "a-w-warrant",
+    "headword": "warrant",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈwɔːrənt/",
+    "tags": ["argument", "law", "essay"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "~할 만하다, 정당화하다, 필요로 하다",
+        "meaningEn": "to make a particular action necessary or appropriate; to justify",
+        "register": "formal",
+        "examples": [
+          { "en": "The allegations are serious enough to warrant an independent inquiry.", "ko": "그 의혹들은 독립적인 조사를 할 만큼 충분히 심각하다." },
+          { "en": "Nothing in the data warrants such a sweeping conclusion.", "ko": "데이터의 어떤 것도 그렇게 포괄적인 결론을 정당화하지 못한다." },
+          { "en": "A minor error hardly warrants a public apology.", "ko": "사소한 실수가 공개 사과까지 할 일은 아니다." }
+        ],
+        "synonyms": ["justify", "merit", "call for"],
+        "note": "deserve 보다 격식적이고 '필요·적절함'의 뜻이 강함. 형용사 unwarranted(부당한, 근거 없는) 도 함께 외울 것."
+      },
+      {
+        "pos": "n.",
+        "context": "법률",
+        "meaningKo": "영장; (행동의) 정당한 근거",
+        "meaningEn": "an official document authorizing police action, or a justification for doing something",
+        "register": "formal",
+        "examples": [
+          { "en": "Police searched the apartment without a warrant, the defense argued.", "ko": "변호인은 경찰이 영장 없이 아파트를 수색했다고 주장했다." },
+          { "en": "There is no warrant in the text for such a reading.", "ko": "본문에는 그런 해석을 뒷받침할 근거가 없다." }
+        ],
+        "note": "a search warrant / arrest warrant. '근거' 뜻은 학술 문어체에서만."
+      }
+    ]
+  },
+  {
+    "id": "a-w-albeit",
+    "headword": "albeit",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɔːlˈbiːɪt/",
+    "tags": ["essay", "grammar"],
+    "senses": [
+      {
+        "pos": "conj.",
+        "context": "학술/글쓰기",
+        "meaningKo": "비록 ~이지만, ~이긴 하나",
+        "meaningEn": "although; used to add a qualifying phrase, not a full clause",
+        "register": "formal",
+        "examples": [
+          { "en": "The economy grew last quarter, albeit at a much slower pace.", "ko": "지난 분기 경제는 성장했다, 비록 훨씬 느린 속도이긴 했지만." },
+          { "en": "He accepted the award, albeit reluctantly and without a speech.", "ko": "그는 마지못해, 그리고 수상 소감도 없이 상을 받았다." },
+          { "en": "It is a useful, albeit imperfect, measure of inequality.", "ko": "그것은 불완전하긴 해도 유용한 불평등 지표이다." }
+        ],
+        "synonyms": ["though", "even if"],
+        "note": "although 와 달리 뒤에 '주어+동사' 완전한 절이 오지 않고 구(형용사·부사·전치사구)만 온다. 'albeit it was...' 는 오류."
+      }
+    ]
+  },
+  {
+    "id": "a-w-notwithstanding",
+    "headword": "notwithstanding",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˌnɑːtwɪθˈstændɪŋ/",
+    "tags": ["essay", "law"],
+    "senses": [
+      {
+        "pos": "prep.",
+        "context": "학술/글쓰기",
+        "meaningKo": "~에도 불구하고",
+        "meaningEn": "in spite of; despite",
+        "register": "formal",
+        "examples": [
+          { "en": "Notwithstanding these objections, the committee approved the plan unanimously.", "ko": "이러한 반대에도 불구하고 위원회는 그 계획을 만장일치로 승인했다." },
+          { "en": "The treaty remains in force, its critics notwithstanding.", "ko": "비판자들이 있음에도 그 조약은 여전히 유효하다." },
+          { "en": "Notwithstanding any provision to the contrary, this clause shall prevail.", "ko": "이에 반하는 어떠한 조항에도 불구하고 본 조항이 우선한다." }
+        ],
+        "synonyms": ["despite", "in spite of"],
+        "note": "despite 의 최상위 격식체로 법률·공문서에 빈번. 특이하게 명사 뒤에 올 수도 있다(its critics notwithstanding). 부사로 문장 끝에 단독으로도 쓰임."
+      }
+    ]
+  },
+  {
+    "id": "a-w-ostensibly",
+    "headword": "ostensibly",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɑːˈstensəbli/",
+    "tags": ["news", "essay", "politics"],
+    "senses": [
+      {
+        "pos": "adv.",
+        "context": "뉴스/시사",
+        "meaningKo": "표면상으로는, 명목상으로는 (실제는 다르다는 함의)",
+        "meaningEn": "according to what is claimed or appears to be true, though probably not really",
+        "register": "formal",
+        "examples": [
+          { "en": "The troops were sent in, ostensibly to protect civilians.", "ko": "표면상으로는 민간인 보호를 명분으로 군대가 투입되었다." },
+          { "en": "He resigned, ostensibly for health reasons, days before the audit.", "ko": "그는 감사 며칠 전, 명목상 건강상의 이유로 사임했다." },
+          { "en": "The ostensible purpose of the trip was trade; the real one was intelligence.", "ko": "여행의 표면적 목적은 무역이었지만 진짜 목적은 정보 수집이었다." }
+        ],
+        "synonyms": ["supposedly", "on the surface"],
+        "note": "apparently 가 중립적 '보기에는'이라면 ostensibly 는 '겉으론 그렇다지만 속내는 다르다'는 의심을 깔고 있다. 기자·사설 문체의 핵심 단어."
+      }
+    ]
+  },
+  {
+    "id": "a-w-tenuous",
+    "headword": "tenuous",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈtenjuəs/",
+    "tags": ["argument", "essay"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(연관·근거·주장이) 빈약한, 희박한, 근거가 약한",
+        "meaningEn": "so weak or slight that it barely exists or can hardly be defended",
+        "register": "formal",
+        "examples": [
+          { "en": "The link between the two events is tenuous at best.", "ko": "두 사건 사이의 연관성은 아무리 좋게 봐도 희박하다." },
+          { "en": "His claim to the throne rested on a tenuous line of descent.", "ko": "그의 왕위 계승권은 빈약한 혈통상의 근거에 의지하고 있었다." },
+          { "en": "She kept a tenuous grip on power through a series of fragile alliances.", "ko": "그녀는 일련의 취약한 동맹을 통해 가까스로 권력을 유지했다." }
+        ],
+        "synonyms": ["flimsy", "shaky"],
+        "antonyms": ["solid", "robust"],
+        "note": "weak 의 고급 대체어. a tenuous link / connection / grip / hold 가 고정 결합. 'at best' 와 자주 함께 쓰임."
+      }
+    ]
+  },
+  {
+    "id": "a-w-scrutinize",
+    "headword": "scrutinize",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈskruːtənaɪz/",
+    "tags": ["news", "politics", "research"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "뉴스/시사",
+        "meaningKo": "면밀히 조사하다, 철저히 검토하다",
+        "meaningEn": "to examine something very carefully in order to find faults or details",
+        "register": "formal",
+        "examples": [
+          { "en": "Every line of the budget will be scrutinized by opposition lawmakers.", "ko": "예산안의 모든 항목이 야당 의원들의 면밀한 검토를 받게 될 것이다." },
+          { "en": "Regulators are scrutinizing the merger for signs of reduced competition.", "ko": "규제 당국은 경쟁 저해 징후가 있는지 그 합병을 면밀히 들여다보고 있다." },
+          { "en": "Her every public statement was scrutinized for hidden political meaning.", "ko": "그녀의 모든 공개 발언이 숨은 정치적 의미가 있는지 샅샅이 분석되었다." }
+        ],
+        "synonyms": ["examine", "inspect"],
+        "note": "examine 보다 '의심을 갖고 꼼꼼히' 보는 뉘앙스. 명사형 scrutiny: come under / face intense scrutiny(철저한 조사를 받다)가 뉴스 최빈출."
+      }
+    ]
+  },
+  {
+    "id": "a-w-resonate",
+    "headword": "resonate",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈrezəneɪt/",
+    "tags": ["emotion", "politics", "literature"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "정치/사회",
+        "meaningKo": "(사람들의) 공감을 얻다, 마음에 와닿다",
+        "meaningEn": "to evoke a feeling of shared emotion or belief in a group of people",
+        "examples": [
+          { "en": "The message of economic fairness resonated with voters in the industrial Midwest.", "ko": "경제적 공정이라는 메시지는 중서부 공업 지대의 유권자들에게 깊은 공감을 얻었다." },
+          { "en": "Decades later, her words still resonate with anyone who has lost a home.", "ko": "수십 년이 지난 지금도 그녀의 말은 집을 잃어 본 사람이라면 누구에게나 울림을 준다." },
+          { "en": "The campaign failed because its slogans simply did not resonate.", "ko": "그 캠페인은 구호가 전혀 공감을 얻지 못해 실패했다." }
+        ],
+        "synonyms": ["strike a chord"],
+        "note": "resonate with + 사람/집단. '감동시키다(move)' 보다 '내 경험과 맞닿아 울린다'는 느낌. 명사 resonance(울림, 공명)."
+      },
+      {
+        "pos": "v.",
+        "context": "문학/묘사",
+        "meaningKo": "(소리가) 울려 퍼지다, 공명하다",
+        "meaningEn": "to produce or be filled with a deep, full, reverberating sound",
+        "examples": [
+          { "en": "The cello's low notes resonated through the empty cathedral.", "ko": "첼로의 낮은 음이 텅 빈 성당 안에 울려 퍼졌다." },
+          { "en": "His voice resonated in the marble hall long after he stopped speaking.", "ko": "그가 말을 멈춘 뒤에도 그의 목소리는 대리석 홀에 오래도록 울렸다." }
+        ],
+        "synonyms": ["reverberate", "echo"]
+      }
+    ]
+  },
+  {
+    "id": "a-w-entail",
+    "headword": "entail",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɪnˈteɪl/",
+    "tags": ["essay", "logic"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(필연적으로) 수반하다, 필요로 하다",
+        "meaningEn": "to involve something as a necessary part or consequence",
+        "register": "formal",
+        "examples": [
+          { "en": "Membership in the union entails obligations as well as benefits.", "ko": "연합 가입은 혜택뿐 아니라 의무도 수반한다." },
+          { "en": "Any serious reform would entail confronting powerful vested interests.", "ko": "어떤 진지한 개혁이든 강력한 기득권과 맞서는 일을 수반할 수밖에 없다." },
+          { "en": "Few voters understood what leaving the bloc would actually entail.", "ko": "탈퇴가 실제로 무엇을 의미하는지 이해한 유권자는 거의 없었다." }
+        ],
+        "synonyms": ["involve", "necessitate"],
+        "note": "involve 보다 '논리적·필연적 결과로 따라온다'는 뜻이 강함. 철학·논리학에서는 'A entails B'(A이면 반드시 B다) 로 쓴다. 수동형으로 잘 쓰지 않음."
+      }
+    ]
+  },
+  {
+    "id": "a-w-preclude",
+    "headword": "preclude",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/prɪˈkluːd/",
+    "tags": ["essay", "law"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(가능성을) 배제하다, 불가능하게 하다",
+        "meaningEn": "to make something impossible, or to prevent someone from doing something",
+        "register": "formal",
+        "examples": [
+          { "en": "A prior conviction does not automatically preclude you from serving on a jury.", "ko": "전과가 있다고 해서 배심원 자격이 자동으로 박탈되는 것은 아니다." },
+          { "en": "The sheer cost precludes any large-scale trial of the drug.", "ko": "막대한 비용 때문에 그 약의 대규모 임상시험은 불가능하다." },
+          { "en": "Correlation, of course, does not preclude a causal relationship.", "ko": "물론 상관관계가 있다고 해서 인과관계가 배제되는 것은 아니다." }
+        ],
+        "synonyms": ["rule out", "prevent"],
+        "note": "prevent 의 격식체. preclude + 명사 / preclude A from -ing. 'does not preclude' 형태로 '~를 배제하지는 않는다'가 학술 빈출."
+      }
+    ]
+  },
+  {
+    "id": "a-w-precarious",
+    "headword": "precarious",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/prɪˈkeriəs/",
+    "tags": ["economy", "society", "description"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "정치/사회",
+        "meaningKo": "(상황·생계가) 불안정한, 위태로운",
+        "meaningEn": "not securely held or in a stable position, and likely to get worse",
+        "register": "formal",
+        "examples": [
+          { "en": "Millions of gig workers live in a state of precarious employment.", "ko": "수백만 명의 긱 노동자들이 불안정한 고용 상태에서 살아간다." },
+          { "en": "The ceasefire remains precarious, with both sides trading accusations.", "ko": "양측이 서로 비난을 주고받는 가운데 휴전은 여전히 위태롭다." },
+          { "en": "The coalition's precarious majority could collapse with a single defection.", "ko": "연립 정부의 아슬아슬한 과반은 단 한 명의 이탈로도 무너질 수 있다." }
+        ],
+        "synonyms": ["unstable", "insecure"],
+        "antonyms": ["secure", "stable"],
+        "note": "unstable 보다 '언제 무너질지 모른다'는 긴장감이 큼. 사회학 용어 precarity(불안정 노동)도 알아 둘 것."
+      },
+      {
+        "pos": "adj.",
+        "context": "문학/묘사",
+        "meaningKo": "(물리적으로) 떨어질 듯한, 아슬아슬한",
+        "meaningEn": "physically balanced in a way that is likely to fall",
+        "examples": [
+          { "en": "A stack of books sat in precarious balance on the edge of the desk.", "ko": "책 더미가 책상 모서리에 아슬아슬하게 균형을 잡고 놓여 있었다." },
+          { "en": "The cabin perched precariously on the cliff above the sea.", "ko": "오두막은 바다 위 절벽에 위태롭게 자리 잡고 있었다." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a-w-salient",
+    "headword": "salient",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈseɪliənt/",
+    "tags": ["essay", "research"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "학술/글쓰기",
+        "meaningKo": "가장 두드러진, 핵심적인",
+        "meaningEn": "most noticeable or important among a set of features or points",
+        "register": "formal",
+        "examples": [
+          { "en": "The most salient feature of the data is the sharp drop after 2008.", "ko": "데이터에서 가장 두드러진 특징은 2008년 이후의 급락이다." },
+          { "en": "Let me summarize the salient points of the committee's report.", "ko": "위원회 보고서의 핵심 요점을 요약하겠습니다." },
+          { "en": "Race became the salient issue of the campaign almost overnight.", "ko": "인종 문제가 거의 하룻밤 사이에 선거의 가장 두드러진 쟁점이 되었다." }
+        ],
+        "synonyms": ["prominent", "striking"],
+        "note": "important 가 아니라 '눈에 띄어 주목하게 되는'이 본뜻. salient point / feature / issue. 심리학·언어학의 salience(현저성)도 파생."
+      }
+    ]
+  },
+  {
+    "id": "a-w-exacerbate",
+    "headword": "exacerbate",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɪɡˈzæsərbeɪt/",
+    "tags": ["policy", "health", "news"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "뉴스/시사",
+        "meaningKo": "(이미 나쁜 상황을) 악화시키다",
+        "meaningEn": "to make a problem, bad situation, or negative feeling worse",
+        "register": "formal",
+        "examples": [
+          { "en": "The drought has exacerbated food shortages across the region.", "ko": "가뭄이 그 지역 전반의 식량 부족을 악화시켰다." },
+          { "en": "Austerity measures only exacerbated the recession they were meant to cure.", "ko": "긴축 조치는 치유하려던 불황을 오히려 더 악화시킬 뿐이었다." },
+          { "en": "Stress is known to exacerbate symptoms of chronic illness.", "ko": "스트레스는 만성 질환의 증상을 악화시키는 것으로 알려져 있다." }
+        ],
+        "synonyms": ["aggravate", "worsen"],
+        "antonyms": ["alleviate", "mitigate"],
+        "note": "worsen 의 격식체. 목적어는 항상 이미 나쁜 것(problem, tension, inequality, crisis). 철자 주의: exa-cer-bate."
+      }
+    ]
+  },
+  {
+    "id": "a-w-inherent",
+    "headword": "inherent",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɪnˈhɪrənt/",
+    "tags": ["essay", "philosophy"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "학술/글쓰기",
+        "meaningKo": "내재하는, 본질적으로 갖고 있는",
+        "meaningEn": "existing as a natural and permanent part of something, not added from outside",
+        "register": "formal",
+        "examples": [
+          { "en": "There is an inherent tension between security and personal liberty.", "ko": "안보와 개인의 자유 사이에는 본질적인 긴장이 존재한다." },
+          { "en": "Risk is inherent in any investment, however carefully chosen.", "ko": "아무리 신중하게 고른 투자라도 위험은 내재해 있다." },
+          { "en": "The flaw is inherent to the design, not a matter of poor workmanship.", "ko": "그 결함은 설계에 내재된 것이지 시공 불량의 문제가 아니다." }
+        ],
+        "synonyms": ["intrinsic", "innate"],
+        "antonyms": ["extrinsic", "acquired"],
+        "note": "inherent in + 명사가 표준. intrinsic 은 '그 자체의 가치'를, inherent 는 '떼어낼 수 없는 속성'을 강조. 부사 inherently(본질적으로)도 빈출."
+      }
+    ]
+  },
+  {
+    "id": "a-w-concede",
+    "headword": "concede",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/kənˈsiːd/",
+    "tags": ["argument", "politics", "sports"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(마지못해) 인정하다, 시인하다",
+        "meaningEn": "to admit, often unwillingly, that something is true or valid",
+        "register": "formal",
+        "examples": [
+          { "en": "Even its harshest critics concede that the program reduced child mortality.", "ko": "가장 혹독한 비판자들조차 그 프로그램이 아동 사망률을 낮췄음은 인정한다." },
+          { "en": "I concede the point, but it does not rescue your overall argument.", "ko": "그 점은 인정하지만, 그렇다고 당신의 전체 논지가 살아나는 건 아니다." },
+          { "en": "She conceded that the study's sample had been too small.", "ko": "그녀는 연구의 표본이 너무 작았다는 점을 시인했다." }
+        ],
+        "synonyms": ["acknowledge", "grant"],
+        "note": "admit 보다 '논쟁 중 상대 주장의 일부를 내준다'는 뉘앙스. 에세이의 반론 수용(concession) 단계에서 핵심 동사."
+      },
+      {
+        "pos": "v.",
+        "context": "정치/사회",
+        "meaningKo": "(패배를) 인정하다; (영토·권리를) 내주다",
+        "meaningEn": "to accept defeat in a contest, or to give up something such as territory or a right",
+        "examples": [
+          { "en": "The senator conceded the race shortly after midnight.", "ko": "그 상원의원은 자정 직후 패배를 인정했다." },
+          { "en": "The empire was forced to concede vast territories under the treaty.", "ko": "제국은 조약에 따라 광대한 영토를 내줄 수밖에 없었다." }
+        ],
+        "note": "concede defeat / the election 이 선거 뉴스 고정 표현. 명사형 concession(양보, 인정)."
+      }
+    ]
+  },
+  {
+    "id": "a-w-arbitrary",
+    "headword": "arbitrary",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈɑːrbətreri/",
+    "tags": ["law", "essay", "logic"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "학술/글쓰기",
+        "meaningKo": "자의적인, 임의의, 합리적 근거가 없는",
+        "meaningEn": "based on personal choice or chance rather than reason or a system",
+        "register": "formal",
+        "examples": [
+          { "en": "The cutoff age of sixty-five is essentially arbitrary.", "ko": "65세라는 기준 연령은 본질적으로 자의적이다." },
+          { "en": "The border was drawn in a largely arbitrary fashion by colonial officials.", "ko": "그 국경은 식민지 관리들이 거의 임의로 그은 것이었다." },
+          { "en": "Linguists note that the link between a word and its meaning is arbitrary.", "ko": "언어학자들은 단어와 그 의미 사이의 연결이 자의적이라고 지적한다." }
+        ],
+        "synonyms": ["random", "capricious"],
+        "note": "random 이 '무작위'라면 arbitrary 는 '원칙 없이 누군가 정한'이라는 뜻. 법률에서 arbitrary detention / arrest(자의적 구금)은 인권 용어."
+      }
+    ]
+  },
+  {
+    "id": "a-w-elicit",
+    "headword": "elicit",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɪˈlɪsɪt/",
+    "tags": ["research", "essay"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(반응·정보·감정을) 이끌어 내다, 끌어내다",
+        "meaningEn": "to draw out a response, answer, or reaction from someone",
+        "register": "formal",
+        "examples": [
+          { "en": "The survey was designed to elicit honest answers about drug use.", "ko": "그 설문은 약물 사용에 관한 솔직한 답변을 이끌어 내도록 설계되었다." },
+          { "en": "Her remarks elicited an angry response from the opposition benches.", "ko": "그녀의 발언은 야당 의석에서 격한 반응을 불러일으켰다." },
+          { "en": "The painting elicits a quiet sorrow that is hard to name.", "ko": "그 그림은 이름 붙이기 어려운 조용한 슬픔을 자아낸다." }
+        ],
+        "synonyms": ["evoke", "draw out"],
+        "note": "evoke 가 기억·감정을 '불러일으킨다'면 elicit 은 질문·자극을 통해 '끌어낸다'. elicit a response / reaction / information. 철자가 비슷한 illicit(불법의)과 혼동 주의."
+      }
+    ]
+  },
+  {
+    "id": "a-w-discourse",
+    "headword": "discourse",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈdɪskɔːrs/",
+    "tags": ["society", "language", "academia"],
+    "senses": [
+      {
+        "pos": "n.",
+        "context": "정치/사회",
+        "meaningKo": "담론, 공적 논의",
+        "meaningEn": "serious written or spoken discussion of a subject in public life",
+        "register": "formal",
+        "examples": [
+          { "en": "Social media has coarsened the tone of political discourse.", "ko": "소셜 미디어가 정치 담론의 어조를 거칠게 만들었다." },
+          { "en": "The term 'resilience' now dominates public discourse on climate change.", "ko": "'회복탄력성'이라는 용어가 이제 기후변화에 관한 공적 담론을 지배하고 있다." },
+          { "en": "Her book reshaped the discourse around motherhood and work.", "ko": "그녀의 책은 모성과 일에 관한 담론을 재편했다." }
+        ],
+        "synonyms": ["debate", "discussion"],
+        "note": "discussion 보다 사회 전체 차원의 '이야기되는 방식'을 가리킴. public / political / academic discourse. 푸코 이후 인문학 핵심어."
+      },
+      {
+        "pos": "n.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(언어학) 담화, 문장 단위를 넘는 언어 사용",
+        "meaningEn": "language used in connected speech or writing beyond the level of a single sentence",
+        "register": "technical",
+        "examples": [
+          { "en": "Discourse analysis examines how meaning is built across whole conversations.", "ko": "담화 분석은 대화 전체에 걸쳐 의미가 어떻게 구축되는지 살핀다." },
+          { "en": "Words like 'however' and 'anyway' function as discourse markers.", "ko": "'however', 'anyway' 같은 단어는 담화 표지 역할을 한다." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a-w-paradigm",
+    "headword": "paradigm",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˈpærədaɪm/",
+    "tags": ["science", "academia", "essay"],
+    "senses": [
+      {
+        "pos": "n.",
+        "context": "기술/과학",
+        "meaningKo": "패러다임, 한 시대의 지배적 사고 틀",
+        "meaningEn": "a set of assumptions and methods that defines how a field understands its subject",
+        "register": "formal",
+        "examples": [
+          { "en": "Darwin's theory marked a paradigm shift in how life was understood.", "ko": "다윈의 이론은 생명을 이해하는 방식에 패러다임의 전환을 가져왔다." },
+          { "en": "The old paradigm treated the patient as a passive recipient of care.", "ko": "낡은 패러다임은 환자를 돌봄의 수동적 수혜자로 취급했다." },
+          { "en": "Within the prevailing paradigm, such results were simply dismissed as error.", "ko": "지배적 패러다임 안에서 그런 결과는 그저 오류로 치부되었다." }
+        ],
+        "synonyms": ["framework", "model"],
+        "note": "토머스 쿤(Kuhn)의 과학철학 용어에서 일반화. paradigm shift 는 남용되어 진부해졌으니 사설에서는 신중히. 'g' 묵음: /ˈpærədaɪm/."
+      },
+      {
+        "pos": "n.",
+        "context": "학술/글쓰기",
+        "meaningKo": "전형, 모범 사례",
+        "meaningEn": "a typical or perfect example of something",
+        "register": "formal",
+        "examples": [
+          { "en": "The Nordic countries are often cited as the paradigm of a generous welfare state.", "ko": "북유럽 국가들은 흔히 관대한 복지국가의 전형으로 인용된다." },
+          { "en": "Her career became a paradigm for young scientists from rural backgrounds.", "ko": "그녀의 경력은 시골 출신 젊은 과학자들에게 하나의 모범이 되었다." }
+        ],
+        "synonyms": ["exemplar", "archetype"]
+      }
+    ]
+  },
+  {
+    "id": "a-w-ubiquitous",
+    "headword": "ubiquitous",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/juːˈbɪkwɪtəs/",
+    "tags": ["technology", "society"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "기술/과학",
+        "meaningKo": "어디에나 있는, 편재하는",
+        "meaningEn": "seeming to be present everywhere at the same time",
+        "register": "formal",
+        "examples": [
+          { "en": "Smartphones have become so ubiquitous that their absence now feels strange.", "ko": "스마트폰이 너무 흔해져서 이제는 없는 것이 오히려 이상하게 느껴진다." },
+          { "en": "The ubiquitous security camera has quietly redefined public space.", "ko": "어디에나 있는 보안 카메라가 공공 공간의 의미를 조용히 다시 정의했다." },
+          { "en": "Plastic is now ubiquitous, from the deepest trench to Arctic ice.", "ko": "플라스틱은 이제 가장 깊은 해구부터 북극 얼음까지 어디에나 존재한다." }
+        ],
+        "synonyms": ["omnipresent", "everywhere"],
+        "note": "everywhere 의 격식 형용사. pervasive 가 '스며들어 영향을 미친다'면 ubiquitous 는 단순히 '어디서나 보인다'. 명사 ubiquity."
+      }
+    ]
+  },
+  {
+    "id": "a-w-ephemeral",
+    "headword": "ephemeral",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ɪˈfemərəl/",
+    "tags": ["literature", "art", "technology"],
+    "senses": [
+      {
+        "pos": "adj.",
+        "context": "문학/묘사",
+        "meaningKo": "덧없는, 금세 사라지는, 일시적인",
+        "meaningEn": "lasting for only a very short time",
+        "register": "formal",
+        "examples": [
+          { "en": "The poem dwells on the ephemeral beauty of cherry blossoms.", "ko": "그 시는 벚꽃의 덧없는 아름다움에 머문다." },
+          { "en": "Fame in the digital age is more ephemeral than ever.", "ko": "디지털 시대의 명성은 그 어느 때보다 덧없다." },
+          { "en": "Messages on the app are ephemeral, vanishing seconds after being read.", "ko": "그 앱의 메시지는 읽은 지 몇 초 만에 사라지는 일시적인 것이다." }
+        ],
+        "synonyms": ["fleeting", "transient"],
+        "antonyms": ["enduring", "permanent"],
+        "note": "temporary 가 중립적 '임시'라면 ephemeral 은 '아름답지만 곧 스러지는' 문학적 애수를 담는다. 명사 ephemera(한때의 인쇄물·수집품)."
+      }
+    ]
+  },
+  {
+    "id": "a-w-underscore",
+    "headword": "underscore",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/ˌʌndərˈskɔːr/",
+    "tags": ["news", "essay"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "뉴스/시사",
+        "meaningKo": "(중요성을) 강조하다, 부각하다",
+        "meaningEn": "to emphasize or show clearly that something is important or true",
+        "register": "formal",
+        "examples": [
+          { "en": "The blackout underscores how fragile the nation's power grid has become.", "ko": "이번 정전은 국가 전력망이 얼마나 취약해졌는지를 여실히 보여 준다." },
+          { "en": "The report underscored the need for independent oversight of the police.", "ko": "보고서는 경찰에 대한 독립적 감독의 필요성을 강조했다." },
+          { "en": "His silence only underscored the awkwardness of the moment.", "ko": "그의 침묵은 그 순간의 어색함을 더욱 두드러지게 할 뿐이었다." }
+        ],
+        "synonyms": ["highlight", "underline"],
+        "note": "emphasize 는 사람이 의도적으로 강조할 때, underscore 는 '사건·사실이 ~을 분명히 드러낸다'는 구조(The incident underscores...)로 뉴스 리드에 매우 빈번. 영국식은 underline 선호."
+      }
+    ]
+  },
+  {
+    "id": "a-w-contend",
+    "headword": "contend",
+    "type": "word",
+    "level": "advanced",
+    "ipa": "/kənˈtend/",
+    "tags": ["argument", "essay", "society"],
+    "senses": [
+      {
+        "pos": "v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(강하게) 주장하다",
+        "meaningEn": "to assert something as a position in an argument",
+        "register": "formal",
+        "examples": [
+          { "en": "The author contends that the welfare state was built on colonial wealth.", "ko": "저자는 복지국가가 식민지의 부 위에 세워졌다고 주장한다." },
+          { "en": "Critics contend that the figures were cherry-picked to flatter the ministry.", "ko": "비판자들은 수치가 부처를 돋보이게 하려고 선별된 것이라고 주장한다." },
+          { "en": "Some economists contend the recession ended far earlier than officially recorded.", "ko": "일부 경제학자들은 불황이 공식 기록보다 훨씬 일찍 끝났다고 주장한다." }
+        ],
+        "synonyms": ["argue", "maintain", "assert"],
+        "note": "argue 의 격식체로, 논문·사설에서 'X contends that...' 로 타인의 입장을 소개할 때 사용. 명사 contention(주장, 논쟁): a bone of contention(논쟁거리)."
+      },
+      {
+        "pos": "v.",
+        "context": "정치/사회",
+        "meaningKo": "(어려움과) 씨름하다, 맞서 싸우다",
+        "meaningEn": "to have to deal with a difficult situation or opponent",
+        "examples": [
+          { "en": "Farmers must now contend with droughts that arrive every other year.", "ko": "농민들은 이제 격년으로 찾아오는 가뭄과 싸워야 한다." },
+          { "en": "Three parties are contending for control of the regional assembly.", "ko": "세 정당이 지방의회 장악을 놓고 경쟁하고 있다." }
+        ],
+        "synonyms": ["grapple with", "compete"],
+        "note": "contend with(~와 씨름하다) / contend for(~를 두고 겨루다). 명사 contender(유력 경쟁자)."
+      }
+    ]
+  },
+  {
+    "id": "a-p-account-for",
+    "headword": "account for",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["research", "essay", "statistics"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "~의 이유를 설명하다, 해명하다",
+        "meaningEn": "to be the explanation or cause of something",
+        "register": "formal",
+        "examples": [
+          { "en": "Genetics alone cannot account for the sharp rise in childhood asthma.", "ko": "유전만으로는 아동 천식의 급증을 설명할 수 없다." },
+          { "en": "How do we account for the gap between what people say and what they do?", "ko": "사람들이 말하는 것과 행동하는 것 사이의 간극을 어떻게 설명해야 할까?" },
+          { "en": "The theory accounts for the data better than any rival explanation.", "ko": "그 이론은 어떤 경쟁 이론보다 데이터를 더 잘 설명한다." }
+        ],
+        "synonyms": ["explain"],
+        "note": "explain 과 달리 '원인이 되어 설명을 제공한다'는 뜻. 'There is no accounting for taste'(취향은 설명할 수 없다)는 관용구."
+      },
+      {
+        "pos": "phr. v.",
+        "context": "뉴스/시사",
+        "meaningKo": "(비율을) 차지하다",
+        "meaningEn": "to form a particular amount or proportion of something",
+        "examples": [
+          { "en": "Housing now accounts for nearly half of household spending in the capital.", "ko": "수도에서는 이제 주거비가 가구 지출의 거의 절반을 차지한다." },
+          { "en": "Five companies account for over 80 percent of the global seed market.", "ko": "다섯 개 기업이 세계 종자 시장의 80퍼센트 이상을 차지한다." }
+        ],
+        "synonyms": ["make up", "constitute"],
+        "note": "통계 보도의 핵심 표현. 'account for + 비율/수치' 형태로 거의 고정."
+      },
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(변수·요인을) 고려에 넣다, 통제하다",
+        "meaningEn": "to include a factor in a calculation so that it does not distort the result",
+        "register": "technical",
+        "examples": [
+          { "en": "Even after accounting for income, the racial gap in home ownership persists.", "ko": "소득을 통제한 뒤에도 주택 소유의 인종 간 격차는 여전히 남는다." },
+          { "en": "The model fails to account for seasonal variation in demand.", "ko": "그 모델은 수요의 계절적 변동을 고려하지 못한다." }
+        ],
+        "synonyms": ["adjust for", "control for"]
+      }
+    ]
+  },
+  {
+    "id": "a-p-set-forth",
+    "headword": "set forth",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["law", "essay", "literature"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "법률",
+        "meaningKo": "(생각·조건을) 명시하다, 제시하다",
+        "meaningEn": "to state or explain something clearly in writing or speech",
+        "register": "formal",
+        "examples": [
+          { "en": "The conditions for membership are set forth in Article 3 of the charter.", "ko": "회원 자격 조건은 헌장 제3조에 명시되어 있다." },
+          { "en": "In her opening chapter she sets forth the central claims of the book.", "ko": "그녀는 첫 장에서 책의 핵심 주장들을 제시한다." },
+          { "en": "The principles set forth here will guide the agency's future decisions.", "ko": "여기에 제시된 원칙들이 앞으로 기관의 결정을 이끌 것이다." }
+        ],
+        "synonyms": ["set out", "lay out", "articulate"],
+        "note": "set out 보다 더 격식적이며 법률·헌장·학술서 서문에 자주 등장. 'as set forth in'(~에 명시된 대로)은 계약서 고정 표현."
+      },
+      {
+        "pos": "phr. v.",
+        "context": "문학/묘사",
+        "meaningKo": "(여정을) 떠나다, 출발하다",
+        "meaningEn": "to begin a journey, especially a long or important one",
+        "register": "formal",
+        "examples": [
+          { "en": "At dawn the expedition set forth across the frozen plateau.", "ko": "동틀 녘에 원정대는 얼어붙은 고원을 가로질러 길을 떠났다." },
+          { "en": "He set forth from the village with nothing but a staff and a letter.", "ko": "그는 지팡이 하나와 편지 한 통만 들고 마을을 떠났다." }
+        ],
+        "synonyms": ["set out", "set off"],
+        "note": "현대 일상어로는 set off / set out 을 쓰고, set forth 는 문학적·고풍스러운 느낌."
+      }
+    ]
+  },
+  {
+    "id": "a-p-bear-out",
+    "headword": "bear out",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["research", "argument"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(주장·예측을) 뒷받침하다, 사실임을 입증하다",
+        "meaningEn": "to confirm that a claim, theory, or prediction is true",
+        "register": "formal",
+        "examples": [
+          { "en": "The latest census figures bear out what demographers predicted a decade ago.", "ko": "최신 인구조사 수치는 인구학자들이 10년 전에 예측한 바를 뒷받침한다." },
+          { "en": "Subsequent events did not bear out the minister's optimism.", "ko": "이후의 사건들은 장관의 낙관론을 뒷받침하지 못했다." },
+          { "en": "If the evidence bears out her theory, textbooks will need rewriting.", "ko": "증거가 그녀의 이론을 입증한다면 교과서를 다시 써야 할 것이다." }
+        ],
+        "synonyms": ["corroborate", "substantiate"],
+        "antonyms": ["contradict", "belie"],
+        "note": "주어는 주로 evidence / data / events / history. 수동형 'is borne out by'(~에 의해 입증된다) 도 매우 흔하니 과거분사 borne 철자에 주의."
+      }
+    ]
+  },
+  {
+    "id": "a-p-hinge-on",
+    "headword": "hinge on",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["argument", "news", "politics"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "뉴스/시사",
+        "meaningKo": "전적으로 ~에 달려 있다, ~을 축으로 하다",
+        "meaningEn": "to depend completely on one thing for its outcome or success",
+        "register": "formal",
+        "examples": [
+          { "en": "The entire case hinges on whether the witness can be believed.", "ko": "사건 전체가 그 증인을 믿을 수 있느냐에 달려 있다." },
+          { "en": "The deal hinges on parliamentary approval, which is far from certain.", "ko": "그 협정은 의회 승인에 달려 있는데, 승인은 결코 확실하지 않다." },
+          { "en": "Much of the novel's plot hinges on a single misdelivered letter.", "ko": "소설 줄거리의 상당 부분이 잘못 배달된 편지 한 통을 축으로 돌아간다." }
+        ],
+        "synonyms": ["depend on", "turn on", "rest on"],
+        "note": "depend on 보다 '그 하나가 경첩(hinge)처럼 결정적'이라는 뜻이 강함. hinge upon 도 같은 뜻으로 더 격식적."
+      }
+    ]
+  },
+  {
+    "id": "a-p-phase-out",
+    "headword": "phase out",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["policy", "environment", "technology"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "정치/사회",
+        "meaningKo": "단계적으로 폐지하다, 점진적으로 없애다",
+        "meaningEn": "to gradually stop using or producing something over a period of time",
+        "register": "formal",
+        "examples": [
+          { "en": "The EU plans to phase out the sale of new petrol cars by 2035.", "ko": "EU는 2035년까지 신규 휘발유차 판매를 단계적으로 중단할 계획이다." },
+          { "en": "Coal subsidies are being phased out over the next decade.", "ko": "석탄 보조금은 향후 10년에 걸쳐 단계적으로 폐지되고 있다." },
+          { "en": "The company will phase out the older model as the new one gains share.", "ko": "회사는 새 모델이 점유율을 확보함에 따라 구형 모델을 점차 단종시킬 것이다." }
+        ],
+        "synonyms": ["wind down", "discontinue"],
+        "antonyms": ["phase in", "roll out"],
+        "note": "abolish 가 '일거에 폐지'라면 phase out 은 '시간을 두고 서서히'. 반의어 phase in(단계적으로 도입하다) 과 짝으로 외울 것. 명사형 phase-out."
+      }
+    ]
+  },
+  {
+    "id": "a-p-single-out",
+    "headword": "single out",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["news", "society"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "뉴스/시사",
+        "meaningKo": "(특별히) 지목하다, 골라내다",
+        "meaningEn": "to choose one person or thing from a group for special attention, praise, or criticism",
+        "examples": [
+          { "en": "The report singled out the housing ministry for particular criticism.", "ko": "보고서는 특히 주택부를 지목해 비판했다." },
+          { "en": "Minority students say they are routinely singled out by campus security.", "ko": "소수 인종 학생들은 교내 보안 요원들에게 일상적으로 지목당한다고 말한다." },
+          { "en": "Among the many fine performances, critics singled out the lead actress.", "ko": "많은 훌륭한 연기 중에서 평론가들은 주연 여배우를 특별히 꼽았다." }
+        ],
+        "synonyms": ["pick out", "target"],
+        "note": "칭찬·비판 양쪽 모두 가능하지만 뉴스에서는 '불공정하게 표적 삼다'는 부정적 맥락이 더 흔함. single out A for B(B의 이유로 A를 지목하다)."
+      }
+    ]
+  },
+  {
+    "id": "a-p-tease-out",
+    "headword": "tease out",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["research", "essay"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(얽힌 것에서 의미·정보를) 조심스럽게 끌어내다, 가려내다",
+        "meaningEn": "to carefully separate or extract information or meaning that is difficult to find",
+        "register": "formal",
+        "examples": [
+          { "en": "It took years of fieldwork to tease out the causes of the decline.", "ko": "쇠퇴의 원인을 가려내는 데 수년간의 현장 조사가 필요했다." },
+          { "en": "The essay teases out the tensions hidden beneath the poem's calm surface.", "ko": "그 에세이는 시의 고요한 표면 아래 숨겨진 긴장들을 세심하게 끌어낸다." },
+          { "en": "Researchers are still trying to tease out genetic effects from environmental ones.", "ko": "연구자들은 여전히 유전적 영향을 환경적 영향으로부터 분리해 내려 애쓰고 있다." }
+        ],
+        "synonyms": ["unravel", "disentangle"],
+        "note": "엉킨 실(tangle)을 풀듯 '얽힌 요인에서 하나를 분리해 낸다'는 이미지. find out 보다 '어렵고 섬세한 작업'임을 암시. tease out A from B."
+      }
+    ]
+  },
+  {
+    "id": "a-p-boil-down-to",
+    "headword": "boil down to",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["argument", "essay"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "결국 ~로 귀결되다, 핵심은 ~이다",
+        "meaningEn": "to have something as its essential point when everything else is removed",
+        "examples": [
+          { "en": "In the end, the debate boils down to a question of trust.", "ko": "결국 그 논쟁은 신뢰의 문제로 귀결된다." },
+          { "en": "The court's decision boiled down to the meaning of a single comma.", "ko": "법원의 판결은 결국 쉼표 하나의 의미에 달린 문제였다." },
+          { "en": "Most management advice boils down to this: listen more than you speak.", "ko": "대부분의 경영 조언은 결국 이 말로 요약된다. 말하기보다 더 많이 들어라." }
+        ],
+        "synonyms": ["come down to", "amount to"],
+        "note": "국물을 졸이면 진액만 남듯 '곁가지를 빼면 남는 핵심'. 주어는 추상명사(issue, debate, question, choice)이며 사람은 주어가 될 수 없다. 격식·비격식 모두 가능."
+      }
+    ]
+  },
+  {
+    "id": "a-p-stem-from",
+    "headword": "stem from",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["essay", "psychology", "news"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "~에서 비롯되다, ~에 기인하다",
+        "meaningEn": "to be caused by or originate from something",
+        "register": "formal",
+        "examples": [
+          { "en": "Much of the current tension stems from a dispute over water rights.", "ko": "현재 긴장의 상당 부분은 수자원 권리를 둘러싼 분쟁에서 비롯된다." },
+          { "en": "Her distrust of institutions stems from a childhood spent in foster care.", "ko": "제도에 대한 그녀의 불신은 위탁 가정에서 보낸 어린 시절에서 비롯된다." },
+          { "en": "The confusion stems largely from the way the question was worded.", "ko": "혼란은 주로 질문이 표현된 방식에서 기인한다." }
+        ],
+        "synonyms": ["arise from", "derive from", "originate in"],
+        "note": "식물의 줄기(stem)가 뿌리에서 자라듯 '근원'을 가리킴. result from 과 비슷하지만 더 깊고 오래된 원인을 암시. 진행형으로 쓰지 않음."
+      }
+    ]
+  },
+  {
+    "id": "a-p-factor-in",
+    "headword": "factor in",
+    "type": "phrasal",
+    "level": "advanced",
+    "tags": ["research", "economy", "planning"],
+    "senses": [
+      {
+        "pos": "phr. v.",
+        "context": "학술/글쓰기",
+        "meaningKo": "(계산·판단에) ~을 고려에 넣다, 반영하다",
+        "meaningEn": "to include a particular element when making a calculation or decision",
+        "examples": [
+          { "en": "Once you factor in inflation, real wages have barely moved since 1990.", "ko": "물가 상승을 감안하면 실질 임금은 1990년 이후 거의 제자리다." },
+          { "en": "The forecast fails to factor in the possibility of another drought.", "ko": "그 전망은 또 다른 가뭄의 가능성을 고려하지 않고 있다." },
+          { "en": "Markets had already factored in a rate rise before the announcement.", "ko": "시장은 발표 전에 이미 금리 인상을 가격에 반영해 둔 상태였다." }
+        ],
+        "synonyms": ["take into account", "allow for"],
+        "antonyms": ["factor out", "leave out"],
+        "note": "consider 보다 '수치·계산에 넣는다'는 구체성이 있음. 분리 가능: factor it in / factor in the cost. 금융에서 'priced in' 과 같은 뜻으로 쓰임."
+      }
+    ]
+  },
+  {
+    "id": "a-i-hit-the-ground-running",
+    "headword": "hit the ground running",
+    "type": "idiom",
+    "level": "advanced",
+    "tags": ["work", "politics"],
+    "senses": [
+      {
+        "pos": "idiom",
+        "context": "직장/회의",
+        "meaningKo": "처음부터 전력으로 시작하다, 준비 기간 없이 바로 성과를 내다",
+        "meaningEn": "to start a new activity with great energy and be effective immediately",
+        "examples": [
+          { "en": "The new administration promised to hit the ground running on day one.", "ko": "새 행정부는 취임 첫날부터 곧바로 전력 가동하겠다고 약속했다." },
+          { "en": "We need someone who can hit the ground running; there is no time to train.", "ko": "바로 투입돼서 성과를 낼 사람이 필요해요. 교육할 시간이 없습니다." },
+          { "en": "Having worked in the sector for years, she hit the ground running as minister.", "ko": "그 분야에서 수년간 일한 덕에 그녀는 장관이 되자마자 능숙하게 업무를 시작했다." }
+        ],
+        "note": "낙하산병이 착지와 동시에 달리는 이미지. 신입 채용·정권 출범 기사에서 빈번. start quickly 보다 '준비가 되어 있어 적응기가 필요 없다'는 함의."
+      }
+    ]
+  },
+  {
+    "id": "a-i-the-elephant-in-the-room",
+    "headword": "the elephant in the room",
+    "type": "idiom",
+    "level": "advanced",
+    "tags": ["discussion", "politics", "work"],
+    "senses": [
+      {
+        "pos": "idiom",
+        "context": "직장/회의",
+        "meaningKo": "모두 알면서도 아무도 입에 올리지 않는 큰 문제",
+        "meaningEn": "an obvious major problem that everyone is aware of but no one wants to discuss",
+        "examples": [
+          { "en": "Let's address the elephant in the room: the project is six months behind schedule.", "ko": "모두가 알면서 말 안 하는 문제를 짚어 봅시다. 프로젝트가 여섯 달이나 지연됐어요." },
+          { "en": "Throughout the summit, climate finance remained the elephant in the room.", "ko": "정상회의 내내 기후 재원 문제는 모두가 알면서도 외면하는 쟁점으로 남았다." },
+          { "en": "The memoir finally confronts the elephant in the room: her father's drinking.", "ko": "그 회고록은 마침내 모두가 피해 온 문제, 아버지의 음주를 정면으로 다룬다." }
+        ],
+        "note": "address / ignore / acknowledge the elephant in the room 으로 결합. 토론을 이끄는 쪽에서 '이제 솔직해지자'는 신호로 쓰면 효과적."
+      }
+    ]
+  },
+  {
+    "id": "a-i-a-double-edged-sword",
+    "headword": "a double-edged sword",
+    "type": "idiom",
+    "level": "advanced",
+    "tags": ["technology", "essay", "argument"],
+    "senses": [
+      {
+        "pos": "idiom",
+        "context": "학술/글쓰기",
+        "meaningKo": "양날의 검, 이로움과 해로움을 동시에 지닌 것",
+        "meaningEn": "something that has both favorable and unfavorable consequences",
+        "examples": [
+          { "en": "Social media has proved a double-edged sword for democracy movements.", "ko": "소셜 미디어는 민주화 운동에 양날의 검임이 드러났다." },
+          { "en": "Tourism is a double-edged sword: it brings money but erodes local culture.", "ko": "관광은 양날의 검이다. 돈을 가져오지만 지역 문화를 잠식한다." },
+          { "en": "For a small nation, abundant oil can be a double-edged sword.", "ko": "작은 나라에 풍부한 석유는 양날의 검이 될 수 있다." }
+        ],
+        "synonyms": ["mixed blessing"],
+        "note": "에세이에서 장단점 논의로 넘어가는 전환 표현으로 유용. 유사 표현 a mixed blessing 은 '좋은 일에 딸려 오는 불편' 정도로 강도가 약함. 'cut both ways' 도 같은 뜻의 동사형."
+      }
+    ]
+  },
+  {
+    "id": "a-i-on-the-fence",
+    "headword": "on the fence",
+    "type": "idiom",
+    "level": "advanced",
+    "tags": ["opinion", "politics"],
+    "senses": [
+      {
+        "pos": "idiom",
+        "context": "정치/사회",
+        "meaningKo": "결정을 못 내린, 어느 편도 들지 않은",
+        "meaningEn": "not yet decided which side of an argument or choice to support",
+        "register": "informal",
+        "examples": [
+          { "en": "Polls suggest a fifth of voters are still on the fence a week before the election.", "ko": "여론조사에 따르면 선거 일주일 전에도 유권자 5분의 1이 아직 마음을 정하지 못했다." },
+          { "en": "I was on the fence about the proposal until I saw the cost estimates.", "ko": "비용 추산을 보기 전까지 나는 그 제안에 대해 결정을 못 내리고 있었다." },
+          { "en": "Several senators remain on the fence, and both parties are courting them.", "ko": "몇몇 상원의원은 여전히 입장을 정하지 않았고, 양당 모두 그들을 설득하고 있다." }
+        ],
+        "synonyms": ["undecided", "noncommittal"],
+        "note": "on the fence about + 대상. 울타리 위에 걸터앉아 어느 쪽 마당으로도 내려오지 않는 그림. 명사형 fence-sitter(기회주의적 중립자)는 약간 경멸조."
+      }
+    ]
+  },
+  {
+    "id": "a-i-at-odds-with",
+    "headword": "at odds with",
+    "type": "idiom",
+    "level": "advanced",
+    "tags": ["argument", "politics", "essay"],
+    "senses": [
+      {
+        "pos": "idiom",
+        "context": "뉴스/시사",
+        "meaningKo": "~와 불화하는, 대립하는",
+        "meaningEn": "in disagreement or conflict with someone",
+        "examples": [
+          { "en": "The governor is increasingly at odds with her own party over immigration.", "ko": "주지사는 이민 문제를 두고 자당과 점점 더 대립하고 있다." },
+          { "en": "The two scientists had been at odds for decades over who discovered it first.", "ko": "두 과학자는 누가 먼저 발견했는지를 두고 수십 년간 반목해 왔다." }
+        ],
+        "synonyms": ["in conflict with", "at loggerheads with"],
+        "note": "사람 간 갈등일 때 사용. be / find oneself / put A at odds with B."
+      },
+      {
+        "pos": "idiom",
+        "context": "학술/글쓰기",
+        "meaningKo": "(사실·주장이) ~와 상충하는, 맞지 않는",
+        "meaningEn": "not consistent or in agreement with a fact, claim, or principle",
+        "register": "formal",
+        "examples": [
+          { "en": "The minister's claims are sharply at odds with the government's own figures.", "ko": "장관의 주장은 정부 자체 수치와 크게 상충한다." },
+          { "en": "His lavish lifestyle seemed at odds with the austerity he preached.", "ko": "그의 호화로운 생활은 그가 설파한 검약과 모순되어 보였다." },
+          { "en": "The ruling is at odds with decades of precedent on free speech.", "ko": "그 판결은 표현의 자유에 관한 수십 년간의 판례와 어긋난다." }
+        ],
+        "synonyms": ["inconsistent with", "contrary to"],
+        "note": "사람이 아닌 사실·수치·행동 사이의 '불일치'를 가리킬 때 이 뜻. 사설에서 '말과 행동이 다르다'를 지적하는 핵심 표현."
+      }
+    ]
+  }
+]
