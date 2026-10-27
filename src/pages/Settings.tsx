@@ -173,6 +173,37 @@ export default function Settings() {
           </div>
         </Card>
 
+        <Card>
+          <h2 className="text-sm font-semibold">제작자 정보</h2>
+          <dl className="mt-3 text-sm">
+            <div className="flex items-baseline gap-4">
+              <dt className="shrink-0 text-slate-500 dark:text-slate-400">제작자</dt>
+              <dd className="font-medium">cheolcheo</dd>
+            </div>
+          </dl>
+          <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+            Eng는 한국어로 뜻과 예문을 살펴보며, 일상부터 비즈니스까지 영어를 꾸준히 익힐 수 있는 학습 앱입니다.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <a
+              href="https://github.com/zlcjfalsvk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded text-brand-600 underline underline-offset-4 hover:text-brand-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-600 dark:text-brand-100 dark:hover:text-white"
+            >
+              GitHub 프로필 <span className="sr-only">(새 탭에서 열기)</span><span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://github.com/zlcjfalsvk/eng-study/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded text-brand-600 underline underline-offset-4 hover:text-brand-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-600 dark:text-brand-100 dark:hover:text-white"
+            >
+              의견 보내기 <span className="sr-only">(GitHub에서 새 탭으로 열기)</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </Card>
+
         <p className="px-1 text-center text-xs text-slate-400">
           Eng v{__APP_VERSION__} · 저장 키 <code className="font-mono">{STORAGE_KEY}</code>
         </p>
