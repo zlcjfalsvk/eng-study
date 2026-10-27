@@ -24,11 +24,12 @@ export const REL_LABEL: Record<RelKind, string> = {
 }
 export const REL_ORDER: RelKind[] = ['d', 'b', 'r', 's', 'a', 'e']
 
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/'
 let cache: Promise<RelationsFile | null> | null = null
 function load() {
   if (!cache) {
-    cache = import('../data/content/relations.json')
-      .then((m) => (m as { default: RelationsFile }).default)
+    cache = fetch(`${BASE}data/relations.json`, { cache: 'no-cache' })
+      .then((r) => (r.ok ? (r.json() as Promise<RelationsFile>) : null))
       .catch(() => null)
   }
   return cache

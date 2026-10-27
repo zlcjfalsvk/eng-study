@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
-import { LEVELS, type Entry, type EntryType, type Level, type Status } from '../data/types'
-import { LEVEL_META, TYPE_LABEL, loadAllLevels, loadLevel, searchEntries } from '../lib/content'
+import { LEVELS, type EntryType, type Level, type Status } from '../data/types'
+import { LEVEL_META, TYPE_LABEL, loadAllIndexes, loadIndex, searchIndex, type IndexItem } from '../lib/content'
 import { useAsync, useDebounced } from '../lib/hooks'
 import { isDue } from '../lib/srs'
 import { useStore } from '../store/progress'
@@ -33,7 +33,7 @@ export default function Browse() {
   const dq = useDebounced(q, 150)
   const [shown, setShown] = useState(PAGE)
 
-  const { data, loading } = useAsync(() => (level === 'all' ? loadAllLevels() : loadLevel(level)), [level])
+  const { data, loading } = useAsync(() => (level === 'all' ? loadAllIndexes() : loadIndex(level)), [level])
   const progress = useStore((s) => s.progress)
 
   useEffect(() => {
@@ -42,8 +42,8 @@ export default function Browse() {
 
   const filtered = useMemo(() => {
     if (!data) return []
-    let list: Entry[] = data
-    if (type !== 'all') list = list.filter((e) => e.type === type)
+    let list: IndexItem[] = data
+    if (type !== 'all') list = list.filter((e) => e.t === type)
     if (filter !== 'all') {
       const now = Date.now()
       list = list.filter((e) => {
@@ -64,7 +64,7 @@ export default function Browse() {
         return true
       })
     }
-    return searchEntries(list, dq)
+    return searchIndex(list, dq)
   }, [data, filter, type, dq, progress])
 
   function setParam(k: string, v: string) {
@@ -76,7 +76,7 @@ export default function Browse() {
 
   const typeCounts = useMemo(() => {
     const c: Record<string, number> = {}
-    for (const e of data ?? []) c[e.type] = (c[e.type] ?? 0) + 1
+    for (const e of data ?? []) c[e.t] = (c[e.t] ?? 0) + 1
     return c
   }, [data])
 
@@ -138,11 +138,11 @@ export default function Browse() {
       {loading ? (
         <Spinner />
       ) : filtered.length === 0 ? (
-        <Empty title="결과가 없습니다" desc={data?.length ? '검색어나 필터를 바꿔 보세요.' : '이 레벨의 콘텐츠가 아직 없습니다. scripts/generate.ts 로 생성할 수 있습니다.'} />
+        <Empty title="결과가 없습니다" desc={data?.length ? '검색어나 필터를 바꿔 보세요.' : '이 레벨의 콘텐츠가 아직 없습니다.'} />
       ) : (
         <>
           <p className="mb-2 mt-1 text-xs text-slate-500">{filtered.length.toLocaleString()}개</p>
-          <EntryList entries={filtered.slice(0, shown)} showLevel={level === 'all'} />
+          <EntryList items={filtered.slice(0, shown)} showLevel={level === 'all'} />
           {shown < filtered.length && (
             <button type="button" onClick={() => setShown((n) => n + PAGE)} className="mt-3 w-full rounded-xl border border-slate-200 bg-white py-2.5 text-sm font-medium text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
               더 보기 ({filtered.length - shown}개 남음)

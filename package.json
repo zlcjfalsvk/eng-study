@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm validate && tsc -b && vite build",
+    "build": "tsx scripts/build-data.ts && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "validate": "tsx scripts/validate.ts",
-    "generate": "tsx scripts/generate.ts"
+    "generate": "tsx scripts/generate.ts",
+    "data": "tsx scripts/build-data.ts",
+    "predev": "tsx scripts/build-data.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router'
 import type { Entry, Sense } from '../data/types'
-import { LEVEL_META, loadEntry, loadLevel } from '../lib/content'
+import { LEVEL_META, loadEntry, loadIndex } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { STATUS_LABEL } from '../lib/srs'
 import { useStore } from '../store/progress'
@@ -26,8 +26,8 @@ function EntryView({ entry }: { entry: Entry }) {
   const sense = entry.senses[active] ?? entry.senses[0]
   const m = LEVEL_META[entry.level]
 
-  const { data: siblings } = useAsync(() => loadLevel(entry.level), [entry.level])
-  const related = (siblings ?? []).filter((e) => e.id !== entry.id && e.tags?.some((t) => entry.tags?.includes(t))).slice(0, 6)
+  const { data: siblings } = useAsync(() => loadIndex(entry.level), [entry.level])
+  const related = (siblings ?? []).filter((e) => e.id !== entry.id && e.g.some((t) => entry.tags?.includes(t))).slice(0, 6)
 
   return (
     <Page
@@ -130,7 +130,7 @@ function EntryView({ entry }: { entry: Entry }) {
           <div className="flex flex-wrap gap-2">
             {related.map((r) => (
               <Link key={r.id} to={`/entry/${r.id}`} className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-800 dark:bg-slate-900">
-                {r.headword} <span className="text-slate-400">· {r.senses[0].meaningKo.split(',')[0]}</span>
+                {r.h} <span className="text-slate-400">· {r.m.split(',')[0]}</span>
               </Link>
             ))}
           </div>

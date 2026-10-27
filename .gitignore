@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 빌드 시 content/ 에서 생성되는 런타임 데이터
+public/data

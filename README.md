@@ -29,21 +29,37 @@ pnpm preview
 ```
 src/data/types.ts            # Entry / Sense / GrammarTopic 타입 (콘텐츠 계약)
 src/data/schema.ts           # zod 스키마
-src/data/content/
-  beginner.json              # 레벨별 어휘 (Entry[])
-  intermediate.json
-  advanced.json
-  business.json
+content/
+  beginner.jsonl             # 레벨별 어휘 원본 — 한 줄에 표제어 하나 (Entry)
+  intermediate.jsonl
+  advanced.jsonl
+  business.jsonl
   grammar.json               # 문법 주제 (GrammarTopic[])
-  manifest.json              # 개수 요약 (pnpm validate 가 자동 생성)
+public/data/                 # 빌드 산출물 (git 제외) — 앱이 런타임에 fetch
+  manifest.json              #   레벨별 개수
+  relations.json             #   단어 간 연관 색인 (어근·유의어·반의어·related)
+  grammar.json
+  <level>/index.json         #   목록·검색용 경량 색인
+  <level>/<n>.json           #   200개 단위 샤드 (전체 항목)
 ```
 
-- `pnpm validate` — 모든 콘텐츠 파일을 검증하고 `manifest.json` 을 갱신합니다. (id 형식, 중복, 예문에 표제어 포함 여부 등)
+- `pnpm validate` — 원본을 스키마·규칙으로 검사합니다 (id 형식, 중복, 예문에 표제어 포함 여부 등).
+- `pnpm data` — 검증 후 `public/data/` 를 생성합니다. `pnpm dev` 와 `pnpm build` 가 자동으로 먼저 실행합니다.
+- 앱은 선택한 레벨의 색인(수백 KB)만 먼저 받고, 상세·학습·퀴즈에서 필요한 샤드만 추가로 받습니다. 받은 파일은 서비스 워커가 캐시해 오프라인에서도 쓰입니다. 레벨당 2,000개로 늘어도 첫 로딩은 거의 같습니다.
 - 현재 시드 데이터: 레벨당 45개 표제어(총 180개, 뜻 394개) + 문법 20주제.
+
+### 연관 단어 ("함께 익히기")
+
+빌드 시 `scripts/relations.ts` 가 다음을 자동으로 찾아 `relations.json` 에 넣습니다. 단어 상세와 플래시카드 뒷면에 표시됩니다.
+
+- 어근: `take` ↔ `take off`, `take a break` (구동사·연어·관용구의 내용어가 단어 표제어와 일치)
+- 유의어·반의어: 각 뜻의 `synonyms`/`antonyms` 에 적힌 표제어
+- `related`: 콘텐츠에 명시한 "함께 익히면 좋은 표현" (혼동어 등)
+- 다른 레벨에 같은 표제어로 수록된 항목
 
 ### 대량 생성 (Claude API)
 
-레벨당 1,500~2,000개 목표는 `scripts/generate.ts` 로 채웁니다. 구조화 출력(JSON 스키마 강제)을 사용하고, 배치마다 파일에 바로 저장되므로 중단해도 안전합니다.
+레벨당 1,500~2,000개 목표는 Claude Code 세션에서 에이전트로 직접 작성하거나, API 키가 있으면 `scripts/generate.ts` 로 무인 생성할 수 있습니다. 스크립트는 구조화 출력(JSON 스키마 강제)을 사용하고, 배치마다 `content/<level>.jsonl` 에 바로 append 하므로 중단해도 안전합니다.
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...      # 또는 `ant auth login`

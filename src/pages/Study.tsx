@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router'
 import { LEVELS, type Entry, type Level } from '../data/types'
-import { LEVEL_META, loadLevel } from '../lib/content'
+import { LEVEL_META, loadEntries, loadIndex } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { isDue, previewInterval, shuffle, todayKey, type Grade } from '../lib/srs'
 import { getRelatedBrief } from '../lib/relations'
@@ -17,7 +17,8 @@ export default function Study() {
   const settings = useStore((s) => s.settings)
   const setSettings = useStore((s) => s.setSettings)
   const level = (LEVELS.find((l) => l === params.level) ?? settings.level) as Level
-  const { data, loading } = useAsync(() => loadLevel(level), [level])
+  const { data, loading } = useAsync(() => loadIndex(level), [level])
+  const [starting, setStarting] = useState(false)
   const progress = useStore((s) => s.progress)
   const daily = useStore((s) => s.daily[todayKey()])
 
@@ -40,19 +41,26 @@ export default function Study() {
 
   const newLeft = Math.max(0, settings.dailyNew - (daily?.newCards ?? 0))
 
-  function start(kind: 'mixed' | 'due' | 'new', count?: number) {
-    if (!data) return
+  async function start(kind: 'mixed' | 'due' | 'new', count?: number) {
+    if (!data || starting) return
     const now = Date.now()
     const dueCards = data.filter((e) => isDue(progress[e.id], now))
     const newCards = data.filter((e) => !progress[e.id] || progress[e.id].status === 'new')
-    let q: Entry[] = []
-    if (kind === 'due') q = shuffle(dueCards)
-    else if (kind === 'new') q = shuffle(newCards).slice(0, count ?? 10)
-    else q = shuffle([...dueCards, ...shuffle(newCards).slice(0, Math.min(newLeft, 20))])
-    if (q.length === 0) return
-    setQueue(q)
-    setDone({ again: 0, good: 0 })
-    setMode('session')
+    let picked = [] as typeof data
+    if (kind === 'due') picked = shuffle(dueCards)
+    else if (kind === 'new') picked = shuffle(newCards).slice(0, count ?? 10)
+    else picked = shuffle([...dueCards, ...shuffle(newCards).slice(0, Math.min(newLeft, 20))])
+    if (picked.length === 0) return
+    setStarting(true)
+    try {
+      const q: Entry[] = await loadEntries(picked.map((i) => i.id))
+      if (q.length === 0) return
+      setQueue(q)
+      setDone({ again: 0, good: 0 })
+      setMode('session')
+    } finally {
+      setStarting(false)
+    }
   }
 
   if (loading || !data) return <Page title="학습"><Spinner /></Page>
@@ -104,7 +112,7 @@ export default function Study() {
       </div>
 
       {data.length === 0 ? (
-        <Empty title="이 레벨에 콘텐츠가 없습니다" desc="scripts/generate.ts 로 단어를 생성하세요." />
+        <Empty title="이 레벨에 콘텐츠가 없습니다" />
       ) : (
         <div className="flex flex-col gap-3">
           <Card className={cx('border-0 ring-1', m.bg, m.ring)}>
@@ -115,12 +123,12 @@ export default function Study() {
             </div>
           </Card>
 
-          <Button className="py-3.5 text-base" onClick={() => start('mixed')} disabled={stats.due === 0 && (stats.fresh === 0 || newLeft === 0)}>
-            오늘의 학습 시작 <span className="font-normal opacity-80">(복습 {stats.due} + 새 단어 {Math.min(newLeft, stats.fresh, 20)})</span>
+          <Button className="py-3.5 text-base" onClick={() => start('mixed')} disabled={starting || (stats.due === 0 && (stats.fresh === 0 || newLeft === 0))}>
+            {starting ? '카드 준비 중…' : '오늘의 학습 시작'} <span className="font-normal opacity-80">(복습 {stats.due} + 새 단어 {Math.min(newLeft, stats.fresh, 20)})</span>
           </Button>
           <div className="grid grid-cols-2 gap-2">
-            <Button variant="secondary" onClick={() => start('due')} disabled={!stats.due}>복습만 ({stats.due})</Button>
-            <Button variant="secondary" onClick={() => start('new', 10)} disabled={!stats.fresh}>새 단어 10개</Button>
+            <Button variant="secondary" onClick={() => start('due')} disabled={starting || !stats.due}>복습만 ({stats.due})</Button>
+            <Button variant="secondary" onClick={() => start('new', 10)} disabled={starting || !stats.fresh}>새 단어 10개</Button>
           </div>
           <p className="text-center text-xs text-slate-400">
             하루 새 단어 목표 {settings.dailyNew}개 · 오늘 {daily?.newCards ?? 0}개 학습 · <Link to="/settings" className="underline">변경</Link>

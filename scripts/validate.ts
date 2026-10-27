@@ -1,113 +1,94 @@
-// 콘텐츠 JSON 검증: pnpm validate [파일...]
-// 인자가 없으면 src/data/content/*.json 전체를 검증한다.
-import { readFileSync, readdirSync } from 'node:fs'
-import { join, basename } from 'node:path'
+// 콘텐츠 검증: pnpm validate
+// content/<level>.jsonl 과 content/grammar.json 을 스키마·규칙으로 검사한다. 출력 파일은 만들지 않는다 (→ scripts/build-data.ts).
 import { entriesSchema, grammarTopicsSchema, LEVEL_PREFIX, TYPE_PREFIX } from '../src/data/schema.ts'
-import { buildRelations } from './relations.ts'
-import type { Entry } from '../src/data/types.ts'
+import type { Entry, GrammarTopic, Level } from '../src/data/types.ts'
+import { LEVELS, readGrammar, readLevelRaw } from './lib/content-io.ts'
 
-const dir = join(import.meta.dirname, '../src/data/content')
-const files = process.argv.slice(2).length
-  ? process.argv.slice(2)
-  : readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'manifest.json' && f !== 'relations.json').map((f) => join(dir, f))
+export interface ValidationResult {
+  ok: boolean
+  levels: Record<Level, Entry[]>
+  grammar: GrammarTopic[]
+  messages: string[]
+}
 
-let failed = false
-const seenIds = new Set<string>()
-const seenHeadwords = new Map<string, string>()
+export function validateAll(): ValidationResult {
+  const messages: string[] = []
+  let ok = true
+  const levels = {} as Record<Level, Entry[]>
+  const seenIds = new Set<string>()
 
-for (const file of files) {
-  const name = basename(file)
-  let json: unknown
-  try {
-    json = JSON.parse(readFileSync(file, 'utf8'))
-  } catch (e) {
-    console.error(`✗ ${name}: JSON 파싱 실패 — ${(e as Error).message}`)
-    failed = true
-    continue
-  }
-
-  if (name.startsWith('grammar')) {
-    const r = grammarTopicsSchema.safeParse(json)
+  for (const lv of LEVELS) {
+    const { entries, errors } = readLevelRaw(lv)
+    for (const e of errors) {
+      ok = false
+      messages.push(`✗ ${lv}.jsonl:${e.line} JSON 파싱 실패 — ${e.error}`)
+    }
+    const r = entriesSchema.safeParse(entries)
     if (!r.success) {
-      failed = true
-      console.error(`✗ ${name}:`)
-      for (const issue of r.error.issues.slice(0, 20)) console.error(`   ${issue.path.join('.')}: ${issue.message}`)
+      ok = false
+      messages.push(`✗ ${lv}.jsonl: 스키마 오류`)
+      for (const issue of r.error.issues.slice(0, 20)) {
+        const idx = Number(issue.path[0])
+        const hw = (entries[idx] as { headword?: string } | undefined)?.headword ?? '?'
+        messages.push(`   [${idx}] ${hw} · ${issue.path.slice(1).join('.')}: ${issue.message}`)
+      }
+      levels[lv] = []
       continue
     }
-    console.log(`✓ ${name}: 문법 주제 ${r.data.length}개`)
-    continue
+    const list = r.data as Entry[]
+    const problems: string[] = []
+    const seenHeadwords = new Set<string>()
+    for (const e of list) {
+      const expectedPrefix = `${LEVEL_PREFIX[e.level]}-${TYPE_PREFIX[e.type]}-`
+      if (e.level !== lv) problems.push(`${e.id}: level 이 "${e.level}" 인데 ${lv}.jsonl 에 있음`)
+      if (!e.id.startsWith(expectedPrefix)) problems.push(`${e.id}: id 접두사가 level/type과 불일치 (기대: ${expectedPrefix}...)`)
+      if (seenIds.has(e.id)) problems.push(`${e.id}: 중복 id`)
+      seenIds.add(e.id)
+      const hw = e.headword.toLowerCase()
+      if (seenHeadwords.has(hw)) problems.push(`${e.id}: 같은 레벨에 중복 headword "${e.headword}"`)
+      seenHeadwords.add(hw)
+      // 예문에 표제어(또는 변화형)가 들어 있는지 — 첫 단어의 어간 + forms 로 느슨하게 검사
+      const first = hw.split(' ')[0]
+      const stems = [first.slice(0, Math.max(3, first.length - 2)), ...(e.forms ?? []).map((f) => f.toLowerCase())]
+      e.senses.forEach((s, si) => {
+        s.examples.forEach((x, xi) => {
+          const en = x.en.toLowerCase()
+          if (!stems.some((st) => en.includes(st))) problems.push(`${e.id} senses[${si}].examples[${xi}]: 예문에 표제어(${e.headword})가 보이지 않음 — "${x.en}"`)
+        })
+      })
+    }
+    if (problems.length) {
+      ok = false
+      messages.push(`✗ ${lv}.jsonl: ${problems.length}개 문제`)
+      for (const p of problems.slice(0, 30)) messages.push(`   ${p}`)
+    } else {
+      const senses = list.reduce((n, e) => n + e.senses.length, 0)
+      messages.push(`✓ ${lv}.jsonl: 표제어 ${list.length}개, 의미 ${senses}개`)
+    }
+    levels[lv] = list
   }
 
-  const r = entriesSchema.safeParse(json)
-  if (!r.success) {
-    failed = true
-    console.error(`✗ ${name}:`)
-    for (const issue of r.error.issues.slice(0, 20)) console.error(`   ${issue.path.join('.')}: ${issue.message}`)
-    continue
-  }
-  const problems: string[] = []
-  for (const e of r.data) {
-    const expectedPrefix = `${LEVEL_PREFIX[e.level]}-${TYPE_PREFIX[e.type]}-`
-    if (!e.id.startsWith(expectedPrefix)) problems.push(`${e.id}: id 접두사가 level/type과 불일치 (기대: ${expectedPrefix}...)`)
-    if (seenIds.has(e.id)) problems.push(`${e.id}: 중복 id`)
-    seenIds.add(e.id)
-    const hw = e.headword.toLowerCase()
-    const key = `${e.level}:${hw}`
-    if (seenHeadwords.has(key)) problems.push(`${e.id}: 같은 레벨에 중복 headword "${e.headword}"`)
-    seenHeadwords.set(key, e.id)
-    // 예문에 표제어(또는 변화형)가 들어 있는지 확인. 첫 단어의 어간 + forms 로 느슨하게 검사한다.
-    const first = hw.split(' ')[0]
-    const stems = [first.slice(0, Math.max(3, first.length - 2)), ...(e.forms ?? []).map((f) => f.toLowerCase())]
-    for (const [si, s] of e.senses.entries()) {
-      for (const [xi, x] of s.examples.entries()) {
-        const en = x.en.toLowerCase()
-        if (!stems.some((st) => en.includes(st))) problems.push(`${e.id} senses[${si}].examples[${xi}]: 예문에 표제어(${e.headword})가 보이지 않음 — "${x.en}"`)
-      }
-    }
-  }
-  if (problems.length) {
-    failed = true
-    console.error(`✗ ${name}: ${problems.length}개 문제`)
-    for (const p of problems.slice(0, 30)) console.error(`   ${p}`)
-  } else {
-    const senses = r.data.reduce((n, e) => n + e.senses.length, 0)
-    console.log(`✓ ${name}: 표제어 ${r.data.length}개, 의미 ${senses}개`)
-  }
-}
-
-// 전체 검증 통과 시 manifest.json 갱신 (홈 화면이 레벨 파일을 모두 내려받지 않고 개수를 알 수 있도록)
-if (!failed && process.argv.slice(2).length === 0) {
-  const { writeFileSync } = await import('node:fs')
-  const manifest: { generatedAt: string; levels: Record<string, { total: number; byType: Record<string, number> }>; grammar: number } = {
-    generatedAt: new Date().toISOString(),
-    levels: {},
-    grammar: 0,
-  }
-  const allEntries: Entry[] = []
-  for (const lv of ['beginner', 'intermediate', 'advanced', 'business']) {
-    const byType: Record<string, number> = {}
-    let total = 0
-    try {
-      const list = entriesSchema.parse(JSON.parse(readFileSync(join(dir, `${lv}.json`), 'utf8'))) as Entry[]
-      total = list.length
-      for (const e of list) byType[e.type] = (byType[e.type] ?? 0) + 1
-      allEntries.push(...list)
-    } catch {
-      /* 파일 없음 */
-    }
-    manifest.levels[lv] = { total, byType }
-  }
-  const relations = buildRelations(allEntries)
-  writeFileSync(join(dir, 'relations.json'), JSON.stringify(relations) + '\n')
-  const relCount = Object.values(relations.rel).reduce((n, r) => n + Object.values(r).reduce((m, a) => m + (a?.length ?? 0), 0), 0)
-  console.log(`→ relations.json 갱신 (연관 ${relCount}개, 항목 ${Object.keys(relations.rel).length}개)`)
+  let grammar: GrammarTopic[] = []
   try {
-    manifest.grammar = grammarTopicsSchema.parse(JSON.parse(readFileSync(join(dir, 'grammar.json'), 'utf8'))).length
-  } catch {
-    /* 파일 없음 */
+    const g = grammarTopicsSchema.safeParse(readGrammar())
+    if (!g.success) {
+      ok = false
+      messages.push('✗ grammar.json:')
+      for (const issue of g.error.issues.slice(0, 20)) messages.push(`   ${issue.path.join('.')}: ${issue.message}`)
+    } else {
+      grammar = g.data as GrammarTopic[]
+      messages.push(`✓ grammar.json: 문법 주제 ${grammar.length}개`)
+    }
+  } catch (e) {
+    ok = false
+    messages.push(`✗ grammar.json: ${(e as Error).message}`)
   }
-  writeFileSync(join(dir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
-  console.log(`→ manifest.json 갱신 (${Object.values(manifest.levels).reduce((n, l) => n + l.total, 0)}개 표제어, 문법 ${manifest.grammar}개)`)
+
+  return { ok, levels, grammar, messages }
 }
 
-process.exit(failed ? 1 : 0)
+if (process.argv[1] && import.meta.filename === process.argv[1]) {
+  const r = validateAll()
+  for (const m of r.messages) (m.startsWith('✗') || m.startsWith('   ') ? console.error : console.log)(m)
+  process.exit(r.ok ? 1 - 1 : 1)
+}

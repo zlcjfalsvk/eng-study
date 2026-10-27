@@ -1,59 +1,71 @@
-import type { Entry, GrammarTopic, Level } from '../data/types'
+import type { Entry, EntryType, GrammarTopic, Level } from '../data/types'
 import { LEVELS } from '../data/types'
 
-// 레벨별 JSON 은 필요할 때만 로드한다 (레벨당 수천 개가 되어도 홈 화면이 무거워지지 않도록).
-const entryModules = import.meta.glob<{ default: unknown }>('../data/content/{beginner,intermediate,advanced,business}.json')
-const grammarModule = import.meta.glob<{ default: unknown }>('../data/content/grammar.json')
+// 콘텐츠는 빌드 시 public/data/ 에 생성된 정적 JSON 을 런타임에 fetch 한다 (scripts/build-data.ts 참고).
+// 목록·검색·학습 대상 선정은 레벨별 경량 색인(index.json)만으로 처리하고,
+// 전체 항목(뜻·예문)은 200개 단위 샤드에서 필요한 것만 받는다. 서비스 워커가 받은 파일을 캐시한다.
+
+export interface IndexItem {
+  id: string
+  h: string // headword
+  t: EntryType
+  l: Level // 로드 시 부여
+  m: string // 첫 뜻
+  n: number // 뜻 개수
+  c: string[] // 상황 라벨
+  g: string[] // 태그
+  k: string // 검색 키워드
+  s: number // 샤드 번호
+}
 
 export interface Manifest {
   generatedAt: string
-  levels: Record<Level, { total: number; byType: Record<string, number> }>
+  shardSize: number
+  levels: Record<Level, { total: number; shards: number; byType: Record<string, number> }>
   grammar: number
 }
 
-let manifestCache: Manifest | null = null
-export async function loadManifest(): Promise<Manifest> {
-  if (manifestCache) return manifestCache
-  try {
-    const m = (await import('../data/content/manifest.json')) as { default: Manifest }
-    manifestCache = m.default
-  } catch {
-    // manifest 가 없으면 레벨 파일을 직접 세어 만든다 (개발 편의용)
-    const levels = {} as Manifest['levels']
-    for (const lv of LEVELS) {
-      const list = await loadLevel(lv)
-      const byType: Record<string, number> = {}
-      for (const e of list) byType[e.type] = (byType[e.type] ?? 0) + 1
-      levels[lv] = { total: list.length, byType }
-    }
-    manifestCache = { generatedAt: '', levels, grammar: (await loadGrammar()).length }
-  }
-  return manifestCache
-}
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/'
+const memo = new Map<string, Promise<unknown>>()
 
-const levelCache = new Map<Level, Entry[]>()
-const levelPromise = new Map<Level, Promise<Entry[]>>()
-
-export function loadLevel(level: Level): Promise<Entry[]> {
-  const cached = levelCache.get(level)
-  if (cached) return Promise.resolve(cached)
-  const pending = levelPromise.get(level)
-  if (pending) return pending
-  const key = Object.keys(entryModules).find((k) => k.endsWith(`/${level}.json`))
-  const p = (async () => {
-    if (!key) return []
-    const mod = await entryModules[key]()
-    const list = (mod.default as Entry[]) ?? []
-    levelCache.set(level, list)
-    return list
-  })()
-  levelPromise.set(level, p)
+function getJSON<T>(path: string): Promise<T> {
+  const cached = memo.get(path)
+  if (cached) return cached as Promise<T>
+  const p = fetch(`${BASE}data/${path}`, { cache: 'no-cache' })
+    .then((r) => {
+      if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`)
+      return r.json() as Promise<T>
+    })
+    .catch((e) => {
+      memo.delete(path) // 실패는 캐시하지 않는다
+      throw e
+    })
+  memo.set(path, p)
   return p
 }
 
-export async function loadAllLevels(): Promise<Entry[]> {
-  const lists = await Promise.all(LEVELS.map((l) => loadLevel(l)))
+export function loadManifest(): Promise<Manifest> {
+  return getJSON<Manifest>('manifest.json')
+}
+
+export async function loadIndex(level: Level): Promise<IndexItem[]> {
+  const key = `index:${level}`
+  const cached = memo.get(key)
+  if (cached) return cached as Promise<IndexItem[]>
+  const p = getJSON<Omit<IndexItem, 'l'>[]>(`${level}/index.json`)
+    .then((items) => items.map((i) => ({ ...i, l: level })))
+    .catch(() => [] as IndexItem[]) // 콘텐츠가 없는 레벨은 빈 목록
+  memo.set(key, p)
+  return p
+}
+
+export async function loadAllIndexes(): Promise<IndexItem[]> {
+  const lists = await Promise.all(LEVELS.map((l) => loadIndex(l)))
   return lists.flat()
+}
+
+export function loadShard(level: Level, shard: number): Promise<Entry[]> {
+  return getJSON<Entry[]>(`${level}/${shard}.json`)
 }
 
 export function levelOfId(id: string): Level {
@@ -70,38 +82,56 @@ export function levelOfId(id: string): Level {
 }
 
 export async function loadEntry(id: string): Promise<Entry | undefined> {
-  const list = await loadLevel(levelOfId(id))
-  return list.find((e) => e.id === id)
+  const level = levelOfId(id)
+  const index = await loadIndex(level)
+  const item = index.find((i) => i.id === id)
+  if (!item) return undefined
+  const shard = await loadShard(level, item.s)
+  return shard.find((e) => e.id === id)
 }
 
-let grammarCache: GrammarTopic[] | null = null
-export async function loadGrammar(): Promise<GrammarTopic[]> {
-  if (grammarCache) return grammarCache
-  const key = Object.keys(grammarModule)[0]
-  if (!key) return (grammarCache = [])
-  const mod = await grammarModule[key]()
-  grammarCache = (mod.default as GrammarTopic[]) ?? []
-  return grammarCache
+/** 여러 항목을 샤드 단위로 묶어 받는다. 입력 순서를 유지한다. */
+export async function loadEntries(ids: string[]): Promise<Entry[]> {
+  const byLevel = new Map<Level, Set<number>>()
+  const indexes = new Map<Level, IndexItem[]>()
+  for (const id of ids) {
+    const lv = levelOfId(id)
+    if (!indexes.has(lv)) indexes.set(lv, await loadIndex(lv))
+    const item = indexes.get(lv)!.find((i) => i.id === id)
+    if (!item) continue
+    if (!byLevel.has(lv)) byLevel.set(lv, new Set())
+    byLevel.get(lv)!.add(item.s)
+  }
+  const found = new Map<string, Entry>()
+  await Promise.all(
+    [...byLevel].flatMap(([lv, shards]) =>
+      [...shards].map(async (s) => {
+        for (const e of await loadShard(lv, s)) found.set(e.id, e)
+      }),
+    ),
+  )
+  return ids.map((id) => found.get(id)).filter((e): e is Entry => !!e)
 }
 
-/** 검색: 표제어 > 뜻(한/영) > 예문 순으로 가중치를 두어 정렬 */
-export function searchEntries(list: Entry[], q: string): Entry[] {
+export function loadGrammar(): Promise<GrammarTopic[]> {
+  return getJSON<GrammarTopic[]>('grammar.json').catch(() => [])
+}
+
+/** 검색: 표제어 > 변화형/뜻/유의어 순으로 가중치 */
+export function searchIndex(list: IndexItem[], q: string): IndexItem[] {
   const needle = q.trim().toLowerCase()
   if (!needle) return list
-  const scored: { e: Entry; s: number }[] = []
+  const scored: { e: IndexItem; s: number }[] = []
   for (const e of list) {
-    const hw = e.headword.toLowerCase()
+    const hw = e.h.toLowerCase()
     let s = 0
     if (hw === needle) s = 100
     else if (hw.startsWith(needle)) s = 80
     else if (hw.includes(needle)) s = 60
-    else if (e.forms?.some((f) => f.toLowerCase().includes(needle))) s = 55
-    else if (e.senses.some((se) => se.meaningKo.includes(needle) || se.meaningEn.toLowerCase().includes(needle))) s = 40
-    else if (e.senses.some((se) => se.synonyms?.some((sy) => sy.toLowerCase().includes(needle)))) s = 30
-    else if (e.senses.some((se) => se.examples.some((x) => x.en.toLowerCase().includes(needle) || x.ko.includes(needle)))) s = 10
+    else if (e.k.includes(needle)) s = 40
     if (s) scored.push({ e, s })
   }
-  return scored.sort((a, b) => b.s - a.s || a.e.headword.localeCompare(b.e.headword)).map((x) => x.e)
+  return scored.sort((a, b) => b.s - a.s || a.e.h.localeCompare(b.e.h)).map((x) => x.e)
 }
 
 export const LEVEL_META: Record<Level, { label: string; short: string; code: string; desc: string; color: string; bg: string; ring: string; bar: string }> = {
@@ -147,7 +177,7 @@ export const LEVEL_META: Record<Level, { label: string; short: string; code: str
   },
 }
 
-export const TYPE_LABEL: Record<Entry['type'], string> = {
+export const TYPE_LABEL: Record<EntryType, string> = {
   word: '단어',
   phrasal: '구동사',
   idiom: '관용구',

@@ -14,8 +14,16 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icons/*.png'],
       workbox: {
+        // 앱 셸만 프리캐시. 콘텐츠(data/*.json)는 받은 것만 캐시하고 다음 방문 때 뒤에서 갱신한다.
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+        globIgnores: ['data/**'],
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => /\/data\/.+\.json$/.test(url.pathname),
+            handler: 'StaleWhileRevalidate',
+            options: { cacheName: 'eng-data', expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 90 } },
+          },
+        ],
       },
       manifest: {
         name: 'Eng — 상황별 영단어·숙어·문법',

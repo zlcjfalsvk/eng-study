@@ -16,14 +16,15 @@
 //   --effort       low | medium | high (기본 medium — 창작/번역 작업에 충분)
 //   --dry-run      API 를 호출하지 않고 후보/프롬프트만 출력
 //
-// 결과는 src/data/content/<level>.json 에 배치마다 즉시 append 되므로 중단해도 안전하다.
-// 끝나면 자동으로 검증(scripts/validate.ts)을 실행해 manifest.json 을 갱신한다.
+// 결과는 content/<level>.jsonl 에 배치마다 즉시 append 되므로 중단해도 안전하다.
+// 끝나면 자동으로 검증·데이터 빌드(scripts/build-data.ts)를 실행한다.
 
 import Anthropic from '@anthropic-ai/sdk'
 import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod'
 import { spawnSync } from 'node:child_process'
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { appendLevel, readLevel } from './lib/content-io.ts'
 import { z } from 'zod'
 import { entrySchema, LEVEL_PREFIX, TYPE_PREFIX } from '../src/data/schema.ts'
 import type { Entry, EntryType, Level } from '../src/data/types.ts'
@@ -100,9 +101,8 @@ const genBatch = z.object({ entries: z.array(genEntry) })
 const candidateBatch = z.object({ candidates: z.array(z.object({ headword: z.string(), type: z.enum(['word', 'phrasal', 'idiom', 'collocation']) })) })
 
 // ─── 파일 IO ─────────────────────────────────────────────────────────────────
-const contentDir = join(import.meta.dirname, '../src/data/content')
-const outFile = join(contentDir, `${level}.json`)
-const existing: Entry[] = existsSync(outFile) ? JSON.parse(readFileSync(outFile, 'utf8')) : []
+const outFile = join(import.meta.dirname, `../content/${level}.jsonl`)
+const existing: Entry[] = readLevel(level)
 const existingHeadwords = new Set(existing.map((e) => e.headword.toLowerCase()))
 const existingIds = new Set(existing.map((e) => e.id))
 
@@ -288,9 +288,8 @@ function track(msg: Anthropic.Message) {
   usage.cacheRead += msg.usage.cache_read_input_tokens ?? 0
 }
 
-function save() {
-  existing.sort((a, b) => a.headword.localeCompare(b.headword))
-  writeFileSync(outFile, JSON.stringify(existing, null, 2) + '\n')
+function save(entries: Entry[]) {
+  appendLevel(level!, entries) // 배치마다 JSONL 에 바로 append — 중단해도 안전
 }
 
 // ─── 메인 ────────────────────────────────────────────────────────────────────
@@ -336,7 +335,7 @@ async function main() {
         const entries = await generateBatch(b)
         existing.push(...entries)
         added += entries.length
-        save()
+        if (entries.length) save(entries)
         done++
         console.log(`[${done}/${batches.length}] +${entries.length}  ${label}`)
       } catch (e) {
@@ -354,7 +353,7 @@ async function main() {
 
   console.log(`\n완료: ${added}개 추가 → ${existing.length}개 (${outFile})`)
   console.log(`토큰: 입력 ${usage.input.toLocaleString()} (캐시 ${usage.cacheRead.toLocaleString()}) / 출력 ${usage.output.toLocaleString()} / 요청 ${usage.requests}회`)
-  const r = spawnSync('npx', ['tsx', join(import.meta.dirname, 'validate.ts')], { stdio: 'inherit' })
+  const r = spawnSync('npx', ['tsx', join(import.meta.dirname, 'build-data.ts')], { stdio: 'inherit' })
   if (r.status !== 0) console.warn('검증에서 문제가 발견되었습니다. 위 메시지를 확인하세요.')
 }
 

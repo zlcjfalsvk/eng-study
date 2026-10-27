@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { LEVELS, type Entry, type Level } from '../data/types'
-import { LEVEL_META, loadLevel } from '../lib/content'
+import { LEVEL_META, loadEntries, loadIndex, type IndexItem } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { shuffle } from '../lib/srs'
 import { speak } from '../lib/tts'
@@ -35,21 +35,22 @@ function blankOut(sentence: string, entry: Entry) {
   return re.test(sentence) ? sentence.replace(re, '_____') : null
 }
 
-function pickHeadwords(others: Entry[], entry: Entry) {
-  const same = others.filter((e) => e.type === entry.type).map((e) => e.headword)
-  const rest = others.filter((e) => e.type !== entry.type).map((e) => e.headword)
+function pickHeadwords(others: IndexItem[], entry: Entry) {
+  const same = others.filter((e) => e.t === entry.type).map((e) => e.h)
+  const rest = others.filter((e) => e.t !== entry.type).map((e) => e.h)
   return [...same, ...rest].slice(0, 3)
 }
 
-function buildQuestions(pool: Entry[], all: Entry[], n: number, kinds: Kind[]): Q[] {
+/** entries: 문제로 낼 항목(전체 데이터), all: 보기(distractor)용 레벨 색인 */
+function buildQuestions(entries: Entry[], all: IndexItem[], kinds: Kind[]): Q[] {
   const qs: Q[] = []
-  for (const entry of shuffle(pool).slice(0, n)) {
+  for (const entry of entries) {
     const senseIdx = Math.floor(Math.random() * entry.senses.length)
     const sense = entry.senses[senseIdx]
     const others = shuffle(all.filter((e) => e.id !== entry.id))
     const kind = kinds[Math.floor(Math.random() * kinds.length)]
     if (kind === 'meaning') {
-      const distract = others.map((e) => e.senses[0].meaningKo).filter((m) => m !== sense.meaningKo).slice(0, 3)
+      const distract = others.map((e) => e.m).filter((m) => m !== sense.meaningKo).slice(0, 3)
       qs.push({ kind, entry, senseIdx, prompt: entry.headword, promptSub: `[${sense.context}] ${sense.pos}`, speakText: entry.headword, options: shuffle([sense.meaningKo, ...distract]), answer: sense.meaningKo })
     } else if (kind === 'word') {
       const distract = pickHeadwords(others, entry)
@@ -58,7 +59,7 @@ function buildQuestions(pool: Entry[], all: Entry[], n: number, kinds: Kind[]): 
       const ex = sense.examples[Math.floor(Math.random() * sense.examples.length)]
       const blanked = blankOut(ex.en, entry)
       if (!blanked) {
-        const distract = others.map((e) => e.senses[0].meaningKo).filter((m) => m !== sense.meaningKo).slice(0, 3)
+        const distract = others.map((e) => e.m).filter((m) => m !== sense.meaningKo).slice(0, 3)
         qs.push({ kind: 'meaning', entry, senseIdx, prompt: entry.headword, promptSub: `[${sense.context}]`, speakText: entry.headword, options: shuffle([sense.meaningKo, ...distract]), answer: sense.meaningKo })
         continue
       }
@@ -74,7 +75,8 @@ export default function Quiz() {
   const settings = useStore((s) => s.settings)
   const setSettings = useStore((s) => s.setSettings)
   const level = settings.level as Level
-  const { data, loading } = useAsync(() => loadLevel(level), [level])
+  const { data, loading } = useAsync(() => loadIndex(level), [level])
+  const [starting, setStarting] = useState(false)
   const progress = useStore((s) => s.progress)
   const recordQuiz = useStore((s) => s.recordQuiz)
   const gradeCard = useStore((s) => s.grade)
@@ -89,14 +91,20 @@ export default function Quiz() {
 
   const studied = useMemo(() => (data ?? []).filter((e) => progress[e.id] && progress[e.id].status !== 'new'), [data, progress])
 
-  function start() {
-    if (!data || data.length < 4) return
+  async function start() {
+    if (!data || data.length < 4 || starting) return
     const pool = scope === 'studied' && studied.length >= 4 ? studied : data
-    setQs(buildQuestions(pool, data, 10, kinds.length ? kinds : ['meaning']))
-    setI(0)
-    setPicked(null)
-    setScore(0)
-    setWrong([])
+    setStarting(true)
+    try {
+      const entries = await loadEntries(shuffle(pool).slice(0, 10).map((i) => i.id))
+      setQs(buildQuestions(entries, data, kinds.length ? kinds : ['meaning']))
+      setI(0)
+      setPicked(null)
+      setScore(0)
+      setWrong([])
+    } finally {
+      setStarting(false)
+    }
   }
 
   if (loading || !data) return <Page title="퀴즈"><Spinner /></Page>
@@ -235,7 +243,7 @@ export default function Quiz() {
             </div>
             {scope === 'studied' && studied.length < 4 && <p className="mt-2 text-xs text-amber-600">학습한 단어가 4개 미만이면 레벨 전체에서 출제됩니다.</p>}
           </Card>
-          <Button className="py-3.5 text-base" onClick={start} disabled={kinds.length === 0}>10문제 시작</Button>
+          <Button className="py-3.5 text-base" onClick={start} disabled={kinds.length === 0 || starting}>{starting ? '문제 준비 중…' : '10문제 시작'}</Button>
           <Button variant="ghost" onClick={() => nav('/study')}>먼저 플래시카드로 학습하기</Button>
         </div>
       )}
