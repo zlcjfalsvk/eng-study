@@ -5,6 +5,7 @@ import { LEVEL_META, loadEntry, loadLevel } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { STATUS_LABEL } from '../lib/srs'
 import { useStore } from '../store/progress'
+import { RelatedWords } from '../components/RelatedWords'
 import { SpeakButton } from '../components/SpeakButton'
 import { Button, Card, Empty, LevelBadge, Page, Spinner, StatusDot, TypeBadge, cx } from '../components/ui'
 
@@ -121,9 +122,11 @@ function EntryView({ entry }: { entry: Entry }) {
         </p>
       )}
 
+      <RelatedWords id={entry.id} level={entry.level} />
+
       {related.length > 0 && (
         <>
-          <h3 className="mb-2 mt-6 text-sm font-semibold text-slate-500">관련 단어 {entry.tags ? `(#${entry.tags.join(' #')})` : ''}</h3>
+          <h3 className="mb-2 mt-6 text-sm font-semibold text-slate-500">같은 주제 {entry.tags ? `(#${entry.tags.join(' #')})` : ''}</h3>
           <div className="flex flex-wrap gap-2">
             {related.map((r) => (
               <Link key={r.id} to={`/entry/${r.id}`} className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-800 dark:bg-slate-900">

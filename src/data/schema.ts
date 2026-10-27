@@ -30,6 +30,7 @@ export const entrySchema = z.object({
   forms: z.array(z.string()).optional(),
   senses: z.array(senseSchema).min(1).max(8),
   tags: z.array(z.string()).optional(),
+  related: z.array(z.string()).optional(),
 })
 
 export const entriesSchema = z.array(entrySchema)

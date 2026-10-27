@@ -4,6 +4,7 @@ import { LEVELS, type Entry, type Level } from '../data/types'
 import { LEVEL_META, loadLevel } from '../lib/content'
 import { useAsync } from '../lib/hooks'
 import { isDue, previewInterval, shuffle, todayKey, type Grade } from '../lib/srs'
+import { getRelatedBrief } from '../lib/relations'
 import { speak } from '../lib/tts'
 import { useStore } from '../store/progress'
 import { SpeakButton } from '../components/SpeakButton'
@@ -255,6 +256,7 @@ function Session({ level, queue: initial, onFinish, onQuit }: { level: Level; qu
                 </div>
               )}
               <SenseCard sense={card.senses[senseIdx]} index={senseIdx} total={card.senses.length} levelColor={m.color} compact />
+              <RelatedBrief id={card.id} />
             </div>
           </div>
         </div>
@@ -278,6 +280,24 @@ function Session({ level, queue: initial, onFinish, onQuit }: { level: Level; qu
         </div>
       </div>
     </Page>
+  )
+}
+
+function RelatedBrief({ id }: { id: string }) {
+  const { data } = useAsync(() => getRelatedBrief(id), [id])
+  if (!data?.length) return null
+  return (
+    <p className="px-1 text-xs text-slate-500">
+      함께 익히기:{' '}
+      {data.map((c, i) => (
+        <span key={c.id}>
+          {i > 0 && ' · '}
+          <Link to={`/entry/${c.id}`} onClick={(e) => e.stopPropagation()} className="font-medium text-slate-700 underline decoration-slate-300 dark:text-slate-200">
+            {c.h}
+          </Link>
+        </span>
+      ))}
+    </p>
   )
 }
 

@@ -34,6 +34,7 @@ export interface Entry {
   forms?: string[] // 변화형: ["ran", "running"] / 복수형 등
   senses: Sense[] // 1~6개. 상황에 따라 뜻이 갈리는 경우 반드시 여러 개로 분리
   tags?: string[] // 주제 태그(영문 소문자): "travel", "email", "finance", "health" ...
+  related?: string[] // 함께 익히면 좋은 표현(표제어). 혼동어·짝 표현 등 규칙으로 못 잡는 연관. 수록된 것만 링크된다
 }
 
 export interface GrammarExample {

@@ -3,11 +3,13 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { join, basename } from 'node:path'
 import { entriesSchema, grammarTopicsSchema, LEVEL_PREFIX, TYPE_PREFIX } from '../src/data/schema.ts'
+import { buildRelations } from './relations.ts'
+import type { Entry } from '../src/data/types.ts'
 
 const dir = join(import.meta.dirname, '../src/data/content')
 const files = process.argv.slice(2).length
   ? process.argv.slice(2)
-  : readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'manifest.json').map((f) => join(dir, f))
+  : readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'manifest.json' && f !== 'relations.json').map((f) => join(dir, f))
 
 let failed = false
 const seenIds = new Set<string>()
@@ -81,18 +83,24 @@ if (!failed && process.argv.slice(2).length === 0) {
     levels: {},
     grammar: 0,
   }
+  const allEntries: Entry[] = []
   for (const lv of ['beginner', 'intermediate', 'advanced', 'business']) {
     const byType: Record<string, number> = {}
     let total = 0
     try {
-      const list = entriesSchema.parse(JSON.parse(readFileSync(join(dir, `${lv}.json`), 'utf8')))
+      const list = entriesSchema.parse(JSON.parse(readFileSync(join(dir, `${lv}.json`), 'utf8'))) as Entry[]
       total = list.length
       for (const e of list) byType[e.type] = (byType[e.type] ?? 0) + 1
+      allEntries.push(...list)
     } catch {
       /* 파일 없음 */
     }
     manifest.levels[lv] = { total, byType }
   }
+  const relations = buildRelations(allEntries)
+  writeFileSync(join(dir, 'relations.json'), JSON.stringify(relations) + '\n')
+  const relCount = Object.values(relations.rel).reduce((n, r) => n + Object.values(r).reduce((m, a) => m + (a?.length ?? 0), 0), 0)
+  console.log(`→ relations.json 갱신 (연관 ${relCount}개, 항목 ${Object.keys(relations.rel).length}개)`)
   try {
     manifest.grammar = grammarTopicsSchema.parse(JSON.parse(readFileSync(join(dir, 'grammar.json'), 'utf8'))).length
   } catch {

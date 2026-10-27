@@ -94,6 +94,7 @@ const genEntry = z.object({
   forms: z.array(z.string()).nullable(),
   senses: z.array(genSense),
   tags: z.array(z.string()).nullable(),
+  related: z.array(z.string()).nullable(),
 })
 const genBatch = z.object({ entries: z.array(genEntry) })
 const candidateBatch = z.object({ candidates: z.array(z.object({ headword: z.string(), type: z.enum(['word', 'phrasal', 'idiom', 'collocation']) })) })
@@ -200,7 +201,8 @@ const SYSTEM = `당신은 한국인 성인 영어 학습자를 위한 사전·�
 6. note: 뉘앙스·콜로케이션·한국인이 자주 하는 실수. 없으면 null.
 7. ipa: 미국식, 슬래시 포함(/rʌn/). 구동사·관용구는 null. forms: 불규칙 변화형만, 없으면 null.
 8. register: 격식 차이가 중요할 때만 표시(neutral 은 null 로). tags: 영문 소문자 주제 태그 1~3개.
-9. 표제어 철자·유형은 요청된 그대로 사용한다. 요청에 없는 표제어를 추가하지 않는다.`
+9. related: 함께 익히면 좋은 표현 0~4개(표제어 문자열). 혼동하기 쉬운 단어(affect/effect), 짝 표현(borrow/lend), 자주 같이 쓰는 구동사 등. 없으면 null.
+10. 표제어 철자·유형은 요청된 그대로 사용한다. 요청에 없는 표제어를 추가하지 않는다.`
 
 async function generateBatch(cands: Candidate[]): Promise<Entry[]> {
   const prompt = `레벨: ${level} — ${LEVEL_GUIDE[level!]}
@@ -265,6 +267,7 @@ ${cands.map((c, i) => `${i + 1}. ${c.headword} (${c.type})`).join('\n')}`
       ...(forms?.length ? { forms } : {}),
       senses,
       ...(g.tags?.length ? { tags: g.tags.map((t) => t.toLowerCase()) } : {}),
+      ...(g.related?.length ? { related: g.related.map((r) => r.trim()).filter(Boolean) } : {}),
     }
     const v = entrySchema.safeParse(entry)
     if (!v.success) {
