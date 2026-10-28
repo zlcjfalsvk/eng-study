@@ -57,7 +57,11 @@ export default function Study() {
   const previewDue = preview.filter((e) => isDue(progress[e.id])).length
 
   async function start(kind: 'mixed' | 'due' | 'new') {
-    if (starting || ongoing) return
+    if (starting) return
+    if (ongoing && saved) {
+      nav(sessionPath(saved))
+      return
+    }
     const picked = selectStudyCards(list, progress, kind, kind === 'new' ? 10 : newLeft, Date.now(), sessionSize)
     if (!picked.length) return
     setStarting(true)
@@ -146,8 +150,8 @@ export default function Study() {
             <span>한 번에 학습할 단어</span>
             <div className="flex gap-1.5">{([10, 20] as const).map((n) => <Chip key={n} active={sessionSize === n} onClick={() => setSettings({ sessionSize: n })}>{n}개</Chip>)}</div>
           </div>
-          <Button className="py-3.5 text-base" onClick={() => start(dueOnly ? 'due' : 'mixed')} disabled={starting || ongoing || !preview.length}>
-            {starting ? '카드 준비 중…' : dueOnly ? '복습 시작' : '오늘의 학습 시작'} <span className="font-normal opacity-80">(복습 {previewDue} + 새 단어 {preview.length - previewDue})</span>
+          <Button className="py-3.5 text-base" onClick={() => start(dueOnly ? 'due' : 'mixed')} disabled={starting || !ongoing && !preview.length}>
+            {starting ? '카드 준비 중…' : ongoing ? '오늘의 학습 이어하기' : dueOnly ? '복습 시작' : '오늘의 학습 시작'} <span className="font-normal opacity-80">{ongoing && saved ? `(남은 카드 ${saved.remaining.length}개)` : `(복습 ${previewDue} + 새 단어 ${preview.length - previewDue})`}</span>
           </Button>
           {!dueOnly && <div className="grid grid-cols-2 gap-2">
             <Button variant="secondary" onClick={() => start('due')} disabled={starting || ongoing || !stats.due}>복습만 (최대 {sessionSize}개)</Button>
@@ -161,7 +165,7 @@ export default function Study() {
           <Card className="mt-2">
             <p className="text-sm font-semibold">플래시카드 사용법</p>
             <ul className="mt-1.5 flex list-disc flex-col gap-1 pl-4 text-sm text-slate-600 dark:text-slate-300">
-              <li>카드를 탭하면 상황별 뜻과 예문이 나옵니다. 🔊 로 발음을 들어 보세요.</li>
+              <li>카드를 탭하면 상황별 뜻과 예문이 나오고, 다시 탭하면 문제로 돌아갑니다. 🔊 로 발음을 들어 보세요.</li>
               <li><b>다시</b>·<b>어려움</b>은 이번 세션에서 한 번 더 확인하고, 이후 복습 일정에도 반영합니다.</li>
               <li><b>저장하고 나가기</b>를 누르거나 새로고침해도 남은 카드부터 이어갈 수 있습니다.</li>
             </ul>
@@ -208,10 +212,13 @@ function Session({ card, session, onPause }: { card: Entry; session: StudySessio
         <div className="h-full bg-brand-500 transition-all" style={{ width: `${Math.round(((session.again + session.good) / (session.again + session.good + remaining)) * 100)}%` }} />
       </div>
 
-      <div className="flip-card" onClick={() => !flipped && setFlipped(true)}>
+      <div className="flip-card cursor-pointer" onClick={(e) => {
+        if ((e.target as HTMLElement).closest('button, a, input, select, textarea')) return
+        setFlipped((value) => !value)
+      }}>
         <div className={cx('flip-inner relative', flipped && 'flipped')}>
           {/* 앞면 */}
-          <div className={cx('flip-face', flipped && 'pointer-events-none absolute inset-0')}>
+          <div inert={flipped} aria-hidden={flipped} className={cx('flip-face', flipped && 'pointer-events-none absolute inset-0')}>
             <Card className="flex min-h-[46dvh] flex-col items-center justify-center text-center">
               <p className="text-xs text-slate-400">{prog && prog.status !== 'new' ? `복습 · ${prog.reps}회` : '새 단어'}</p>
               {frontIsEn ? (
@@ -234,7 +241,7 @@ function Session({ card, session, onPause }: { card: Entry; session: StudySessio
             </Card>
           </div>
           {/* 뒷면 */}
-          <div className={cx('flip-face flip-back', !flipped && 'pointer-events-none absolute inset-0')}>
+          <div inert={!flipped} aria-hidden={!flipped} className={cx('flip-face flip-back', !flipped && 'pointer-events-none absolute inset-0')}>
             <div className="flex flex-col gap-2">
               <Card className="flex items-center justify-between py-3">
                 <div>
@@ -263,6 +270,8 @@ function Session({ card, session, onPause }: { card: Entry; session: StudySessio
           </div>
         </div>
       </div>
+
+      {flipped && <Button variant="ghost" className="mt-3 w-full" onClick={() => setFlipped(false)}>문제로 돌아가기</Button>}
 
       {/* 평가 버튼 */}
       <div className="pb-safe fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">

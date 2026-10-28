@@ -57,8 +57,8 @@ export default function Home() {
               <p className="text-3xl font-bold">{totalDue}</p>
               <p className="mt-1 text-xs text-white/70">{totalDue ? '잊기 전에 복습하면 기억이 오래 갑니다.' : '모두 복습했어요. 새 단어를 배워 보세요!'}</p>
             </div>
-            <Link to={totalDue ? '/study/all?mode=due' : '/study'} className="rounded-xl bg-white/95 px-4 py-2.5 text-sm font-semibold text-brand-700 shadow active:scale-95">
-              {totalDue ? '복습 시작' : '학습 시작'}
+            <Link to={session?.remaining.length ? sessionPath(session) : totalDue ? '/study/all?mode=due' : '/study'} className="shrink-0 rounded-xl bg-white/95 px-4 py-2.5 text-sm font-semibold text-brand-700 shadow active:scale-95">
+              {session?.remaining.length ? '학습 이어하기' : totalDue ? '복습 시작' : '학습 시작'}
             </Link>
           </div>
         </Card>
